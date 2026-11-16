@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v3",
-  "builtAt": "2026-11-16T23:20:11.306Z",
+  "version": "sk-v5",
+  "builtAt": "2026-11-16T23:31:34.860Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,7 +37,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 7975,
+   "total": 3850,
    "mediums": [
     {
      "medium": "Events",
@@ -46,18 +46,18 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 3625,
-     "deals": 3
-    },
-    {
-     "medium": "Webinars",
-     "credited": 1000,
+     "credited": 1500,
      "deals": 1
     },
     {
+     "medium": "Webinars",
+     "credited": 0,
+     "deals": 0
+    },
+    {
      "medium": "Digital",
-     "credited": 1000,
-     "deals": 2
+     "credited": 0,
+     "deals": 0
     },
     {
      "medium": "Untagged",
@@ -67,39 +67,15 @@
    ],
    "top": [
     {
-     "source": "BDR Co - Business Development Resources",
-     "medium": "Partners and referrals",
-     "credited": 1625,
-     "deals": 1
-    },
-    {
      "source": "Nexstar",
      "medium": "Partners and referrals",
      "credited": 1500,
      "deals": 1
     },
     {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 1000,
-     "deals": 2
-    },
-    {
-     "source": "Webinar - KickCharge",
-     "medium": "Webinars",
-     "credited": 1000,
-     "deals": 1
-    },
-    {
      "source": "2026 - Home Service Freedom",
      "medium": "Events",
      "credited": 1000,
-     "deals": 1
-    },
-    {
-     "source": "Tool Vault",
-     "medium": "Partners and referrals",
-     "credited": 500,
      "deals": 1
     },
     {
@@ -111,17 +87,17 @@
    ]
   },
   "ytd": {
-   "total": 350209.4,
+   "total": 341034.9,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 74220.32,
-     "deals": 68
+     "credited": 72570.32,
+     "deals": 66
     },
     {
      "medium": "Partners and referrals",
-     "credited": 109935.25,
-     "deals": 112
+     "credited": 104285.75,
+     "deals": 106
     },
     {
      "medium": "Webinars",
@@ -130,12 +106,12 @@
     },
     {
      "medium": "Digital",
-     "credited": 59299,
-     "deals": 52
+     "credited": 58299,
+     "deals": 51
     },
     {
      "medium": "Untagged",
-     "credited": 102554.83,
+     "credited": 101679.83,
      "deals": 118
     }
    ],
@@ -143,20 +119,20 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 24799,
+     "credited": 24299,
      "deals": 21
     },
     {
      "source": "Facebook",
      "medium": "Digital",
-     "credited": 20800,
-     "deals": 21
+     "credited": 20300,
+     "deals": 20
     },
     {
      "source": "LAB",
      "medium": "Partners and referrals",
-     "credited": 12637.25,
-     "deals": 19
+     "credited": 12300.25,
+     "deals": 17
     },
     {
      "source": "2026 - Tommy Mello Podcast",
@@ -171,22 +147,22 @@
      "deals": 7
     },
     {
+     "source": "Certain Path",
+     "medium": "Partners and referrals",
+     "credited": 7538,
+     "deals": 7
+    },
+    {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
-     "credited": 9024,
-     "deals": 8
+     "credited": 7399,
+     "deals": 7
     },
     {
      "source": "2025 - Home Service Freedom",
      "medium": "Events",
-     "credited": 7949,
-     "deals": 8
-    },
-    {
-     "source": "Certain Path",
-     "medium": "Partners and referrals",
-     "credited": 7838,
-     "deals": 8
+     "credited": 7049,
+     "deals": 7
     }
    ]
   }
