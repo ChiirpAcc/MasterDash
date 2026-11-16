@@ -1,0 +1,375 @@
+{
+ "meta": {
+  "version": "sk-v3",
+  "builtAt": "2026-11-16T23:20:11.306Z",
+  "month": "2026-11",
+  "periods": {
+   "thisMonth": [
+    "2026-11",
+    "2026-11"
+   ],
+   "lastMonth": [
+    "2026-10",
+    "2026-10"
+   ],
+   "qtd": [
+    "2026-10",
+    "2026-11"
+   ],
+   "ytd": [
+    "2026-01",
+    "2026-11"
+   ]
+  },
+  "roster": [
+   "Josh Anderson",
+   "Blake Fenn",
+   "colton lingmann",
+   "Ky Decker"
+  ],
+  "countTypes": [
+   "New Business",
+   "Expansion"
+  ],
+  "start": "2026-01-01",
+  "rule": "A rep is credited with the first month’s MRR of each New Business or Expansion deal they close, in the month the customer first pays."
+ },
+ "retention": {
+  "month": "2026-11",
+  "bomMonth": "2026-10",
+  "bom": 0,
+  "current": 0,
+  "dataThrough": "2026-11-14",
+  "churned": {
+   "count": 15,
+   "mrr": 14542,
+   "rows": [
+    {
+     "company": "Bert Black",
+     "mrr": 900,
+     "requested": "2026-11-09",
+     "ended": "2026-11-14",
+     "unexpected": false
+    },
+    {
+     "company": "TemperaturePro San Antonio",
+     "mrr": 450,
+     "requested": "2026-10-27",
+     "ended": "2026-11-13",
+     "unexpected": false
+    },
+    {
+     "company": "Mallard Air LLC",
+     "mrr": 700,
+     "requested": "2026-11-04",
+     "ended": "2026-11-13",
+     "unexpected": false
+    },
+    {
+     "company": "Phoenix Home Comfort LLC",
+     "mrr": 735,
+     "requested": "2026-10-27",
+     "ended": "2026-11-13",
+     "unexpected": false
+    },
+    {
+     "company": "Saffer Plumbing and Electric",
+     "mrr": 1100,
+     "requested": "2026-10-27",
+     "ended": "2026-11-11",
+     "unexpected": false
+    },
+    {
+     "company": "Sutton Brothers",
+     "mrr": 749,
+     "requested": "2026-11-04",
+     "ended": "2026-11-10",
+     "unexpected": false
+    },
+    {
+     "company": "Apex Heating and Cooling",
+     "mrr": 2500,
+     "requested": "2026-11-10",
+     "ended": "2026-11-10",
+     "unexpected": true
+    },
+    {
+     "company": "cus_NUOJySvROL0pyB",
+     "mrr": 550,
+     "requested": "2026-11-04",
+     "ended": "2026-11-08",
+     "unexpected": false
+    },
+    {
+     "company": "Prime Plumbing",
+     "mrr": 1400,
+     "requested": "2026-10-06",
+     "ended": "2026-11-05",
+     "unexpected": false
+    },
+    {
+     "company": "Contemporary Plumbing Services",
+     "mrr": 650,
+     "requested": "2026-11-02",
+     "ended": "2026-11-04",
+     "unexpected": false
+    },
+    {
+     "company": "Davis Heating & Air LLC",
+     "mrr": 1500,
+     "requested": "2026-11-04",
+     "ended": "2026-11-04",
+     "unexpected": true
+    },
+    {
+     "company": "Bill Fry the Plumbing Guy",
+     "mrr": 700,
+     "requested": "2026-10-31",
+     "ended": "2026-11-03",
+     "unexpected": false
+    },
+    {
+     "company": "Accurate Home Services",
+     "mrr": 700,
+     "requested": "2026-10-31",
+     "ended": "2026-11-02",
+     "unexpected": false
+    },
+    {
+     "company": "Matthew Palmieri",
+     "mrr": 1020.5,
+     "requested": "2026-10-31",
+     "ended": "2026-11-02",
+     "unexpected": false
+    },
+    {
+     "company": "cus_O0Fp2K2YWkno4b",
+     "mrr": 887.5,
+     "requested": "2026-10-27",
+     "ended": "2026-11-01",
+     "unexpected": false
+    }
+   ]
+  },
+  "unexpected": {
+   "count": 2,
+   "mrr": 4000
+  },
+  "endingThisMonth": {
+   "count": 34,
+   "mrr": 25930,
+   "rows": [
+    {
+     "company": "Curran Plumbing, Electrical, Heating & Air",
+     "mrr": 500,
+     "requested": "2026-10-30",
+     "endsAt": "2026-11-16"
+    },
+    {
+     "company": "Best Virginia HVAC",
+     "mrr": 950,
+     "requested": "2026-10-28",
+     "endsAt": "2026-11-16"
+    },
+    {
+     "company": "Briggs Mechanical",
+     "mrr": 2250,
+     "requested": "2026-11-10",
+     "endsAt": "2026-11-17"
+    },
+    {
+     "company": "BEPO LLC",
+     "mrr": 650,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-17"
+    },
+    {
+     "company": "DC ROOFING FL",
+     "mrr": 650,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-17"
+    },
+    {
+     "company": "Five Star Pressure Washing",
+     "mrr": 200,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-17"
+    },
+    {
+     "company": "Albiero Plumbing & HVAC",
+     "mrr": 1050,
+     "requested": "2026-10-30",
+     "endsAt": "2026-11-17"
+    },
+    {
+     "company": "Salt Lake Plumbing",
+     "mrr": 749,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-18"
+    },
+    {
+     "company": "Prime Mobile Detailing",
+     "mrr": 0,
+     "requested": "2026-10-30",
+     "endsAt": "2026-11-18"
+    },
+    {
+     "company": "Access Heating Air and Plumbing",
+     "mrr": 1299,
+     "requested": "2026-10-29",
+     "endsAt": "2026-11-19"
+    },
+    {
+     "company": "Jeoah Electric",
+     "mrr": 949,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-19"
+    },
+    {
+     "company": "Luxor Garage Door",
+     "mrr": 0,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-19"
+    },
+    {
+     "company": "CONCIERGE HOME REMODELING",
+     "mrr": 450,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-20"
+    },
+    {
+     "company": "Oleada Electrical",
+     "mrr": 1050,
+     "requested": "2026-10-29",
+     "endsAt": "2026-11-20"
+    },
+    {
+     "company": "Jackson Comfort Systems",
+     "mrr": 1050,
+     "requested": "2026-10-22",
+     "endsAt": "2026-11-20"
+    },
+    {
+     "company": "Crisafulli Bros",
+     "mrr": 950,
+     "requested": "2026-11-12",
+     "endsAt": "2026-11-21"
+    },
+    {
+     "company": "Service Now Home Services",
+     "mrr": 1050,
+     "requested": "2026-10-30",
+     "endsAt": "2026-11-21"
+    },
+    {
+     "company": "West Houston Electric",
+     "mrr": 0,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-22"
+    },
+    {
+     "company": "Gering Valley Plumbing and Heating",
+     "mrr": 550,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-22"
+    },
+    {
+     "company": "True Blue Heat and Air, LLC",
+     "mrr": 0,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-22"
+    },
+    {
+     "company": "DT Electric LLC",
+     "mrr": 849,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-23"
+    },
+    {
+     "company": "cus_NPeqjKR6PXrGPs",
+     "mrr": 75,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-23"
+    },
+    {
+     "company": "Famously Clean",
+     "mrr": 0,
+     "requested": "2026-11-10",
+     "endsAt": "2026-11-24"
+    },
+    {
+     "company": "Halo Doors Inc",
+     "mrr": 0,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-24"
+    },
+    {
+     "company": "Homestead Home Services",
+     "mrr": 800,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-25"
+    },
+    {
+     "company": "Service Star Inc",
+     "mrr": 3950,
+     "requested": "2026-11-12",
+     "endsAt": "2026-11-26"
+    },
+    {
+     "company": "American Trade Partners LLC",
+     "mrr": 850,
+     "requested": "2026-10-31",
+     "endsAt": "2026-11-26"
+    },
+    {
+     "company": "Royalty Carpet",
+     "mrr": 200,
+     "requested": "2026-10-29",
+     "endsAt": "2026-11-26"
+    },
+    {
+     "company": "City Wide Chem-Dry",
+     "mrr": 75,
+     "requested": "2026-10-28",
+     "endsAt": "2026-11-26"
+    },
+    {
+     "company": "Van Delden Wastewater Systems",
+     "mrr": 0,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-26"
+    },
+    {
+     "company": "Good Times Restoration LLC DBA Good Times Plumbing & Restoration",
+     "mrr": 935,
+     "requested": "2026-11-04",
+     "endsAt": "2026-11-28"
+    },
+    {
+     "company": "JW Heating and Air",
+     "mrr": 1250,
+     "requested": "2026-11-03",
+     "endsAt": "2026-11-29"
+    },
+    {
+     "company": "Popsicle Air",
+     "mrr": 1650,
+     "requested": "2026-11-12",
+     "endsAt": "2026-11-30"
+    },
+    {
+     "company": "R&R Plumbing Services Inc.",
+     "mrr": 949,
+     "requested": "2026-10-27",
+     "endsAt": "2026-11-30"
+    }
+   ]
+  },
+  "endingLater": {
+   "count": 29,
+   "mrr": 21561
+  },
+  "retainedSoFar": null,
+  "retainedIfAllEnd": null
+ }
+}
