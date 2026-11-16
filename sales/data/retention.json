@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v3",
-  "builtAt": "2026-11-16T23:20:11.306Z",
+  "version": "sk-v5",
+  "builtAt": "2026-11-16T23:31:34.860Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,8 +37,8 @@
  "retention": {
   "month": "2026-11",
   "bomMonth": "2026-10",
-  "bom": 0,
-  "current": 0,
+  "bom": 732604.06,
+  "current": 722556.89,
   "dataThrough": "2026-11-14",
   "churned": {
    "count": 15,
@@ -156,15 +156,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 34,
-   "mrr": 25930,
+   "count": 33,
+   "mrr": 25430,
    "rows": [
-    {
-     "company": "Curran Plumbing, Electrical, Heating & Air",
-     "mrr": 500,
-     "requested": "2026-10-30",
-     "endsAt": "2026-11-16"
-    },
     {
      "company": "Best Virginia HVAC",
      "mrr": 950,
@@ -366,10 +360,10 @@
    ]
   },
   "endingLater": {
-   "count": 29,
-   "mrr": 21561
+   "count": 30,
+   "mrr": 22061
   },
-  "retainedSoFar": null,
-  "retainedIfAllEnd": null
+  "retainedSoFar": 0.98,
+  "retainedIfAllEnd": 0.945
  }
 }
