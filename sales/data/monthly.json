@@ -1,0 +1,558 @@
+{
+ "meta": {
+  "version": "sk-v1",
+  "builtAt": "2026-11-16T22:26:40.256Z",
+  "month": "2026-11",
+  "periods": {
+   "thisMonth": [
+    "2026-11",
+    "2026-11"
+   ],
+   "lastMonth": [
+    "2026-10",
+    "2026-10"
+   ],
+   "qtd": [
+    "2026-10",
+    "2026-11"
+   ],
+   "ytd": [
+    "2026-01",
+    "2026-11"
+   ]
+  },
+  "roster": [
+   "Ky Decker",
+   "Blake Fenn",
+   "colton lingmann"
+  ],
+  "countTypes": [
+   "New Business",
+   "Expansion"
+  ],
+  "start": "2026-01-01",
+  "rule": "A rep is credited with the first month’s MRR of each New Business or Expansion deal they close, in the month the customer first pays."
+ },
+ "rows": [
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-01",
+   "won": 3,
+   "booked": 4149,
+   "collectedDeals": 3,
+   "credited": 3199,
+   "newCredited": 3199,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-01",
+   "won": 2,
+   "booked": 3190,
+   "collectedDeals": 1,
+   "credited": 1800,
+   "newCredited": 1800,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-01",
+   "won": 4,
+   "booked": 3848,
+   "collectedDeals": 3,
+   "credited": 1849,
+   "newCredited": 1849,
+   "expCredited": 0
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-01",
+   "won": 13,
+   "booked": 12447,
+   "collectedDeals": 10,
+   "credited": 6098,
+   "newCredited": 5898,
+   "expCredited": 200
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-01",
+   "won": 5,
+   "booked": 4949,
+   "collectedDeals": 4,
+   "credited": 2300,
+   "newCredited": 2300,
+   "expCredited": 0
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-02",
+   "won": 6,
+   "booked": 9950,
+   "collectedDeals": 4,
+   "credited": 3240,
+   "newCredited": 3240,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-02",
+   "won": 7,
+   "booked": 10500,
+   "collectedDeals": 6,
+   "credited": 5440,
+   "newCredited": 5440,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-02",
+   "won": 6,
+   "booked": 9049,
+   "collectedDeals": 5,
+   "credited": 4224,
+   "newCredited": 4224,
+   "expCredited": 0
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-02",
+   "won": 26,
+   "booked": 28463,
+   "collectedDeals": 25,
+   "credited": 18900,
+   "newCredited": 16300,
+   "expCredited": 2600
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-02",
+   "won": 8,
+   "booked": 10898,
+   "collectedDeals": 7,
+   "credited": 3649,
+   "newCredited": 3649,
+   "expCredited": 0
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-03",
+   "won": 13,
+   "booked": 15300,
+   "collectedDeals": 14,
+   "credited": 14000,
+   "newCredited": 14000,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-03",
+   "won": 11,
+   "booked": 13998,
+   "collectedDeals": 5,
+   "credited": 4886.25,
+   "newCredited": 4886.25,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-03",
+   "won": 22,
+   "booked": 25013,
+   "collectedDeals": 17,
+   "credited": 13395,
+   "newCredited": 13395,
+   "expCredited": 0
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-03",
+   "won": 8,
+   "booked": 5288,
+   "collectedDeals": 6,
+   "credited": 3239.25,
+   "newCredited": 3239.25,
+   "expCredited": 0
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-03",
+   "won": 9,
+   "booked": 9249,
+   "collectedDeals": 8,
+   "credited": 5138,
+   "newCredited": 5138,
+   "expCredited": 0
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-04",
+   "won": 12,
+   "booked": 14150,
+   "collectedDeals": 7,
+   "credited": 7700,
+   "newCredited": 7700,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-04",
+   "won": 15,
+   "booked": 21140.04,
+   "collectedDeals": 8,
+   "credited": 10495,
+   "newCredited": 10495,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-04",
+   "won": 28,
+   "booked": 29475,
+   "collectedDeals": 28,
+   "credited": 24088,
+   "newCredited": 20350,
+   "expCredited": 3738
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-04",
+   "won": 8,
+   "booked": 7250,
+   "collectedDeals": 8,
+   "credited": 6139,
+   "newCredited": 4850,
+   "expCredited": 1289
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-04",
+   "won": 12,
+   "booked": 8681.25,
+   "collectedDeals": 10,
+   "credited": 6361.5,
+   "newCredited": 5161.5,
+   "expCredited": 1200
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-05",
+   "won": 7,
+   "booked": 10100,
+   "collectedDeals": 6,
+   "credited": 8300,
+   "newCredited": 8300,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-05",
+   "won": 14,
+   "booked": 18025,
+   "collectedDeals": 12,
+   "credited": 14500,
+   "newCredited": 14500,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-05",
+   "won": 10,
+   "booked": 13400,
+   "collectedDeals": 6,
+   "credited": 8500,
+   "newCredited": 7500,
+   "expCredited": 1000
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-05",
+   "won": 4,
+   "booked": 2800,
+   "collectedDeals": 4,
+   "credited": 2375,
+   "newCredited": 2075,
+   "expCredited": 300
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-05",
+   "won": 5,
+   "booked": 4340,
+   "collectedDeals": 5,
+   "credited": 4400,
+   "newCredited": 4100,
+   "expCredited": 300
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-06",
+   "won": 7,
+   "booked": 13000,
+   "collectedDeals": 7,
+   "credited": 7950,
+   "newCredited": 7950,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-06",
+   "won": 9,
+   "booked": 8550,
+   "collectedDeals": 8,
+   "credited": 7819.57,
+   "newCredited": 7819.57,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-06",
+   "won": 11,
+   "booked": 9325,
+   "collectedDeals": 7,
+   "credited": 7050,
+   "newCredited": 7050,
+   "expCredited": 0
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-06",
+   "won": 3,
+   "booked": 2300,
+   "collectedDeals": 1,
+   "credited": 600,
+   "newCredited": 600,
+   "expCredited": 0
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-06",
+   "won": 8,
+   "booked": 10337.5,
+   "collectedDeals": 5,
+   "credited": 3987.5,
+   "newCredited": 3987.5,
+   "expCredited": 0
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-07",
+   "won": 8,
+   "booked": 6949,
+   "collectedDeals": 7,
+   "credited": 7900,
+   "newCredited": 7900,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-07",
+   "won": 13,
+   "booked": 18467,
+   "collectedDeals": 12,
+   "credited": 15300,
+   "newCredited": 15300,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-07",
+   "won": 15,
+   "booked": 16150,
+   "collectedDeals": 15,
+   "credited": 15450,
+   "newCredited": 14600,
+   "expCredited": 850
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-07",
+   "won": 3,
+   "booked": 3000,
+   "collectedDeals": 4,
+   "credited": 3500,
+   "newCredited": 2750,
+   "expCredited": 750
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-07",
+   "won": 2,
+   "booked": 1137.5,
+   "collectedDeals": 3,
+   "credited": 1337.5,
+   "newCredited": 1137.5,
+   "expCredited": 200
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-08",
+   "won": 10,
+   "booked": 15500,
+   "collectedDeals": 9,
+   "credited": 12250,
+   "newCredited": 12250,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-08",
+   "won": 10,
+   "booked": 15800,
+   "collectedDeals": 7,
+   "credited": 10700,
+   "newCredited": 10700,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-08",
+   "won": 0,
+   "booked": 0,
+   "collectedDeals": 1,
+   "credited": 1250,
+   "newCredited": 1250,
+   "expCredited": 0
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-08",
+   "won": 2,
+   "booked": 2000,
+   "collectedDeals": 2,
+   "credited": 1500,
+   "newCredited": 1500,
+   "expCredited": 0
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-08",
+   "won": 14,
+   "booked": 19250,
+   "collectedDeals": 11,
+   "credited": 9802.5,
+   "newCredited": 9275,
+   "expCredited": 527.5
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-09",
+   "won": 7,
+   "booked": 14000,
+   "collectedDeals": 4,
+   "credited": 7500,
+   "newCredited": 7500,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-09",
+   "won": 9,
+   "booked": 13450,
+   "collectedDeals": 6,
+   "credited": 9125,
+   "newCredited": 9125,
+   "expCredited": 0
+  },
+  {
+   "ae": "Unassigned",
+   "month": "2026-09",
+   "won": 0,
+   "booked": 0,
+   "collectedDeals": 1,
+   "credited": 2250,
+   "newCredited": 2250,
+   "expCredited": 0
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-09",
+   "won": 7,
+   "booked": 10250,
+   "collectedDeals": 7,
+   "credited": 8275,
+   "newCredited": 7875,
+   "expCredited": 400
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-10",
+   "won": 3,
+   "booked": 4750,
+   "collectedDeals": 3,
+   "credited": 4738,
+   "newCredited": 4738,
+   "expCredited": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-10",
+   "won": 7,
+   "booked": 12600,
+   "collectedDeals": 7,
+   "credited": 13300,
+   "newCredited": 13300,
+   "expCredited": 0
+  },
+  {
+   "ae": "Other",
+   "month": "2026-10",
+   "won": 1,
+   "booked": 1500,
+   "collectedDeals": 3,
+   "credited": 2400,
+   "newCredited": 1500,
+   "expCredited": 900
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-10",
+   "won": 7,
+   "booked": 8200,
+   "collectedDeals": 4,
+   "credited": 4033.33,
+   "newCredited": 3333.33,
+   "expCredited": 700
+  },
+  {
+   "ae": "Blake Fenn",
+   "month": "2026-11",
+   "won": 4,
+   "booked": 5050,
+   "collectedDeals": 4,
+   "credited": 4125,
+   "newCredited": 1500,
+   "expCredited": 2625
+  },
+  {
+   "ae": "Ky Decker",
+   "month": "2026-11",
+   "won": 1,
+   "booked": 2000,
+   "collectedDeals": 2,
+   "credited": 1000,
+   "newCredited": 500,
+   "expCredited": 500
+  },
+  {
+   "ae": "Other",
+   "month": "2026-11",
+   "won": 1,
+   "booked": 1500,
+   "collectedDeals": 1,
+   "credited": 1500,
+   "newCredited": 1500,
+   "expCredited": 0
+  },
+  {
+   "ae": "colton lingmann",
+   "month": "2026-11",
+   "won": 3,
+   "booked": 4266.65,
+   "collectedDeals": 2,
+   "credited": 1350,
+   "newCredited": 1350,
+   "expCredited": 0
+  }
+ ]
+}
