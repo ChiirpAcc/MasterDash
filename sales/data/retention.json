@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v5",
-  "builtAt": "2026-11-16T23:31:34.860Z",
+  "version": "sk-v6",
+  "builtAt": "2026-11-16T23:55:53.694Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -156,7 +156,7 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 33,
+   "count": 35,
    "mrr": 25430,
    "rows": [
     {
@@ -226,6 +226,12 @@
      "endsAt": "2026-11-19"
     },
     {
+     "company": "Vanguard Plumbing Solutions",
+     "mrr": 0,
+     "requested": "2026-10-06",
+     "endsAt": "2026-11-19"
+    },
+    {
      "company": "CONCIERGE HOME REMODELING",
      "mrr": 450,
      "requested": "2026-11-04",
@@ -253,6 +259,12 @@
      "company": "Service Now Home Services",
      "mrr": 1050,
      "requested": "2026-10-30",
+     "endsAt": "2026-11-21"
+    },
+    {
+     "company": "Regal, Inc. Plumbing, Heating & A/C",
+     "mrr": 0,
+     "requested": "2026-10-06",
      "endsAt": "2026-11-21"
     },
     {
@@ -360,7 +372,7 @@
    ]
   },
   "endingLater": {
-   "count": 30,
+   "count": 28,
    "mrr": 22061
   },
   "retainedSoFar": 0.98,
