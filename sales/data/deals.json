@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v1",
-  "builtAt": "2026-11-16T22:26:40.256Z",
+  "version": "sk-v3",
+  "builtAt": "2026-11-16T23:20:11.306Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -22,9 +22,10 @@
    ]
   },
   "roster": [
-   "Ky Decker",
+   "Josh Anderson",
    "Blake Fenn",
-   "colton lingmann"
+   "colton lingmann",
+   "Ky Decker"
   ],
   "countTypes": [
    "New Business",
