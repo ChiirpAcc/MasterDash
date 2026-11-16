@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v3",
-  "builtAt": "2026-11-16T23:20:11.306Z",
+  "version": "sk-v5",
+  "builtAt": "2026-11-16T23:31:34.860Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -78,7 +78,7 @@
    "close": "2026-01-15",
    "booked": 699,
    "status": "Collected",
-   "creditedMonth": "2026-04",
+   "creditedMonth": "2026-03",
    "credited": 699,
    "daysToCollect": 15,
    "waitingDays": null
@@ -90,7 +90,7 @@
    "close": "2026-01-16",
    "booked": 940,
    "status": "Collected",
-   "creditedMonth": "2026-02",
+   "creditedMonth": "2026-01",
    "credited": 740,
    "daysToCollect": 25,
    "waitingDays": null
@@ -174,7 +174,7 @@
    "close": "2026-02-03",
    "booked": 1250,
    "status": "Collected",
-   "creditedMonth": "2026-03",
+   "creditedMonth": "2026-02",
    "credited": 1136.25,
    "daysToCollect": 30,
    "waitingDays": null
@@ -378,7 +378,7 @@
    "close": "2026-02-26",
    "booked": 1250,
    "status": "Collected",
-   "creditedMonth": "2026-03",
+   "creditedMonth": "2026-02",
    "credited": 1250,
    "daysToCollect": 29,
    "waitingDays": null
@@ -390,7 +390,7 @@
    "close": "2026-02-27",
    "booked": 1000,
    "status": "Collected",
-   "creditedMonth": "2026-03",
+   "creditedMonth": "2026-02",
    "credited": 1000,
    "daysToCollect": 4,
    "waitingDays": null
@@ -426,7 +426,7 @@
    "close": "2026-03-02",
    "booked": 1000,
    "status": "Collected",
-   "creditedMonth": "2026-08",
+   "creditedMonth": "2026-07",
    "credited": 750,
    "daysToCollect": 155,
    "waitingDays": null
@@ -594,7 +594,7 @@
    "close": "2026-03-16",
    "booked": 2250,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 666.96,
    "daysToCollect": 31,
    "waitingDays": null
@@ -678,7 +678,7 @@
    "close": "2026-03-20",
    "booked": 1250,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 1250,
    "daysToCollect": 3,
    "waitingDays": null
@@ -690,7 +690,7 @@
    "close": "2026-03-20",
    "booked": 899,
    "status": "Collected",
-   "creditedMonth": "2026-04",
+   "creditedMonth": "2026-03",
    "credited": 899,
    "daysToCollect": 34,
    "waitingDays": null
@@ -726,7 +726,7 @@
    "close": "2026-03-25",
    "booked": 2250,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 200,
    "daysToCollect": 7,
    "waitingDays": null
@@ -786,7 +786,7 @@
    "close": "2026-03-31",
    "booked": 899,
    "status": "Collected",
-   "creditedMonth": "2026-04",
+   "creditedMonth": "2026-03",
    "credited": 899,
    "daysToCollect": 30,
    "waitingDays": null
@@ -834,7 +834,7 @@
    "close": "2026-04-01",
    "booked": 1750,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 1750,
    "daysToCollect": 21,
    "waitingDays": null
@@ -858,7 +858,7 @@
    "close": "2026-04-03",
    "booked": 1500,
    "status": "Collected",
-   "creditedMonth": "2026-10",
+   "creditedMonth": "2026-09",
    "credited": 1500,
    "daysToCollect": 183,
    "waitingDays": null
@@ -954,7 +954,7 @@
    "close": "2026-04-14",
    "booked": 1500,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 227.61,
    "daysToCollect": 2,
    "waitingDays": null
@@ -1003,7 +1003,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
-   "credited": 300,
+   "credited": 150,
    "daysToCollect": 0,
    "waitingDays": null
   },
@@ -1015,7 +1015,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
-   "credited": 300,
+   "credited": 150,
    "daysToCollect": 0,
    "waitingDays": null
   },
@@ -1026,9 +1026,9 @@
    "close": "2026-04-16",
    "booked": 300,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 300,
-   "daysToCollect": 15,
+   "daysToCollect": 0,
    "waitingDays": null
   },
   {
@@ -1039,7 +1039,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
-   "credited": 300,
+   "credited": 150,
    "daysToCollect": 0,
    "waitingDays": null
   },
@@ -1050,7 +1050,7 @@
    "close": "2026-04-16",
    "booked": 2250,
    "status": "Collected",
-   "creditedMonth": "2026-07",
+   "creditedMonth": "2026-06",
    "credited": 2250,
    "daysToCollect": 91,
    "waitingDays": null
@@ -1062,7 +1062,7 @@
    "close": "2026-04-17",
    "booked": 1000,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1098,7 +1098,7 @@
    "close": "2026-04-21",
    "booked": 1250,
    "status": "Collected",
-   "creditedMonth": "2026-08",
+   "creditedMonth": "2026-07",
    "credited": 1250,
    "daysToCollect": 122,
    "waitingDays": null
@@ -1182,7 +1182,7 @@
    "close": "2026-04-27",
    "booked": 850,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 850,
    "daysToCollect": 4,
    "waitingDays": null
@@ -1230,7 +1230,7 @@
    "close": "2026-04-29",
    "booked": 2500,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 500,
    "daysToCollect": 30,
    "waitingDays": null
@@ -1254,7 +1254,7 @@
    "close": "2026-04-29",
    "booked": 650,
    "status": "Collected",
-   "creditedMonth": "2026-08",
+   "creditedMonth": "2026-07",
    "credited": 650,
    "daysToCollect": 2,
    "waitingDays": null
@@ -1266,7 +1266,7 @@
    "close": "2026-04-30",
    "booked": 1700,
    "status": "Collected",
-   "creditedMonth": "2026-05",
+   "creditedMonth": "2026-04",
    "credited": 1700,
    "daysToCollect": 1,
    "waitingDays": null
@@ -1290,7 +1290,7 @@
    "close": "2026-05-05",
    "booked": 800,
    "status": "Collected",
-   "creditedMonth": "2026-08",
+   "creditedMonth": "2026-07",
    "credited": 800,
    "daysToCollect": 92,
    "waitingDays": null
@@ -1338,9 +1338,9 @@
    "close": "2026-05-11",
    "booked": 500,
    "status": "Collected",
-   "creditedMonth": "2026-11",
+   "creditedMonth": "2026-10",
    "credited": 500,
-   "daysToCollect": 174,
+   "daysToCollect": 143,
    "waitingDays": null
   },
   {
@@ -1410,7 +1410,7 @@
    "close": "2026-05-13",
    "booked": 1125,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 1125,
    "daysToCollect": 7,
    "waitingDays": null
@@ -1458,7 +1458,7 @@
    "close": "2026-05-20",
    "booked": 2250,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 2250,
    "daysToCollect": 13,
    "waitingDays": null
@@ -1470,7 +1470,7 @@
    "close": "2026-05-20",
    "booked": 1250,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 1250,
    "daysToCollect": 12,
    "waitingDays": null
@@ -1482,9 +1482,9 @@
    "close": "2026-05-20",
    "booked": 527.5,
    "status": "Collected",
-   "creditedMonth": "2026-08",
+   "creditedMonth": "2026-07",
    "credited": 527.5,
-   "daysToCollect": 73,
+   "daysToCollect": 42,
    "waitingDays": null
   },
   {
@@ -1494,7 +1494,7 @@
    "close": "2026-05-22",
    "booked": 1300,
    "status": "Collected",
-   "creditedMonth": "2026-06",
+   "creditedMonth": "2026-05",
    "credited": 1300,
    "daysToCollect": 5,
    "waitingDays": null
@@ -1530,7 +1530,7 @@
    "close": "2026-05-26",
    "booked": 2250,
    "status": "Collected",
-   "creditedMonth": "2026-07",
+   "creditedMonth": "2026-06",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1674,9 +1674,9 @@
    "close": "2026-06-16",
    "booked": 200,
    "status": "Collected",
-   "creditedMonth": "2026-07",
+   "creditedMonth": "2026-06",
    "credited": 200,
-   "daysToCollect": 15,
+   "daysToCollect": 0,
    "waitingDays": null
   },
   {
@@ -1686,9 +1686,9 @@
    "close": "2026-06-22",
    "booked": 400,
    "status": "Collected",
-   "creditedMonth": "2026-09",
+   "creditedMonth": "2026-08",
    "credited": 400,
-   "daysToCollect": 71,
+   "daysToCollect": 40,
    "waitingDays": null
   },
   {
@@ -1698,9 +1698,9 @@
    "close": "2026-06-23",
    "booked": 500,
    "status": "Collected",
-   "creditedMonth": "2026-11",
+   "creditedMonth": "2026-10",
    "credited": 500,
-   "daysToCollect": 131,
+   "daysToCollect": 100,
    "waitingDays": null
   },
   {
@@ -1710,7 +1710,7 @@
    "close": "2026-06-24",
    "booked": 1000,
    "status": "Collected",
-   "creditedMonth": "2026-07",
+   "creditedMonth": "2026-06",
    "credited": 500,
    "daysToCollect": 12,
    "waitingDays": null
@@ -1746,7 +1746,7 @@
    "close": "2026-06-24",
    "booked": 500,
    "status": "Collected",
-   "creditedMonth": "2026-07",
+   "creditedMonth": "2026-06",
    "credited": 500,
    "daysToCollect": 21,
    "waitingDays": null
@@ -1769,11 +1769,11 @@
    "type": "New Business",
    "close": "2026-06-25",
    "booked": 6000,
-   "status": "Collected",
-   "creditedMonth": "2026-06",
-   "credited": 1250,
-   "daysToCollect": 0,
-   "waitingDays": null
+   "status": "Not paid after 60 days",
+   "creditedMonth": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 144
   },
   {
    "ae": "Blake Fenn",
@@ -1891,7 +1891,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-07",
-   "credited": 1500,
+   "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
   },
@@ -1962,7 +1962,7 @@
    "close": "2026-07-10",
    "booked": 1000,
    "status": "Collected",
-   "creditedMonth": "2026-08",
+   "creditedMonth": "2026-07",
    "credited": 1000,
    "daysToCollect": 6,
    "waitingDays": null
@@ -2154,7 +2154,7 @@
    "close": "2026-08-03",
    "booked": 1000,
    "status": "Collected",
-   "creditedMonth": "2026-10",
+   "creditedMonth": "2026-09",
    "credited": 1000,
    "daysToCollect": 61,
    "waitingDays": null
@@ -2826,9 +2826,9 @@
    "close": "2026-09-30",
    "booked": 2000,
    "status": "Collected",
-   "creditedMonth": "2026-11",
+   "creditedMonth": "2026-10",
    "credited": 1000,
-   "daysToCollect": 32,
+   "daysToCollect": 1,
    "waitingDays": null
   },
   {
@@ -2899,7 +2899,7 @@
    "booked": 700,
    "status": "Collected",
    "creditedMonth": "2026-10",
-   "credited": 700,
+   "credited": 350,
    "daysToCollect": 0,
    "waitingDays": null
   },
@@ -3041,11 +3041,11 @@
    "type": "Expansion",
    "close": "2026-11-02",
    "booked": 2300,
-   "status": "Collected",
-   "creditedMonth": "2026-11",
-   "credited": 1625,
-   "daysToCollect": 0,
-   "waitingDays": null
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 14
   },
   {
    "ae": "Blake Fenn",
@@ -3065,11 +3065,11 @@
    "type": "New Business",
    "close": "2026-11-04",
    "booked": 500,
-   "status": "Collected",
-   "creditedMonth": "2026-11",
-   "credited": 500,
-   "daysToCollect": 0,
-   "waitingDays": null
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 12
   },
   {
    "ae": "colton lingmann",
