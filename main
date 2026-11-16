@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CHIIRP sales scoreboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #F6F7FA;
+    --panel: #FFFFFF;
+    --ink: #18233A;
+    --navy: #223B6E;
+    --muted: #6B7488;
+    --rule: #DDE1EA;
+    --lane: #E9ECF3;
+    --paid: #2F8F5B;
+    --wait: #B7791F;
+    --late: #B23A3A;
+    --focus: #3B6FD8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --paper: #0F1626;
+      --panel: #16203A;
+      --ink: #E8ECF5;
+      --navy: #8FB0F0;
+      --muted: #97A1B8;
+      --rule: #26324E;
+      --lane: #1E2A45;
+      --paid: #4DBB80;
+      --wait: #E0A845;
+      --late: #E27272;
+      --focus: #7EA6FF;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: "Barlow", "Segoe UI", Roboto, Arial, sans-serif; font-size: 16px; line-height: 1.45;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 24px 48px; }
+  .num, .name, h1, h2 { font-family: "Barlow Condensed", "Arial Narrow", Arial, sans-serif; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* header */
+  header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; margin-bottom: 28px; }
+  h1 { margin: 0; font-weight: 700; font-size: clamp(34px, 5vw, 52px); line-height: 1; letter-spacing: -0.01em; }
+  .sub { margin: 6px 0 0; color: var(--muted); }
+  .periods { display: flex; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--panel); }
+  .periods button {
+    font: 600 15px "Barlow", Arial, sans-serif; color: var(--muted); background: none; border: 0;
+    padding: 9px 14px; cursor: pointer; border-right: 1px solid var(--rule);
+  }
+  .periods button:last-child { border-right: 0; }
+  .periods button[aria-pressed="true"] { color: #fff; background: var(--navy); }
+  @media (prefers-color-scheme: dark) { .periods button[aria-pressed="true"] { color: var(--paper); } }
+  button:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; }
+
+  /* the race */
+  .race { background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; padding: 8px 24px 4px; }
+  .lane { display: grid; grid-template-columns: minmax(130px, 200px) 1fr; gap: 6px 20px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+  .lane:last-child { border-bottom: 0; }
+  .name { font-weight: 600; font-size: 26px; line-height: 1.05; text-transform: capitalize; }
+  .rank { color: var(--muted); font-weight: 500; font-size: 18px; margin-right: 6px; }
+  .track { position: relative; height: 34px; background: var(--lane); border-radius: 6px; overflow: hidden; }
+  .bar { position: absolute; inset: 0 auto 0 0; background: var(--paid); border-radius: 6px; width: 0; transition: width 900ms cubic-bezier(.2,.8,.2,1); }
+  .bar.exp { background: color-mix(in srgb, var(--paid) 55%, var(--panel)); }
+  .figs { grid-column: 2; display: flex; flex-wrap: wrap; gap: 4px 22px; color: var(--muted); font-size: 15px; }
+  .figs .big { color: var(--ink); font-size: 30px; font-weight: 700; line-height: 1; margin-right: 4px; }
+  .figs b { color: var(--ink); font-weight: 600; }
+  .figs .waiting b { color: var(--wait); }
+  .figs .late b { color: var(--late); }
+  .team { display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 16px 0 20px; color: var(--muted); border-top: 2px solid var(--ink); margin-top: 4px; }
+  .team .num { color: var(--ink); font-size: 22px; font-weight: 700; }
+  .key { display: flex; gap: 18px; color: var(--muted); font-size: 14px; margin: 12px 4px 0; }
+  .key i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--paid); }
+  .key i.exp { background: color-mix(in srgb, var(--paid) 55%, var(--panel)); }
+
+  /* lower half */
+  .lower { display: grid; grid-template-columns: 1.15fr 1fr; gap: 24px; margin-top: 32px; }
+  h2 { font-weight: 600; font-size: 26px; margin: 0 0 4px; }
+  .note { color: var(--muted); margin: 0 0 14px; font-size: 15px; }
+  section.panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; padding: 20px 22px; min-width: 0; }
+  .waitlist { list-style: none; margin: 0; padding: 0; }
+  .waitlist li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  .waitlist li:last-child { border-bottom: 0; }
+  .waitlist .co { font-weight: 600; }
+  .waitlist .who { color: var(--muted); font-size: 14px; }
+  .waitlist .amt { text-align: right; font-size: 20px; font-weight: 600; }
+  .waitlist .days { text-align: right; font-size: 14px; color: var(--wait); }
+  .waitlist .days.late { color: var(--late); font-weight: 600; }
+  .empty { color: var(--muted); padding: 8px 0; }
+  .chart { overflow-x: auto; }
+  .chart svg { display: block; min-width: 420px; width: 100%; height: auto; }
+  .chart text { fill: var(--muted); font: 13px "Barlow", Arial, sans-serif; }
+  .chart .axis { stroke: var(--rule); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: 14px; color: var(--muted); }
+  .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 15px; max-width: 72ch; }
+  footer p { margin: 0 0 8px; }
+  .error { background: var(--panel); border: 1px solid var(--late); border-radius: 12px; padding: 20px; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 20px 16px 36px; }
+    .lane { grid-template-columns: 1fr; }
+    .figs { grid-column: 1; }
+    .lower { grid-template-columns: 1fr; }
+    .periods button { padding: 8px 10px; font-size: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .bar { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1 id="title">Sales scoreboard</h1>
+      <p class="sub" id="sub">Loading the latest numbers…</p>
+    </div>
+    <div class="periods" role="group" aria-label="Period">
+      <button type="button" data-p="thisMonth" aria-pressed="true">This month</button>
+      <button type="button" data-p="lastMonth" aria-pressed="false">Last month</button>
+      <button type="button" data-p="qtd" aria-pressed="false">Quarter</button>
+      <button type="button" data-p="ytd" aria-pressed="false">Year</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="race" id="race" aria-live="polite"></div>
+    <div class="key" aria-hidden="true"><span><i></i>New business</span><span><i class="exp"></i>Expansions</span></div>
+
+    <div class="lower">
+      <section class="panel" aria-labelledby="w-h">
+        <h2 id="w-h">Waiting to be paid</h2>
+        <p class="note">Won, but the customer hasn’t paid yet. These count the month they pay.</p>
+        <ul class="waitlist" id="waitlist"></ul>
+      </section>
+      <section class="panel" aria-labelledby="m-h">
+        <h2 id="m-h">Collected by month</h2>
+        <p class="note">New revenue credited each month, by rep.</p>
+        <div class="chart" id="chart"></div>
+        <div class="legend" id="legend"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+(function () {
+  var state = { period: 'thisMonth', S: null, M: null, D: null };
+  var REP_COLORS = ['#2F8F5B', '#223B6E', '#B7791F', '#7A4FB0', '#2C8C9A', '#B23A3A'];
+  var money0 = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function $(id) { return document.getElementById(id); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function monthName(mk, long) { var m = Number(mk.slice(5, 7)) - 1; return (long ? new Date(2000, m, 1).toLocaleString('en-US', { month: 'long' }) : MONTHS[m]) + (long ? ' ' + mk.slice(0, 4) : ''); }
+  function label(p) {
+    var per = state.S.meta.periods[p];
+    if (p === 'thisMonth' || p === 'lastMonth') return monthName(per[0], true);
+    if (p === 'qtd') return monthName(per[0]) + '–' + monthName(per[1]) + ' ' + per[1].slice(0, 4);
+    return 'Year to date ' + per[1].slice(0, 4);
+  }
+
+  function fetchJson(f) {
+    return fetch('data/' + f + '?v=' + Date.now(), { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error(f + ' could not be loaded (HTTP ' + r.status + ')');
+      return r.json();
+    });
+  }
+
+  function renderRace() {
+    var S = state.S, p = state.period, race = $('race');
+    race.replaceChildren();
+    var reps = S.reps.filter(function (r) { return r.onRoster; })
+                     .sort(function (a, b) { return b[p].credited - a[p].credited || (a.ae < b.ae ? -1 : 1); });
+    var max = Math.max.apply(null, reps.map(function (r) { return r[p].credited; }).concat([1]));
+    reps.forEach(function (r, i) {
+      var x = r[p], lane = el('div', 'lane');
+      var nm = el('div', 'name'); nm.appendChild(el('span', 'rank num', String(i + 1)));
+      nm.appendChild(document.createTextNode(r.ae)); lane.appendChild(nm);
+      var track = el('div', 'track'); track.setAttribute('role', 'img');
+      track.setAttribute('aria-label', r.ae + ': ' + money0.format(x.credited) + ' collected new revenue');
+      var newBar = el('div', 'bar'), expBar = el('div', 'bar exp');
+      track.appendChild(expBar); track.appendChild(newBar); lane.appendChild(track);
+      var figs = el('div', 'figs');
+      var big = el('span'); big.appendChild(el('span', 'big num', money0.format(x.credited))); big.appendChild(document.createTextNode('collected new revenue')); figs.appendChild(big);
+      [['', x.dealsCollected, x.dealsCollected === 1 ? 'deal paid' : 'deals paid'],
+       ['', x.dealsWon, x.dealsWon === 1 ? 'deal won' : 'deals won'],
+       ['waiting', r.awaiting.deals, 'waiting to pay'],
+       [r.awaiting.stale ? 'late' : '', r.awaiting.stale, 'over 60 days']].forEach(function (f, k) {
+        if (k === 3 && !f[1]) return;
+        var s = el('span', f[0]); s.appendChild(el('b', 'num', String(f[1]))); s.appendChild(document.createTextNode(' ' + f[2])); figs.appendChild(s);
+      });
+      lane.appendChild(figs);
+      race.appendChild(lane);
+      var newW = 100 * x.newCredited / max, totW = 100 * x.credited / max;
+      requestAnimationFrame(function () { requestAnimationFrame(function () { newBar.style.width = newW + '%'; expBar.style.width = totW + '%'; }); });
+    });
+    var t = S.team[p], team = el('div', 'team');
+    [['Team', money0.format(t.credited), 'collected new revenue'], ['', String(t.dealsCollected), 'deals paid'],
+     ['', String(t.dealsWon), 'deals won'], ['', money0.format(t.booked), 'booked MRR won']].forEach(function (f) {
+      var s = el('span'); if (f[0]) s.appendChild(document.createTextNode(f[0] + ' '));
+      s.appendChild(el('span', 'num', f[1])); s.appendChild(document.createTextNode(' ' + f[2])); team.appendChild(s);
+    });
+    race.appendChild(team);
+    $('sub').textContent = label(p) + '. Updated ' + new Date(S.meta.builtAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + '.';
+  }
+
+  function renderWaiting() {
+    var list = $('waitlist'); list.replaceChildren();
+    var rows = state.D.rows.filter(function (d) { return d.status !== 'Collected' && d.status !== 'No Stripe link'; })
+                          .sort(function (a, b) { return (b.waitingDays || 0) - (a.waitingDays || 0); }).slice(0, 25);
+    if (!rows.length) { list.appendChild(el('li', 'empty', 'Every won deal has paid.')); return; }
+    rows.forEach(function (d) {
+      var li = el('li');
+      var l = el('div'); l.appendChild(el('div', 'co', d.company || '(no company name)'));
+      l.appendChild(el('div', 'who', d.ae + ', ' + d.type.toLowerCase() + ', won ' + new Date(d.close + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })));
+      var r = el('div'); r.appendChild(el('div', 'amt num', money0.format(d.booked)));
+      var late = (d.waitingDays || 0) > 60;
+      r.appendChild(el('div', 'days' + (late ? ' late' : ''), (d.waitingDays || 0) + ' days waiting'));
+      li.appendChild(l); li.appendChild(r); list.appendChild(li);
+    });
+  }
+
+  function renderChart() {
+    var M = state.M.rows, S = state.S;
+    var reps = S.reps.filter(function (r) { return r.onRoster; }).map(function (r) { return r.ae; });
+    var months = [], end = S.meta.month, y = Number(end.slice(0, 4)), m = Number(end.slice(5, 7));
+    for (var i = 5; i >= 0; i--) { var mm = m - i, yy = y; while (mm < 1) { mm += 12; yy--; } months.push(yy + '-' + (mm < 10 ? '0' : '') + mm); }
+    var val = {}; M.forEach(function (r) { val[r.ae + '|' + r.month] = r.credited; });
+    var totals = months.map(function (mk) { return reps.reduce(function (s, a) { return s + (val[a + '|' + mk] || 0); }, 0); });
+    var max = Math.max.apply(null, totals.concat([1]));
+    var W = 520, H = 230, L = 52, B = 26, T = 10, bw = (W - L - 10) / months.length;
+    var ns = 'http://www.w3.org/2000/svg', svg = document.createElementNS(ns, 'svg');
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'Collected new revenue by month for the last six months, stacked by rep');
+    function add(tag, attrs, text) { var e = document.createElementNS(ns, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; svg.appendChild(e); return e; }
+    [0, 0.5, 1].forEach(function (f) {
+      var yy2 = T + (H - B - T) * (1 - f);
+      add('line', { x1: L, x2: W - 6, y1: yy2, y2: yy2, class: 'axis' });
+      add('text', { x: L - 8, y: yy2 + 4, 'text-anchor': 'end' }, f ? '$' + Math.round(max * f / 1000) + 'k' : '$0');
+    });
+    months.forEach(function (mk, i2) {
+      var x = L + i2 * bw + bw * 0.18, w = bw * 0.64, acc = 0;
+      reps.forEach(function (a, k) {
+        var v = val[a + '|' + mk] || 0; if (!v) return;
+        var h = (H - B - T) * v / max, yTop = T + (H - B - T) * (1 - (acc + v) / max);
+        var r = add('rect', { x: x, y: yTop, width: w, height: Math.max(h, 0.5), fill: REP_COLORS[k % REP_COLORS.length], rx: 2 });
+        var tt = document.createElementNS(ns, 'title'); tt.textContent = a + ', ' + monthName(mk) + ': ' + money0.format(v); r.appendChild(tt);
+        acc += v;
+      });
+      add('text', { x: x + w / 2, y: H - 8, 'text-anchor': 'middle' }, monthName(mk));
+    });
+    var box = $('chart'); box.replaceChildren(svg);
+    var lg = $('legend'); lg.replaceChildren();
+    reps.forEach(function (a, k) { var s = el('span'); var i3 = el('i'); i3.style.background = REP_COLORS[k % REP_COLORS.length]; s.appendChild(i3); s.appendChild(document.createTextNode(a)); s.style.textTransform = 'capitalize'; lg.appendChild(s); });
+  }
+
+  function renderFoot() {
+    var f = $('foot'); f.replaceChildren();
+    f.appendChild(el('p', null, state.S.meta.rule + ' The first payment is capped at the deal’s MRR, so an annual prepay counts as one month.'));
+    f.appendChild(el('p', null, 'An expansion counts once at least half of its MRR shows up above what the customer paid before. Payments come from Stripe (both accounts), net of refunds; deals come from HubSpot, credited to the deal’s Account Executive.'));
+  }
+
+  function render() { renderRace(); renderWaiting(); renderChart(); renderFoot(); }
+
+  document.querySelectorAll('.periods button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      state.period = b.getAttribute('data-p');
+      document.querySelectorAll('.periods button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      renderRace();
+    });
+  });
+
+  function load() {
+    Promise.all([fetchJson('summary.json'), fetchJson('monthly.json'), fetchJson('deals.json')]).then(function (r) {
+      state.S = r[0]; state.M = r[1]; state.D = r[2]; render();
+    }).catch(function (e) {
+      var m = $('main'); m.replaceChildren();
+      var box = el('div', 'error');
+      box.appendChild(el('h2', null, 'The numbers didn’t load'));
+      box.appendChild(el('p', null, e.message + '. Run the Sales KPI sheet once (Sales KPI menu, Run now) so the data files exist, then reload this page.'));
+      m.appendChild(box); $('sub').textContent = '';
+    });
+  }
+  load();
+  setInterval(load, 15 * 60 * 1000);   // the sheet refreshes hourly; the page checks every 15 minutes
+})();
+</script>
+</body>
+</html>
