@@ -1,0 +1,194 @@
+{
+ "meta": {
+  "version": "sk-v3",
+  "builtAt": "2026-11-16T23:20:11.306Z",
+  "month": "2026-11",
+  "periods": {
+   "thisMonth": [
+    "2026-11",
+    "2026-11"
+   ],
+   "lastMonth": [
+    "2026-10",
+    "2026-10"
+   ],
+   "qtd": [
+    "2026-10",
+    "2026-11"
+   ],
+   "ytd": [
+    "2026-01",
+    "2026-11"
+   ]
+  },
+  "roster": [
+   "Josh Anderson",
+   "Blake Fenn",
+   "colton lingmann",
+   "Ky Decker"
+  ],
+  "countTypes": [
+   "New Business",
+   "Expansion"
+  ],
+  "start": "2026-01-01",
+  "rule": "A rep is credited with the first month’s MRR of each New Business or Expansion deal they close, in the month the customer first pays."
+ },
+ "sources": {
+  "month": "2026-11",
+  "thisMonth": {
+   "total": 7975,
+   "mediums": [
+    {
+     "medium": "Events",
+     "credited": 1500,
+     "deals": 2
+    },
+    {
+     "medium": "Partners and referrals",
+     "credited": 3625,
+     "deals": 3
+    },
+    {
+     "medium": "Webinars",
+     "credited": 1000,
+     "deals": 1
+    },
+    {
+     "medium": "Digital",
+     "credited": 1000,
+     "deals": 2
+    },
+    {
+     "medium": "Untagged",
+     "credited": 850,
+     "deals": 1
+    }
+   ],
+   "top": [
+    {
+     "source": "BDR Co - Business Development Resources",
+     "medium": "Partners and referrals",
+     "credited": 1625,
+     "deals": 1
+    },
+    {
+     "source": "Nexstar",
+     "medium": "Partners and referrals",
+     "credited": 1500,
+     "deals": 1
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 1000,
+     "deals": 2
+    },
+    {
+     "source": "Webinar - KickCharge",
+     "medium": "Webinars",
+     "credited": 1000,
+     "deals": 1
+    },
+    {
+     "source": "2026 - Home Service Freedom",
+     "medium": "Events",
+     "credited": 1000,
+     "deals": 1
+    },
+    {
+     "source": "Tool Vault",
+     "medium": "Partners and referrals",
+     "credited": 500,
+     "deals": 1
+    },
+    {
+     "source": "2026 - HSF Freedom",
+     "medium": "Events",
+     "credited": 500,
+     "deals": 1
+    }
+   ]
+  },
+  "ytd": {
+   "total": 350209.4,
+   "mediums": [
+    {
+     "medium": "Events",
+     "credited": 74220.32,
+     "deals": 68
+    },
+    {
+     "medium": "Partners and referrals",
+     "credited": 109935.25,
+     "deals": 112
+    },
+    {
+     "medium": "Webinars",
+     "credited": 4200,
+     "deals": 5
+    },
+    {
+     "medium": "Digital",
+     "credited": 59299,
+     "deals": 52
+    },
+    {
+     "medium": "Untagged",
+     "credited": 102554.83,
+     "deals": 118
+    }
+   ],
+   "top": [
+    {
+     "source": "Website",
+     "medium": "Digital",
+     "credited": 24799,
+     "deals": 21
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 20800,
+     "deals": 21
+    },
+    {
+     "source": "LAB",
+     "medium": "Partners and referrals",
+     "credited": 12637.25,
+     "deals": 19
+    },
+    {
+     "source": "2026 - Tommy Mello Podcast",
+     "medium": "Events",
+     "credited": 10102.61,
+     "deals": 9
+    },
+    {
+     "source": "2026 - EGIA Epic Tradeshow",
+     "medium": "Events",
+     "credited": 9250,
+     "deals": 7
+    },
+    {
+     "source": "BDR Co - Business Development Resources",
+     "medium": "Partners and referrals",
+     "credited": 9024,
+     "deals": 8
+    },
+    {
+     "source": "2025 - Home Service Freedom",
+     "medium": "Events",
+     "credited": 7949,
+     "deals": 8
+    },
+    {
+     "source": "Certain Path",
+     "medium": "Partners and referrals",
+     "credited": 7838,
+     "deals": 8
+    }
+   ]
+  }
+ }
+}
