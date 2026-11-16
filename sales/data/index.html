@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CHIIRP sales</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%2310151D%22/><rect x=%227%22 y=%2218%22 width=%224%22 height=%227%22 fill=%22%237AA7FF%22/><rect x=%2214%22 y=%2212%22 width=%224%22 height=%2213%22 fill=%22%237AA7FF%22/><rect x=%2221%22 y=%227%22 width=%224%22 height=%2218%22 fill=%22%23F0A44B%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #10151D;
+    --raised: #161D28;
+    --rule: #252E3C;
+    --track: #1E2633;
+    --text: #E6E9EE;
+    --soft: #B9C1CD;
+    --muted: #8C96A6;
+    --deal: #7AA7FF;
+    --exp: #4D6FB0;
+    --dlc: #F0A44B;
+    --late: #F08A7E;
+    --u: min(1vw, 1.78vh);            /* one unit = 1% of a 16:9 screen's width, whatever the screen */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--ground); overflow: hidden; }
+  body {
+    color: var(--text); font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-variation-settings: "wdth" 100; font-size: calc(var(--u) * 1.05); line-height: 1.35;
+    font-feature-settings: "tnum" 1, "lnum" 1;
+  }
+  .wide { font-variation-settings: "wdth" 118; }
+  .narrow { font-variation-settings: "wdth" 80; }
+
+  /* Burn-in protection. Nothing holds the same pixels for long. */
+  @keyframes drift { 0%{transform:translate(0,0)} 25%{transform:translate(.7%,.6%)} 50%{transform:translate(-.5%,1%)} 75%{transform:translate(-.7%,-.5%)} 100%{transform:translate(0,0)} }
+  @keyframes feed  { from{transform:translateY(0)} to{transform:translateY(-50%)} }
+  @keyframes spot  { 0%,100%{opacity:0} 5%,20%{opacity:1} 25%{opacity:0} }
+  @keyframes sweep { 0%,100%{opacity:0} 3%,13%{opacity:1} 16%{opacity:0} }
+
+  .stage { position: fixed; inset: 0; padding: calc(var(--u) * 2.6) calc(var(--u) * 3.2) calc(var(--u) * 2.2);
+           display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: calc(var(--u) * 2);
+           animation: drift 360s ease-in-out infinite; }
+
+  /* top line */
+  header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: calc(var(--u) * 3); }
+  .month { margin: 0; font-weight: 760; font-size: calc(var(--u) * 6.4); line-height: .86; letter-spacing: -.01em; }
+  .monthsub { margin: calc(var(--u) * .9) 0 0; color: var(--muted); font-size: calc(var(--u) * 1.15); }
+  .monthsub.stale { color: var(--late); }
+  .totals { display: flex; gap: calc(var(--u) * 3.4); align-items: end; }
+  .total { display: grid; justify-items: end; gap: calc(var(--u) * .35); }
+  .total > b { font-weight: 720; font-size: calc(var(--u) * 4.6); line-height: .9; }
+  .total.minor > b { font-size: calc(var(--u) * 2.6); font-weight: 640; color: var(--soft); }
+  .total > span { color: var(--muted); font-size: calc(var(--u) * 1.05); }
+
+  /* middle */
+  main { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: calc(var(--u) * 2.6); min-height: 0; }
+  .reps { display: grid; grid-auto-rows: minmax(0, 1fr); border-top: 1px solid var(--rule); min-height: 0; }
+  .rep { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto auto;
+         column-gap: calc(var(--u) * 2); align-content: center; border-bottom: 1px solid var(--rule); padding: 0 calc(var(--u) * 1.1); }
+  .rep::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(122,167,255,.07), rgba(122,167,255,0) 70%);
+                 opacity: 0; animation: spot 40s linear infinite; animation-delay: var(--d, 0s); pointer-events: none; }
+  .name { grid-row: 1; grid-column: 1; align-self: end; font-weight: 600; font-size: calc(var(--u) * 2.15); line-height: 1.1; }
+  .place { color: var(--muted); font-weight: 500; margin-right: calc(var(--u) * .9); }
+  .amount { grid-row: 1; grid-column: 2; align-self: end; text-align: right; font-weight: 720; font-size: calc(var(--u) * 3.1); line-height: 1; }
+  .detail { grid-row: 2; grid-column: 1; color: var(--muted); font-size: calc(var(--u) * 1.05); margin-top: calc(var(--u) * .35); }
+  .detail em { font-style: normal; color: var(--soft); }
+  .bar { grid-row: 3; grid-column: 1 / -1; display: flex; height: calc(var(--u) * .55); background: var(--track); border-radius: 99px; overflow: hidden; margin-top: calc(var(--u) * 1.1); }
+  .bar i { display: block; height: 100%; transition: width 1.2s cubic-bezier(.2,.8,.2,1); }
+  .bar i.exp-later { background-image: repeating-linear-gradient(135deg, rgba(16,21,29,.55) 0 3px, transparent 3px 7px) !important; opacity: .75; }
+  .expected { grid-row: 2; grid-column: 2; text-align: right; color: var(--soft); font-size: calc(var(--u) * 1.05); margin-top: calc(var(--u) * .35); white-space: nowrap; }
+  .expected b { font-weight: 640; color: var(--text); }
+  .total .exp { color: var(--soft); font-size: calc(var(--u) * 1.05); }
+  .total .exp b { font-weight: 640; color: var(--text); }
+  .key { display: flex; gap: calc(var(--u) * 1.6); color: var(--muted); font-size: calc(var(--u) * .9); margin-top: calc(var(--u) * .5); }
+  .key i { display: inline-block; width: calc(var(--u) * 1.6); height: calc(var(--u) * .55); border-radius: 99px; margin-right: calc(var(--u) * .5); vertical-align: middle; background: var(--deal); }
+  .key i.h { background-image: repeating-linear-gradient(135deg, rgba(16,21,29,.55) 0 3px, transparent 3px 7px); opacity: .75; }
+
+  .feedcol { background: var(--raised); border-radius: calc(var(--u) * .8); display: grid; grid-template-rows: auto minmax(0, 1fr); min-height: 0; overflow: hidden; }
+  .feedhead { padding: calc(var(--u) * 1.5) calc(var(--u) * 1.7) calc(var(--u) * .9); display: flex; justify-content: space-between; align-items: baseline; gap: 1em; }
+  .feedhead h2 { margin: 0; font-weight: 640; font-size: calc(var(--u) * 1.6); }
+  .feedhead span { color: var(--muted); font-size: calc(var(--u) * .95); }
+  .feedwin { position: relative; overflow: hidden; -webkit-mask-image: linear-gradient(transparent, #000 8%, #000 85%, transparent); mask-image: linear-gradient(transparent, #000 8%, #000 85%, transparent); }
+  .feedlist { list-style: none; margin: 0; padding: 0; }
+  .feedlist.moving { animation: feed var(--feedtime, 90s) linear infinite; }
+  .feedlist li { display: grid; grid-template-columns: calc(var(--u) * .5) minmax(0, 1fr) auto; gap: calc(var(--u) * .25) calc(var(--u) * 1.1);
+                 padding: calc(var(--u) * 1.05) calc(var(--u) * 1.7); border-top: 1px solid var(--rule); align-items: center; }
+  .feedlist .tick { width: calc(var(--u) * .5); height: calc(var(--u) * 2.3); border-radius: 99px; grid-row: 1 / span 2; }
+  .feedlist .co { font-weight: 600; font-size: calc(var(--u) * 1.15); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .feedlist .amt { font-weight: 700; font-size: calc(var(--u) * 1.45); text-align: right; }
+  .feedlist .why { color: var(--muted); font-size: calc(var(--u) * .95); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .feedlist .who { color: var(--soft); font-size: calc(var(--u) * .95); text-align: right; }
+  .empty { color: var(--muted); padding: calc(var(--u) * 1.4) calc(var(--u) * 1.7); }
+
+  /* bottom strip */
+  footer { display: grid; gap: calc(var(--u) * .45); }
+  .strip { display: grid; grid-template-columns: calc(var(--u) * 13) repeat(6, minmax(0, 1fr)) calc(var(--u) * 8); gap: 0 calc(var(--u) * 1); align-items: center; }
+  .strip.head { color: var(--muted); font-size: calc(var(--u) * .95); padding-bottom: calc(var(--u) * .3); }
+  .strip.head .m { position: relative; }
+  .strip.head .m::after { content: ""; position: absolute; left: 0; right: 0; bottom: calc(var(--u) * -.35); height: 2px; background: var(--deal);
+                          opacity: 0; animation: sweep 72s linear infinite; animation-delay: var(--d, 0s); }
+  .strip .who { font-size: calc(var(--u) * 1.05); color: var(--soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cell { position: relative; height: calc(var(--u) * 1.9); display: flex; align-items: center; font-size: calc(var(--u) * 1); color: var(--soft); }
+  .cell i { position: absolute; left: 0; bottom: 0; height: 3px; border-radius: 2px; }
+  .cell.now { color: var(--text); font-weight: 600; }
+  .strip .sum { text-align: right; font-weight: 640; font-size: calc(var(--u) * 1.1); }
+  .rule { border-top: 1px solid var(--rule); }
+  .note { color: var(--muted); font-size: calc(var(--u) * .9); margin-top: calc(var(--u) * .5); }
+
+  /* two screens on one TV: crossfade */
+  .stage { opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+  .stage.on { opacity: 1; pointer-events: auto; }
+
+  /* screen 2: retention and sources */
+  .r-main { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--u) * 2.2); min-height: 0; }
+  .col { display: grid; grid-template-rows: auto auto minmax(0, 1fr); min-height: 0; overflow: hidden; border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.2); }
+  .col h2 { margin: 0; font-weight: 640; font-size: calc(var(--u) * 1.6); }
+  .colsum { margin: calc(var(--u) * .3) 0 calc(var(--u) * .9); color: var(--muted); font-size: calc(var(--u) * 1.05); }
+  .colsum b { color: var(--text); font-weight: 700; font-size: calc(var(--u) * 2.3); margin-right: calc(var(--u) * .5); }
+  .win { position: relative; overflow: hidden; -webkit-mask-image: linear-gradient(transparent, #000 6%, #000 88%, transparent); mask-image: linear-gradient(transparent, #000 6%, #000 88%, transparent); }
+  .acct { list-style: none; margin: 0; padding: 0; }
+  .acct.moving { animation: feed var(--feedtime, 80s) linear infinite; }
+  .acct li { display: grid; grid-template-columns: calc(var(--u) * .45) minmax(0, 1fr) auto; gap: calc(var(--u) * .2) calc(var(--u) * 1); padding: calc(var(--u) * .85) 0; border-bottom: 1px solid var(--rule); align-items: center; }
+  .acct .tick { width: calc(var(--u) * .45); height: calc(var(--u) * 2); border-radius: 99px; grid-row: 1 / span 2; background: var(--rule); }
+  .acct .tick.lost { background: var(--late); }
+  .acct .tick.sudden { background: var(--dlc); }
+  .acct .tick.soon { background: var(--soft); }
+  .acct .co { font-weight: 600; font-size: calc(var(--u) * 1.1); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .acct .amt { font-weight: 700; font-size: calc(var(--u) * 1.35); text-align: right; }
+  .acct .why { color: var(--muted); font-size: calc(var(--u) * .92); }
+  .acct .why.sudden { color: var(--dlc); }
+  .acct .when { color: var(--soft); font-size: calc(var(--u) * .92); text-align: right; }
+  .src { display: grid; gap: calc(var(--u) * .8); align-content: start; min-height: 0; overflow: hidden; }
+  .srow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: calc(var(--u) * .35) 1em; }
+  .srow .nm { font-size: calc(var(--u) * 1.1); }
+  .srow .v { font-weight: 700; font-size: calc(var(--u) * 1.3); text-align: right; }
+  .srow .ytd { grid-column: 1 / -1; color: var(--muted); font-size: calc(var(--u) * .92); }
+  .srow .track { grid-column: 1 / -1; height: calc(var(--u) * .4); background: var(--track); border-radius: 99px; overflow: hidden; display: flex; }
+  .srow .track i { display: block; height: 100%; background: var(--deal); }
+  .srow .track i.y { background: var(--exp); }
+  .tops { margin-top: calc(var(--u) * .4); color: var(--muted); font-size: calc(var(--u) * .92); line-height: 1.6; }
+  .tops b { color: var(--soft); font-weight: 600; }
+  .pct { color: var(--text); }
+
+  .error { grid-row: 1 / -1; align-self: center; justify-self: center; max-width: 60ch; color: var(--soft); font-size: calc(var(--u) * 1.4); }
+  .error h2 { color: var(--text); margin: 0 0 .4em; font-size: calc(var(--u) * 2.4); }
+</style>
+</head>
+<body>
+<div class="stage on" id="stage">
+  <header>
+    <div>
+      <h1 class="month wide" id="month">Sales</h1>
+      <p class="monthsub" id="monthsub">Loading the latest numbers</p>
+    </div>
+    <div class="totals" id="totals"></div>
+  </header>
+  <main id="main">
+    <section class="reps" id="reps" aria-label="New revenue by rep this month"></section>
+    <section class="feedcol" aria-labelledby="feedh">
+      <div class="feedhead"><h2 id="feedh">Just collected</h2><span id="feedcount"></span></div>
+      <div class="feedwin"><ul class="feedlist" id="feed"></ul></div>
+    </section>
+  </main>
+  <footer id="foot"></footer>
+</div>
+
+<div class="stage" id="stage2" aria-hidden="true">
+  <header>
+    <div>
+      <h1 class="month wide" id="r-title">Retention</h1>
+      <p class="monthsub" id="r-sub"></p>
+    </div>
+    <div class="totals" id="r-totals"></div>
+  </header>
+  <main class="r-main">
+    <section class="col" aria-labelledby="r-h1"><h2 id="r-h1">Churned this month</h2><p class="colsum" id="r-lostsum"></p><div class="win"><ul class="acct" id="r-lost"></ul></div></section>
+    <section class="col" aria-labelledby="r-h2"><h2 id="r-h2">Ending this month</h2><p class="colsum" id="r-soonsum"></p><div class="win"><ul class="acct" id="r-soon"></ul></div></section>
+    <section class="col" aria-labelledby="r-h3"><h2 id="r-h3">New revenue by source</h2><p class="colsum" id="r-srcsum"></p><div class="src" id="r-src"></div></section>
+  </main>
+  <footer><div class="note narrow" id="r-note"></div></footer>
+</div>
+
+<script>
+(function () {
+  var money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+  var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var C = { deal: 'var(--deal)', exp: 'var(--exp)', dlc: 'var(--dlc)' };
+  function $(id) { return document.getElementById(id); }
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function nice(n) { return String(n || '').replace(/\b([a-z])/g, function (c) { return c.toUpperCase(); }); }
+  function monthOf(mk) { return MONTHS[Number(mk.slice(5, 7)) - 1]; }
+  function addMonths(mk, n) { var y = +mk.slice(0, 4), m = +mk.slice(5, 7) - 1 + n; y += Math.floor(m / 12); m = ((m % 12) + 12) % 12; return y + '-' + (m < 9 ? '0' : '') + (m + 1); }
+  function fetchJson(f) {
+    return fetch('data/' + f + '?v=' + Date.now(), { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error(f + ' could not be loaded (HTTP ' + r.status + ')'); return r.json();
+    });
+  }
+
+  function render(S, M, D) {
+    var mk = S.meta.month, now = new Date();
+    $('month').textContent = monthOf(mk);
+    var dim = new Date(+mk.slice(0, 4), +mk.slice(5, 7), 0).getDate();
+    $('monthsub').textContent = 'So far, day ' + Math.min(now.getDate(), dim) + ' of ' + dim + '. New revenue counts once it’s collected. Updated ' +
+      new Date(S.meta.builtAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }) + '.';
+
+    // top totals
+    var t = S.team.thisMonth, tp = S.team.pending || {}, tot = $('totals'); tot.replaceChildren();
+    [[money.format(t.credited), 'collected this month', '', tp.amount], [String(t.dealsCollected), t.dealsCollected === 1 ? 'deal paid' : 'deals paid', 'minor']]
+      .concat(t.dlcCount ? [[String(t.dlcCount), '10DLC fees paid', 'minor']] : [])
+      .forEach(function (x) {
+        var d = el('div', 'total ' + x[2]); d.appendChild(el('b', 'wide', x[0])); d.appendChild(el('span', null, x[1]));
+        if (x[3]) { var e = el('span', 'exp'); e.appendChild(el('b', null, '+' + money.format(x[3]))); e.appendChild(document.createTextNode(' expected this month')); d.appendChild(e); }
+        tot.appendChild(d);
+      });
+
+    // reps, ranked
+    var reps = S.reps.filter(function (r) { return r.onRoster; })
+                     .sort(function (a, b) { return b.thisMonth.credited - a.thisMonth.credited || (a.ae < b.ae ? -1 : 1); });
+    var max = Math.max.apply(null, reps.map(function (r) { return r.thisMonth.credited + ((r.pending && r.pending.amount) || 0); }).concat([1]));
+    var box = $('reps'); box.replaceChildren();
+    reps.forEach(function (r, i) {
+      var x = r.thisMonth, row = el('div', 'rep'); row.style.setProperty('--d', (i * 10) + 's');
+      var nm = el('div', 'name'); nm.appendChild(el('span', 'place', String(i + 1))); nm.appendChild(document.createTextNode(nice(r.ae))); row.appendChild(nm);
+      row.appendChild(el('div', 'amount wide', money.format(x.credited)));
+      var det = el('div', 'detail'), bits = [];
+      if (x.dealsCollected) bits.push(x.dealsCollected + (x.dealsCollected === 1 ? ' deal paid' : ' deals paid'));
+      if (x.dlcCount) bits.push(x.dlcCount + ' 10DLC fees paid');
+      if (r.awaiting && r.awaiting.stale) bits.push(r.awaiting.stale + (r.awaiting.stale === 1 ? ' win' : ' wins') + ' unpaid after 60 days');
+      if (!bits.length) bits.push('Nothing collected yet this month');
+      det.textContent = bits.join(', '); row.appendChild(det);
+      var pd = r.pending || {};
+      if (pd.amount) {
+        var ex = el('div', 'expected'), what = [];
+        if (pd.deals) what.push(pd.deals + (pd.deals === 1 ? ' deal' : ' deals'));
+        if (pd.dlcCount) what.push(pd.dlcCount + ' 10DLC fees');
+        ex.appendChild(el('b', null, '+' + money.format(pd.amount))); ex.appendChild(document.createTextNode(' expected this month' + (what.length ? ' (' + what.join(', ') + ')' : '')));
+        row.appendChild(ex);
+      }
+      var bar = el('div', 'bar'); bar.setAttribute('role', 'img');
+      bar.setAttribute('aria-label', nice(r.ae) + ': ' + money.format(x.credited));
+      [['deal', x.newCredited || 0], ['exp', x.expCredited || 0], ['dlc', x.dlcCredited || 0],
+       ['deal', pd.dealAmount || 0, 'h'], ['dlc', pd.dlcAmount || 0, 'h']].forEach(function (s) {
+        var seg = el('i', s[2] ? 'exp-later' : ''); seg.style.backgroundColor = C[s[0]]; seg.style.width = '0%'; bar.appendChild(seg);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { seg.style.width = (100 * s[1] / max) + '%'; }); });
+      });
+      row.appendChild(bar); box.appendChild(row);
+    });
+
+
+    // feed: this month's collected deals, newest first, plus the 10DLC round as one line
+    var items = D.rows.filter(function (d) { return d.status === 'Collected' && d.creditedMonth === mk; })
+                      .sort(function (a, b) { return a.close < b.close ? 1 : -1; })
+                      .map(function (d) {
+                        var won = new Date(d.close + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                        return { color: d.type === 'Expansion' ? C.exp : C.deal, co: d.company || 'Unnamed company', amt: money.format(d.credited),
+                                 why: (d.type === 'Expansion' ? 'Expansion' : 'New business') + ', won ' + won, who: nice(d.ae) };
+                      });
+    var owner = reps.filter(function (r) { return r.thisMonth.dlcCount; })[0];
+    if (owner) items.splice(Math.min(1, items.length), 0, { color: C.dlc, co: owner.thisMonth.dlcCount + ' accounts', amt: money.format(owner.thisMonth.dlcCredited),
+                                                              why: '10DLC fee added to running plans', who: nice(owner.ae) });
+    $('feedcount').textContent = items.length ? items.length + (items.length === 1 ? ' line' : ' lines') : '';
+    var list = $('feed'); list.replaceChildren(); list.classList.remove('moving');
+    if (!items.length) { list.appendChild(el('li', 'empty', 'Nothing collected yet this month.')); }
+    else {
+      var loop = items.length > 5;                                   // scroll only when the list overflows
+      (loop ? items.concat(items) : items).forEach(function (it) {
+        var li = el('li'); var tk = el('span', 'tick'); tk.style.background = it.color; li.appendChild(tk);
+        li.appendChild(el('span', 'co', it.co)); li.appendChild(el('span', 'amt wide', it.amt));
+        li.appendChild(el('span', 'why', it.why)); li.appendChild(el('span', 'who', it.who)); list.appendChild(li);
+      });
+      if (loop) { list.style.setProperty('--feedtime', Math.max(45, items.length * 9) + 's'); list.classList.add('moving'); }
+    }
+
+    // bottom strip: six months by rep
+    var months = []; for (var k = 5; k >= 0; k--) months.push(addMonths(mk, -k));
+    var val = {}; M.rows.forEach(function (m) { val[m.ae + '|' + m.month] = m; });
+    var top = 1; reps.forEach(function (r) { months.forEach(function (m) { var v = val[r.ae + '|' + m]; if (v && v.credited > top) top = v.credited; }); });
+    var foot = $('foot'); foot.replaceChildren();
+    var key = el('div', 'key');
+    var k1 = el('span'); k1.appendChild(el('i')); k1.appendChild(document.createTextNode('Collected')); key.appendChild(k1);
+    var k2 = el('span'); k2.appendChild(el('i', 'h')); k2.appendChild(document.createTextNode('Sold, expected to collect this month')); key.appendChild(k2);
+    foot.appendChild(key);
+    var hd = el('div', 'strip head'); hd.appendChild(el('span', null, 'Last six months'));
+    months.forEach(function (m, j) { var s = el('span', 'm', monthOf(m).slice(0, 3)); s.style.setProperty('--d', (j * 12) + 's'); hd.appendChild(s); });
+    hd.appendChild(el('span', null, '')); foot.appendChild(hd);
+    foot.appendChild(el('div', 'rule'));
+    reps.forEach(function (r) {
+      var row = el('div', 'strip'), sum = 0; row.appendChild(el('span', 'who', nice(r.ae)));
+      months.forEach(function (m) {
+        var v = val[r.ae + '|' + m], amt = v ? v.credited : 0; sum += amt;
+        var c = el('div', 'cell' + (m === mk ? ' now' : ''), amt ? money.format(amt) : '');
+        if (amt) { var b = el('i'); var dlcShare = v.dlcCredited && v.credited ? v.dlcCredited / v.credited : 0;
+                   b.style.width = Math.max(4, 100 * amt / top) + '%'; b.style.background = dlcShare > .5 ? C.dlc : C.deal; c.appendChild(b); }
+        row.appendChild(c);
+      });
+      row.appendChild(el('span', 'sum wide', money.format(sum))); foot.appendChild(row);
+    });
+    foot.appendChild(el('div', 'note narrow', 'Revenue counts in the month it’s collected: a deal’s first month of MRR when the customer first pays, a 10DLC fee when its $12 is first paid. Shaded is sold but not collected yet.'));
+  }
+
+  function day(d) { return d ? new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : ''; }
+  function fillList(ul, rows, make, empty) {
+    ul.replaceChildren(); ul.classList.remove('moving');
+    if (!rows.length) { ul.appendChild(el('li', 'empty', empty)); return; }
+    var loop = rows.length > 6;
+    (loop ? rows.concat(rows) : rows).forEach(function (r) { ul.appendChild(make(r)); });
+    if (loop) { ul.style.setProperty('--feedtime', Math.max(40, rows.length * 8) + 's'); ul.classList.add('moving'); }
+  }
+  function coName(c) { return /^cus_/.test(String(c || '')) || !c ? 'Unnamed account' : c; }
+  function renderRetention(Rt, So) {
+    var mk = Rt.month;
+    $('r-title').textContent = 'Retention';
+    $('r-sub').textContent = monthOf(mk) + ' so far. Churn counts when an account’s last subscription ends. Data through ' + day(Rt.dataThrough) + '.';
+    var tot = $('r-totals'); tot.replaceChildren();
+    [[money.format(Rt.bom), 'start of month', 'minor'], [money.format(Rt.current), 'MRR now', 'minor'],
+     [Rt.retainedSoFar == null ? '—' : (Rt.retainedSoFar * 100).toFixed(1) + '%', 'MRR kept so far', '']].forEach(function (x) {
+      var d = el('div', 'total ' + x[2]); d.appendChild(el('b', 'wide', x[0])); d.appendChild(el('span', null, x[1])); tot.appendChild(d);
+    });
+    var ls = $('r-lostsum'); ls.replaceChildren(); ls.appendChild(el('b', 'wide', money.format(Rt.churned.mrr)));
+    ls.appendChild(document.createTextNode(Rt.churned.count + (Rt.churned.count === 1 ? ' account' : ' accounts') +
+      (Rt.unexpected.count ? ', ' + money.format(Rt.unexpected.mrr) + ' turned off without notice' : '')));
+    fillList($('r-lost'), Rt.churned.rows, function (r) {
+      var li = el('li'); li.appendChild(el('span', 'tick ' + (r.unexpected ? 'sudden' : 'lost')));
+      li.appendChild(el('span', 'co', coName(r.company))); li.appendChild(el('span', 'amt wide', money.format(r.mrr)));
+      li.appendChild(el('span', 'why' + (r.unexpected ? ' sudden' : ''), r.unexpected ? 'Asked and turned off the same day' : 'Asked ' + day(r.requested)));
+      li.appendChild(el('span', 'when', 'Ended ' + day(r.ended))); return li;
+    }, 'No accounts lost this month.');
+    var ss = $('r-soonsum'); ss.replaceChildren(); ss.appendChild(el('b', 'wide', money.format(Rt.endingThisMonth.mrr)));
+    ss.appendChild(document.createTextNode(Rt.endingThisMonth.count + (Rt.endingThisMonth.count === 1 ? ' account' : ' accounts') +
+      (Rt.retainedIfAllEnd != null ? ', ' + (Rt.retainedIfAllEnd * 100).toFixed(1) + '% kept if all end' : '')));
+    fillList($('r-soon'), Rt.endingThisMonth.rows, function (r) {
+      var li = el('li'); li.appendChild(el('span', 'tick soon'));
+      li.appendChild(el('span', 'co', coName(r.company))); li.appendChild(el('span', 'amt wide', money.format(r.mrr)));
+      li.appendChild(el('span', 'why', 'Asked ' + day(r.requested))); li.appendChild(el('span', 'when', 'Ends ' + day(r.endsAt))); return li;
+    }, 'Nothing else set to end this month.');
+    var tm = So.thisMonth, yt = So.ytd, sm = $('r-srcsum'); sm.replaceChildren();
+    sm.appendChild(el('b', 'wide', money.format(tm.total))); sm.appendChild(document.createTextNode('collected this month, ' + money.format(yt.total) + ' this year'));
+    var box = $('r-src'); box.replaceChildren();
+    var maxM = Math.max.apply(null, tm.mediums.map(function (m) { return m.credited; }).concat([1]));
+    var maxY = Math.max.apply(null, yt.mediums.map(function (m) { return m.credited; }).concat([1]));
+    tm.mediums.forEach(function (m, i) {
+      var y = yt.mediums[i], row = el('div', 'srow');
+      row.appendChild(el('span', 'nm', m.medium)); row.appendChild(el('span', 'v wide', money.format(m.credited)));
+      var tr = el('div', 'track'), bar = el('i'); bar.style.width = (100 * m.credited / maxM) + '%'; tr.appendChild(bar); row.appendChild(tr);
+      row.appendChild(el('span', 'ytd', (m.deals ? m.deals + (m.deals === 1 ? ' deal' : ' deals') + ' this month, ' : '') + money.format(y.credited) + ' this year' +
+        (yt.total ? ' (' + Math.round(100 * y.credited / yt.total) + '%)' : '')));
+      box.appendChild(row);
+    });
+    if (yt.top && yt.top.length) {
+      var tp = el('div', 'tops'); tp.appendChild(document.createTextNode('Top sources this year: '));
+      yt.top.slice(0, 2).forEach(function (s, i) { if (i) tp.appendChild(document.createTextNode(', ')); tp.appendChild(el('b', null, s.source)); tp.appendChild(document.createTextNode(' ' + money.format(s.credited))); });
+      box.appendChild(tp);
+    }
+    $('r-note').textContent = 'Start of month is the active MRR the month opened on. Turned off without notice means the cancellation was requested and the account ended the same day. Ending this month uses each subscription’s cancellation date in Stripe. Lead source comes from the deal, else its contact, in HubSpot.';
+  }
+
+  // Two screens on one TV: crossfade every 40 seconds (also keeps pixels moving).
+  var screen2 = false, showing = 1;
+  setInterval(function () {
+    if (!screen2) { if (showing !== 1) { showing = 1; $('stage').classList.add('on'); $('stage2').classList.remove('on'); } return; }
+    showing = showing === 1 ? 2 : 1;
+    $('stage').classList.toggle('on', showing === 1); $('stage2').classList.toggle('on', showing === 2);
+    $('stage').setAttribute('aria-hidden', String(showing !== 1)); $('stage2').setAttribute('aria-hidden', String(showing !== 2));
+  }, 40000);
+
+  // Live without anyone touching it: check every 5 minutes, redraw only when a new
+  // push landed, keep the last numbers if a check fails, reload the page nightly.
+  var lastBuilt = null, data = null;
+  function markStale() {
+    if (!data) return;
+    var hrs = (Date.now() - new Date(data[0].meta.builtAt).getTime()) / 36e5, sub = $('monthsub');
+    sub.classList.toggle('stale', hrs > 3);
+    if (hrs > 3 && !/Not updated/.test(sub.textContent)) sub.textContent += ' Not updated in ' + Math.floor(hrs) + ' hours: check the Sales KPI sheet.';
+  }
+  function load() {
+    var opt = function (f) { return fetchJson(f).catch(function () { return null; }); };
+    Promise.all([fetchJson('summary.json'), fetchJson('monthly.json'), fetchJson('deals.json'), opt('retention.json'), opt('sources.json')]).then(function (r) {
+      var built = r[0].meta && r[0].meta.builtAt;
+      if (built && built === lastBuilt) { markStale(); return; }
+      try {
+        render(r[0], r[1], r[2]);
+        screen2 = false;
+        if (r[3] && r[3].retention && r[4] && r[4].sources) {
+          try { renderRetention(r[3].retention, r[4].sources); screen2 = true; } catch (e2) { console.error(e2); }   // screen 1 still runs
+        }
+      }
+      catch (err) {
+        // A push the page can't draw. Say so on screen and try again next check,
+        // rather than freezing silently on the last numbers.
+        console.error(err); lastBuilt = null;
+        if (data) { var sub = $('monthsub'); sub.classList.add('stale'); sub.textContent = 'The latest update couldn’t be shown (' + err.message + '). Showing the previous numbers; retrying in 5 minutes.'; return; }
+        throw err;
+      }
+      lastBuilt = built; data = r; markStale();
+    }).catch(function (e) {
+      if (data) { markStale(); return; }
+      var st = $('stage'); st.replaceChildren();
+      var box = el('div', 'error'); box.appendChild(el('h2', 'wide', 'The numbers didn’t load'));
+      box.appendChild(el('p', null, e.message + '. Run the Sales KPI sheet once so the data exists. This screen tries again every 5 minutes.'));
+      st.appendChild(box);
+    });
+  }
+  load();
+  setInterval(load, 5 * 60 * 1000);
+  (function nightly() { var n = new Date(), t = new Date(n); t.setHours(3, 0, 0, 0); if (t <= n) t.setDate(t.getDate() + 1);
+    setTimeout(function () { location.reload(); }, t - n); })();
+})();
+</script>
+</body>
+</html>
