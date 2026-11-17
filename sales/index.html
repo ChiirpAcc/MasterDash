@@ -40,8 +40,11 @@
 
   .stage { position: fixed; top: 0; left: 0; right: 0; bottom: var(--tickh); padding: calc(var(--u) * 2.2) calc(var(--u) * 2.8) calc(var(--u) * 1.8);
            display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: calc(var(--u) * 1.6);
-           animation: drift 360s ease-in-out infinite; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+           animation: drift 360s ease-in-out infinite; opacity: 0; pointer-events: none; background: var(--ground); z-index: 1; }
   .stage.on { opacity: 1; pointer-events: auto; }
+  /* Screen change: diagonal slice. The incoming screen sits on top and an angled edge sweeps across
+     (a clip-path transition, so the burn-in drift animation is never restarted). */
+  .stage.wiping { opacity: 1; z-index: 2; }
 
   /* ---------- header line */
   .top { display: flex; align-items: baseline; justify-content: space-between; gap: 2em; border-bottom: 1px solid var(--rule); padding-bottom: calc(var(--u) * 1); }
@@ -564,11 +567,28 @@
 
   // ======================================================= rotation, refresh, nightly reload
   var screen2 = false, showing = 1;
+  var WIPE_MS = 1000, SLICE_FROM = 'polygon(0 0, 0 0, -30% 100%, -30% 100%)', SLICE_TO = 'polygon(0 0, 130% 0, 100% 100%, -30% 100%)';
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function showScreen(n) {
+    if (n === showing) return;
+    var inc = $(n === 1 ? 'stage' : 'stage2'), out = $(n === 1 ? 'stage2' : 'stage');
+    showing = n;
+    inc.setAttribute('aria-hidden', 'false'); out.setAttribute('aria-hidden', 'true');
+    if (reduceMotion) { inc.classList.add('on'); out.classList.remove('on'); return; }
+    inc.style.transition = 'none'; inc.style.clipPath = SLICE_FROM;  // start fully hidden, on top
+    inc.classList.add('on', 'wiping');
+    void inc.offsetWidth;
+    inc.style.transition = 'clip-path ' + WIPE_MS + 'ms cubic-bezier(.7, 0, .3, 1)';
+    inc.style.clipPath = SLICE_TO;
+    setTimeout(function () {
+      if (showing !== n) return;
+      out.classList.remove('on'); inc.classList.remove('wiping');
+      inc.style.transition = ''; inc.style.clipPath = '';
+    }, WIPE_MS + 60);
+  }
   setInterval(function () {
-    if (!screen2) { if (showing !== 1) { showing = 1; $('stage').classList.add('on'); $('stage2').classList.remove('on'); } return; }
-    showing = showing === 1 ? 2 : 1;
-    $('stage').classList.toggle('on', showing === 1); $('stage2').classList.toggle('on', showing === 2);
-    $('stage').setAttribute('aria-hidden', String(showing !== 1)); $('stage2').setAttribute('aria-hidden', String(showing !== 2));
+    if (!screen2) { showScreen(1); return; }
+    showScreen(showing === 1 ? 2 : 1);
   }, 40000);
 
   var lastBuilt = null, data = null;

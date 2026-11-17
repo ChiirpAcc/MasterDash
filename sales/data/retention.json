@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v35",
-  "builtAt": "2026-11-17T17:32:42.110Z",
+  "version": "sk-v38",
+  "builtAt": "2026-11-17T17:37:54.762Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -156,8 +156,8 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 32,
-   "mrr": 22380,
+   "count": 22,
+   "mrr": 21330,
    "rows": [
     {
      "company": "Briggs Mechanical",
@@ -190,12 +190,6 @@
      "endsAt": "2026-11-18"
     },
     {
-     "company": "Prime Mobile Detailing",
-     "mrr": 0,
-     "requested": "2026-10-30",
-     "endsAt": "2026-11-18"
-    },
-    {
      "company": "Access Heating Air and Plumbing",
      "mrr": 1299,
      "requested": "2026-10-29",
@@ -205,18 +199,6 @@
      "company": "Jeoah Electric",
      "mrr": 949,
      "requested": "2026-10-27",
-     "endsAt": "2026-11-19"
-    },
-    {
-     "company": "Luxor Garage Door",
-     "mrr": 0,
-     "requested": "2026-10-27",
-     "endsAt": "2026-11-19"
-    },
-    {
-     "company": "Vanguard Plumbing Solutions",
-     "mrr": 0,
-     "requested": "2026-10-06",
      "endsAt": "2026-11-19"
     },
     {
@@ -238,33 +220,9 @@
      "endsAt": "2026-11-21"
     },
     {
-     "company": "Service Now Home Services",
-     "mrr": 1050,
-     "requested": "2026-10-30",
-     "endsAt": "2026-11-21"
-    },
-    {
-     "company": "Regal, Inc. Plumbing, Heating & A/C",
-     "mrr": 0,
-     "requested": "2026-10-06",
-     "endsAt": "2026-11-21"
-    },
-    {
-     "company": "West Houston Electric",
-     "mrr": 0,
-     "requested": "2026-10-27",
-     "endsAt": "2026-11-22"
-    },
-    {
      "company": "Gering Valley Plumbing and Heating",
      "mrr": 550,
      "requested": "2026-11-04",
-     "endsAt": "2026-11-22"
-    },
-    {
-     "company": "True Blue Heat and Air, LLC",
-     "mrr": 0,
-     "requested": "2026-10-27",
      "endsAt": "2026-11-22"
     },
     {
@@ -278,18 +236,6 @@
      "mrr": 75,
      "requested": "2026-11-04",
      "endsAt": "2026-11-23"
-    },
-    {
-     "company": "Famously Clean",
-     "mrr": 0,
-     "requested": "2026-11-10",
-     "endsAt": "2026-11-24"
-    },
-    {
-     "company": "Halo Doors Inc",
-     "mrr": 0,
-     "requested": "2026-10-27",
-     "endsAt": "2026-11-24"
     },
     {
      "company": "Homestead Home Services",
@@ -322,12 +268,6 @@
      "endsAt": "2026-11-26"
     },
     {
-     "company": "Van Delden Wastewater Systems",
-     "mrr": 0,
-     "requested": "2026-10-27",
-     "endsAt": "2026-11-26"
-    },
-    {
      "company": "Good Times Restoration LLC DBA Good Times Plumbing & Restoration",
      "mrr": 935,
      "requested": "2026-11-04",
@@ -354,13 +294,13 @@
    ]
   },
   "endingLater": {
-   "count": 30,
-   "mrr": 24061
+   "count": 25,
+   "mrr": 23161
   },
   "lostSoFar": 21681,
   "retainedSoFar": 0.97,
-  "retainedIfAllEnd": 0.94,
-  "eomMrr": 699188.89,
+  "retainedIfAllEnd": 0.941,
+  "eomMrr": 700238.89,
   "trailing": [
    {
     "month": "2026-09",
