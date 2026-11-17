@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v22",
-  "builtAt": "2026-11-17T01:12:07.264Z",
+  "version": "sk-v26",
+  "builtAt": "2026-11-17T01:27:12.718Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -43,6 +43,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-12",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -55,6 +56,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-14",
    "credited": 1000,
    "daysToCollect": 1,
    "waitingDays": null
@@ -67,6 +69,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-13",
    "credited": 1800,
    "daysToCollect": 0,
    "waitingDays": null
@@ -79,6 +82,7 @@
    "booked": 699,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "",
    "credited": 699,
    "daysToCollect": 15,
    "waitingDays": null
@@ -91,6 +95,7 @@
    "booked": 940,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-10",
    "credited": 740,
    "daysToCollect": 25,
    "waitingDays": null
@@ -103,6 +108,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-26",
    "credited": 1300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -115,6 +121,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-27",
    "credited": 250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -127,6 +134,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-30",
    "credited": 500,
    "daysToCollect": 2,
    "waitingDays": null
@@ -139,6 +147,7 @@
    "booked": 899,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-28",
    "credited": 899,
    "daysToCollect": 0,
    "waitingDays": null
@@ -151,6 +160,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-01",
+   "collectedDate": "2026-01-30",
    "credited": 550,
    "daysToCollect": 2,
    "waitingDays": null
@@ -163,6 +173,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-02",
    "credited": 550,
    "daysToCollect": 0,
    "waitingDays": null
@@ -175,6 +186,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-05",
    "credited": 1136.25,
    "daysToCollect": 30,
    "waitingDays": null
@@ -187,6 +199,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-03",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -199,6 +212,7 @@
    "booked": 899,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-04",
    "credited": 50,
    "daysToCollect": 0,
    "waitingDays": null
@@ -211,6 +225,7 @@
    "booked": 899,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-04",
    "credited": 899,
    "daysToCollect": 0,
    "waitingDays": null
@@ -223,6 +238,7 @@
    "booked": 2250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 283
@@ -235,6 +251,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-11",
    "credited": 800,
    "daysToCollect": 0,
    "waitingDays": null
@@ -247,6 +264,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-11",
    "credited": 1300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -259,6 +277,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-11",
    "credited": 800,
    "daysToCollect": 0,
    "waitingDays": null
@@ -271,6 +290,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-12",
    "credited": 1300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -283,6 +303,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-16",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -295,6 +316,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-17",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -307,6 +329,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-23",
    "credited": 1040,
    "daysToCollect": 4,
    "waitingDays": null
@@ -319,6 +342,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-24",
    "credited": 500,
    "daysToCollect": 4,
    "waitingDays": null
@@ -331,6 +355,7 @@
    "booked": 1200,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-23",
    "credited": 1200,
    "daysToCollect": 0,
    "waitingDays": null
@@ -343,6 +368,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-23",
    "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null
@@ -355,6 +381,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-25",
    "credited": 50,
    "daysToCollect": 1,
    "waitingDays": null
@@ -367,6 +394,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-02",
+   "collectedDate": "2026-02-24",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -379,6 +407,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-27",
    "credited": 1250,
    "daysToCollect": 29,
    "waitingDays": null
@@ -391,6 +420,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-03",
    "credited": 1000,
    "daysToCollect": 4,
    "waitingDays": null
@@ -403,6 +433,7 @@
    "booked": 2250,
    "status": "No Stripe link",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": null
@@ -415,6 +446,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-02",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -427,6 +459,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-04",
    "credited": 750,
    "daysToCollect": 155,
    "waitingDays": null
@@ -439,6 +472,7 @@
    "booked": 1000,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 259
@@ -451,6 +485,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-18",
    "credited": 500,
    "daysToCollect": 16,
    "waitingDays": null
@@ -463,6 +498,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-18",
    "credited": 500,
    "daysToCollect": 16,
    "waitingDays": null
@@ -475,6 +511,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-13",
    "credited": 750,
    "daysToCollect": 10,
    "waitingDays": null
@@ -487,6 +524,7 @@
    "booked": 499,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-26",
    "credited": 390,
    "daysToCollect": 23,
    "waitingDays": null
@@ -499,6 +537,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-23",
    "credited": 1250,
    "daysToCollect": 19,
    "waitingDays": null
@@ -511,6 +550,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-05",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -523,6 +563,7 @@
    "booked": 1250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 256
@@ -535,6 +576,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-23",
    "credited": 1500,
    "daysToCollect": 14,
    "waitingDays": null
@@ -547,6 +589,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-23",
    "credited": 750,
    "daysToCollect": 12,
    "waitingDays": null
@@ -559,6 +602,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-16",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -571,6 +615,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-13",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -583,6 +628,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-13",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -595,6 +641,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "",
    "credited": 666.96,
    "daysToCollect": 31,
    "waitingDays": null
@@ -607,6 +654,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-12",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -619,6 +667,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-17",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -631,6 +680,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-17",
    "credited": 748,
    "daysToCollect": 0,
    "waitingDays": null
@@ -643,6 +693,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-17",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -655,6 +706,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-18",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -667,6 +719,7 @@
    "booked": 700,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 242
@@ -679,6 +732,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "",
    "credited": 1250,
    "daysToCollect": 3,
    "waitingDays": null
@@ -691,6 +745,7 @@
    "booked": 899,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-23",
    "credited": 899,
    "daysToCollect": 34,
    "waitingDays": null
@@ -703,6 +758,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-06",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -715,6 +771,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-02",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -727,6 +784,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "",
    "credited": 200,
    "daysToCollect": 7,
    "waitingDays": null
@@ -739,6 +797,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-27",
    "credited": 550,
    "daysToCollect": 0,
    "waitingDays": null
@@ -751,6 +810,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-30",
    "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null
@@ -763,6 +823,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-30",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -775,6 +836,7 @@
    "booked": 899,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-30",
    "credited": 899,
    "daysToCollect": 30,
    "waitingDays": null
@@ -787,6 +849,7 @@
    "booked": 650,
    "status": "Collected",
    "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-31",
    "credited": 650,
    "daysToCollect": 0,
    "waitingDays": null
@@ -799,6 +862,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-01",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -811,6 +875,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-01",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -823,6 +888,7 @@
    "booked": 1750,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "",
    "credited": 1750,
    "daysToCollect": 21,
    "waitingDays": null
@@ -835,6 +901,7 @@
    "booked": 1750,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 228
@@ -847,6 +914,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-03",
    "credited": 1500,
    "daysToCollect": 183,
    "waitingDays": null
@@ -859,6 +927,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-03",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -871,6 +940,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-06",
    "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null
@@ -883,6 +953,7 @@
    "booked": 400,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 222
@@ -895,6 +966,7 @@
    "booked": 538,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 221
@@ -907,6 +979,7 @@
    "booked": 600,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 221
@@ -919,6 +992,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-10",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -931,6 +1005,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-13",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -943,6 +1018,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "",
    "credited": 227.61,
    "daysToCollect": 2,
    "waitingDays": null
@@ -955,6 +1031,7 @@
    "booked": 655.04,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 215
@@ -967,6 +1044,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-16",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -979,6 +1057,7 @@
    "booked": 1531.25,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-17",
    "credited": 1312.5,
    "daysToCollect": 1,
    "waitingDays": null
@@ -991,6 +1070,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "",
    "credited": 300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1003,6 +1083,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "",
    "credited": 300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1015,6 +1096,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "",
    "credited": 300,
    "daysToCollect": 15,
    "waitingDays": null
@@ -1027,6 +1109,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "",
    "credited": 300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1039,6 +1122,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-16",
    "credited": 2250,
    "daysToCollect": 91,
    "waitingDays": null
@@ -1051,6 +1135,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1063,6 +1148,7 @@
    "booked": 600,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-23",
    "credited": 600,
    "daysToCollect": 6,
    "waitingDays": null
@@ -1075,6 +1161,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-22",
    "credited": 1000,
    "daysToCollect": 1,
    "waitingDays": null
@@ -1087,6 +1174,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-21",
    "credited": 1250,
    "daysToCollect": 122,
    "waitingDays": null
@@ -1099,6 +1187,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-21",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1111,6 +1200,7 @@
    "booked": 650,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-22",
    "credited": 650,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1123,6 +1213,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-22",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1135,6 +1226,7 @@
    "booked": 1750,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-22",
    "credited": 1750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1147,6 +1239,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-24",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1159,6 +1252,7 @@
    "booked": 1647,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-24",
    "credited": 1647,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1171,6 +1265,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-01",
    "credited": 850,
    "daysToCollect": 4,
    "waitingDays": null
@@ -1183,6 +1278,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "",
    "credited": 300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1195,6 +1291,7 @@
    "booked": 1250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 202
@@ -1207,6 +1304,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-28",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1219,6 +1317,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-29",
    "credited": 500,
    "daysToCollect": 30,
    "waitingDays": null
@@ -1231,6 +1330,7 @@
    "booked": 800,
    "status": "Collected",
    "creditedMonth": "2026-04",
+   "collectedDate": "2026-04-29",
    "credited": 800,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1243,6 +1343,7 @@
    "booked": 650,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "",
    "credited": 650,
    "daysToCollect": 2,
    "waitingDays": null
@@ -1255,6 +1356,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-01",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1267,6 +1369,7 @@
    "booked": 800,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-05",
    "credited": 800,
    "daysToCollect": 92,
    "waitingDays": null
@@ -1279,6 +1382,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-08",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1291,6 +1395,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-08",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1303,6 +1408,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-11",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1315,6 +1421,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-08",
    "credited": 500,
    "daysToCollect": 174,
    "waitingDays": null
@@ -1327,6 +1434,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-22",
    "credited": 750,
    "daysToCollect": 11,
    "waitingDays": null
@@ -1339,6 +1447,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-29",
    "credited": 1500,
    "daysToCollect": 17,
    "waitingDays": null
@@ -1351,6 +1460,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-21",
    "credited": 2250,
    "daysToCollect": 9,
    "waitingDays": null
@@ -1363,6 +1473,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-13",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1375,6 +1486,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-13",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1387,6 +1499,7 @@
    "booked": 1125,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "",
    "credited": 1125,
    "daysToCollect": 7,
    "waitingDays": null
@@ -1399,6 +1512,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-18",
    "credited": 1250,
    "daysToCollect": 2,
    "waitingDays": null
@@ -1411,6 +1525,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-18",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1423,6 +1538,7 @@
    "booked": 500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 182
@@ -1435,6 +1551,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-02",
    "credited": 2250,
    "daysToCollect": 13,
    "waitingDays": null
@@ -1447,6 +1564,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-01",
    "credited": 1250,
    "daysToCollect": 12,
    "waitingDays": null
@@ -1459,6 +1577,7 @@
    "booked": 527.5,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "",
    "credited": 527.5,
    "daysToCollect": 73,
    "waitingDays": null
@@ -1471,6 +1590,7 @@
    "booked": 1300,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "",
    "credited": 1300,
    "daysToCollect": 5,
    "waitingDays": null
@@ -1483,6 +1603,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-29",
    "credited": 1250,
    "daysToCollect": 7,
    "waitingDays": null
@@ -1495,6 +1616,7 @@
    "booked": 1100,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-23",
    "credited": 1100,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1507,6 +1629,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1519,6 +1642,7 @@
    "booked": 800,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-29",
    "credited": 800,
    "daysToCollect": 3,
    "waitingDays": null
@@ -1531,6 +1655,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-27",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1543,6 +1668,7 @@
    "booked": 562.5,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 172
@@ -1555,6 +1681,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-29",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1567,6 +1694,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-03",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1579,6 +1707,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-03",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1591,6 +1720,7 @@
    "booked": 1350,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 165
@@ -1603,6 +1733,7 @@
    "booked": 637.5,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-05",
    "credited": 637.5,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1615,6 +1746,7 @@
    "booked": 2250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 161
@@ -1627,6 +1759,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-09",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1639,6 +1772,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-10",
    "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1651,6 +1785,7 @@
    "booked": 200,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "",
    "credited": 200,
    "daysToCollect": 15,
    "waitingDays": null
@@ -1663,6 +1798,7 @@
    "booked": 400,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "",
    "credited": 400,
    "daysToCollect": 71,
    "waitingDays": null
@@ -1675,6 +1811,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-05",
    "credited": 500,
    "daysToCollect": 131,
    "waitingDays": null
@@ -1687,6 +1824,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-06",
    "credited": 500,
    "daysToCollect": 12,
    "waitingDays": null
@@ -1699,6 +1837,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-24",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1711,6 +1850,7 @@
    "booked": 400,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-25",
    "credited": 400,
    "daysToCollect": 1,
    "waitingDays": null
@@ -1723,6 +1863,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-15",
    "credited": 500,
    "daysToCollect": 21,
    "waitingDays": null
@@ -1735,6 +1876,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-25",
    "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1747,6 +1889,7 @@
    "booked": 6000,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1759,6 +1902,7 @@
    "booked": 600,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-26",
    "credited": 600,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1771,6 +1915,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-30",
    "credited": 850,
    "daysToCollect": 4,
    "waitingDays": null
@@ -1783,6 +1928,7 @@
    "booked": 7200,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "",
    "credited": 50,
    "daysToCollect": 5,
    "waitingDays": null
@@ -1795,6 +1941,7 @@
    "booked": 1000,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 143
@@ -1807,6 +1954,7 @@
    "booked": 1000,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 140
@@ -1819,6 +1967,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-29",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1831,6 +1980,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-06",
+   "collectedDate": "2026-06-30",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1843,6 +1993,7 @@
    "booked": 550,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 139
@@ -1855,6 +2006,7 @@
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-01",
    "credited": 300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1867,6 +2019,7 @@
    "booked": 1500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 138
@@ -1879,6 +2032,7 @@
    "booked": 500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 138
@@ -1891,6 +2045,7 @@
    "booked": 2000,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-07",
    "credited": 2000,
    "daysToCollect": 6,
    "waitingDays": null
@@ -1903,6 +2058,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-02",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1915,6 +2071,7 @@
    "booked": 799,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 130
@@ -1927,6 +2084,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "",
    "credited": 1000,
    "daysToCollect": 6,
    "waitingDays": null
@@ -1939,6 +2097,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-22",
    "credited": 1000,
    "daysToCollect": 12,
    "waitingDays": null
@@ -1951,6 +2110,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-13",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1963,6 +2123,7 @@
    "booked": 2000,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 126
@@ -1975,6 +2136,7 @@
    "booked": 637.5,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-14",
    "credited": 637.5,
    "daysToCollect": 0,
    "waitingDays": null
@@ -1987,6 +2149,7 @@
    "booked": 650,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-16",
    "credited": 650,
    "daysToCollect": 1,
    "waitingDays": null
@@ -1999,6 +2162,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-17",
    "credited": 1500,
    "daysToCollect": 2,
    "waitingDays": null
@@ -2011,6 +2175,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-16",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2023,6 +2188,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-17",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2035,6 +2201,7 @@
    "booked": 2000,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-17",
    "credited": 2000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2047,6 +2214,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-24",
    "credited": 1250,
    "daysToCollect": 4,
    "waitingDays": null
@@ -2059,6 +2227,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-21",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2071,6 +2240,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-22",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2083,6 +2253,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-27",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2095,6 +2266,7 @@
    "booked": 1250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 109
@@ -2107,6 +2279,7 @@
    "booked": 1667,
    "status": "Collected",
    "creditedMonth": "2026-07",
+   "collectedDate": "2026-07-31",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2119,6 +2292,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-03",
    "credited": 1000,
    "daysToCollect": 61,
    "waitingDays": null
@@ -2131,6 +2305,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-04",
    "credited": 1125,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2143,6 +2318,7 @@
    "booked": 650,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 102
@@ -2155,6 +2331,7 @@
    "booked": 1800,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-07",
    "credited": 1800,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2167,6 +2344,7 @@
    "booked": 3250,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-14",
    "credited": 3250,
    "daysToCollect": 7,
    "waitingDays": null
@@ -2179,6 +2357,7 @@
    "booked": 500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 101
@@ -2191,6 +2370,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-07",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2203,6 +2383,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-07",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2215,6 +2396,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-10",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2227,6 +2409,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-14",
    "credited": 750,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2239,6 +2422,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-13",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2251,6 +2435,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-13",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2263,6 +2448,7 @@
    "booked": 1100,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-13",
    "credited": 1100,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2275,6 +2461,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-14",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2287,6 +2474,7 @@
    "booked": 2250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 94
@@ -2299,6 +2487,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-14",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2311,6 +2500,7 @@
    "booked": 2000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-17",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2323,6 +2513,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-19",
    "credited": 500,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2335,6 +2526,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-18",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2347,6 +2539,7 @@
    "booked": 2000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-19",
    "credited": 2000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2359,6 +2552,7 @@
    "booked": 2500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 89
@@ -2371,6 +2565,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-20",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2383,6 +2578,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-20",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2395,6 +2591,7 @@
    "booked": 1500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 87
@@ -2407,6 +2604,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-21",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2419,6 +2617,7 @@
    "booked": 1000,
    "status": "No Stripe link",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": null
@@ -2431,6 +2630,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-24",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2443,6 +2643,7 @@
    "booked": 1750,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 84
@@ -2455,6 +2656,7 @@
    "booked": 1500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 83
@@ -2467,6 +2669,7 @@
    "booked": 2250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 82
@@ -2479,6 +2682,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-08",
+   "collectedDate": "2026-08-27",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2491,6 +2695,7 @@
    "booked": 2500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 80
@@ -2503,6 +2708,7 @@
    "booked": 2500,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 77
@@ -2515,6 +2721,7 @@
    "booked": 1000,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 77
@@ -2527,6 +2734,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-02",
    "credited": 1125,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2539,6 +2747,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-02",
    "credited": 1500,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2551,6 +2760,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-01",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2563,6 +2773,7 @@
    "booked": 2250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 75
@@ -2575,6 +2786,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-03",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2587,6 +2799,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-03",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2599,6 +2812,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-08",
    "credited": 2500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2611,6 +2825,7 @@
    "booked": 2250,
    "status": "Not paid after 60 days",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 67
@@ -2623,6 +2838,7 @@
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-17",
    "credited": 2250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2635,6 +2851,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-19",
    "credited": 1000,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2647,6 +2864,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-19",
    "credited": 1250,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2659,6 +2877,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-23",
    "credited": 500,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2671,6 +2890,7 @@
    "booked": 1500,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 55
@@ -2683,6 +2903,7 @@
    "booked": 600,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 55
@@ -2695,6 +2916,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-23",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2707,6 +2929,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-24",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2719,6 +2942,7 @@
    "booked": 1500,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 53
@@ -2731,6 +2955,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-25",
    "credited": 625,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2743,6 +2968,7 @@
    "booked": 1600,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 52
@@ -2755,6 +2981,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-25",
    "credited": 2500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2767,6 +2994,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-25",
    "credited": 2500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2779,6 +3007,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-09",
+   "collectedDate": "2026-09-29",
    "credited": 750,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2791,6 +3020,7 @@
    "booked": 2000,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-08",
    "credited": 1000,
    "daysToCollect": 32,
    "waitingDays": null
@@ -2803,6 +3033,7 @@
    "booked": 2000,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-02",
    "credited": 2000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2815,6 +3046,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-05",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2827,6 +3059,7 @@
    "booked": 800,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 41
@@ -2839,6 +3072,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-09",
    "credited": 2500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2851,6 +3085,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-13",
    "credited": 2500,
    "daysToCollect": 4,
    "waitingDays": null
@@ -2863,6 +3098,7 @@
    "booked": 700,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-08",
    "credited": 700,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2875,6 +3111,7 @@
    "booked": 2500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-13",
    "credited": 2500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2887,6 +3124,7 @@
    "booked": 1500,
    "status": "No Stripe link",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": null
@@ -2899,6 +3137,7 @@
    "booked": 2300,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-15",
    "credited": 2300,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2911,6 +3150,7 @@
    "booked": 750,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 28
@@ -2923,6 +3163,7 @@
    "booked": 1000,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 28
@@ -2935,6 +3176,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-22",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2947,6 +3189,7 @@
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-23",
    "credited": 333.33,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2959,6 +3202,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-27",
    "credited": 1500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -2971,6 +3215,7 @@
    "booked": 1500,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-30",
    "credited": 1500,
    "daysToCollect": 1,
    "waitingDays": null
@@ -2983,6 +3228,7 @@
    "booked": 1000,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 17
@@ -2995,6 +3241,7 @@
    "booked": 750,
    "status": "Collected",
    "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-30",
    "credited": 738,
    "daysToCollect": 0,
    "waitingDays": null
@@ -3007,6 +3254,7 @@
    "booked": 2300,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-02",
    "credited": 1625,
    "daysToCollect": 0,
    "waitingDays": null
@@ -3019,6 +3267,7 @@
    "booked": 1250,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 13
@@ -3031,6 +3280,7 @@
    "booked": 500,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-14",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -3043,6 +3293,7 @@
    "booked": 850,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-05",
    "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null
@@ -3055,6 +3306,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-06",
    "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null
@@ -3067,6 +3319,7 @@
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-07",
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
@@ -3079,6 +3332,7 @@
    "booked": 2416.65,
    "status": "Awaiting first payment",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 7
@@ -3091,6 +3345,7 @@
    "booked": 2000,
    "status": "No Stripe link",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": null
@@ -3103,6 +3358,7 @@
    "booked": 1000,
    "status": "No Stripe link",
    "creditedMonth": "",
+   "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": null
