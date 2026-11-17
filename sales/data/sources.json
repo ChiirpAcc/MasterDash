@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v45",
-  "builtAt": "2026-11-17T21:53:12.008Z",
+  "builtAt": "2026-11-17T21:57:52.008Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -117,7 +117,7 @@
    ]
   },
   "ytd": {
-   "total": 346241.4,
+   "total": 345078.4,
    "mediums": [
     {
      "medium": "Events",
@@ -126,8 +126,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 106557.25,
-     "deals": 116
+     "credited": 107332.25,
+     "deals": 117
     },
     {
      "medium": "Webinars",
@@ -141,8 +141,8 @@
     },
     {
      "medium": "Untagged",
-     "credited": 93928.83,
-     "deals": 109
+     "credited": 91990.83,
+     "deals": 107
     }
    ],
    "top": [
@@ -161,7 +161,7 @@
     {
      "source": "LAB",
      "medium": "Partners and referrals",
-     "credited": 12637.25,
+     "credited": 12662.25,
      "deals": 19
     },
     {
@@ -183,15 +183,15 @@
      "deals": 8
     },
     {
+     "source": "Certain Path",
+     "medium": "Partners and referrals",
+     "credited": 8588,
+     "deals": 9
+    },
+    {
      "source": "2025 - Home Service Freedom",
      "medium": "Events",
      "credited": 7949,
-     "deals": 8
-    },
-    {
-     "source": "Certain Path",
-     "medium": "Partners and referrals",
-     "credited": 7838,
      "deals": 8
     }
    ]

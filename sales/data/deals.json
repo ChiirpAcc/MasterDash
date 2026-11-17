@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v45",
-  "builtAt": "2026-11-17T21:53:12.008Z",
+  "builtAt": "2026-11-17T21:57:52.008Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -3804,7 +3804,7 @@
    "status": "Collected",
    "creditedMonth": "2026-10",
    "collectedDate": "2026-10-08",
-   "credited": 700,
+   "credited": 612,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,

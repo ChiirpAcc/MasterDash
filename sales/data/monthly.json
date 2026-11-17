@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v45",
-  "builtAt": "2026-11-17T21:53:12.008Z",
+  "builtAt": "2026-11-17T21:57:52.008Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -137,9 +137,9 @@
    "won": 26,
    "booked": 28463,
    "collectedDeals": 25,
-   "credited": 18900,
+   "credited": 18925,
    "newCredited": 16300,
-   "expCredited": 2600,
+   "expCredited": 2625,
    "dlcCredited": 0,
    "dlcCount": 0
   },
@@ -244,9 +244,9 @@
    "month": "2026-04",
    "won": 28,
    "booked": 29475,
-   "collectedDeals": 28,
-   "credited": 24088,
-   "newCredited": 20350,
+   "collectedDeals": 27,
+   "credited": 23088,
+   "newCredited": 19350,
    "expCredited": 3738,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -304,9 +304,9 @@
    "month": "2026-05",
    "won": 8,
    "booked": 10650,
-   "collectedDeals": 5,
-   "credited": 7000,
-   "newCredited": 6000,
+   "collectedDeals": 6,
+   "credited": 7750,
+   "newCredited": 6750,
    "expCredited": 1000,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -424,9 +424,9 @@
    "month": "2026-07",
    "won": 14,
    "booked": 15350,
-   "collectedDeals": 15,
-   "credited": 15450,
-   "newCredited": 14600,
+   "collectedDeals": 14,
+   "credited": 14600,
+   "newCredited": 13750,
    "expCredited": 850,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -593,9 +593,9 @@
    "won": 7,
    "booked": 8200,
    "collectedDeals": 9,
-   "credited": 5831.33,
+   "credited": 5743.33,
    "newCredited": 5131.33,
-   "expCredited": 700,
+   "expCredited": 612,
    "dlcCredited": 0,
    "dlcCount": 0
   },
@@ -617,11 +617,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 816,
+   "credited": 852,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 816,
-   "dlcCount": 68
+   "dlcCredited": 852,
+   "dlcCount": 71
   },
   {
    "ae": "Ky Decker",
