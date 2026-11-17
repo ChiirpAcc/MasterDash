@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v10",
-  "builtAt": "2026-11-17T00:26:57.926Z",
+  "version": "sk-v12",
+  "builtAt": "2026-11-17T00:31:02.450Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -94,7 +94,7 @@
      "unexpected": true
     },
     {
-     "company": "cus_NUOJySvROL0pyB",
+     "company": "Service Specialties Inc.",
      "mrr": 550,
      "requested": "2026-11-04",
      "ended": "2026-11-08",
@@ -143,7 +143,7 @@
      "unexpected": false
     },
     {
-     "company": "cus_O0Fp2K2YWkno4b",
+     "company": "Southern Air",
      "mrr": 887.5,
      "requested": "2026-10-27",
      "ended": "2026-11-01",
@@ -292,7 +292,7 @@
      "endsAt": "2026-11-23"
     },
     {
-     "company": "cus_NPeqjKR6PXrGPs",
+     "company": "Chem-Dry of Nebraska",
      "mrr": 75,
      "requested": "2026-11-04",
      "endsAt": "2026-11-23"
