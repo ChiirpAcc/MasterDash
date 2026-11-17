@@ -460,29 +460,25 @@
     var mk = Rt.month;
     $('r-sub').textContent = monthOf(mk) + ' so far. Data through ' + day(Rt.dataThrough) + '.';
     var k = $('r-kept'); k.replaceChildren();
-    var N = Rt.nrr;
-    // One basis per panel: the SaaS dashboard ledger when available (NRR), else the weekly report (churn only).
-    var nowV = N ? N.soFar : Rt.retainedSoFar, eom = N ? N.eom : Rt.retainedIfAllEnd;
-    k.appendChild(el('div', 'lab', N ? 'Anticipated end-of-month NRR' : 'MRR kept this month'));
-    k.appendChild(el('div', 'big wide', (N ? eom : nowV) == null ? '\u2014' : ((N ? eom : nowV) * 100).toFixed(1) + '%'));
-    if (N && N.trailing && N.trailing.length) {       // the two completed months before this one
+    // Overall retention on start-of-month MRR (the weekly report's month table): simple subtraction, checkable by hand.
+    var p1 = function (x) { return (x * 100).toFixed(1) + '%'; };
+    k.appendChild(el('div', 'lab', 'MRR kept this month'));
+    k.appendChild(el('div', 'big wide', Rt.retainedSoFar == null ? '\u2014' : p1(Rt.retainedSoFar)));
+    if (Rt.retainedIfAllEnd != null) { var an = el('div', 'trail'); an.appendChild(document.createTextNode('Anticipated by month end: ')); an.appendChild(el('b', null, p1(Rt.retainedIfAllEnd))); k.appendChild(an); }
+    if (Rt.trailing && Rt.trailing.length) {
       var tr2 = el('div', 'trail'); tr2.appendChild(document.createTextNode('Last 2 months: '));
-      N.trailing.forEach(function (x, i) {
-        if (i) tr2.appendChild(document.createTextNode(', '));
-        tr2.appendChild(document.createTextNode(MONTHS[+x.month.slice(5, 7) - 1] + ' ')); tr2.appendChild(el('b', null, (x.nrr * 100).toFixed(1) + '%'));
-      });
+      Rt.trailing.forEach(function (x, i) { if (i) tr2.appendChild(document.createTextNode(', '));
+        tr2.appendChild(document.createTextNode(MONTHS[+x.month.slice(5, 7) - 1] + ' ')); tr2.appendChild(el('b', null, p1(x.kept))); });
       k.appendChild(tr2);
     }
-    // three small facts, nothing else (the full breakdown is in the run log)
-    var facts = el('div', 'kfacts');
-    if (N && N.eomMrr != null) {                      // start of month -> anticipated end of month MRR
+    if (Rt.eomMrr != null) {
       var path = el('div', 'mrrpath');
-      path.appendChild(el('b', 'wide', money.format(N.bom))); path.appendChild(el('span', 'arrow', '\u2192')); path.appendChild(el('b', 'wide', money.format(N.eomMrr)));
-      var cap = el('div', 'cap', 'MRR, start of month \u2192 anticipated end of month'); var wrap = el('div'); wrap.appendChild(path); wrap.appendChild(cap); k.appendChild(wrap);
+      path.appendChild(el('b', 'wide', money.format(Rt.bom))); path.appendChild(el('span', 'arrow', '\u2192')); path.appendChild(el('b', 'wide', money.format(Rt.eomMrr)));
+      var wrap = el('div'); wrap.appendChild(path); wrap.appendChild(el('div', 'cap', 'MRR, start of month \u2192 anticipated end of month')); k.appendChild(wrap);
     }
-    (N ? [[(N.soFar * 100).toFixed(1) + '%', 'NRR so far'], ['\u2212' + money.format(N.endingThisMonth), 'set to end by month end'],
-          [(N.eomWithNew * 100).toFixed(1) + '%', 'with new MRR (+' + money.format(N.newMrr + N.reactivation) + ')']]
-       : [[money.format(Rt.bom), 'start of month'], ['\u2212' + money.format(Rt.churned.mrr), 'lost so far'], ['\u2212' + money.format(Rt.endingThisMonth.mrr), 'set to end by month end']])
+    var facts = el('div', 'kfacts');
+    [['\u2212' + money.format(Rt.lostSoFar != null ? Rt.lostSoFar : Rt.churned.mrr), 'MRR lost so far'], ['\u2212' + money.format(Rt.endingThisMonth.mrr), 'set to end by month end'],
+     [money.format(Rt.current), 'MRR now']]
       .forEach(function (f) { var d = el('div', 'kf'); d.appendChild(el('b', 'wide', f[0])); d.appendChild(el('span', null, f[1])); facts.appendChild(d); });
     k.appendChild(facts);
 
@@ -513,30 +509,21 @@
       row.appendChild(el('span', 'yr', money.format(y.credited) + ' this year' + (yt.total ? ', ' + Math.round(100 * y.credited / yt.total) + '%' : '')));
       box.appendChild(row);
     });
-    // The NRR arithmetic with this month's values, then the general notes.
+    // The retention arithmetic with this month's values, then the general notes.
     var note = $('r-note'); note.replaceChildren();
-    if (Rt.nrr) {
-      var Nn = Rt.nrr, p1 = function (x) { return (x * 100).toFixed(1) + '%'; }, pts = function (a) { return (a / Nn.bom * 100).toFixed(1) + ' pts'; };
-      var f = el('div', 'formula');
-      var l1 = el('div'); l1.appendChild(el('b', null, 'NRR so far ' + p1(Nn.soFar)));
-      l1.appendChild(document.createTextNode(' (SaaS Metrics Dashboard' + (Nn.built ? ', built ' + Nn.built : '') + '): start of month excluding pilots and unpaid sign-ups, + upgrades ' +
-        money.format(Nn.upgrades) + ' + recovered ' + money.format(Nn.recovered) + ' \u2212 downgrades ' + money.format(-Nn.downgrades) + ' \u2212 churn ' +
-        money.format(-Nn.churn) + ' \u2212 lapsed ' + money.format(-Nn.lapsed)));
-      var l2 = el('div'); l2.appendChild(el('b', null, 'Anticipated EOM NRR'));
-      l2.appendChild(document.createTextNode(' = ' + p1(Nn.soFar) + ' \u2212 ' + money.format(Nn.endingThisMonth) + ' set to end \u00f7 ' + money.format(Nn.bom) +
-        ' start of month (' + pts(Nn.endingThisMonth) + ') = ')); l2.appendChild(el('b', null, p1(Nn.eom)));
-      if (Nn.endingAlreadyCounted) l2.appendChild(document.createTextNode('  (the ending total leaves out ' + Nn.endingAlreadyCounted +
-        (Nn.endingAlreadyCounted === 1 ? ' account' : ' accounts') + ' already counted in churn, so it is lower than the Ending this month column)'));
-      var l3 = el('div'); l3.appendChild(el('b', null, 'With new MRR'));
-      l3.appendChild(document.createTextNode(' = ' + p1(Nn.eom) + ' + ' + money.format(Nn.newMrr + Nn.reactivation) + ' new \u00f7 ' + money.format(Nn.bom) +
-        ' (' + pts(Nn.newMrr + Nn.reactivation) + ') = ')); l3.appendChild(el('b', null, p1(Nn.eomWithNew)));
-      var l4 = el('div');
-      if (Nn.eomMrr != null) { l4.appendChild(el('b', null, 'Anticipated EOM MRR'));
-        l4.appendChild(document.createTextNode(' = ' + money.format(Nn.mrrNow) + ' MRR now (SaaS dashboard, start ' + money.format(Nn.bom) + ' plus this month\u2019s movements) \u2212 ' +
-          money.format(Nn.endingThisMonth) + ' set to end = ')); l4.appendChild(el('b', null, money.format(Nn.eomMrr))); }
+    if (Rt.bom) {
+      var f = el('div', 'formula'), lostV = Rt.lostSoFar != null ? Rt.lostSoFar : Rt.churned.mrr;
+      var l1 = el('div'); l1.appendChild(el('b', null, 'MRR kept'));
+      l1.appendChild(document.createTextNode(' = (' + money.format(Rt.bom) + ' start of month \u2212 ' + money.format(lostV) + ' lost) \u00f7 ' + money.format(Rt.bom) + ' = ')); l1.appendChild(el('b', null, p1(Rt.retainedSoFar)));
+      var l2 = el('div'); l2.appendChild(el('b', null, 'Anticipated by month end'));
+      l2.appendChild(document.createTextNode(' = (' + money.format(Rt.bom) + ' \u2212 ' + money.format(lostV) + ' lost \u2212 ' + money.format(Rt.endingThisMonth.mrr) + ' set to end) \u00f7 ' + money.format(Rt.bom) + ' = ')); l2.appendChild(el('b', null, p1(Rt.retainedIfAllEnd)));
+      var l3 = el('div'); if (Rt.eomMrr != null) { l3.appendChild(el('b', null, 'Anticipated end-of-month MRR'));
+        l3.appendChild(document.createTextNode(' = ' + money.format(Rt.current) + ' MRR now \u2212 ' + money.format(Rt.endingThisMonth.mrr) + ' set to end = ')); l3.appendChild(el('b', null, money.format(Rt.eomMrr))); }
+      var l4 = el('div'); if (Rt.trailing && Rt.trailing.length) { l4.appendChild(el('b', null, 'Last 2 months'));
+        l4.appendChild(document.createTextNode(': ' + Rt.trailing.map(function (x) { return MONTHS[+x.month.slice(5, 7) - 1] + ' (' + money.format(x.bom) + ' \u2212 ' + money.format(x.lost) + ') \u00f7 ' + money.format(x.bom) + ' = ' + p1(x.kept); }).join('; '))); }
       f.appendChild(l1); f.appendChild(l2); f.appendChild(l3); f.appendChild(l4); note.appendChild(f);
     }
-    note.appendChild(el('div', null, (Rt.nrr ? 'New customer MRR is not part of NRR. 10DLC fees are not MRR. ' : 'MRR kept = (start of month \u2212 churned) \u00f7 start of month. ') +
+    note.appendChild(el('div', null, 'All figures from the Weekly Revenue Report. MRR lost is net of migrations and includes accounts that lapsed unpaid, so it can be more than the Churned this month list. 10DLC fees are not MRR. ' +
       'Without notice = asked to cancel and turned off the same day. Ending this month uses each cancellation date in Stripe. Lead source comes from the deal, else its contact, in HubSpot.'));
   }
 
