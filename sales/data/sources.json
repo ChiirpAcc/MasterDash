@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v44",
-  "builtAt": "2026-11-17T20:42:54.234Z",
+  "version": "sk-v45",
+  "builtAt": "2026-11-17T20:44:11.526Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,16 +37,16 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 7975,
+   "total": 7999,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 1500,
+     "credited": 1512,
      "deals": 2
     },
     {
      "medium": "Partners and referrals",
-     "credited": 3625,
+     "credited": 3637,
      "deals": 3
     },
     {
@@ -69,7 +69,7 @@
     {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
-     "credited": 1625,
+     "credited": 1637,
      "deals": 1
     },
     {
@@ -97,31 +97,31 @@
      "deals": 1
     },
     {
-     "source": "Tool Vault",
-     "medium": "Partners and referrals",
-     "credited": 500,
+     "source": "2026 - HSF Freedom",
+     "medium": "Events",
+     "credited": 512,
      "deals": 1
     },
     {
-     "source": "2026 - HSF Freedom",
-     "medium": "Events",
+     "source": "Tool Vault",
+     "medium": "Partners and referrals",
      "credited": 500,
      "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 342609.4,
+   "total": 344491.4,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 72520.32,
-     "deals": 67
+     "credited": 72556.32,
+     "deals": 68
     },
     {
      "medium": "Partners and referrals",
-     "credited": 105735.25,
-     "deals": 110
+     "credited": 105807.25,
+     "deals": 115
     },
     {
      "medium": "Webinars",
@@ -130,13 +130,13 @@
     },
     {
      "medium": "Digital",
-     "credited": 67249,
-     "deals": 62
+     "credited": 67999,
+     "deals": 63
     },
     {
      "medium": "Untagged",
-     "credited": 92904.83,
-     "deals": 107
+     "credited": 93928.83,
+     "deals": 109
     }
    ],
    "top": [
@@ -173,7 +173,7 @@
     {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
-     "credited": 9024,
+     "credited": 9036,
      "deals": 8
     },
     {
