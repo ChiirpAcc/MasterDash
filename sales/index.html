@@ -51,7 +51,7 @@
   .top p.stale { color: var(--late); }
   .clock { margin-left: 1.6em; color: var(--muted); }
   .clock b { color: var(--text); font-weight: 650; margin-left: .3em; }
-  .clock .ago { margin-left: .6em; }
+  .clock .ago { margin-left: 0; }
   .monthbar { display: inline-block; vertical-align: middle; width: calc(var(--u) * 9); height: 4px; background: var(--track); border-radius: 99px; margin-left: .8em; overflow: hidden; }
   .monthbar i { display: block; height: 100%; background: var(--soft); border-radius: 99px; }
 
@@ -164,6 +164,7 @@
   .ticker .it b { color: var(--text); font-weight: 680; margin-left: .4em; }
   .ticker .it small { font-size: .82em; margin-left: .35em; }
   .ticker .it .d { font-size: .82em; margin-left: .55em; font-weight: 600; }
+  .ticker .when { font-size: .78em; color: var(--muted); margin-left: .45em; padding: .1em .45em; border: 1px solid var(--rule); border-radius: .4em; }
   .ticker .d.good { color: var(--good); } .ticker .d.bad { color: var(--late); } .ticker .d.flat { color: var(--muted); }
 
   .error { grid-row: 1 / -1; align-self: center; justify-self: center; max-width: 60ch; color: var(--soft); font-size: calc(var(--u) * 1.4); }
@@ -223,16 +224,31 @@
       if (!r.ok) throw new Error(f + ' could not be loaded (HTTP ' + r.status + ')'); return r.json();
     });
   }
+  // Scrolling: 20% faster than the original pace, and a data refresh never restarts a scroll.
+  var SPEED = 1.2;
+  function loopPos(el) {            // how far through its loop a scroll is (0 to 1), or null
+    var a = el.getAnimations && el.getAnimations()[0];
+    if (!a || a.currentTime == null) return null;
+    var dur = a.effect.getTiming().duration; return dur ? (a.currentTime % dur) / dur : null;
+  }
+  function resumeAt(el, pos) {      // put a (re)started scroll back where it was
+    if (pos == null) return;
+    requestAnimationFrame(function () { var a = el.getAnimations && el.getAnimations()[0];
+      if (a) a.currentTime = pos * a.effect.getTiming().duration; });
+  }
   function fillList(ul, rows, make, empty, secsPerRow) {
+    var pos = loopPos(ul);
     ul.replaceChildren(); ul.classList.remove('moving');
     if (!rows.length) { ul.appendChild(el('li', 'empty', empty)); return; }
     var box = ul.parentNode;
     rows.forEach(function (r) { ul.appendChild(make(r)); });
     if (ul.scrollHeight > box.clientHeight + 4) {              // scroll only when it doesn't fit
       rows.forEach(function (r) { ul.appendChild(make(r)); });
-      ul.style.setProperty('--feedtime', Math.max(40, rows.length * (secsPerRow || 8)) + 's'); ul.classList.add('moving');
+      ul.style.setProperty('--feedtime', (Math.max(40, rows.length * (secsPerRow || 8)) / SPEED).toFixed(1) + 's'); ul.classList.add('moving');
+      resumeAt(ul, pos);
     }
   }
+
 
   // ======================================================= screen 1: sales
   function render(S, M, D) {
@@ -349,7 +365,7 @@
     var d = new Date(builtAt), mins = Math.max(0, Math.round((Date.now() - d.getTime()) / 60000));
     var at = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/Denver', timeZoneName: 'short' });
     var ago = mins < 1 ? 'just now' : mins < 60 ? mins + ' min ago' : Math.floor(mins / 60) + ' h ' + (mins % 60) + ' min ago';
-    c.replaceChildren(document.createTextNode('Last refreshed '), el('b', null, at), el('span', 'ago', ago));
+    c.replaceChildren(document.createTextNode('Last refreshed '), el('b', null, at), el('span', 'ago', ', ' + ago));
   }
   setInterval(tickClock, 60000);
 
@@ -359,45 +375,52 @@
     var bar = $('ticker'), track = $('tickTrack'), root = document.documentElement;
     if (!W || !W.metrics) { bar.classList.remove('on'); root.style.setProperty('--tickh', '0px'); return; }
     var m = W.metrics, p = W.prev || {}, s = W.sales || null;
+    function shift(d, days) { var x = new Date(d + 'T12:00'); x.setDate(x.getDate() + days); return x.getFullYear() + '-' + String(x.getMonth() + 1).padStart(2, '0') + '-' + String(x.getDate()).padStart(2, '0'); }
+    function short(d) { return new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); }
     function range(a, b) { if (!a) return ''; var A = new Date(a + 'T12:00'), B = new Date((b || a) + 'T12:00');
-      var f = function (d, withMonth) { return withMonth ? d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : String(d.getDate()); };
-      return f(A, true) + ' \u2013 ' + f(B, A.getMonth() !== B.getMonth()); }
-    function item(label, v, prev, up, isMoney, extra) {
+      return short(a) + ' \u2013 ' + (A.getMonth() !== B.getMonth() ? short(b || a) : String(B.getDate())); }
+    // label, its time window, value, the comparison value, whether a rise is good, money or count, a note, what the arrow compares against
+    function item(label, when, v, prev, up, isMoney, extra, vs) {
       var it = el('span', 'it'); it.appendChild(document.createTextNode(label));
+      if (when) it.appendChild(el('span', 'when', when));
       it.appendChild(el('b', 'wide', isMoney ? (v < 0 ? '\u2212' : '') + money.format(Math.abs(v || 0)) : String(v || 0)));
       if (extra) it.appendChild(el('small', null, extra));
       if (prev != null && v != null) {
         var diff = v - prev;
-        if (Math.abs(diff) >= (isMoney ? 1 : 1)) {
+        if (Math.abs(diff) >= 1) {
           var good = up ? diff > 0 : diff < 0;
-          it.appendChild(el('span', 'd ' + (good ? 'good' : 'bad'), (diff > 0 ? '\u25B2 ' : '\u25BC ') + (isMoney ? money.format(Math.abs(diff)) : Math.abs(diff))));
-        } else it.appendChild(el('span', 'd flat', 'no change'));
+          it.appendChild(el('span', 'd ' + (good ? 'good' : 'bad'), (diff > 0 ? '\u25B2 ' : '\u25BC ') + (isMoney ? money.format(Math.abs(diff)) : Math.abs(diff)) + ' ' + vs));
+        } else it.appendChild(el('span', 'd flat', 'same as ' + vs.replace(/^vs /, '')));
       }
       return it;
     }
+    var wk = range(W.start, W.end), asOf = W.end ? 'as of ' + short(W.end) : '', vsWk = 'vs prior week';
     function group() {
       var g = el('div', 'grp');
-      g.appendChild(el('span', 'hd', 'Week of ' + range(W.start, W.end)));
-      g.appendChild(item('New MRR', m.newMrr, p.newMrr, true, true, m.newLogos != null ? plural(m.newLogos, 'logo', 'logos') : ''));
-      g.appendChild(item('Reactivated', m.reactivated, p.reactivated, true, true));
-      g.appendChild(item('Churned', m.churned, p.churned, false, true, m.churnedAccounts != null ? plural(m.churnedAccounts, 'account', 'accounts') : ''));
-      g.appendChild(item('Net change', m.net, p.net, true, true));
-      if (m.active) g.appendChild(item('Active MRR', m.active, p.active, true, true));
-      if (m.atRisk != null) g.appendChild(item('At risk', m.atRisk, p.atRisk, false, true));
-      if (m.pending) g.appendChild(item('Pending cancellation', m.pending, p.pending, false, true));
-      if (m.stale) g.appendChild(item('Stale unpaid', m.stale, p.stale, false, true));
+      g.appendChild(el('span', 'hd', 'Weekly revenue report'));
+      g.appendChild(item('New MRR', wk, m.newMrr, p.newMrr, true, true, m.newLogos != null ? plural(m.newLogos, 'logo', 'logos') : '', vsWk));
+      g.appendChild(item('Reactivated', wk, m.reactivated, p.reactivated, true, true, '', vsWk));
+      g.appendChild(item('Churned', wk, m.churned, p.churned, false, true, m.churnedAccounts != null ? plural(m.churnedAccounts, 'account', 'accounts') : '', vsWk));
+      g.appendChild(item('Net change', wk, m.net, p.net, true, true, '', vsWk));
+      if (m.active) g.appendChild(item('Active MRR', asOf, m.active, p.active, true, true, '', vsWk));
+      if (m.atRisk != null) g.appendChild(item('At risk', asOf, m.atRisk, p.atRisk, false, true, '', vsWk));
+      if (m.pending) g.appendChild(item('Pending cancellation', asOf, m.pending, p.pending, false, true, '', vsWk));
+      if (m.stale) g.appendChild(item('Stale unpaid', asOf, m.stale, p.stale, false, true, '', vsWk));
       if (s) {
-        g.appendChild(el('span', 'hd', 'Last 7 days'));
-        g.appendChild(item('Deals won', s.now.dealsWon, s.prev.dealsWon, true, false, s.now.bookedMrr ? money.format(s.now.bookedMrr) + ' MRR' : ''));
-        if (s.now.dlcPaid || s.prev.dlcPaid) g.appendChild(item('10DLC increases paid', s.now.dlcPaid, s.prev.dlcPaid, true, false, s.now.dlcAmount ? money.format(s.now.dlcAmount) : ''));
+        var sw = range(s.from, s.to), vs7 = 'vs prior 7 days';
+        g.appendChild(el('span', 'hd', 'Sales, last 7 days'));
+        g.appendChild(item('Deals won', sw, s.now.dealsWon, s.prev.dealsWon, true, false, s.now.bookedMrr ? money.format(s.now.bookedMrr) + ' MRR' : '', vs7));
+        if (s.now.dlcPaid || s.prev.dlcPaid) g.appendChild(item('10DLC increases paid', sw, s.now.dlcPaid, s.prev.dlcPaid, true, false, s.now.dlcAmount ? money.format(s.now.dlcAmount) : '', vs7));
       }
       return g;
     }
     root.style.setProperty('--tickh', 'calc(min(1vw, 1.75vh) * 4.2)');
+    var pos = loopPos(track);
     bar.classList.add('on'); track.replaceChildren(group(), group());          // two copies make a seamless loop
     requestAnimationFrame(function () {
       var w = track.scrollWidth / 2, u = Math.min(window.innerWidth / 100, window.innerHeight * 0.0175);
-      track.style.setProperty('--ticktime', Math.max(45, Math.round(w / (u * 3.2))) + 's');   // about 3 units a second
+      track.style.setProperty('--ticktime', (Math.max(45, w / (u * 3.2)) / SPEED).toFixed(1) + 's');   // about 3.8 units a second
+      resumeAt(track, pos);
     });
   }
 
@@ -501,7 +524,7 @@
         }
       } catch (err) {
         console.error(err); lastBuilt = null;
-        if (data) { var sub = $('monthsub'); sub.classList.add('stale'); sub.textContent = 'The latest update couldn’t be shown (' + err.message + '). Showing the previous numbers; retrying in 5 minutes.'; return; }
+        if (data) { var sub = $('monthsub'); sub.classList.add('stale'); sub.textContent = 'The latest update couldn’t be shown (' + err.message + '). Showing the previous numbers; retrying in 2 minutes.'; return; }
         throw err;
       }
       lastBuilt = built; data = r; markStale();
@@ -509,12 +532,31 @@
       if (data) { markStale(); return; }
       var st = $('stage'); st.replaceChildren();
       var box = el('div', 'error'); box.appendChild(el('h2', 'wide', 'The numbers didn’t load'));
-      box.appendChild(el('p', null, e.message + '. Run the Sales KPI sheet once so the data exists. This screen tries again every 5 minutes.'));
+      box.appendChild(el('p', null, e.message + '. Run the Sales KPI sheet once so the data exists. This screen tries again every 2 minutes.'));
       st.appendChild(box);
     });
   }
   load();
-  setInterval(load, 5 * 60 * 1000);
+  // Check for a new push every 2 minutes, and right away when the TV wakes or the tab comes back into view.
+  setInterval(load, 2 * 60 * 1000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) { load(); tickClock(); } });
+  window.addEventListener('focus', function () { load(); tickClock(); });
+  // When a new version of this page is published to GitHub, reload once to pick it up
+  // (within about 10 minutes). The numbers never need this: they update in place.
+  (function selfUpdate() {
+    var mine = null;
+    function sig(s) { var h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return s.length + ':' + h; }
+    function check() {
+      fetch(location.pathname + '?page=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.ok ? r.text() : null; }).then(function (txt) {
+        if (!txt || !/<html/i.test(txt)) return;                 // a failed or partial fetch never triggers a reload
+        var s = sig(txt);
+        if (mine === null) { mine = s; return; }                  // first look: remember this version
+        if (s !== mine) location.reload();
+      }).catch(function () {});
+    }
+    check();
+    setInterval(check, 10 * 60 * 1000);
+  })();
   (function nightly() { var n = new Date(), t = new Date(n); t.setHours(3, 0, 0, 0); if (t <= n) t.setDate(t.getDate() + 1);
     setTimeout(function () { location.reload(); }, t - n); })();
 })();
