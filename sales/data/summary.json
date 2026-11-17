@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v35",
-  "builtAt": "2026-11-17T16:58:18.269Z",
+  "builtAt": "2026-11-17T17:32:42.110Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -36,10 +36,10 @@
  },
  "team": {
   "thisMonth": {
-   "credited": 8695,
+   "credited": 8707,
    "newCredited": 4850,
-   "dlcCredited": 720,
-   "dlcCount": 60,
+   "dlcCredited": 732,
+   "dlcCount": 61,
    "expCredited": 3125,
    "dealsCollected": 9,
    "dealsWon": 10,
@@ -58,10 +58,10 @@
    "avgDaysToCollect": 29
   },
   "qtd": {
-   "credited": 33166.33,
+   "credited": 33178.33,
    "newCredited": 27721.33,
-   "dlcCredited": 720,
-   "dlcCount": 60,
+   "dlcCredited": 732,
+   "dlcCount": 61,
    "expCredited": 4725,
    "dealsCollected": 26,
    "dealsWon": 28,
@@ -69,10 +69,10 @@
    "avgDaysToCollect": 32
   },
   "ytd": {
-   "credited": 343329.4,
+   "credited": 343341.4,
    "newCredited": 324479.9,
-   "dlcCredited": 720,
-   "dlcCount": 60,
+   "dlcCredited": 732,
+   "dlcCount": 61,
    "expCredited": 18129.5,
    "dealsCollected": 351,
    "dealsWon": 418,
@@ -280,10 +280,10 @@
   },
   {
    "thisMonth": {
-    "credited": 720,
+    "credited": 732,
     "newCredited": 0,
-    "dlcCredited": 720,
-    "dlcCount": 60,
+    "dlcCredited": 732,
+    "dlcCount": 61,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -302,10 +302,10 @@
     "avgDaysToCollect": null
    },
    "qtd": {
-    "credited": 720,
+    "credited": 732,
     "newCredited": 0,
-    "dlcCredited": 720,
-    "dlcCount": 60,
+    "dlcCredited": 732,
+    "dlcCount": 61,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -313,10 +313,10 @@
     "avgDaysToCollect": null
    },
    "ytd": {
-    "credited": 720,
+    "credited": 732,
     "newCredited": 0,
-    "dlcCredited": 720,
-    "dlcCount": 60,
+    "dlcCredited": 732,
+    "dlcCount": 61,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -499,8 +499,8 @@
    "now": {
     "dealsWon": 2,
     "bookedMrr": 3000,
-    "dlcPaid": 50,
-    "dlcAmount": 600
+    "dlcPaid": 51,
+    "dlcAmount": 612
    },
    "prev": {
     "dealsWon": 6,
