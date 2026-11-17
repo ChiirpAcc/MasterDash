@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v31",
-  "builtAt": "2026-11-17T01:55:34.374Z",
+  "version": "sk-v33",
+  "builtAt": "2026-11-17T02:00:37.812Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -369,37 +369,23 @@
    "count": 28,
    "mrr": 22061
   },
-  "retainedSoFar": 0.98,
-  "retainedIfAllEnd": 0.947,
-  "nrr": {
-   "bom": 718766.39,
-   "upgrades": 5762.5,
-   "downgrades": -5300,
-   "churn": -20092,
-   "lapsed": -6300,
-   "mrrNow": 700585.89,
-   "eomMrr": 676205.89,
-   "recovered": 3899,
-   "newMrr": 3850,
-   "reactivation": 0,
-   "endingThisMonth": 24380,
-   "endingAlreadyCounted": 0,
-   "soFar": 0.971,
-   "eom": 0.937,
-   "eomWithNew": 0.942,
-   "grr": 0.957,
-   "source": "SaaS Metrics Dashboard",
-   "built": "2026-11-15 06:14",
-   "trailing": [
-    {
-     "month": "2026-09",
-     "nrr": 0.924
-    },
-    {
-     "month": "2026-10",
-     "nrr": 0.929
-    }
-   ]
-  }
+  "lostSoFar": 21681,
+  "retainedSoFar": 0.97,
+  "retainedIfAllEnd": 0.937,
+  "eomMrr": 698176.89,
+  "trailing": [
+   {
+    "month": "2026-09",
+    "kept": 0.939,
+    "bom": 792572.38,
+    "lost": 48081.5
+   },
+   {
+    "month": "2026-10",
+    "kept": 0.931,
+    "bom": 760881.43,
+    "lost": 52814.51
+   }
+  ]
  }
 }
