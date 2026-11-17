@@ -122,6 +122,7 @@
   .list .why.warn { color: var(--dlc); }
   .list .side { color: var(--soft); font-size: calc(var(--u) * .92); text-align: right; white-space: nowrap; }
   .empty { color: var(--muted); padding: calc(var(--u) * 1.2) calc(var(--u) * 1.6); }
+  .list li.empty { display: block; border-top: 0; }
 
   /* ---------- screen 1 bottom: six months, one small chart per person */
   .multiples { display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); gap: calc(var(--u) * 2.4); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.1); }
@@ -158,7 +159,7 @@
   .lane .sub { grid-column: 1 / -1; color: var(--muted); font-size: calc(var(--u) * .9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .lane .sub b { color: var(--soft); font-weight: 600; }
   .spot { position: relative; background: var(--raised); border-radius: calc(var(--u) * .9); padding: calc(var(--u) * 1.5) calc(var(--u) * 1.8) calc(var(--u) * 1.2); min-height: 0; overflow: hidden; }
-  .spotin { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: calc(var(--u) * 1.1); height: 100%; transition: opacity .45s ease, transform .45s ease; }
+  .spotin { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: calc(var(--u) * 1.1); height: 100%; transition: opacity .45s ease, transform .45s ease; }
   .spotin.out { opacity: 0; transform: translateY(calc(var(--u) * .6)); }
   .spothead { display: flex; align-items: baseline; justify-content: space-between; gap: 1em; }
   .spothead h2 { margin: 0; font-weight: 740; font-size: calc(var(--u) * 3); line-height: 1; white-space: nowrap; }
@@ -172,16 +173,6 @@
   .scol .list li { padding-left: 0; padding-right: 0; grid-template-columns: calc(var(--u) * .4) minmax(0, 1fr) auto; }
   .scol .list .co { font-size: calc(var(--u) * 1.05); }
   .scol .list .v { font-size: calc(var(--u) * 1.15); }
-  .spotchart { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: calc(var(--u) * 1.2); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * .8); }
-  .spotchart .lab { color: var(--muted); font-size: calc(var(--u) * .95); align-self: center; }
-  .spotchart .bars { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: calc(var(--u) * .6); align-items: end; height: calc(var(--u) * 3.6); }
-  .spotchart .bars div { display: grid; grid-template-rows: minmax(0, 1fr) auto; height: 100%; text-align: center; }
-  .spotchart .bars i { align-self: end; display: block; background: var(--exp); border-radius: 3px 3px 1px 1px; min-height: 2px; }
-  .spotchart .bars i.now { background: var(--deal); }
-  .spotchart .bars span { color: var(--muted); font-size: calc(var(--u) * .8); margin-top: calc(var(--u) * .2); }
-  .spotchart .bars span.now { color: var(--text); font-weight: 600; }
-  .spotchart .tot { text-align: right; font-weight: 700; font-size: calc(var(--u) * 1.3); align-self: center; }
-  .spotchart .tot span { display: block; color: var(--muted); font-weight: 400; font-size: calc(var(--u) * .85); }
   .dots { position: absolute; right: calc(var(--u) * 1.8); bottom: calc(var(--u) * .5); display: flex; gap: 6px; }
   .dots i { width: calc(var(--u) * 1.3); height: 3px; border-radius: 2px; background: var(--rule); }
   .dots i.on { background: var(--text); }
@@ -268,7 +259,6 @@
           <div class="scol"><h3>Due this month <span id="sp-due-n"></span></h3><div class="win"><ul class="list" id="sp-due"></ul></div></div>
           <div class="scol"><h3>First payment issues <span id="sp-iss-n"></span></h3><div class="win"><ul class="list" id="sp-iss"></ul></div></div>
         </div>
-        <div class="spotchart" id="spotchart"></div>
       </div>
       <div class="dots" id="spotdots"></div>
     </section>
@@ -390,12 +380,10 @@
     });
 
     // ---- spotlight data: deal reps only (never the 10DLC rep)
-    var months = []; for (var k = 5; k >= 0; k--) months.push(addMonths(mk, -k));
-    var val = {}; M.rows.forEach(function (m) { val[m.ae + '|' + m.month] = m; });
     var spotReps = reps.filter(function (r) { return !isDlcRep(r); });
     var names = {}; spotReps.forEach(function (r) { names[r.ae] = 1; });
     var SP = {};
-    spotReps.forEach(function (r) { SP[r.ae] = { rep: r, paid: [], due: [], issues: [], months: months.map(function (m) { var v = val[r.ae + '|' + m]; return { m: m, v: v ? v.credited - (v.dlcCredited || 0) : 0 }; }) }; });
+    spotReps.forEach(function (r) { SP[r.ae] = { rep: r, paid: [], due: [], issues: [] }; });
     var orphanIssues = 0;
     D.rows.forEach(function (d) {
       var s2 = SP[d.ae];
@@ -457,15 +445,6 @@
         li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
         li.appendChild(el('span', 'why' + (bad ? ' bad' : ''), d.issue + (d.issueDays != null ? ', ' + d.issueDays + 'd' : ''))); li.appendChild(el('span', 'side', '')); return li;
       }, 'No first-payment problems.', 7);
-      // six months for this rep (deal MRR only)
-      var ch = $('spotchart'); ch.replaceChildren();
-      ch.appendChild(el('div', 'lab', 'Last six months'));
-      var top = Math.max.apply(null, S2.months.map(function (m) { return m.v; }).concat([1])), bars = el('div', 'bars'), sum = 0;
-      S2.months.forEach(function (m, i) { sum += m.v; var now = i === S2.months.length - 1, c = el('div'), bi = el('i', now ? 'now' : '');
-        bi.style.height = m.v ? Math.max(4, 100 * m.v / top) + '%' : '0'; c.appendChild(bi);
-        c.appendChild(el('span', now ? 'now' : '', now ? money.format(m.v) : monthOf(m.m).slice(0, 3))); bars.appendChild(c); });
-      ch.appendChild(bars);
-      var tot = el('div', 'tot wide', money.format(sum)); tot.appendChild(el('span', null, '6 months')); ch.appendChild(tot);
       // dots and the race highlight
       var dots = $('spotdots'); dots.replaceChildren(); spot.order.forEach(function (n, i) { dots.appendChild(el('i', i === spot.idx ? 'on' : '')); });
       [].forEach.call(document.querySelectorAll('#reps .lane'), function (l) { l.classList.toggle('on', l.dataset.ae === ae); });
