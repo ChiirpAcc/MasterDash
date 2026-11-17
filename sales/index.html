@@ -68,6 +68,7 @@
   .fact { display: flex; align-items: baseline; gap: .6em; }
   .fact b { font-weight: 700; font-size: calc(var(--u) * 2.1); min-width: 2.2em; }
   .fact span { color: var(--muted); font-size: calc(var(--u) * 1.05); }
+  .fact span small { font-size: .82em; opacity: .85; }
   .fact.warn b { color: var(--late); }
 
   .race { display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); gap: calc(var(--u) * 1.6); min-height: 0;
@@ -271,15 +272,21 @@
 
     // ---- hero
     var t = S.team.thisMonth, tp = S.team.pending || {}, ta = S.team.awaiting || {}, hero = $('hero'); hero.replaceChildren();
-    hero.appendChild(el('div', 'lab', 'Collected this month'));
-    hero.appendChild(el('div', 'big wide', money.format(t.credited)));
-    if (tp.amount) { var ex = el('div', 'exp'); var sw = el('i', 'hatch'); ex.appendChild(sw); ex.appendChild(el('b', null, '+' + money.format(tp.amount)));
-                     ex.appendChild(document.createTextNode(' expected this month')); hero.appendChild(ex); }
+    // 10DLC fees are not MRR: the big number is new MRR from deals only; 10DLC is its own line.
+    var dealMrr = (t.newCredited || 0) + (t.expCredited || 0), dlc = t.dlcCredited || 0;
+    if (!dealMrr && t.credited && !dlc) dealMrr = t.credited;
+    var dealExp = tp.dealAmount != null ? tp.dealAmount : (tp.amount || 0) - (tp.dlcAmount || 0);
+    hero.appendChild(el('div', 'lab', 'New MRR collected this month'));
+    hero.appendChild(el('div', 'big wide', money.format(dealMrr)));
+    if (dealExp > 0) { var ex = el('div', 'exp'); var sw = el('i', 'hatch'); ex.appendChild(sw); ex.appendChild(el('b', null, '+' + money.format(dealExp)));
+                       ex.appendChild(document.createTextNode(' expected this month')); hero.appendChild(ex); }
     var facts = el('div', 'facts');
-    [[t.dealsCollected, t.dealsCollected === 1 ? 'deal paid' : 'deals paid', ''],
-     [t.dlcCount || 0, '10DLC increases paid', '']].forEach(function (f) {
-      if (f[1].indexOf('10DLC') > -1 && !f[0]) return;
-      var d = el('div', 'fact ' + f[2]); d.appendChild(el('b', 'wide', String(f[0]))); d.appendChild(el('span', null, f[1])); facts.appendChild(d);
+    [[String(t.dealsCollected), t.dealsCollected === 1 ? 'deal paid' : 'deals paid', '', ''],
+     [money.format(dlc), '10DLC fees collected (not MRR)', '', (t.dlcCount || 0) + ' increases' + ((tp.dlcAmount || 0) > 0 ? ', +' + money.format(tp.dlcAmount) + ' this month' : '')]].forEach(function (f) {
+      if (f[1].indexOf('10DLC') > -1 && !dlc && !(tp.dlcAmount > 0)) return;
+      var d = el('div', 'fact ' + f[2]); d.appendChild(el('b', 'wide', f[0]));
+      var lab = el('span', null, f[1]); if (f[3]) { lab.appendChild(el('br')); lab.appendChild(el('small', null, f[3])); }
+      d.appendChild(lab); facts.appendChild(d);
     });
     hero.appendChild(facts);
 
@@ -310,7 +317,7 @@
       who.appendChild(nm);
       var bits = [];
       if (x.dealsCollected) bits.push(plural(x.dealsCollected, 'deal paid', 'deals paid'));
-      if (x.dlcCount) bits.push(plural(x.dlcCount, '10DLC fee', '10DLC fees'));
+      if (x.dlcCount) bits.push(plural(x.dlcCount, '10DLC fee', '10DLC fees') + ' (not MRR)');
       if (!bits.length) bits.push('Nothing collected yet');
       who.appendChild(el('div', 'dt', bits.join(', ')));
       if (recent[r.ae]) {
@@ -371,7 +378,7 @@
     });
     foot.appendChild(grid);
     var fl = el('div', 'foot narrow');
-    fl.appendChild(el('span', null, 'Revenue counts in the month it’s collected: a deal’s first month of MRR when the customer first pays; a 10DLC price increase when its $12 is first paid.'));
+    fl.appendChild(el('span', null, 'Revenue counts in the month it’s collected: a deal’s first month of MRR when the customer first pays. 10DLC fees are not MRR; a 10DLC price increase counts as a fee when its $12 is first paid.'));
     var key = el('span', 'key'); var k1 = el('span'); k1.appendChild(el('i')); k1.appendChild(document.createTextNode('Collected'));
     var k2 = el('span'); k2.appendChild(el('i', 'hatch')); k2.appendChild(document.createTextNode('Expected this month')); key.appendChild(k1); key.appendChild(k2);
     fl.appendChild(key); foot.appendChild(fl);
