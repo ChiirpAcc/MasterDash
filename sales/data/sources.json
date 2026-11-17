@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v45",
-  "builtAt": "2026-11-17T21:17:54.904Z",
+  "builtAt": "2026-11-17T21:23:01.228Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,7 +37,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 7999,
+   "total": 9749,
    "mediums": [
     {
      "medium": "Events",
@@ -46,8 +46,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 3637,
-     "deals": 3
+     "credited": 4387,
+     "deals": 4
     },
     {
      "medium": "Webinars",
@@ -56,8 +56,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 1000,
-     "deals": 2
+     "credited": 2000,
+     "deals": 3
     },
     {
      "medium": "Untagged",
@@ -97,21 +97,27 @@
      "deals": 1
     },
     {
-     "source": "2026 - HSF Freedom",
-     "medium": "Events",
-     "credited": 512,
+     "source": "Direct Traffic",
+     "medium": "Digital",
+     "credited": 1000,
      "deals": 1
     },
     {
-     "source": "Tool Vault",
+     "source": "Parker Joos",
      "medium": "Partners and referrals",
-     "credited": 500,
+     "credited": 750,
+     "deals": 1
+    },
+    {
+     "source": "2026 - HSF Freedom",
+     "medium": "Events",
+     "credited": 512,
      "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 344491.4,
+   "total": 346241.4,
    "mediums": [
     {
      "medium": "Events",
@@ -120,8 +126,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 105807.25,
-     "deals": 115
+     "credited": 106557.25,
+     "deals": 116
     },
     {
      "medium": "Webinars",
@@ -130,8 +136,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 67999,
-     "deals": 63
+     "credited": 68999,
+     "deals": 64
     },
     {
      "medium": "Untagged",

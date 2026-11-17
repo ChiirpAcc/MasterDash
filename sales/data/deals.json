@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v45",
-  "builtAt": "2026-11-17T21:17:54.904Z",
+  "builtAt": "2026-11-17T21:23:01.228Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4121,15 +4121,15 @@
    "type": "New Business",
    "close": "2026-11-16",
    "booked": 1000,
-   "status": "No Stripe link",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-17",
+   "credited": 1000,
+   "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
-   "issue": "No Stripe link in HubSpot",
-   "issueDays": 1
+   "issue": "",
+   "issueDays": null
   },
   {
    "ae": "Ky Decker",
@@ -4153,15 +4153,15 @@
    "type": "New Business",
    "close": "2026-11-17",
    "booked": 750,
-   "status": "No Stripe link",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-17",
+   "credited": 750,
+   "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
-   "issue": "No Stripe link in HubSpot",
-   "issueDays": 0
+   "issue": "",
+   "issueDays": null
   },
   {
    "ae": "Ky Decker",
