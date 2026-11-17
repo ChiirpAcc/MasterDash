@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v12",
-  "builtAt": "2026-11-17T00:31:02.450Z",
+  "version": "sk-v16",
+  "builtAt": "2026-11-17T00:49:20.681Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -1889,11 +1889,11 @@
    "type": "New Business",
    "close": "2026-07-01",
    "booked": 1500,
-   "status": "Collected",
-   "creditedMonth": "2026-07",
-   "credited": 1500,
-   "daysToCollect": 0,
-   "waitingDays": null
+   "status": "Not paid after 60 days",
+   "creditedMonth": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 138
   },
   {
    "ae": "Blake Fenn",
