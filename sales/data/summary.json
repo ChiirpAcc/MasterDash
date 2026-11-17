@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v6",
-  "builtAt": "2026-11-16T23:55:53.694Z",
+  "builtAt": "2026-11-17T00:08:58.526Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -69,10 +69,10 @@
    "avgDaysToCollect": 32
   },
   "ytd": {
-   "credited": 351025.4,
+   "credited": 351061.4,
    "newCredited": 332129.9,
-   "dlcCredited": 816,
-   "dlcCount": 67,
+   "dlcCredited": 852,
+   "dlcCount": 70,
    "expCredited": 18079.5,
    "dealsCollected": 355,
    "dealsWon": 424,
@@ -313,10 +313,10 @@
     "avgDaysToCollect": null
    },
    "ytd": {
-    "credited": 816,
+    "credited": 852,
     "newCredited": 0,
-    "dlcCredited": 816,
-    "dlcCount": 67,
+    "dlcCredited": 852,
+    "dlcCount": 70,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
