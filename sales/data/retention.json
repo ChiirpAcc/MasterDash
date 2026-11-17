@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v29",
-  "builtAt": "2026-11-17T01:46:41.269Z",
+  "version": "sk-v31",
+  "builtAt": "2026-11-17T01:52:59.753Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -377,6 +377,8 @@
    "downgrades": -5300,
    "churn": -20092,
    "lapsed": -6300,
+   "mrrNow": 700585.89,
+   "eomMrr": 676205.89,
    "recovered": 3899,
    "newMrr": 3850,
    "reactivation": 0,
