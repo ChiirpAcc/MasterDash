@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v6",
-  "builtAt": "2026-11-16T23:55:53.694Z",
+  "builtAt": "2026-11-17T00:08:58.526Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -46,6 +46,18 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
+  },
+  {
+   "ae": "Josh Anderson",
+   "month": "2026-01",
+   "won": 0,
+   "booked": 0,
+   "collectedDeals": 0,
+   "credited": 12,
+   "newCredited": 0,
+   "expCredited": 0,
+   "dlcCredited": 12,
+   "dlcCount": 1
   },
   {
    "ae": "Ky Decker",
@@ -108,6 +120,18 @@
    "dlcCount": 0
   },
   {
+   "ae": "Josh Anderson",
+   "month": "2026-02",
+   "won": 0,
+   "booked": 0,
+   "collectedDeals": 0,
+   "credited": 144,
+   "newCredited": 0,
+   "expCredited": 0,
+   "dlcCredited": 144,
+   "dlcCount": 12
+  },
+  {
    "ae": "Ky Decker",
    "month": "2026-02",
    "won": 7,
@@ -166,6 +190,18 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
+  },
+  {
+   "ae": "Josh Anderson",
+   "month": "2026-03",
+   "won": 0,
+   "booked": 0,
+   "collectedDeals": 0,
+   "credited": 48,
+   "newCredited": 0,
+   "expCredited": 0,
+   "dlcCredited": 48,
+   "dlcCount": 4
   },
   {
    "ae": "Ky Decker",
@@ -233,11 +269,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 120,
+   "credited": 36,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 120,
-   "dlcCount": 9
+   "dlcCredited": 36,
+   "dlcCount": 2
   },
   {
    "ae": "Ky Decker",
@@ -298,18 +334,6 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
-  },
-  {
-   "ae": "Josh Anderson",
-   "month": "2026-05",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 72,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 72,
-   "dlcCount": 6
   },
   {
    "ae": "Ky Decker",
@@ -509,11 +533,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 36,
+   "credited": 24,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 36,
-   "dlcCount": 3
+   "dlcCredited": 24,
+   "dlcCount": 2
   },
   {
    "ae": "Ky Decker",
