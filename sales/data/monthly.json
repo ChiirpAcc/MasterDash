@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v6",
-  "builtAt": "2026-11-17T00:08:58.526Z",
+  "version": "sk-v10",
+  "builtAt": "2026-11-17T00:26:57.926Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -46,18 +46,6 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
-  },
-  {
-   "ae": "Josh Anderson",
-   "month": "2026-01",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 12,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 12,
-   "dlcCount": 1
   },
   {
    "ae": "Ky Decker",
@@ -120,18 +108,6 @@
    "dlcCount": 0
   },
   {
-   "ae": "Josh Anderson",
-   "month": "2026-02",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 144,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 144,
-   "dlcCount": 12
-  },
-  {
    "ae": "Ky Decker",
    "month": "2026-02",
    "won": 7,
@@ -192,18 +168,6 @@
    "dlcCount": 0
   },
   {
-   "ae": "Josh Anderson",
-   "month": "2026-03",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 48,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 48,
-   "dlcCount": 4
-  },
-  {
    "ae": "Ky Decker",
    "month": "2026-03",
    "won": 11,
@@ -262,18 +226,6 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
-  },
-  {
-   "ae": "Josh Anderson",
-   "month": "2026-04",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 36,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 36,
-   "dlcCount": 2
   },
   {
    "ae": "Ky Decker",
@@ -456,18 +408,6 @@
    "dlcCount": 0
   },
   {
-   "ae": "Josh Anderson",
-   "month": "2026-07",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 156,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 156,
-   "dlcCount": 13
-  },
-  {
    "ae": "Ky Decker",
    "month": "2026-07",
    "won": 13,
@@ -526,18 +466,6 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
-  },
-  {
-   "ae": "Josh Anderson",
-   "month": "2026-08",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 24,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 24,
-   "dlcCount": 2
   },
   {
    "ae": "Ky Decker",
@@ -600,18 +528,6 @@
    "dlcCount": 0
   },
   {
-   "ae": "Josh Anderson",
-   "month": "2026-09",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 12,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 12,
-   "dlcCount": 1
-  },
-  {
    "ae": "Ky Decker",
    "month": "2026-09",
    "won": 9,
@@ -658,18 +574,6 @@
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
-  },
-  {
-   "ae": "Josh Anderson",
-   "month": "2026-10",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 0,
-   "credited": 12,
-   "newCredited": 0,
-   "expCredited": 0,
-   "dlcCredited": 12,
-   "dlcCount": 1
   },
   {
    "ae": "Ky Decker",
@@ -725,11 +629,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 408,
+   "credited": 624,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 408,
-   "dlcCount": 34
+   "dlcCredited": 624,
+   "dlcCount": 52
   },
   {
    "ae": "Ky Decker",
