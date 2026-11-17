@@ -76,7 +76,7 @@
 
   .race { display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); gap: calc(var(--u) * 1.6); min-height: 0;
           border-left: 1px solid var(--rule); border-right: 1px solid var(--rule); padding: 0 calc(var(--u) * 1.6); }
-  .col { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr) calc(var(--u) * 8.6); justify-items: center; min-height: 0; min-width: 0; padding-top: calc(var(--u) * .4); }
+  .col { position: relative; display: grid; grid-template-rows: auto minmax(calc(var(--u) * 5), .8fr) auto minmax(0, 1.15fr); justify-items: center; min-height: 0; min-width: 0; padding-top: calc(var(--u) * .4); }
   .col::before { content: ""; position: absolute; inset: 0 -12%; border-radius: calc(var(--u) * .8);
                  background: radial-gradient(60% 45% at 50% 60%, rgba(122,167,255,.10), transparent 70%); opacity: 0;
                  animation: glow 44s linear infinite; animation-delay: var(--d, 0s); pointer-events: none; }
@@ -86,11 +86,23 @@
   .tube { position: relative; width: min(62%, calc(var(--u) * 6.5)); margin: calc(var(--u) * 1) 0; background: var(--track); border-radius: calc(var(--u) * .6); overflow: hidden; min-height: 0; }
   .tube i { position: absolute; left: 0; right: 0; bottom: 0; height: 0; transition: height 1.4s cubic-bezier(.2,.8,.2,1), bottom 1.4s cubic-bezier(.2,.8,.2,1); }
   .tube i.hatch { opacity: .8; }
-  .col .who { text-align: center; align-self: start; width: 100%; min-width: 0; max-height: 100%; overflow: hidden; }
+  .col .who { text-align: center; align-self: start; width: 100%; min-width: 0; overflow: hidden; }
   .col .who .nm { font-weight: 640; font-size: calc(var(--u) * 1.6); line-height: 1.1; white-space: nowrap; }
   .col .who .rk { color: var(--muted); font-weight: 500; margin-right: .35em; }
   .col .who .dt { color: var(--muted); font-size: calc(var(--u) * .95); margin-top: calc(var(--u) * .3); white-space: nowrap; }
   .col .who .dt.warn { color: var(--late); }
+  .dwin { width: 100%; min-height: 0; overflow: hidden; margin-top: calc(var(--u) * .6); border-top: 1px solid var(--rule);
+          -webkit-mask-image: linear-gradient(transparent, #000 8%, #000 86%, transparent); mask-image: linear-gradient(transparent, #000 8%, #000 86%, transparent); }
+  .dl { list-style: none; margin: 0; padding: 0; }
+  .dl.moving { animation: feed var(--feedtime, 40s) linear infinite; }
+  .dl li { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: .5em; padding: calc(var(--u) * .45) 0; border-bottom: 1px solid var(--rule); text-align: left; }
+  .dl .dco { font-size: calc(var(--u) * .88); color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .dl .dv { font-size: calc(var(--u) * .88); font-weight: 650; text-align: right; }
+  .dl .dwhen { grid-column: 1 / -1; font-size: calc(var(--u) * .75); color: var(--muted); }
+  .dl li.due .dco, .dl li.due .dv { color: var(--soft); }
+  .dl li.due .dwhen { color: var(--deal); }
+  .dl li.none { display: block; color: var(--muted); font-size: calc(var(--u) * .85); border: 0; text-align: center; }
+  .list .why.bad { color: var(--late); }
   .col .who .owed { margin-top: calc(var(--u) * .3); color: var(--muted); font-size: calc(var(--u) * .8); line-height: 1.35; opacity: .85; }
   .col .who .owed div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
   .col .who .owed .more { font-style: italic; }
@@ -127,6 +139,52 @@
   .foot { color: var(--muted); font-size: calc(var(--u) * .85); margin-top: calc(var(--u) * .9); display: flex; justify-content: space-between; gap: 2em; }
   .key { display: flex; gap: 1.4em; white-space: nowrap; }
   .key i { display: inline-block; width: 1.6em; height: .6em; border-radius: 99px; margin-right: .45em; vertical-align: middle; background-color: var(--deal); }
+
+  /* ---------- screen 1, spotlight layout */
+  .s1main { grid-template-columns: minmax(0, .9fr) minmax(0, 2.1fr) !important; }
+  .left { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: calc(var(--u) * 1.4); min-height: 0; }
+  .left .hero { justify-content: flex-start; gap: calc(var(--u) * .6); }
+  .left .hero .big { font-size: calc(var(--u) * 4.2); }
+  .left .facts { padding-top: calc(var(--u) * .8); }
+  .race2 { display: grid; align-content: start; gap: calc(var(--u) * 1.1); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.1); min-height: 0; }
+  .lane { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: calc(var(--u) * .3) calc(var(--u) * .8); padding: calc(var(--u) * .45) calc(var(--u) * .7);
+          border-radius: calc(var(--u) * .5); border-left: 3px solid transparent; transition: background .5s, border-color .5s; }
+  .lane.on { background: var(--raised); border-left-color: var(--deal); }
+  .lane .nm { font-weight: 640; font-size: calc(var(--u) * 1.35); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lane .nm .rk { color: var(--muted); font-weight: 500; margin-right: .4em; }
+  .lane .amt { font-weight: 720; font-size: calc(var(--u) * 1.5); text-align: right; white-space: nowrap; }
+  .lane .lbar { grid-column: 1 / -1; position: relative; height: calc(var(--u) * .55); background: var(--track); border-radius: 99px; overflow: hidden; }
+  .lane .lbar i { position: absolute; top: 0; bottom: 0; left: 0; width: 0; border-radius: 99px; transition: width 1.2s cubic-bezier(.2,.8,.2,1), left 1.2s cubic-bezier(.2,.8,.2,1); }
+  .lane .sub { grid-column: 1 / -1; color: var(--muted); font-size: calc(var(--u) * .9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lane .sub b { color: var(--soft); font-weight: 600; }
+  .spot { position: relative; background: var(--raised); border-radius: calc(var(--u) * .9); padding: calc(var(--u) * 1.5) calc(var(--u) * 1.8) calc(var(--u) * 1.2); min-height: 0; overflow: hidden; }
+  .spotin { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: calc(var(--u) * 1.1); height: 100%; transition: opacity .45s ease, transform .45s ease; }
+  .spotin.out { opacity: 0; transform: translateY(calc(var(--u) * .6)); }
+  .spothead { display: flex; align-items: baseline; justify-content: space-between; gap: 1em; }
+  .spothead h2 { margin: 0; font-weight: 740; font-size: calc(var(--u) * 3); line-height: 1; white-space: nowrap; }
+  .spothead .stats { color: var(--muted); font-size: calc(var(--u) * 1.1); text-align: right; }
+  .spothead .stats b { color: var(--text); font-weight: 700; font-size: calc(var(--u) * 1.8); margin-right: .25em; }
+  .spothead .stats .due b { color: var(--soft); font-size: calc(var(--u) * 1.3); }
+  .spotcols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--u) * 1.6); min-height: 0; }
+  .scol { display: grid; grid-template-rows: auto minmax(0, 1fr); min-height: 0; border-top: 1px solid var(--rule); }
+  .scol h3 { margin: 0; padding: calc(var(--u) * .7) 0 calc(var(--u) * .3); font-weight: 640; font-size: calc(var(--u) * 1.1); }
+  .scol h3 span { color: var(--muted); font-weight: 500; margin-left: .4em; }
+  .scol .list li { padding-left: 0; padding-right: 0; grid-template-columns: calc(var(--u) * .4) minmax(0, 1fr) auto; }
+  .scol .list .co { font-size: calc(var(--u) * 1.05); }
+  .scol .list .v { font-size: calc(var(--u) * 1.15); }
+  .spotchart { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: calc(var(--u) * 1.2); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * .8); }
+  .spotchart .lab { color: var(--muted); font-size: calc(var(--u) * .95); align-self: center; }
+  .spotchart .bars { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: calc(var(--u) * .6); align-items: end; height: calc(var(--u) * 3.6); }
+  .spotchart .bars div { display: grid; grid-template-rows: minmax(0, 1fr) auto; height: 100%; text-align: center; }
+  .spotchart .bars i { align-self: end; display: block; background: var(--exp); border-radius: 3px 3px 1px 1px; min-height: 2px; }
+  .spotchart .bars i.now { background: var(--deal); }
+  .spotchart .bars span { color: var(--muted); font-size: calc(var(--u) * .8); margin-top: calc(var(--u) * .2); }
+  .spotchart .bars span.now { color: var(--text); font-weight: 600; }
+  .spotchart .tot { text-align: right; font-weight: 700; font-size: calc(var(--u) * 1.3); align-self: center; }
+  .spotchart .tot span { display: block; color: var(--muted); font-weight: 400; font-size: calc(var(--u) * .85); }
+  .dots { position: absolute; right: calc(var(--u) * 1.8); bottom: calc(var(--u) * .5); display: flex; gap: 6px; }
+  .dots i { width: calc(var(--u) * 1.3); height: 3px; border-radius: 2px; background: var(--rule); }
+  .dots i.on { background: var(--text); }
 
   /* ---------- screen 2: retention */
   .s2main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.05fr); gap: calc(var(--u) * 2.2); min-height: 0; }
@@ -198,11 +256,21 @@
     <p id="monthsub">Loading the latest numbers</p>
   </div>
   <div class="s1main" id="main">
-    <section class="hero" aria-label="Team this month" id="hero"></section>
-    <section class="race" id="reps" aria-label="New revenue collected by person"></section>
-    <section class="feedcol" aria-labelledby="feedh">
-      <div class="feedhead"><h2 id="feedh">Just collected</h2><span id="feedcount"></span></div>
-      <div class="win"><ul class="list" id="feed"></ul></div>
+    <section class="left">
+      <div class="hero" aria-label="Team this month" id="hero"></div>
+      <div class="race2" id="reps" aria-label="New revenue collected by person"></div>
+    </section>
+    <section class="spot" id="spot" aria-live="polite">
+      <div class="spotin" id="spotin">
+        <div class="spothead" id="spothead"></div>
+        <div class="spotcols">
+          <div class="scol"><h3>Paid this month <span id="sp-paid-n"></span></h3><div class="win"><ul class="list" id="sp-paid"></ul></div></div>
+          <div class="scol"><h3>Due this month <span id="sp-due-n"></span></h3><div class="win"><ul class="list" id="sp-due"></ul></div></div>
+          <div class="scol"><h3>First payment issues <span id="sp-iss-n"></span></h3><div class="win"><ul class="list" id="sp-iss"></ul></div></div>
+        </div>
+        <div class="spotchart" id="spotchart"></div>
+      </div>
+      <div class="dots" id="spotdots"></div>
     </section>
   </div>
   <footer id="foot"></footer>
@@ -298,99 +366,115 @@
     });
     hero.appendChild(facts);
 
-    // ---- race: one column per person, solid = collected, hatched = expected
+    // ---- race: one lane per person (Josh included), solid = collected, hatched = expected this month
     var reps = S.reps.filter(function (r) { return r.onRoster; })
                      .sort(function (a, b) { return b.thisMonth.credited - a.thisMonth.credited || (a.ae < b.ae ? -1 : 1); });
     var max = Math.max.apply(null, reps.map(function (r) { return r.thisMonth.credited + ((r.pending && r.pending.amount) || 0); }).concat([1]));
-    // Recent unpaid wins only (won in the last 30 days, not paid yet). Older ones stay off the screen.
-    var cutoff = new Date(now.getTime() - 30 * 86400000), cut = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).padStart(2, '0') + '-' + String(cutoff.getDate()).padStart(2, '0');
-    var recent = {};
-    D.rows.filter(function (d) { return d.status !== 'Collected' && d.status !== 'No Stripe link' && d.close >= cut; })
-      .sort(function (a, b) { return a.close < b.close ? 1 : -1; })
-      .forEach(function (d) { (recent[d.ae] = recent[d.ae] || []).push(d.company || 'Unnamed company'); });
-    var race = $('reps'); race.replaceChildren(); race.style.setProperty('--n', reps.length);
+    var race = $('reps'); race.replaceChildren();
+    var isDlcRep = function (r) { var x = r.thisMonth, pd = r.pending || {};
+      return (x.dlcCredited || 0) + (pd.dlcAmount || 0) > (x.newCredited || 0) + (x.expCredited || 0) + (pd.dealAmount || 0); };
     reps.forEach(function (r, i) {
-      var x = r.thisMonth, pd = r.pending || {}, isDlc = (x.dlcCredited || 0) + (pd.dlcAmount || 0) > (x.newCredited || 0) + (x.expCredited || 0) + (pd.dealAmount || 0);
-      var col = el('div', 'col'); col.style.setProperty('--d', (i * 11) + 's');
-      var head = el('div'); head.style.textAlign = 'center';
-      head.appendChild(el('div', 'amt wide', money.format(x.credited)));
-      var pl = el('div', 'plus'); if (pd.amount) { pl.appendChild(el('b', null, '+' + money.format(pd.amount))); pl.appendChild(document.createTextNode(' this month')); } else pl.textContent = '\u00a0';
-      head.appendChild(pl); col.appendChild(head);
-      var tube = el('div', 'tube'); tube.setAttribute('role', 'img');
-      tube.setAttribute('aria-label', nice(r.ae) + ': ' + money.format(x.credited) + ' collected' + (pd.amount ? ', ' + money.format(pd.amount) + ' expected' : ''));
-      var solid = el('i'), hatch = el('i', 'hatch'), color = isDlc ? C.dlc : C.deal;
-      solid.style.backgroundColor = color; hatch.style.backgroundColor = color;
-      tube.appendChild(solid); tube.appendChild(hatch); col.appendChild(tube);
-      var who = el('div', 'who'), nm = el('div', 'nm'); nm.appendChild(el('span', 'rk', String(i + 1))); nm.appendChild(document.createTextNode(first(r.ae)));
-      who.appendChild(nm);
-      var bits = [];
-      if (x.dealsCollected) bits.push(plural(x.dealsCollected, 'deal paid', 'deals paid'));
-      if (x.dlcCount) bits.push(plural(x.dlcCount, '10DLC fee', '10DLC fees') + ' (not MRR)');
-      if (!bits.length) bits.push('Nothing collected yet');
-      who.appendChild(el('div', 'dt', bits.join(', ')));
-      if (recent[r.ae]) {
-        var names = recent[r.ae];
-        who.appendChild(el('div', 'dt', names.length + ' awaiting payment'));
-        var list = el('div', 'owed');
-        names.slice(0, 2).forEach(function (n) { list.appendChild(el('div', null, n)); });
-        if (names.length > 2) list.appendChild(el('div', 'more', '+' + (names.length - 2) + ' more'));
-        who.appendChild(list);
-      }
-      col.appendChild(who); race.appendChild(col);
-      var hSolid = 100 * x.credited / max, hHatch = 100 * (pd.amount || 0) / max;
-      requestAnimationFrame(function () { requestAnimationFrame(function () {
-        solid.style.height = hSolid + '%'; hatch.style.bottom = hSolid + '%'; hatch.style.height = hHatch + '%';
-      }); });
+      var x = r.thisMonth, pd = r.pending || {}, dlcRep = isDlcRep(r), color = dlcRep ? C.dlc : C.deal;
+      var lane = el('div', 'lane'); lane.dataset.ae = r.ae;
+      var nm = el('div', 'nm'); nm.appendChild(el('span', 'rk', String(i + 1))); nm.appendChild(document.createTextNode(nice(r.ae))); lane.appendChild(nm);
+      lane.appendChild(el('div', 'amt wide', money.format(x.credited)));
+      var bar = el('div', 'lbar'), solid = el('i'), hatch = el('i', 'hatch');
+      solid.style.backgroundColor = color; hatch.style.backgroundColor = color; bar.appendChild(hatch); bar.appendChild(solid); lane.appendChild(bar);
+      var sub = el('div', 'sub');
+      if (dlcRep) sub.textContent = plural(x.dlcCount || 0, '10DLC fee', '10DLC fees') + ' (not MRR)' + (pd.amount ? ', +' + money.format(pd.amount) + ' this month' : '');
+      else { sub.appendChild(document.createTextNode(plural(x.dealsCollected || 0, 'deal paid', 'deals paid')));
+             if (pd.amount) { sub.appendChild(document.createTextNode(', ')); sub.appendChild(el('b', null, '+' + money.format(pd.amount))); sub.appendChild(document.createTextNode(' this month')); } }
+      lane.appendChild(sub); race.appendChild(lane);
+      var wS = 100 * x.credited / max, wH = 100 * (pd.amount || 0) / max;
+      requestAnimationFrame(function () { requestAnimationFrame(function () { solid.style.width = wS + '%'; hatch.style.left = wS + '%'; hatch.style.width = wH + '%'; }); });
     });
 
-    // ---- feed
-    // Newest collection first; the date shown is when the money came in, not when the deal was won.
-    var items = D.rows.filter(function (d) { return d.status === 'Collected' && d.creditedMonth === mk; })
-      .sort(function (a, b) { var x = a.collectedDate || a.creditedMonth + '-00', y = b.collectedDate || b.creditedMonth + '-00'; return x < y ? 1 : x > y ? -1 : (a.close < b.close ? 1 : -1); })
-      .map(function (d) { return { color: d.type === 'Expansion' ? C.exp : C.deal, co: d.company || 'Unnamed company', v: money.format(d.credited),
-                                   why: (d.type === 'Expansion' ? 'Expansion' : 'New business') + ', collected ' + (d.collectedDate ? day(d.collectedDate) : 'in ' + monthOf(mk)), who: nice(d.ae) }; });
-    var owner = reps.filter(function (r) { return r.thisMonth.dlcCount; })[0];
-    if (owner) items.splice(Math.min(1, items.length), 0, { color: C.dlc, co: plural(owner.thisMonth.dlcCount, 'account', 'accounts'),
-      v: money.format(owner.thisMonth.dlcCredited), why: '10DLC price increase', who: nice(owner.ae) });
-    $('feedcount').textContent = items.length ? plural(items.length, 'line', 'lines') : '';
-    fillList($('feed'), items, function (it) {
-      var li = el('li'); var tk = el('span', 'tick'); tk.style.background = it.color; li.appendChild(tk);
-      li.appendChild(el('span', 'co', it.co)); li.appendChild(el('span', 'v wide', it.v));
-      li.appendChild(el('span', 'why', it.why)); li.appendChild(el('span', 'side', it.who)); return li;
-    }, 'Nothing collected yet this month.', 9);
-
-    // ---- six months, a small chart per person
+    // ---- spotlight data: deal reps only (never the 10DLC rep)
     var months = []; for (var k = 5; k >= 0; k--) months.push(addMonths(mk, -k));
     var val = {}; M.rows.forEach(function (m) { val[m.ae + '|' + m.month] = m; });
-    var top = 1; reps.forEach(function (r) { months.forEach(function (m) { var v = val[r.ae + '|' + m]; if (v && v.credited - (v.dlcCredited || 0) > top) top = v.credited - (v.dlcCredited || 0); }); });
+    var spotReps = reps.filter(function (r) { return !isDlcRep(r); });
+    var names = {}; spotReps.forEach(function (r) { names[r.ae] = 1; });
+    var SP = {};
+    spotReps.forEach(function (r) { SP[r.ae] = { rep: r, paid: [], due: [], issues: [], months: months.map(function (m) { var v = val[r.ae + '|' + m]; return { m: m, v: v ? v.credited - (v.dlcCredited || 0) : 0 }; }) }; });
+    var orphanIssues = 0;
+    D.rows.forEach(function (d) {
+      var s2 = SP[d.ae];
+      if (d.issue && !s2) { orphanIssues++; return; }
+      if (!s2) return;
+      if (d.status === 'Collected' && d.creditedMonth === mk) s2.paid.push(d);
+      else if (d.status === 'Awaiting first payment' && d.billsThisMonth && !d.issue) s2.due.push(d);
+      if (d.issue) s2.issues.push(d);
+    });
+    spotReps.forEach(function (r) { var s2 = SP[r.ae];
+      s2.paid.sort(function (a, b) { return (b.collectedDate || '') < (a.collectedDate || '') ? -1 : 1; });
+      s2.due.sort(function (a, b) { return (b.booked || 0) - (a.booked || 0); });
+      s2.issues.sort(function (a, b) { return (/failed|stuck/i.test(b.issue) ? 1 : 0) - (/failed|stuck/i.test(a.issue) ? 1 : 0) || (b.issueDays || 0) - (a.issueDays || 0); });
+    });
+    spot.order = spotReps.map(function (r) { return r.ae; }); spot.data = SP; spot.mk = mk;
+    renderSpot(false);
+
+    // ---- footnote and key
     var foot = $('foot'); foot.replaceChildren();
-    // Six-month charts are for deal revenue: leave out anyone whose credit is all 10DLC.
-    var dealReps = reps.filter(function (r) {
-      var deals = months.reduce(function (s, m) { var v = val[r.ae + '|' + m]; return s + (v ? v.credited - (v.dlcCredited || 0) : 0); }, 0);
-      return deals > 0 || (r.thisMonth.dealsCollected || 0) > 0 || ((r.pending && r.pending.dealAmount) || 0) > 0;
-    });
-    var grid = el('div', 'multiples'); grid.style.setProperty('--n', dealReps.length);
-    dealReps.forEach(function (r) {
-      var cell = el('div', 'mult'), sum = 0;
-      months.forEach(function (m) { var v = val[r.ae + '|' + m]; sum += v ? v.credited : 0; });
-      cell.appendChild(el('div', 'nm', nice(r.ae)));
-      var tot = el('div', 'tot wide', money.format(sum)); tot.appendChild(el('span', null, '6 mo')); cell.appendChild(tot);
-      var mini = el('div', 'mini'); mini.setAttribute('role', 'img'); mini.setAttribute('aria-label', nice(r.ae) + ', last six months');
-      var lab = el('div', 'mlabels');
-      months.forEach(function (m) {
-        var v = val[r.ae + '|' + m], amt = v ? v.credited : 0, isDlc = v && v.dlcCredited && v.dlcCredited > amt / 2;
-        var b = el('i', (m === mk ? 'now ' : '') + (isDlc ? 'dlc' : '')); b.style.height = amt ? Math.max(4, 100 * amt / top) + '%' : '0';
-        mini.appendChild(b); lab.appendChild(el('span', m === mk ? 'now' : '', m === mk ? money.format(amt) : monthOf(m).slice(0, 3)));
-      });
-      cell.appendChild(mini); cell.appendChild(lab); grid.appendChild(cell);
-    });
-    foot.appendChild(grid);
     var fl = el('div', 'foot narrow');
-    fl.appendChild(el('span', null, 'Revenue counts in the month it’s collected: a deal’s first month of MRR when the customer first pays. 10DLC fees are not MRR; a 10DLC price increase counts as a fee when its $12 is first paid.'));
+    fl.appendChild(el('span', null, 'Revenue counts in the month it\u2019s collected: a deal\u2019s first month of MRR when the customer first pays. 10DLC fees are not MRR. ' +
+      'The spotlight changes every 20 seconds.' + (orphanIssues ? ' ' + plural(orphanIssues, 'first-payment issue is', 'first-payment issues are') + ' on deals with no rep: see the Data Issues tab.' : '')));
     var key = el('span', 'key'); var k1 = el('span'); k1.appendChild(el('i')); k1.appendChild(document.createTextNode('Collected'));
     var k2 = el('span'); k2.appendChild(el('i', 'hatch')); k2.appendChild(document.createTextNode('Expected this month')); key.appendChild(k1); key.appendChild(k2);
     fl.appendChild(key); foot.appendChild(fl);
   }
+
+  // ======================================================= spotlight: one rep at a time, 20 seconds each
+  var spot = { order: [], data: {}, idx: 0, current: null, mk: '' };
+  function renderSpot(advance) {
+    if (!spot.order.length) { $('spothead').replaceChildren(el('h2', 'wide', 'No deals yet')); return; }
+    if (advance) spot.idx = (spot.idx + 1) % spot.order.length;
+    else { var keep = spot.order.indexOf(spot.current); spot.idx = keep > -1 ? keep : 0; }   // a data refresh keeps the same rep
+    var ae = spot.order[spot.idx], S2 = spot.data[ae], r = S2.rep, x = r.thisMonth, pd = r.pending || {};
+    var changing = spot.current !== null && spot.current !== ae; spot.current = ae;
+    var draw = function () {
+      var head = $('spothead'); head.replaceChildren();
+      head.appendChild(el('h2', 'wide', nice(r.ae)));
+      var st = el('div', 'stats');
+      var a = el('span'); a.appendChild(el('b', 'wide', money.format(x.credited))); a.appendChild(document.createTextNode(' collected, ' + plural(x.dealsCollected || 0, 'deal', 'deals')));
+      st.appendChild(a);
+      if (pd.amount) { st.appendChild(el('br')); var b = el('span', 'due'); b.appendChild(el('b', 'wide', '+' + money.format(pd.amount))); b.appendChild(document.createTextNode(' expected this month')); st.appendChild(b); }
+      head.appendChild(st);
+      $('sp-paid-n').textContent = S2.paid.length || ''; $('sp-due-n').textContent = S2.due.length || ''; $('sp-iss-n').textContent = S2.issues.length || '';
+      fillList($('sp-paid'), S2.paid, function (d) {
+        var li = el('li'); var tk = el('span', 'tick'); tk.style.background = d.type === 'Expansion' ? C.exp : C.deal; li.appendChild(tk);
+        li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.credited)));
+        li.appendChild(el('span', 'why', (d.type === 'Expansion' ? 'Expansion, ' : '') + (d.collectedDate ? 'paid ' + day(d.collectedDate) : 'paid in ' + monthOf(spot.mk))));
+        li.appendChild(el('span', 'side', '')); return li;
+      }, 'Nothing paid yet this month.', 7);
+      fillList($('sp-due'), S2.due, function (d) {
+        var li = el('li'); var tk = el('span', 'tick hatch'); tk.style.backgroundColor = C.deal; li.appendChild(tk);
+        li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
+        li.appendChild(el('span', 'why', 'won ' + day(d.close))); li.appendChild(el('span', 'side', '')); return li;
+      }, 'Nothing else due this month.', 7);
+      fillList($('sp-iss'), S2.issues, function (d) {
+        var bad = /failed|stuck/i.test(d.issue);
+        var li = el('li'); var tk = el('span', 'tick'); tk.style.background = bad ? 'var(--late)' : 'var(--dlc)'; li.appendChild(tk);
+        li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
+        li.appendChild(el('span', 'why' + (bad ? ' bad' : ''), d.issue + (d.issueDays != null ? ', ' + d.issueDays + 'd' : ''))); li.appendChild(el('span', 'side', '')); return li;
+      }, 'No first-payment problems.', 7);
+      // six months for this rep (deal MRR only)
+      var ch = $('spotchart'); ch.replaceChildren();
+      ch.appendChild(el('div', 'lab', 'Last six months'));
+      var top = Math.max.apply(null, S2.months.map(function (m) { return m.v; }).concat([1])), bars = el('div', 'bars'), sum = 0;
+      S2.months.forEach(function (m, i) { sum += m.v; var now = i === S2.months.length - 1, c = el('div'), bi = el('i', now ? 'now' : '');
+        bi.style.height = m.v ? Math.max(4, 100 * m.v / top) + '%' : '0'; c.appendChild(bi);
+        c.appendChild(el('span', now ? 'now' : '', now ? money.format(m.v) : monthOf(m.m).slice(0, 3))); bars.appendChild(c); });
+      ch.appendChild(bars);
+      var tot = el('div', 'tot wide', money.format(sum)); tot.appendChild(el('span', null, '6 months')); ch.appendChild(tot);
+      // dots and the race highlight
+      var dots = $('spotdots'); dots.replaceChildren(); spot.order.forEach(function (n, i) { dots.appendChild(el('i', i === spot.idx ? 'on' : '')); });
+      [].forEach.call(document.querySelectorAll('#reps .lane'), function (l) { l.classList.toggle('on', l.dataset.ae === ae); });
+    };
+    var inn = $('spotin');
+    if (changing) { inn.classList.add('out'); setTimeout(function () { draw(); inn.classList.remove('out'); }, 450); }
+    else draw();
+  }
+  setInterval(function () { if (spot.order.length > 1) renderSpot(true); }, 20000);
 
   // ======================================================= last refreshed clock (Mountain time: MST, MDT in summer)
   var builtAt = null;
@@ -533,14 +617,7 @@
   // ======================================================= fitting text to any screen
   // Columns and amounts must fit their space on any TV shape: shrink the race text a step at a time if not.
   function fit() {
-    var race = $('reps'), cols = [].slice.call(document.querySelectorAll('#reps .col'));
-    if (!cols.length) return;
-    function over() {
-      return cols.some(function (c) { var cb = c.getBoundingClientRect();
-        return [].some.call(c.querySelectorAll('.amt, .plus, .nm, .dt'), function (e) { var b = e.getBoundingClientRect(); return b.left < cb.left - 1 || b.right > cb.right + 1 || e.scrollWidth > e.clientWidth + 1; }); });
-    }
-    var s = 1; race.style.removeProperty('--u');
-    while (over() && s > 0.6) { s = Math.round((s - 0.04) * 100) / 100; race.style.setProperty('--u', 'calc(min(1vw, 1.75vh) * ' + s + ')'); }
+    // lanes: names trim with an ellipsis; nothing else to fit in the race now
   }
   // Big single-line figures shrink to fit their column (real font widths vary with the numbers).
   function fitWidth(e, minScale) {

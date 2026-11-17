@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v38",
-  "builtAt": "2026-11-17T18:17:54.065Z",
+  "version": "sk-v40",
+  "builtAt": "2026-11-17T18:19:08.743Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,11 +39,32 @@
   "bomMonth": "2026-10",
   "bom": 732604.06,
   "current": 721568.89,
-  "dataThrough": "2026-11-15",
+  "dataThrough": "2026-11-16",
   "churned": {
-   "count": 15,
-   "mrr": 14542,
+   "count": 18,
+   "mrr": 17992,
    "rows": [
+    {
+     "company": "Curran Plumbing, Electrical, Heating & Air",
+     "mrr": 500,
+     "requested": "2026-10-30",
+     "ended": "2026-11-16",
+     "unexpected": false
+    },
+    {
+     "company": "Family Heating and Air",
+     "mrr": 650,
+     "requested": "2026-11-04",
+     "ended": "2026-11-16",
+     "unexpected": false
+    },
+    {
+     "company": "Austin Electric",
+     "mrr": 2300,
+     "requested": "2026-10-28",
+     "ended": "2026-11-16",
+     "unexpected": false
+    },
     {
      "company": "Bert Black",
      "mrr": 900,
@@ -294,8 +315,8 @@
    ]
   },
   "endingLater": {
-   "count": 25,
-   "mrr": 23161
+   "count": 23,
+   "mrr": 22011
   },
   "lostSoFar": 21681,
   "retainedSoFar": 0.97,
