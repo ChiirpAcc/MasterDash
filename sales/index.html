@@ -83,7 +83,7 @@
   .tube { position: relative; width: min(62%, calc(var(--u) * 6.5)); margin: calc(var(--u) * 1) 0; background: var(--track); border-radius: calc(var(--u) * .6); overflow: hidden; min-height: 0; }
   .tube i { position: absolute; left: 0; right: 0; bottom: 0; height: 0; transition: height 1.4s cubic-bezier(.2,.8,.2,1), bottom 1.4s cubic-bezier(.2,.8,.2,1); }
   .tube i.hatch { opacity: .8; }
-  .col .who { text-align: center; align-self: start; width: 100%; min-width: 0; overflow: hidden; }
+  .col .who { text-align: center; align-self: start; width: 100%; min-width: 0; max-height: 100%; overflow: hidden; }
   .col .who .nm { font-weight: 640; font-size: calc(var(--u) * 1.6); line-height: 1.1; white-space: nowrap; }
   .col .who .rk { color: var(--muted); font-weight: 500; margin-right: .35em; }
   .col .who .dt { color: var(--muted); font-size: calc(var(--u) * .95); margin-top: calc(var(--u) * .3); white-space: nowrap; }
@@ -134,7 +134,7 @@
   .kept .trail b { color: var(--soft); font-weight: 650; }
   .kfacts { display: grid; gap: calc(var(--u) * .9); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.2); margin-top: calc(var(--u) * .6); }
   .kf { display: flex; align-items: baseline; gap: .6em; }
-  .mrrpath { display: flex; align-items: baseline; gap: .5em; margin-top: calc(var(--u) * .8); }
+  .mrrpath { display: flex; align-items: baseline; gap: .5em; margin-top: calc(var(--u) * .8); max-width: 100%; overflow: hidden; white-space: nowrap; }
   .mrrpath b { font-weight: 720; font-size: calc(var(--u) * 2.3); }
   .mrrpath .arrow { color: var(--muted); font-size: calc(var(--u) * 1.8); }
   .kept .cap { color: var(--muted); font-size: calc(var(--u) * .95); margin-top: calc(var(--u) * .2); }
@@ -329,8 +329,8 @@
         var names = recent[r.ae];
         who.appendChild(el('div', 'dt', names.length + ' awaiting payment'));
         var list = el('div', 'owed');
-        names.slice(0, 3).forEach(function (n) { list.appendChild(el('div', null, n)); });
-        if (names.length > 3) list.appendChild(el('div', 'more', '+' + (names.length - 3) + ' more'));
+        names.slice(0, 2).forEach(function (n) { list.appendChild(el('div', null, n)); });
+        if (names.length > 2) list.appendChild(el('div', 'more', '+' + (names.length - 2) + ' more'));
         who.appendChild(list);
       }
       col.appendChild(who); race.appendChild(col);
@@ -468,7 +468,7 @@
     if (Rt.trailing && Rt.trailing.length) {
       var tr2 = el('div', 'trail'); tr2.appendChild(document.createTextNode('Last 2 months: '));
       Rt.trailing.forEach(function (x, i) { if (i) tr2.appendChild(document.createTextNode(', '));
-        tr2.appendChild(document.createTextNode(MONTHS[+x.month.slice(5, 7) - 1] + ' ')); tr2.appendChild(el('b', null, p1(x.kept))); });
+        tr2.appendChild(document.createTextNode(MONTHS[+x.month.slice(5, 7) - 1].slice(0, 3) + ' ')); tr2.appendChild(el('b', null, p1(x.kept))); });
       k.appendChild(tr2);
     }
     if (Rt.eomMrr != null) {
@@ -539,6 +539,25 @@
     var s = 1; race.style.removeProperty('--u');
     while (over() && s > 0.6) { s = Math.round((s - 0.04) * 100) / 100; race.style.setProperty('--u', 'calc(min(1vw, 1.75vh) * ' + s + ')'); }
   }
+  // Big single-line figures shrink to fit their column (real font widths vary with the numbers).
+  function fitWidth(e, minScale) {
+    if (!e) return;
+    e.style.fontSize = '';
+    var base = parseFloat(getComputedStyle(e).fontSize), s = 1, box = e.parentNode.getBoundingClientRect().width;
+    var tooWide = function () { return e.scrollWidth > e.clientWidth + 1 || e.getBoundingClientRect().width > box + 1; };
+    while (tooWide() && s > (minScale || 0.5)) { s = Math.round((s - 0.04) * 100) / 100; e.style.fontSize = (base * s) + 'px'; }
+  }
+  function fitBig() {
+    [].forEach.call(document.querySelectorAll('.kept .mrrpath, .kept .big, .hero .big'), function (e) {
+      if (e.classList.contains('mrrpath')) {           // scale the numbers and arrow inside the path together
+        e.querySelectorAll('b, .arrow').forEach(function (x) { x.style.fontSize = ''; });
+        var parts = [].slice.call(e.querySelectorAll('b, .arrow')), sizes = parts.map(function (x) { return parseFloat(getComputedStyle(x).fontSize); }), s = 1;
+        var box = e.parentNode.getBoundingClientRect().width;
+        while ((e.scrollWidth > box + 1) && s > 0.5) { s = Math.round((s - 0.04) * 100) / 100; parts.forEach(function (x, i) { x.style.fontSize = (sizes[i] * s) + 'px'; }); }
+      } else fitWidth(e, 0.6);
+    });
+  }
+  var _fit = fit; fit = function () { _fit(); fitBig(); };
   window.addEventListener('resize', function () { clearTimeout(fit.t); fit.t = setTimeout(fit, 150); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
   if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fit);
@@ -568,7 +587,7 @@
         render(r[0], r[1], r[2]); renderTicker(r[0].week); fit();
         screen2 = false;
         if (r[3] && r[3].retention && r[4] && r[4].sources) {
-          try { renderRetention(r[3].retention, r[4].sources); screen2 = true; } catch (e2) { console.error(e2); }
+          try { renderRetention(r[3].retention, r[4].sources); screen2 = true; fitBig(); } catch (e2) { console.error(e2); }
         }
       } catch (err) {
         console.error(err); lastBuilt = null;
