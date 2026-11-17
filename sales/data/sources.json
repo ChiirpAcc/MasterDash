@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v40",
-  "builtAt": "2026-11-17T18:57:36.688Z",
+  "builtAt": "2026-11-17T19:02:43.065Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -130,21 +130,21 @@
     },
     {
      "medium": "Digital",
-     "credited": 64899,
-     "deals": 58
+     "credited": 67249,
+     "deals": 62
     },
     {
      "medium": "Untagged",
-     "credited": 95254.83,
-     "deals": 111
+     "credited": 92904.83,
+     "deals": 107
     }
    ],
    "top": [
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 26799,
-     "deals": 23
+     "credited": 29149,
+     "deals": 27
     },
     {
      "source": "Facebook",
