@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v22",
-  "builtAt": "2026-11-17T01:12:07.264Z",
+  "version": "sk-v26",
+  "builtAt": "2026-11-17T01:27:12.718Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -370,6 +370,34 @@
    "mrr": 22061
   },
   "retainedSoFar": 0.98,
-  "retainedIfAllEnd": 0.947
+  "retainedIfAllEnd": 0.947,
+  "nrr": {
+   "bom": 718766.39,
+   "upgrades": 5762.5,
+   "downgrades": -5300,
+   "churn": -20092,
+   "lapsed": -6300,
+   "recovered": 3899,
+   "newMrr": 3850,
+   "reactivation": 0,
+   "endingThisMonth": 24380,
+   "endingAlreadyCounted": 0,
+   "soFar": 0.971,
+   "eom": 0.937,
+   "eomWithNew": 0.942,
+   "grr": 0.957,
+   "source": "SaaS Metrics Dashboard",
+   "built": "2026-11-15 06:14",
+   "trailing": [
+    {
+     "month": "2026-09",
+     "nrr": 0.924
+    },
+    {
+     "month": "2026-10",
+     "nrr": 0.929
+    }
+   ]
+  }
  }
 }
