@@ -195,7 +195,7 @@
   function addMonths(mk, n) { var y = +mk.slice(0, 4), m = +mk.slice(5, 7) - 1 + n; y += Math.floor(m / 12); m = ((m % 12) + 12) % 12; return y + '-' + (m < 9 ? '0' : '') + (m + 1); }
   function day(d) { return d ? new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : ''; }
   function plural(k, one, many) { return k + ' ' + (k === 1 ? one : many); }
-  function coName(c) { return /^cus_/.test(String(c || '')) || !c ? 'Unnamed account' : c; }
+  function coName(c) { c = String(c || ''); return /^cus_\w+$/.test(c) ? 'Stripe customer \u2026' + c.slice(-8) : (c || 'Account with no name'); }
   function fetchJson(f) {
     return fetch('data/' + f + '?v=' + Date.now(), { cache: 'no-store' }).then(function (r) {
       if (!r.ok) throw new Error(f + ' could not be loaded (HTTP ' + r.status + ')'); return r.json();
