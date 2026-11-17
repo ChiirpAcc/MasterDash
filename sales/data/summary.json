@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v12",
-  "builtAt": "2026-11-17T00:31:02.450Z",
+  "version": "sk-v16",
+  "builtAt": "2026-11-17T00:49:20.681Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -69,12 +69,12 @@
    "avgDaysToCollect": 32
   },
   "ytd": {
-   "credited": 350833.4,
-   "newCredited": 332129.9,
+   "credited": 349333.4,
+   "newCredited": 330629.9,
    "dlcCredited": 624,
    "dlcCount": 52,
    "expCredited": 18079.5,
-   "dealsCollected": 355,
+   "dealsCollected": 354,
    "dealsWon": 424,
    "booked": 515984.94,
    "avgDaysToCollect": 8
@@ -87,11 +87,11 @@
    "amount": 13832.65
   },
   "awaiting": {
-   "deals": 60,
-   "booked": 77746.19,
-   "stale": 50
+   "deals": 61,
+   "booked": 79246.19,
+   "stale": 51
   },
-  "collectionRate": 0.862,
+  "collectionRate": 0.859,
   "ae": "Team total"
  },
  "reps": [
@@ -130,12 +130,12 @@
     "avgDaysToCollect": 5
    },
    "ytd": {
-    "credited": 80902,
-    "newCredited": 78277,
+    "credited": 79402,
+    "newCredited": 76777,
     "dlcCredited": 0,
     "dlcCount": 0,
     "expCredited": 2625,
-    "dealsCollected": 68,
+    "dealsCollected": 67,
     "dealsWon": 81,
     "booked": 113898,
     "avgDaysToCollect": 3
@@ -148,11 +148,11 @@
     "amount": 1250
    },
    "awaiting": {
-    "deals": 11,
-    "booked": 20349,
-    "stale": 10
+    "deals": 12,
+    "booked": 21849,
+    "stale": 11
    },
-   "collectionRate": 0.861,
+   "collectionRate": 0.847,
    "ae": "Blake Fenn",
    "onRoster": true
   },
@@ -463,5 +463,51 @@
    "ae": "Unassigned",
    "onRoster": false
   }
- ]
+ ],
+ "week": {
+  "start": "2026-11-05",
+  "end": "2026-11-11",
+  "metrics": {
+   "newMrr": 2500,
+   "reactivated": 0,
+   "churned": 5599,
+   "net": -3099,
+   "newLogos": 2,
+   "churnedAccounts": 5,
+   "atRisk": 7688,
+   "pending": 46441,
+   "stale": 22494.5,
+   "active": 722556.89,
+   "reactivations": 0
+  },
+  "prev": {
+   "newMrr": 7062,
+   "reactivated": 1670.92,
+   "churned": 8858,
+   "net": -125.08,
+   "newLogos": 5,
+   "churnedAccounts": 10,
+   "atRisk": 14286,
+   "pending": 35577,
+   "stale": 19844.5,
+   "active": 724779.41,
+   "reactivations": 2
+  },
+  "sales": {
+   "from": "2026-11-10",
+   "to": "2026-11-16",
+   "now": {
+    "dealsWon": 2,
+    "bookedMrr": 3000,
+    "dlcPaid": 43,
+    "dlcAmount": 516
+   },
+   "prev": {
+    "dealsWon": 7,
+    "bookedMrr": 8516.65,
+    "dlcPaid": 7,
+    "dlcAmount": 84
+   }
+  }
+ }
 }
