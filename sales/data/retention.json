@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v16",
-  "builtAt": "2026-11-17T00:49:20.681Z",
+  "version": "sk-v18",
+  "builtAt": "2026-11-17T01:03:42.996Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -156,8 +156,8 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 35,
-   "mrr": 25430,
+   "count": 34,
+   "mrr": 24380,
    "rows": [
     {
      "company": "Best Virginia HVAC",
@@ -241,12 +241,6 @@
      "company": "Oleada Electrical",
      "mrr": 1050,
      "requested": "2026-10-29",
-     "endsAt": "2026-11-20"
-    },
-    {
-     "company": "Jackson Comfort Systems",
-     "mrr": 1050,
-     "requested": "2026-10-22",
      "endsAt": "2026-11-20"
     },
     {
@@ -376,6 +370,6 @@
    "mrr": 22061
   },
   "retainedSoFar": 0.98,
-  "retainedIfAllEnd": 0.945
+  "retainedIfAllEnd": 0.947
  }
 }
