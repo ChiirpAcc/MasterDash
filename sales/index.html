@@ -72,7 +72,7 @@
 
   .race { display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); gap: calc(var(--u) * 1.6); min-height: 0;
           border-left: 1px solid var(--rule); border-right: 1px solid var(--rule); padding: 0 calc(var(--u) * 1.6); }
-  .col { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr) calc(var(--u) * 5.4); justify-items: center; min-height: 0; min-width: 0; padding-top: calc(var(--u) * .4); }
+  .col { position: relative; display: grid; grid-template-rows: auto minmax(0, 1fr) calc(var(--u) * 8.6); justify-items: center; min-height: 0; min-width: 0; padding-top: calc(var(--u) * .4); }
   .col::before { content: ""; position: absolute; inset: 0 -12%; border-radius: calc(var(--u) * .8);
                  background: radial-gradient(60% 45% at 50% 60%, rgba(122,167,255,.10), transparent 70%); opacity: 0;
                  animation: glow 44s linear infinite; animation-delay: var(--d, 0s); pointer-events: none; }
@@ -82,11 +82,14 @@
   .tube { position: relative; width: min(62%, calc(var(--u) * 6.5)); margin: calc(var(--u) * 1) 0; background: var(--track); border-radius: calc(var(--u) * .6); overflow: hidden; min-height: 0; }
   .tube i { position: absolute; left: 0; right: 0; bottom: 0; height: 0; transition: height 1.4s cubic-bezier(.2,.8,.2,1), bottom 1.4s cubic-bezier(.2,.8,.2,1); }
   .tube i.hatch { opacity: .8; }
-  .col .who { text-align: center; align-self: start; max-width: 100%; }
+  .col .who { text-align: center; align-self: start; width: 100%; min-width: 0; overflow: hidden; }
   .col .who .nm { font-weight: 640; font-size: calc(var(--u) * 1.6); line-height: 1.1; white-space: nowrap; }
   .col .who .rk { color: var(--muted); font-weight: 500; margin-right: .35em; }
   .col .who .dt { color: var(--muted); font-size: calc(var(--u) * .95); margin-top: calc(var(--u) * .3); white-space: nowrap; }
   .col .who .dt.warn { color: var(--late); }
+  .col .who .owed { margin-top: calc(var(--u) * .3); color: var(--muted); font-size: calc(var(--u) * .8); line-height: 1.35; opacity: .85; }
+  .col .who .owed div { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+  .col .who .owed .more { font-style: italic; }
 
   .feedcol { background: var(--raised); border-radius: calc(var(--u) * .9); display: grid; grid-template-rows: auto minmax(0, 1fr); min-height: 0; overflow: hidden; }
   .feedhead { padding: calc(var(--u) * 1.4) calc(var(--u) * 1.6) calc(var(--u) * .8); display: flex; justify-content: space-between; align-items: baseline; }
@@ -128,6 +131,10 @@
   .kept .lab { color: var(--muted); font-size: calc(var(--u) * 1.05); }
   .kept .trail { color: var(--muted); font-size: calc(var(--u) * 1.1); margin-top: calc(var(--u) * -.4); }
   .kept .trail b { color: var(--soft); font-weight: 650; }
+  .kfacts { display: grid; gap: calc(var(--u) * .9); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.2); margin-top: calc(var(--u) * .6); }
+  .kf { display: flex; align-items: baseline; gap: .6em; }
+  .kf b { font-weight: 700; font-size: calc(var(--u) * 1.7); min-width: 5.2em; }
+  .kf span { color: var(--muted); font-size: calc(var(--u) * 1); }
   .scale { position: relative; height: calc(var(--u) * 5.2); margin-top: calc(var(--u) * .4); }
   .scale .track { position: absolute; left: 0; right: 0; top: calc(var(--u) * 2.2); height: calc(var(--u) * .8); background: var(--track); border-radius: 99px; overflow: hidden; }
   .scale .track i { position: absolute; top: 0; bottom: 0; left: 0; background: var(--deal); }
@@ -283,7 +290,9 @@
     // Recent unpaid wins only (won in the last 30 days, not paid yet). Older ones stay off the screen.
     var cutoff = new Date(now.getTime() - 30 * 86400000), cut = cutoff.getFullYear() + '-' + String(cutoff.getMonth() + 1).padStart(2, '0') + '-' + String(cutoff.getDate()).padStart(2, '0');
     var recent = {};
-    D.rows.forEach(function (d) { if (d.status !== 'Collected' && d.status !== 'No Stripe link' && d.close >= cut) recent[d.ae] = (recent[d.ae] || 0) + 1; });
+    D.rows.filter(function (d) { return d.status !== 'Collected' && d.status !== 'No Stripe link' && d.close >= cut; })
+      .sort(function (a, b) { return a.close < b.close ? 1 : -1; })
+      .forEach(function (d) { (recent[d.ae] = recent[d.ae] || []).push(d.company || 'Unnamed company'); });
     var race = $('reps'); race.replaceChildren(); race.style.setProperty('--n', reps.length);
     reps.forEach(function (r, i) {
       var x = r.thisMonth, pd = r.pending || {}, isDlc = (x.dlcCredited || 0) + (pd.dlcAmount || 0) > (x.newCredited || 0) + (x.expCredited || 0) + (pd.dealAmount || 0);
@@ -304,7 +313,14 @@
       if (x.dlcCount) bits.push(plural(x.dlcCount, '10DLC fee', '10DLC fees'));
       if (!bits.length) bits.push('Nothing collected yet');
       who.appendChild(el('div', 'dt', bits.join(', ')));
-      if (recent[r.ae]) who.appendChild(el('div', 'dt', recent[r.ae] + ' awaiting payment'));
+      if (recent[r.ae]) {
+        var names = recent[r.ae];
+        who.appendChild(el('div', 'dt', names.length + ' awaiting payment'));
+        var list = el('div', 'owed');
+        names.slice(0, 3).forEach(function (n) { list.appendChild(el('div', null, n)); });
+        if (names.length > 3) list.appendChild(el('div', 'more', '+' + (names.length - 3) + ' more'));
+        who.appendChild(list);
+      }
       col.appendChild(who); race.appendChild(col);
       var hSolid = 100 * x.credited / max, hHatch = 100 * (pd.amount || 0) / max;
       requestAnimationFrame(function () { requestAnimationFrame(function () {
@@ -445,34 +461,13 @@
       });
       k.appendChild(tr2);
     }
-    // the scale: MRR kept so far (churn only), and anticipated end-of-month NRR (with upgrades and downgrades)
-    if (nowV != null) {
-      var vals = [nowV].concat(eom != null ? [eom] : []), lo = Math.min(0.9, Math.floor((Math.min.apply(null, vals) - 0.01) * 100) / 100),
-          hi = Math.max(1, Math.ceil((Math.max.apply(null, vals) + 0.005) * 100) / 100);
-      var pos = function (p) { return Math.max(0, Math.min(100, (p - lo) / (hi - lo) * 100)); };
-      var sc = el('div', 'scale'), tr = el('div', 'track');
-      var a = el('i'); a.style.width = pos(nowV) + '%'; tr.appendChild(a);
-      if (eom != null) {
-        var b = el('i', 'proj hatch'), x1 = Math.min(pos(eom), pos(nowV)), x2 = Math.max(pos(eom), pos(nowV));
-        b.style.left = x1 + '%'; b.style.width = (x2 - x1) + '%'; if (eom > nowV) b.style.backgroundColor = 'var(--good)';
-        tr.appendChild(b);
-      }
-      sc.appendChild(tr);
-      var m1 = el('div', 'mk', (N ? 'NRR so far ' : 'kept so far ') + (nowV * 100).toFixed(1) + '%'); m1.style.left = pos(nowV) + '%'; sc.appendChild(m1);
-      if (eom != null) { var m2 = el('div', 'mk low', (N ? 'anticipated EOM ' : 'if all end ') + (eom * 100).toFixed(1) + '%'); m2.style.left = pos(eom) + '%'; sc.appendChild(m2); }
-      var e1 = el('div', 'ends', Math.round(lo * 100) + '%'); e1.style.left = '0'; var e2 = el('div', 'ends', Math.round(hi * 100) + '%'); e2.style.right = '0';
-      sc.appendChild(e1); sc.appendChild(e2); k.appendChild(sc);
-    }
-    var mrr = el('div', 'mrr');
-    var bridge = N ? [['Start of month', N.bom], ['Upgrades', N.upgrades], ['Downgrades', N.downgrades], ['Churn and lapsed, net of recovered', N.churn + N.lapsed + N.recovered],
-                      ['Ending by month end', -N.endingThisMonth], ['NRR so far (SaaS dashboard)', null, (N.soFar * 100).toFixed(1) + '%'],
-                      ['With new MRR (+' + money.format(N.newMrr + N.reactivation) + ')', null, (N.eomWithNew * 100).toFixed(1) + '%']]
-                   : [['Start of month', Rt.bom], ['MRR now', Rt.current], ['Lost so far', -Rt.churned.mrr], ['Ending this month', -Rt.endingThisMonth.mrr]];
-    bridge.forEach(function (x) {
-      mrr.appendChild(el('span', null, x[0]));
-      mrr.appendChild(el('b', 'wide', x[2] != null ? x[2] : (x[1] < 0 ? '\u2212' : x[0] === 'Upgrades' && x[1] > 0 ? '+' : '') + money.format(Math.abs(x[1]))));
-    });
-    k.appendChild(mrr);
+    // three small facts, nothing else (the full breakdown is in the run log)
+    var facts = el('div', 'kfacts');
+    (N ? [[(N.soFar * 100).toFixed(1) + '%', 'NRR so far'], ['\u2212' + money.format(N.endingThisMonth), 'set to end by month end'],
+          [(N.eomWithNew * 100).toFixed(1) + '%', 'with new MRR (+' + money.format(N.newMrr + N.reactivation) + ')']]
+       : [[money.format(Rt.bom), 'start of month'], ['\u2212' + money.format(Rt.churned.mrr), 'lost so far'], ['\u2212' + money.format(Rt.endingThisMonth.mrr), 'set to end by month end']])
+      .forEach(function (f) { var d = el('div', 'kf'); d.appendChild(el('b', 'wide', f[0])); d.appendChild(el('span', null, f[1])); facts.appendChild(d); });
+    k.appendChild(facts);
 
     var ls = $('r-lostsum'); ls.replaceChildren(); ls.appendChild(el('b', 'wide', money.format(Rt.churned.mrr)));
     ls.appendChild(document.createTextNode(plural(Rt.churned.count, 'account', 'accounts') + (Rt.unexpected.count ? ', ' + money.format(Rt.unexpected.mrr) + ' without notice' : '')));
