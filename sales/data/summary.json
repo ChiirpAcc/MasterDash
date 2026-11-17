@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v27",
-  "builtAt": "2026-11-17T01:34:29.240Z",
+  "version": "sk-v28",
+  "builtAt": "2026-11-17T01:38:39.896Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -80,11 +80,11 @@
    "avgDaysToCollect": 8
   },
   "pending": {
-   "deals": 10,
-   "dealAmount": 12416.65,
+   "deals": 5,
+   "dealAmount": 7016.65,
    "dlcCount": 117,
    "dlcAmount": 1416,
-   "amount": 13832.65
+   "amount": 8432.65
   },
   "awaiting": {
    "deals": 58,
@@ -141,11 +141,11 @@
     "avgDaysToCollect": 3
    },
    "pending": {
-    "deals": 1,
-    "dealAmount": 1250,
+    "deals": 0,
+    "dealAmount": 0,
     "dlcCount": 0,
     "dlcAmount": 0,
-    "amount": 1250
+    "amount": 0
    },
    "awaiting": {
     "deals": 11,
@@ -202,11 +202,11 @@
     "avgDaysToCollect": 7
    },
    "pending": {
-    "deals": 4,
-    "dealAmount": 5666.65,
+    "deals": 3,
+    "dealAmount": 4916.65,
     "dlcCount": 0,
     "dlcAmount": 0,
-    "amount": 5666.65
+    "amount": 4916.65
    },
    "awaiting": {
     "deals": 11,
@@ -263,11 +263,11 @@
     "avgDaysToCollect": 15
    },
    "pending": {
-    "deals": 5,
-    "dealAmount": 5500,
+    "deals": 2,
+    "dealAmount": 2100,
     "dlcCount": 0,
     "dlcAmount": 0,
-    "amount": 5500
+    "amount": 2100
    },
    "awaiting": {
     "deals": 23,
