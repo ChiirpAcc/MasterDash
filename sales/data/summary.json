@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v45",
-  "builtAt": "2026-11-17T22:02:47.085Z",
+  "version": "sk-v46",
+  "builtAt": "2026-11-17T22:07:48.967Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -493,6 +493,7 @@
    "active": 724779.41,
    "reactivations": 2
   },
+  "rolling": null,
   "sales": {
    "from": "2026-11-11",
    "to": "2026-11-17",
@@ -507,6 +508,19 @@
     "bookedMrr": 7266.65,
     "dlcPaid": 8,
     "dlcAmount": 96
+   },
+   "from30": "2026-10-19",
+   "now30": {
+    "dealsWon": 22,
+    "bookedMrr": 26866.65,
+    "dlcPaid": 71,
+    "dlcAmount": 852
+   },
+   "prev30": {
+    "dealsWon": 22,
+    "bookedMrr": 35750,
+    "dlcPaid": 0,
+    "dlcAmount": 0
    }
   }
  }

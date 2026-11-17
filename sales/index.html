@@ -242,6 +242,18 @@
   .ticker .it .d { font-size: .82em; margin-left: .55em; font-weight: 600; }
   .ticker .when { font-size: .78em; color: var(--muted); margin-left: .45em; padding: .1em .45em; border: 1px solid var(--rule); border-radius: .4em; }
   .ticker .d.good { color: var(--good); } .ticker .d.bad { color: var(--late); } .ticker .d.flat { color: var(--muted); }
+  /* two-line banner: trailing 7 days on top, trailing 30 days underneath */
+  .ticker .hd2 { display: inline-grid; grid-auto-rows: auto; row-gap: .15em; background: var(--track); padding: .35em .9em; border-radius: .7em;
+                 font-size: calc(var(--u) * .82); color: var(--muted); line-height: 1.15; }
+  .ticker .hd2 b { color: var(--text); font-weight: 680; font-size: 1.12em; }
+  .ticker .it.two { display: inline-grid; grid-template-columns: auto auto; grid-template-rows: auto auto; column-gap: .75em; row-gap: .1em; align-items: baseline; line-height: 1.15; }
+  .ticker .it.two .lb { grid-row: 1 / span 2; align-self: center; }
+  .ticker .it.two .l1, .ticker .it.two .l2 { white-space: nowrap; }
+  .ticker .it.two .l1 b { margin-left: 0; }
+  .ticker .it.two .l2 { font-size: .8em; }
+  .ticker .it.two .l2 b { margin-left: 0; font-weight: 620; }
+  .ticker .it.two small, .ticker .it.two .d { margin-left: .55em; }
+  .ticker .it.two .k { color: var(--muted); font-size: .82em; margin-right: .5em; letter-spacing: .02em; }
 
   .error { grid-row: 1 / -1; align-self: center; justify-self: center; max-width: 60ch; color: var(--soft); font-size: calc(var(--u) * 1.4); }
   .error h2 { color: var(--text); margin: 0 0 .4em; font-size: calc(var(--u) * 2.4); }
@@ -288,7 +300,7 @@
   <div class="s2note narrow" id="r-note"></div>
 </div>
 
-<div class="ticker" id="ticker" aria-label="Last 7 days"><div class="track" id="tickTrack"></div></div>
+<div class="ticker" id="ticker" aria-label="Last 7 and 30 days"><div class="track" id="tickTrack"></div></div>
 
 <script>
 (function () {
@@ -500,7 +512,68 @@
       return it;
     }
     var wk = range(W.start, W.end), asOf = W.end ? 'as of ' + short(W.end) : '', vsWk = 'vs prior week';
-    function group() {
+    // ---- two-line banner: trailing 7 days on top, trailing 30 days underneath (weekly report's rolling table)
+    function amt(v, isMoney) { return isMoney ? (v < 0 ? '\u2212' : '') + money.format(Math.abs(v || 0)) : String(Math.round(v || 0)); }
+    function arrow(v, prev, up, isMoney, phrase) {
+      if (prev == null || v == null) return null;
+      var diff = v - prev;
+      if (Math.abs(diff) < 1) return el('span', 'd flat', 'same ' + phrase);
+      return el('span', 'd ' + ((up ? diff > 0 : diff < 0) ? 'good' : 'bad'), (diff > 0 ? '\u25B2 ' : '\u25BC ') + amt(Math.abs(diff), isMoney) + ' ' + phrase);
+    }
+    function line(cls, tag, v, prev, up, isMoney, extra, phrase) {
+      var ln = el('span', cls);
+      if (tag) ln.appendChild(el('span', 'k', tag));
+      ln.appendChild(el('b', 'wide', amt(v, isMoney)));
+      if (extra) ln.appendChild(el('small', null, extra));
+      var d = arrow(v, prev, up, isMoney, phrase); if (d) ln.appendChild(d);
+      return ln;
+    }
+    // label; [7-day value, prior 7, extra]; [30-day value, prior 30, extra]; whether a rise is good; money or count
+    function two(label, t, b, up, isMoney) {
+      var it = el('span', 'it two'); it.appendChild(el('span', 'lb', label));
+      it.appendChild(line('l1', '', t[0], t[1], up, isMoney, t[2], 'vs prior 7 days'));
+      it.appendChild(line('l2', '30 days', b[0], b[1], up, isMoney, b[2], 'vs prior 30'));
+      return it;
+    }
+    // point in time: value now, and its change since the last weekly snapshot
+    function now(label, v, prev, up, since) {
+      var it = el('span', 'it two'); it.appendChild(el('span', 'lb', label));
+      it.appendChild(line('l1', '', v, null, up, true, '', ''));
+      var b = el('span', 'l2'), d = arrow(v, prev, up, true, since);
+      b.appendChild(d || el('span', 'd flat', '\u00A0')); it.appendChild(b);
+      return it;
+    }
+    function head(title, l1, l2) {
+      var h = el('span', 'hd2'); h.appendChild(el('b', null, title)); h.appendChild(el('span', null, l1)); if (l2) h.appendChild(el('span', null, l2));
+      return h;
+    }
+    function groupRolling() {
+      var R = W.rolling, a = R.d7, ap = R.p7 || {}, b = R.d30, bp = R.p30 || {}, g = el('div', 'grp');
+      var lg = function (n) { return n != null ? plural(n, 'logo', 'logos') : ''; }, ac = function (n) { return n != null ? plural(n, 'account', 'accounts') : ''; };
+      g.appendChild(head('Revenue', '7 days \u00B7 ' + range(a.from, a.to), '30 days \u00B7 ' + range(b.from, b.to)));
+      g.appendChild(two('New MRR', [a.newMrr, ap.newMrr, lg(a.newLogos)], [b.newMrr, bp.newMrr, lg(b.newLogos)], true, true));
+      g.appendChild(two('Reactivated', [a.reactivated, ap.reactivated, ''], [b.reactivated, bp.reactivated, ''], true, true));
+      g.appendChild(two('Churned', [a.churned, ap.churned, ac(a.churnedAccounts)], [b.churned, bp.churned, ac(b.churnedAccounts)], false, true));
+      g.appendChild(two('Net change', [a.net, ap.net, ''], [b.net, bp.net, ''], true, true));
+      if (a.atRisk != null) g.appendChild(two('At risk', [a.atRisk, ap.atRisk, ''], [b.atRisk, bp.atRisk, ''], false, true));
+      if (m.active || m.pending || m.stale) {
+        var since = 'since ' + short(W.start);           // the report's last Thursday snapshot
+        g.appendChild(head('Right now', 'as of ' + short(R.through || W.end), 'change ' + since));
+        if (m.active) g.appendChild(now('Active MRR', m.active, p.active, true, since));
+        if (m.pending) g.appendChild(now('Pending cancellation', m.pending, p.pending, false, since));
+        if (m.stale) g.appendChild(now('Stale unpaid', m.stale, p.stale, false, since));
+      }
+      if (s && s.now30) {
+        g.appendChild(head('Sales', '7 days \u00B7 ' + range(s.from, s.to), '30 days \u00B7 ' + range(s.from30, s.to)));
+        g.appendChild(two('Deals won', [s.now.dealsWon, s.prev.dealsWon, s.now.bookedMrr ? money.format(s.now.bookedMrr) + ' MRR' : ''],
+                                       [s.now30.dealsWon, s.prev30.dealsWon, s.now30.bookedMrr ? money.format(s.now30.bookedMrr) + ' MRR' : ''], true, false));
+        if (s.now30.dlcPaid || s.prev30.dlcPaid) g.appendChild(two('10DLC increases paid', [s.now.dlcPaid, s.prev.dlcPaid, s.now.dlcAmount ? money.format(s.now.dlcAmount) : ''],
+                                       [s.now30.dlcPaid, s.prev30.dlcPaid, s.now30.dlcAmount ? money.format(s.now30.dlcAmount) : ''], true, false));
+      }
+      return g;
+    }
+    // ---- one-line banner: the report's last Thursday week (used until the rolling table exists)
+    function groupWeek() {
       var g = el('div', 'grp');
       g.appendChild(el('span', 'hd', 'Weekly revenue report'));
       g.appendChild(item('New MRR', wk, m.newMrr, p.newMrr, true, true, m.newLogos != null ? plural(m.newLogos, 'logo', 'logos') : '', vsWk));
@@ -519,7 +592,8 @@
       }
       return g;
     }
-    root.style.setProperty('--tickh', 'calc(min(1vw, 1.75vh) * 4.2)');
+    var group = W.rolling && W.rolling.d7 && W.rolling.d30 ? groupRolling : groupWeek;
+    root.style.setProperty('--tickh', 'calc(min(1vw, 1.75vh) * ' + (group === groupRolling ? '6.4' : '4.2') + ')');
     var pos = loopPos(track);
     bar.classList.add('on'); track.replaceChildren(group(), group());          // two copies make a seamless loop
     requestAnimationFrame(function () {
