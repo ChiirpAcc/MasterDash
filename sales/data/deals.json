@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v41",
-  "builtAt": "2026-11-17T19:40:09.978Z",
+  "builtAt": "2026-11-17T19:42:43.317Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4117,7 +4117,7 @@
   },
   {
    "ae": "Blake Fenn",
-   "company": "Envy Electrical",
+   "company": "Envy Electrical LLC",
    "type": "New Business",
    "close": "2026-11-16",
    "booked": 1000,
