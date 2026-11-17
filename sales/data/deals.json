@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v46",
-  "builtAt": "2026-11-17T22:27:55.392Z",
+  "version": "sk-v47",
+  "builtAt": "2026-11-17T22:32:47.929Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -997,6 +997,22 @@
   },
   {
    "ae": "Blake Fenn",
+   "company": "Chen Plumbing",
+   "type": "New Business",
+   "close": "2026-03-30",
+   "booked": 1700,
+   "status": "Collected",
+   "creditedMonth": "2026-03",
+   "collectedDate": "2026-03-31",
+   "credited": 1700,
+   "daysToCollect": 1,
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "",
+   "issueDays": null
+  },
+  {
+   "ae": "Blake Fenn",
    "company": "Modern Air and Water",
    "type": "New Business",
    "close": "2026-03-30",
@@ -1646,6 +1662,22 @@
    "collectedDate": "",
    "credited": 650,
    "daysToCollect": 2,
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "",
+   "issueDays": null
+  },
+  {
+   "ae": "Blake Fenn",
+   "company": "Sierra Pacific Home and Comfort",
+   "type": "New Business",
+   "close": "2026-04-30",
+   "booked": 1700,
+   "status": "Collected",
+   "creditedMonth": "2026-05",
+   "collectedDate": "2026-05-01",
+   "credited": 1700,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
@@ -2362,10 +2394,10 @@
    "close": "2026-06-26",
    "booked": 7200,
    "status": "Collected",
-   "creditedMonth": "2026-07",
+   "creditedMonth": "2026-08",
    "collectedDate": "",
    "credited": 50,
-   "daysToCollect": 5,
+   "daysToCollect": 36,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",

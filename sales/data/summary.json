@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v46",
-  "builtAt": "2026-11-17T22:27:55.392Z",
+  "version": "sk-v47",
+  "builtAt": "2026-11-17T22:32:47.929Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -69,14 +69,14 @@
    "avgDaysToCollect": 26
   },
   "ytd": {
-   "credited": 345930.4,
-   "newCredited": 326999.9,
+   "credited": 352080.4,
+   "newCredited": 333149.9,
    "dlcCredited": 852,
    "dlcCount": 71,
    "expCredited": 18078.5,
-   "dealsCollected": 361,
-   "dealsWon": 421,
-   "booked": 510834.94,
+   "dealsCollected": 365,
+   "dealsWon": 425,
+   "booked": 516984.94,
    "avgDaysToCollect": 8
   },
   "pending": {
@@ -91,7 +91,7 @@
    "booked": 55096.19,
    "stale": 43
   },
-  "collectionRate": 0.881,
+  "collectionRate": 0.882,
   "ae": "Team total"
  },
  "reps": [
@@ -130,15 +130,15 @@
     "avgDaysToCollect": 6
    },
    "ytd": {
-    "credited": 77850,
-    "newCredited": 75163,
+    "credited": 81250,
+    "newCredited": 78563,
     "dlcCredited": 0,
     "dlcCount": 0,
     "expCredited": 2687,
-    "dealsCollected": 70,
-    "dealsWon": 80,
-    "booked": 111248,
-    "avgDaysToCollect": 3
+    "dealsCollected": 72,
+    "dealsWon": 82,
+    "booked": 114648,
+    "avgDaysToCollect": 4
    },
    "pending": {
     "deals": 0,
@@ -152,7 +152,7 @@
     "booked": 9899,
     "stale": 8
    },
-   "collectionRate": 0.886,
+   "collectionRate": 0.889,
    "ae": "Blake Fenn",
    "onRoster": true
   },
@@ -376,14 +376,14 @@
     "avgDaysToCollect": 59
    },
    "ytd": {
-    "credited": 75856,
-    "newCredited": 69368,
+    "credited": 78606,
+    "newCredited": 72118,
     "dlcCredited": 0,
     "dlcCount": 0,
     "expCredited": 6488,
-    "dealsCollected": 83,
-    "dealsWon": 95,
-    "booked": 105710,
+    "dealsCollected": 85,
+    "dealsWon": 97,
+    "booked": 108460,
     "avgDaysToCollect": 7
    },
    "pending": {
@@ -398,7 +398,7 @@
     "booked": 7475,
     "stale": 8
    },
-   "collectionRate": 0.91,
+   "collectionRate": 0.912,
    "ae": "Other",
    "onRoster": false
   },
