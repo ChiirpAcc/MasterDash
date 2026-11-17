@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v12",
-  "builtAt": "2026-11-17T00:31:02.450Z",
+  "version": "sk-v16",
+  "builtAt": "2026-11-17T00:49:20.681Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -111,7 +111,7 @@
    ]
   },
   "ytd": {
-   "total": 350209.4,
+   "total": 348709.4,
    "mediums": [
     {
      "medium": "Events",
@@ -120,8 +120,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 109935.25,
-     "deals": 112
+     "credited": 108435.25,
+     "deals": 111
     },
     {
      "medium": "Webinars",
