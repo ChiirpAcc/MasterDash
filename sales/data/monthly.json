@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v16",
-  "builtAt": "2026-11-17T00:49:20.681Z",
+  "version": "sk-v18",
+  "builtAt": "2026-11-17T01:03:42.996Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -158,11 +158,11 @@
   {
    "ae": "Blake Fenn",
    "month": "2026-03",
-   "won": 13,
-   "booked": 15300,
-   "collectedDeals": 14,
-   "credited": 14000,
-   "newCredited": 14000,
+   "won": 12,
+   "booked": 13600,
+   "collectedDeals": 13,
+   "credited": 12300,
+   "newCredited": 12300,
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -218,8 +218,8 @@
   {
    "ae": "Blake Fenn",
    "month": "2026-04",
-   "won": 12,
-   "booked": 14150,
+   "won": 11,
+   "booked": 12450,
    "collectedDeals": 7,
    "credited": 7700,
    "newCredited": 7700,
@@ -280,9 +280,9 @@
    "month": "2026-05",
    "won": 7,
    "booked": 10100,
-   "collectedDeals": 6,
-   "credited": 8300,
-   "newCredited": 8300,
+   "collectedDeals": 5,
+   "credited": 6600,
+   "newCredited": 6600,
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -302,11 +302,11 @@
   {
    "ae": "Other",
    "month": "2026-05",
-   "won": 10,
-   "booked": 13400,
-   "collectedDeals": 6,
-   "credited": 8500,
-   "newCredited": 7500,
+   "won": 8,
+   "booked": 10650,
+   "collectedDeals": 5,
+   "credited": 7000,
+   "newCredited": 6000,
    "expCredited": 1000,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -400,10 +400,10 @@
    "month": "2026-07",
    "won": 8,
    "booked": 6949,
-   "collectedDeals": 6,
-   "credited": 6400,
+   "collectedDeals": 7,
+   "credited": 6450,
    "newCredited": 6400,
-   "expCredited": 0,
+   "expCredited": 50,
    "dlcCredited": 0,
    "dlcCount": 0
   },
@@ -422,8 +422,8 @@
   {
    "ae": "Other",
    "month": "2026-07",
-   "won": 15,
-   "booked": 16150,
+   "won": 14,
+   "booked": 15350,
    "collectedDeals": 15,
    "credited": 15450,
    "newCredited": 14600,
@@ -446,8 +446,8 @@
   {
    "ae": "colton lingmann",
    "month": "2026-07",
-   "won": 2,
-   "booked": 1137.5,
+   "won": 1,
+   "booked": 637.5,
    "collectedDeals": 3,
    "credited": 1337.5,
    "newCredited": 1137.5,
@@ -475,18 +475,6 @@
    "collectedDeals": 7,
    "credited": 10700,
    "newCredited": 10700,
-   "expCredited": 0,
-   "dlcCredited": 0,
-   "dlcCount": 0
-  },
-  {
-   "ae": "Other",
-   "month": "2026-08",
-   "won": 0,
-   "booked": 0,
-   "collectedDeals": 1,
-   "credited": 1250,
-   "newCredited": 1250,
    "expCredited": 0,
    "dlcCredited": 0,
    "dlcCount": 0
