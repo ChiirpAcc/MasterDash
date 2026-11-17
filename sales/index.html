@@ -160,6 +160,8 @@
   .srow .tr i { display: block; height: 100%; background: var(--deal); border-radius: 99px; }
   .srow .yr { grid-column: 1 / -1; color: var(--muted); font-size: calc(var(--u) * .88); }
   .s2note { color: var(--muted); font-size: calc(var(--u) * .85); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * .9); }
+  .s2note .formula { color: var(--soft); font-size: calc(var(--u) * .9); line-height: 1.55; margin-bottom: calc(var(--u) * .5); }
+  .s2note .formula b { color: var(--text); font-weight: 650; }
 
   /* ---------- 7-day banner (both screens) */
   @keyframes tick { from{transform:translateX(0)} to{transform:translateX(-50%)} }
@@ -503,7 +505,27 @@
       row.appendChild(el('span', 'yr', money.format(y.credited) + ' this year' + (yt.total ? ', ' + Math.round(100 * y.credited / yt.total) + '%' : '')));
       box.appendChild(row);
     });
-    $('r-note').textContent = (Rt.nrr ? 'NRR so far is the SaaS Metrics Dashboard\u2019s own figure' + (Rt.nrr.built ? ' (built ' + Rt.nrr.built + ')' : '') + '. Anticipated EOM NRR = NRR so far − MRR set to end by month end (Stripe cancellation dates) ÷ start of month. New customer MRR is not part of NRR and is shown separately. ' : 'MRR kept = (start of month − churned) ÷ start of month.') + ' Without notice = asked to cancel and turned off the same day. Ending this month uses each cancellation date in Stripe. Lead source comes from the deal, else its contact, in HubSpot.';
+    // The NRR arithmetic with this month's values, then the general notes.
+    var note = $('r-note'); note.replaceChildren();
+    if (Rt.nrr) {
+      var Nn = Rt.nrr, p1 = function (x) { return (x * 100).toFixed(1) + '%'; }, pts = function (a) { return (a / Nn.bom * 100).toFixed(1) + ' pts'; };
+      var f = el('div', 'formula');
+      var l1 = el('div'); l1.appendChild(el('b', null, 'NRR so far ' + p1(Nn.soFar)));
+      l1.appendChild(document.createTextNode(' (SaaS Metrics Dashboard' + (Nn.built ? ', built ' + Nn.built : '') + '): start of month excluding pilots and unpaid sign-ups, + upgrades ' +
+        money.format(Nn.upgrades) + ' + recovered ' + money.format(Nn.recovered) + ' \u2212 downgrades ' + money.format(-Nn.downgrades) + ' \u2212 churn ' +
+        money.format(-Nn.churn) + ' \u2212 lapsed ' + money.format(-Nn.lapsed)));
+      var l2 = el('div'); l2.appendChild(el('b', null, 'Anticipated EOM NRR'));
+      l2.appendChild(document.createTextNode(' = ' + p1(Nn.soFar) + ' \u2212 ' + money.format(Nn.endingThisMonth) + ' set to end \u00f7 ' + money.format(Nn.bom) +
+        ' start of month (' + pts(Nn.endingThisMonth) + ') = ')); l2.appendChild(el('b', null, p1(Nn.eom)));
+      if (Nn.endingAlreadyCounted) l2.appendChild(document.createTextNode('  (the ending total leaves out ' + Nn.endingAlreadyCounted +
+        (Nn.endingAlreadyCounted === 1 ? ' account' : ' accounts') + ' already counted in churn, so it is lower than the Ending this month column)'));
+      var l3 = el('div'); l3.appendChild(el('b', null, 'With new MRR'));
+      l3.appendChild(document.createTextNode(' = ' + p1(Nn.eom) + ' + ' + money.format(Nn.newMrr + Nn.reactivation) + ' new \u00f7 ' + money.format(Nn.bom) +
+        ' (' + pts(Nn.newMrr + Nn.reactivation) + ') = ')); l3.appendChild(el('b', null, p1(Nn.eomWithNew)));
+      f.appendChild(l1); f.appendChild(l2); f.appendChild(l3); note.appendChild(f);
+    }
+    note.appendChild(el('div', null, (Rt.nrr ? 'New customer MRR is not part of NRR. 10DLC fees are not MRR. ' : 'MRR kept = (start of month \u2212 churned) \u00f7 start of month. ') +
+      'Without notice = asked to cancel and turned off the same day. Ending this month uses each cancellation date in Stripe. Lead source comes from the deal, else its contact, in HubSpot.'));
   }
 
   // ======================================================= fitting text to any screen
