@@ -134,6 +134,10 @@
   .kept .trail b { color: var(--soft); font-weight: 650; }
   .kfacts { display: grid; gap: calc(var(--u) * .9); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.2); margin-top: calc(var(--u) * .6); }
   .kf { display: flex; align-items: baseline; gap: .6em; }
+  .mrrpath { display: flex; align-items: baseline; gap: .5em; margin-top: calc(var(--u) * .8); }
+  .mrrpath b { font-weight: 720; font-size: calc(var(--u) * 2.3); }
+  .mrrpath .arrow { color: var(--muted); font-size: calc(var(--u) * 1.8); }
+  .kept .cap { color: var(--muted); font-size: calc(var(--u) * .95); margin-top: calc(var(--u) * .2); }
   .kf b { font-weight: 700; font-size: calc(var(--u) * 1.7); min-width: 5.2em; }
   .kf span { color: var(--muted); font-size: calc(var(--u) * 1); }
   .scale { position: relative; height: calc(var(--u) * 5.2); margin-top: calc(var(--u) * .4); }
@@ -283,8 +287,7 @@
     if (dealExp > 0) { var ex = el('div', 'exp'); var sw = el('i', 'hatch'); ex.appendChild(sw); ex.appendChild(el('b', null, '+' + money.format(dealExp)));
                        ex.appendChild(document.createTextNode(' expected this month')); hero.appendChild(ex); }
     var facts = el('div', 'facts');
-    [[String(t.dealsCollected), t.dealsCollected === 1 ? 'deal paid' : 'deals paid', '', ''],
-     [money.format(dlc), '10DLC fees collected (not MRR)', '', (t.dlcCount || 0) + ' increases' + ((tp.dlcAmount || 0) > 0 ? ', +' + money.format(tp.dlcAmount) + ' this month' : '')]].forEach(function (f) {
+    [[String(t.dealsCollected), t.dealsCollected === 1 ? 'deal paid' : 'deals paid', '', '']].forEach(function (f) {
       if (f[1].indexOf('10DLC') > -1 && !dlc && !(tp.dlcAmount > 0)) return;
       var d = el('div', 'fact ' + f[2]); d.appendChild(el('b', 'wide', f[0]));
       var lab = el('span', null, f[1]); if (f[3]) { lab.appendChild(el('br')); lab.appendChild(el('small', null, f[3])); }
@@ -472,6 +475,11 @@
     }
     // three small facts, nothing else (the full breakdown is in the run log)
     var facts = el('div', 'kfacts');
+    if (N && N.eomMrr != null) {                      // start of month -> anticipated end of month MRR
+      var path = el('div', 'mrrpath');
+      path.appendChild(el('b', 'wide', money.format(N.bom))); path.appendChild(el('span', 'arrow', '\u2192')); path.appendChild(el('b', 'wide', money.format(N.eomMrr)));
+      var cap = el('div', 'cap', 'MRR, start of month \u2192 anticipated end of month'); var wrap = el('div'); wrap.appendChild(path); wrap.appendChild(cap); k.appendChild(wrap);
+    }
     (N ? [[(N.soFar * 100).toFixed(1) + '%', 'NRR so far'], ['\u2212' + money.format(N.endingThisMonth), 'set to end by month end'],
           [(N.eomWithNew * 100).toFixed(1) + '%', 'with new MRR (+' + money.format(N.newMrr + N.reactivation) + ')']]
        : [[money.format(Rt.bom), 'start of month'], ['\u2212' + money.format(Rt.churned.mrr), 'lost so far'], ['\u2212' + money.format(Rt.endingThisMonth.mrr), 'set to end by month end']])
@@ -522,7 +530,11 @@
       var l3 = el('div'); l3.appendChild(el('b', null, 'With new MRR'));
       l3.appendChild(document.createTextNode(' = ' + p1(Nn.eom) + ' + ' + money.format(Nn.newMrr + Nn.reactivation) + ' new \u00f7 ' + money.format(Nn.bom) +
         ' (' + pts(Nn.newMrr + Nn.reactivation) + ') = ')); l3.appendChild(el('b', null, p1(Nn.eomWithNew)));
-      f.appendChild(l1); f.appendChild(l2); f.appendChild(l3); note.appendChild(f);
+      var l4 = el('div');
+      if (Nn.eomMrr != null) { l4.appendChild(el('b', null, 'Anticipated EOM MRR'));
+        l4.appendChild(document.createTextNode(' = ' + money.format(Nn.mrrNow) + ' MRR now (SaaS dashboard, start ' + money.format(Nn.bom) + ' plus this month\u2019s movements) \u2212 ' +
+          money.format(Nn.endingThisMonth) + ' set to end = ')); l4.appendChild(el('b', null, money.format(Nn.eomMrr))); }
+      f.appendChild(l1); f.appendChild(l2); f.appendChild(l3); f.appendChild(l4); note.appendChild(f);
     }
     note.appendChild(el('div', null, (Rt.nrr ? 'New customer MRR is not part of NRR. 10DLC fees are not MRR. ' : 'MRR kept = (start of month \u2212 churned) \u00f7 start of month. ') +
       'Without notice = asked to cancel and turned off the same day. Ending this month uses each cancellation date in Stripe. Lead source comes from the deal, else its contact, in HubSpot.'));
