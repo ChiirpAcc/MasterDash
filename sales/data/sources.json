@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v16",
-  "builtAt": "2026-11-17T00:49:20.681Z",
+  "version": "sk-v18",
+  "builtAt": "2026-11-17T01:03:42.996Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -111,17 +111,17 @@
    ]
   },
   "ytd": {
-   "total": 348709.4,
+   "total": 342609.4,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 74220.32,
-     "deals": 68
+     "credited": 72520.32,
+     "deals": 67
     },
     {
      "medium": "Partners and referrals",
-     "credited": 108435.25,
-     "deals": 111
+     "credited": 105735.25,
+     "deals": 110
     },
     {
      "medium": "Webinars",
@@ -135,8 +135,8 @@
     },
     {
      "medium": "Untagged",
-     "credited": 102554.83,
-     "deals": 118
+     "credited": 100854.83,
+     "deals": 117
     }
    ],
    "top": [
