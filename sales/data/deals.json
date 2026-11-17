@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v40",
-  "builtAt": "2026-11-17T18:52:37.029Z",
+  "builtAt": "2026-11-17T18:57:36.688Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4137,6 +4137,22 @@
    "type": "New Business",
    "close": "2026-11-17",
    "booked": 850,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0
+  },
+  {
+   "ae": "Blake Fenn",
+   "company": "Watson Home Construction",
+   "type": "New Business",
+   "close": "2026-11-17",
+   "booked": 750,
    "status": "No Stripe link",
    "creditedMonth": "",
    "collectedDate": "",
