@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v48",
-  "builtAt": "2026-11-17T23:38:29.263Z",
+  "builtAt": "2026-11-17T23:42:45.359Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -103,7 +103,7 @@
      "deals": 1
     },
     {
-     "source": "Parker Joos",
+     "source": "One-offs",
      "medium": "Partners and referrals",
      "credited": 750,
      "deals": 1
