@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v47",
-  "builtAt": "2026-11-17T23:32:46.131Z",
+  "version": "sk-v48",
+  "builtAt": "2026-11-17T23:38:29.263Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,7 +37,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 9749,
+   "total": 9074,
    "mediums": [
     {
      "medium": "Events",
@@ -46,7 +46,7 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 4387,
+     "credited": 3712,
      "deals": 4
     },
     {
@@ -66,12 +66,6 @@
     }
    ],
    "top": [
-    {
-     "source": "BDR Co - Business Development Resources",
-     "medium": "Partners and referrals",
-     "credited": 1637,
-     "deals": 1
-    },
     {
      "source": "Nexstar",
      "medium": "Partners and referrals",
@@ -103,6 +97,12 @@
      "deals": 1
     },
     {
+     "source": "BDR Co - Business Development Resources",
+     "medium": "Partners and referrals",
+     "credited": 962,
+     "deals": 1
+    },
+    {
      "source": "Parker Joos",
      "medium": "Partners and referrals",
      "credited": 750,
@@ -117,7 +117,7 @@
    ]
   },
   "ytd": {
-   "total": 351228.4,
+   "total": 349166.36,
    "mediums": [
     {
      "medium": "Events",
@@ -126,8 +126,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 110082.25,
-     "deals": 119
+     "credited": 108145.25,
+     "deals": 117
     },
     {
      "medium": "Webinars",
@@ -141,8 +141,8 @@
     },
     {
      "medium": "Untagged",
-     "credited": 93690.83,
-     "deals": 108
+     "credited": 93565.79,
+     "deals": 109
     }
    ],
    "top": [
@@ -161,8 +161,8 @@
     {
      "source": "LAB",
      "medium": "Partners and referrals",
-     "credited": 12662.25,
-     "deals": 19
+     "credited": 12100.25,
+     "deals": 17
     },
     {
      "source": "2026 - Tommy Mello Podcast",
@@ -177,16 +177,16 @@
      "deals": 7
     },
     {
-     "source": "BDR Co - Business Development Resources",
-     "medium": "Partners and referrals",
-     "credited": 9036,
-     "deals": 8
-    },
-    {
      "source": "Certain Path",
      "medium": "Partners and referrals",
      "credited": 8588,
      "deals": 9
+    },
+    {
+     "source": "BDR Co - Business Development Resources",
+     "medium": "Partners and referrals",
+     "credited": 8361,
+     "deals": 8
     },
     {
      "source": "2025 - Home Service Freedom",

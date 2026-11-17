@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v47",
-  "builtAt": "2026-11-17T23:32:46.131Z",
+  "version": "sk-v48",
+  "builtAt": "2026-11-17T23:38:29.263Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -318,9 +318,10 @@
    "count": 23,
    "mrr": 22011
   },
-  "lostSoFar": 19791,
-  "retainedSoFar": 0.973,
-  "retainedIfAllEnd": 0.944,
+  "lostSoFar": 17992,
+  "lostSigma": 19791,
+  "retainedSoFar": 0.975,
+  "retainedIfAllEnd": 0.946,
   "eomMrr": 694608.89,
   "trailing": [
    {

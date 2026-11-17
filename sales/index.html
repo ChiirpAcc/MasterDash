@@ -690,7 +690,7 @@
         l4.appendChild(document.createTextNode(': ' + Rt.trailing.map(function (x) { return MONTHS[+x.month.slice(5, 7) - 1] + ' (' + money.format(x.bom) + ' \u2212 ' + money.format(x.lost) + ') \u00f7 ' + money.format(x.bom) + ' = ' + p1(x.kept); }).join('; '))); }
       f.appendChild(l1); f.appendChild(l2); f.appendChild(l3); f.appendChild(l4); note.appendChild(f);
     }
-    note.appendChild(el('div', null, 'All figures from the Weekly Revenue Report. MRR lost is net of migrations and includes accounts that lapsed unpaid, so it can be more than the Churned this month list. 10DLC fees are not MRR. ' +
+    note.appendChild(el('div', null, 'All figures from the Weekly Revenue Report. MRR lost this month is the Churned this month list: accounts whose last subscription ended this month, not live on another account. Earlier months also count accounts that lapsed unpaid. 10DLC fees are not MRR. ' +
       'Without notice = asked to cancel and turned off the same day. Ending this month uses each cancellation date in Stripe. Lead source comes from the deal, else its contact, in HubSpot.'));
   }
 
