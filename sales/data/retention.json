@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v33",
-  "builtAt": "2026-11-17T02:00:37.812Z",
+  "version": "sk-v35",
+  "builtAt": "2026-11-17T16:58:18.269Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,8 +38,8 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 722556.89,
-  "dataThrough": "2026-11-14",
+  "current": 721568.89,
+  "dataThrough": "2026-11-15",
   "churned": {
    "count": 15,
    "mrr": 14542,
@@ -156,15 +156,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 34,
-   "mrr": 24380,
+   "count": 32,
+   "mrr": 22380,
    "rows": [
-    {
-     "company": "Best Virginia HVAC",
-     "mrr": 950,
-     "requested": "2026-10-28",
-     "endsAt": "2026-11-16"
-    },
     {
      "company": "Briggs Mechanical",
      "mrr": 2250,
@@ -187,12 +181,6 @@
      "company": "Five Star Pressure Washing",
      "mrr": 200,
      "requested": "2026-11-04",
-     "endsAt": "2026-11-17"
-    },
-    {
-     "company": "Albiero Plumbing & HVAC",
-     "mrr": 1050,
-     "requested": "2026-10-30",
      "endsAt": "2026-11-17"
     },
     {
@@ -366,13 +354,13 @@
    ]
   },
   "endingLater": {
-   "count": 28,
-   "mrr": 22061
+   "count": 30,
+   "mrr": 24061
   },
   "lostSoFar": 21681,
   "retainedSoFar": 0.97,
-  "retainedIfAllEnd": 0.937,
-  "eomMrr": 698176.89,
+  "retainedIfAllEnd": 0.94,
+  "eomMrr": 699188.89,
   "trailing": [
    {
     "month": "2026-09",
