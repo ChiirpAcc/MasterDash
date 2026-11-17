@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v16",
-  "builtAt": "2026-11-17T00:49:20.681Z",
+  "version": "sk-v18",
+  "builtAt": "2026-11-17T01:03:42.996Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -757,18 +757,6 @@
   },
   {
    "ae": "Blake Fenn",
-   "company": "Chen Plumbing",
-   "type": "New Business",
-   "close": "2026-03-30",
-   "booked": 1700,
-   "status": "Collected",
-   "creditedMonth": "2026-03",
-   "credited": 1700,
-   "daysToCollect": 1,
-   "waitingDays": null
-  },
-  {
-   "ae": "Blake Fenn",
    "company": "Modern Air and Water",
    "type": "New Business",
    "close": "2026-03-30",
@@ -1257,18 +1245,6 @@
    "creditedMonth": "2026-08",
    "credited": 650,
    "daysToCollect": 2,
-   "waitingDays": null
-  },
-  {
-   "ae": "Blake Fenn",
-   "company": "Sierra Pacific Home and Comfort",
-   "type": "New Business",
-   "close": "2026-04-30",
-   "booked": 1700,
-   "status": "Collected",
-   "creditedMonth": "2026-05",
-   "credited": 1700,
-   "daysToCollect": 1,
    "waitingDays": null
   },
   {
@@ -1805,11 +1781,11 @@
    "type": "Expansion",
    "close": "2026-06-26",
    "booked": 7200,
-   "status": "Not paid after 60 days",
-   "creditedMonth": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 143
+   "status": "Collected",
+   "creditedMonth": "2026-07",
+   "credited": 50,
+   "daysToCollect": 5,
+   "waitingDays": null
   },
   {
    "ae": "Ky Decker",
@@ -1930,18 +1906,6 @@
    "credited": 1000,
    "daysToCollect": 0,
    "waitingDays": null
-  },
-  {
-   "ae": "colton lingmann",
-   "company": "Midwest Heating and Cooling",
-   "type": "Expansion",
-   "close": "2026-07-06",
-   "booked": 500,
-   "status": "Not paid after 60 days",
-   "creditedMonth": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 133
   },
   {
    "ae": "Blake Fenn",
