@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v41",
-  "builtAt": "2026-11-17T19:47:38.992Z",
+  "version": "sk-v42",
+  "builtAt": "2026-11-17T19:50:45.228Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4153,6 +4153,22 @@
    "type": "New Business",
    "close": "2026-11-17",
    "booked": 750,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0
+  },
+  {
+   "ae": "Ky Decker",
+   "company": "Mr. Air Air Conditioning & Electrical",
+   "type": "New Business",
+   "close": "2026-11-17",
+   "booked": 700,
    "status": "No Stripe link",
    "creditedMonth": "",
    "collectedDate": "",

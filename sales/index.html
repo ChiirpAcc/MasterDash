@@ -209,6 +209,14 @@
   .pane .list li { padding-left: 0; padding-right: 0; }
   .tick.lost { background: var(--late); } .tick.sudden { background: var(--dlc); } .tick.soon { background: var(--soft); }
   .srcs { display: grid; gap: calc(var(--u) * .95); align-content: start; min-height: 0; overflow: hidden; }
+  .pie { display: block; flex: none; width: calc(var(--u) * 10); height: calc(var(--u) * 10); margin: calc(var(--u) * .3) auto calc(var(--u) * .6); }
+  .plegend { display: grid; gap: calc(var(--u) * .45); }
+  .prow { display: grid; grid-template-columns: calc(var(--u) * .9) minmax(0, 1fr) auto; column-gap: calc(var(--u) * .7); align-items: baseline; }
+  .prow i { width: calc(var(--u) * .9); height: calc(var(--u) * .9); border-radius: 3px; align-self: center; }
+  .prow .nm { font-size: calc(var(--u) * 1.02); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .prow .v { font-weight: 700; font-size: calc(var(--u) * 1.15); text-align: right; white-space: pre; }
+  .prow .yr { grid-column: 2 / -1; color: var(--muted); font-size: calc(var(--u) * .85); }
+  .prow.zero .nm, .prow.zero .v { color: var(--muted); }
   .srow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: calc(var(--u) * .3) 1em; }
   .srow .nm { font-size: calc(var(--u) * 1.05); }
   .srow .v { font-weight: 700; font-size: calc(var(--u) * 1.25); text-align: right; }
@@ -567,14 +575,33 @@
     var tm = So.thisMonth, yt = So.ytd, sm = $('r-srcsum'); sm.replaceChildren();
     sm.appendChild(el('b', 'wide', money.format(tm.total))); sm.appendChild(document.createTextNode('new revenue this month, ' + money.format(yt.total) + ' this year'));
     var box = $('r-src'); box.replaceChildren();
-    var maxM = Math.max.apply(null, tm.mediums.map(function (m) { return m.credited; }).concat([1]));
-    tm.mediums.forEach(function (m, i) {
-      var y = yt.mediums[i], row = el('div', 'srow');
-      row.appendChild(el('span', 'nm', m.medium)); row.appendChild(el('span', 'v wide', money.format(m.credited)));
-      var tr = el('div', 'tr'), bar = el('i'); bar.style.width = (100 * m.credited / maxM) + '%'; tr.appendChild(bar); row.appendChild(tr);
-      row.appendChild(el('span', 'yr', money.format(y.credited) + ' this year' + (yt.total ? ', ' + Math.round(100 * y.credited / yt.total) + '%' : '')));
-      box.appendChild(row);
+    // pie: this month's collected new revenue by medium; the legend also gives this year
+    var PIE = { 'Events': 'var(--deal)', 'Partners and referrals': 'var(--good)', 'Webinars': 'var(--dlc)', 'Digital': '#B48CF0', 'Untagged': 'var(--muted)' };
+    var NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg'), a0 = -Math.PI / 2;
+    svg.setAttribute('viewBox', '-50 -50 100 100'); svg.setAttribute('class', 'pie'); svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', 'New revenue this month by source');
+    var slice = function (tag, attrs) { var e = document.createElementNS(NS, tag); Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); }); svg.appendChild(e); };
+    var parts = tm.mediums.filter(function (m) { return m.credited > 0; });
+    if (!tm.total) slice('circle', { r: 46, fill: 'var(--track)' });
+    else if (parts.length === 1) slice('circle', { r: 46, style: 'fill:' + (PIE[parts[0].medium] || 'var(--soft)') });
+    else parts.forEach(function (m) {
+      var a1 = a0 + 2 * Math.PI * m.credited / tm.total, big = a1 - a0 > Math.PI ? 1 : 0;
+      var p = function (a) { return (46 * Math.cos(a)).toFixed(3) + ' ' + (46 * Math.sin(a)).toFixed(3); };
+      slice('path', { d: 'M0 0 L' + p(a0) + ' A46 46 0 ' + big + ' 1 ' + p(a1) + ' Z', style: 'fill:' + (PIE[m.medium] || 'var(--soft)'),
+                      stroke: 'var(--ground)', 'stroke-width': 1.2, 'stroke-linejoin': 'round' });
+      a0 = a1;
     });
+    box.appendChild(svg);
+    var leg = el('div', 'plegend');
+    tm.mediums.forEach(function (m, i) {
+      var y = yt.mediums[i], row = el('div', 'prow' + (m.credited ? '' : ' zero'));
+      var sw = el('i'); sw.style.background = PIE[m.medium] || 'var(--soft)'; row.appendChild(sw);
+      row.appendChild(el('span', 'nm', m.medium));
+      row.appendChild(el('span', 'v wide', money.format(m.credited) + (tm.total && m.credited ? '  ' + Math.round(100 * m.credited / tm.total) + '%' : '')));
+      row.appendChild(el('span', 'yr', money.format(y.credited) + ' this year' + (yt.total ? ', ' + Math.round(100 * y.credited / yt.total) + '%' : '')));
+      leg.appendChild(row);
+    });
+    box.appendChild(leg);
     // The retention arithmetic with this month's values, then the general notes.
     var note = $('r-note'); note.replaceChildren();
     if (Rt.bom) {
