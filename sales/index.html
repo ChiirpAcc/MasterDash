@@ -274,7 +274,7 @@
     hero.appendChild(el('div', 'lab', 'Collected this month'));
     hero.appendChild(el('div', 'big wide', money.format(t.credited)));
     if (tp.amount) { var ex = el('div', 'exp'); var sw = el('i', 'hatch'); ex.appendChild(sw); ex.appendChild(el('b', null, '+' + money.format(tp.amount)));
-                     ex.appendChild(document.createTextNode(' expected')); hero.appendChild(ex); }
+                     ex.appendChild(document.createTextNode(' expected this month')); hero.appendChild(ex); }
     var facts = el('div', 'facts');
     [[t.dealsCollected, t.dealsCollected === 1 ? 'deal paid' : 'deals paid', ''],
      [t.dlcCount || 0, '10DLC increases paid', '']].forEach(function (f) {
@@ -299,7 +299,7 @@
       var col = el('div', 'col'); col.style.setProperty('--d', (i * 11) + 's');
       var head = el('div'); head.style.textAlign = 'center';
       head.appendChild(el('div', 'amt wide', money.format(x.credited)));
-      var pl = el('div', 'plus'); if (pd.amount) { pl.appendChild(el('b', null, '+' + money.format(pd.amount))); pl.appendChild(document.createTextNode(' expected')); } else pl.textContent = '\u00a0';
+      var pl = el('div', 'plus'); if (pd.amount) { pl.appendChild(el('b', null, '+' + money.format(pd.amount))); pl.appendChild(document.createTextNode(' this month')); } else pl.textContent = '\u00a0';
       head.appendChild(pl); col.appendChild(head);
       var tube = el('div', 'tube'); tube.setAttribute('role', 'img');
       tube.setAttribute('aria-label', nice(r.ae) + ': ' + money.format(x.credited) + ' collected' + (pd.amount ? ', ' + money.format(pd.amount) + ' expected' : ''));
@@ -373,7 +373,7 @@
     var fl = el('div', 'foot narrow');
     fl.appendChild(el('span', null, 'Revenue counts in the month it’s collected: a deal’s first month of MRR when the customer first pays; a 10DLC price increase when its $12 is first paid.'));
     var key = el('span', 'key'); var k1 = el('span'); k1.appendChild(el('i')); k1.appendChild(document.createTextNode('Collected'));
-    var k2 = el('span'); k2.appendChild(el('i', 'hatch')); k2.appendChild(document.createTextNode('Expected')); key.appendChild(k1); key.appendChild(k2);
+    var k2 = el('span'); k2.appendChild(el('i', 'hatch')); k2.appendChild(document.createTextNode('Expected this month')); key.appendChild(k1); key.appendChild(k2);
     fl.appendChild(key); foot.appendChild(fl);
   }
 
