@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v40",
-  "builtAt": "2026-11-17T18:19:08.743Z",
+  "builtAt": "2026-11-17T18:22:40.406Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -475,9 +475,9 @@
    "newLogos": 2,
    "churnedAccounts": 5,
    "atRisk": 7688,
-   "pending": 46441,
-   "stale": 22494.5,
-   "active": 721568.89,
+   "pending": 45291,
+   "stale": 25290.5,
+   "active": 715938.89,
    "reactivations": 0
   },
   "prev": {

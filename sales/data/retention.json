@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v40",
-  "builtAt": "2026-11-17T18:19:08.743Z",
+  "builtAt": "2026-11-17T18:22:40.406Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 721568.89,
+  "current": 715938.89,
   "dataThrough": "2026-11-16",
   "churned": {
    "count": 18,
@@ -318,22 +318,22 @@
    "count": 23,
    "mrr": 22011
   },
-  "lostSoFar": 21681,
-  "retainedSoFar": 0.97,
-  "retainedIfAllEnd": 0.941,
-  "eomMrr": 700238.89,
+  "lostSoFar": 19791,
+  "retainedSoFar": 0.973,
+  "retainedIfAllEnd": 0.944,
+  "eomMrr": 694608.89,
   "trailing": [
    {
     "month": "2026-09",
     "kept": 0.939,
-    "bom": 792572.38,
+    "bom": 791322.38,
     "lost": 48081.5
    },
    {
     "month": "2026-10",
-    "kept": 0.931,
+    "kept": 0.934,
     "bom": 760881.43,
-    "lost": 52814.51
+    "lost": 50015.51
    }
   ]
  }
