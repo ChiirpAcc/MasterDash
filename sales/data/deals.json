@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v40",
-  "builtAt": "2026-11-17T18:22:40.406Z",
+  "builtAt": "2026-11-17T18:28:07.853Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4130,6 +4130,22 @@
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
    "issueDays": 1
+  },
+  {
+   "ae": "Ky Decker",
+   "company": "Seaside Heating and Cooling",
+   "type": "New Business",
+   "close": "2026-11-17",
+   "booked": 850,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0
   }
  ]
 }
