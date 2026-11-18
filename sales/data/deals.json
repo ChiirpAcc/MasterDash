@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v62",
-  "builtAt": "2026-11-18T20:37:58.172Z",
+  "builtAt": "2026-11-18T20:42:57.144Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4915,6 +4915,25 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
+   "waitWhy": "",
+   "expect": null
+  },
+  {
+   "id": "372354172604",
+   "ae": "Ky Decker",
+   "company": "Eric's Plumbing and Drain Cleaning",
+   "type": "New Business",
+   "close": "2026-11-18",
+   "booked": 1500,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0,
    "waitWhy": "",
    "expect": null
   }
