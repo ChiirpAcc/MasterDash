@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v63",
-  "builtAt": "2026-11-18T21:43:01.812Z",
+  "version": "sk-v72",
+  "builtAt": "2026-11-18T21:46:36.988Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -32,6 +32,7 @@
    "Expansion"
   ],
   "start": "2026-01-01",
+  "goal": 25000,
   "rule": "A rep is credited with the first month’s MRR of each New Business or Expansion deal they close, in the month the customer first pays."
  },
  "rows": [
@@ -52,7 +53,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1050
   },
   {
    "id": "260450682599",
@@ -71,7 +73,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1050
   },
   {
    "id": "257189096168",
@@ -90,7 +93,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1800
   },
   {
    "id": "242456016618",
@@ -109,7 +113,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 699
   },
   {
    "id": "251757160152",
@@ -128,7 +133,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 740
   },
   {
    "id": "273164630766",
@@ -147,7 +153,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1300
   },
   {
    "id": "273740275387",
@@ -166,7 +173,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 250
   },
   {
    "id": "262711403198",
@@ -185,7 +193,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "252045612758",
@@ -204,7 +213,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 949
   },
   {
    "id": "276124401352",
@@ -223,7 +233,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 550
   },
   {
    "id": "278206800580",
@@ -242,7 +253,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 550
   },
   {
    "id": "279745949386",
@@ -261,7 +273,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1136.25
   },
   {
    "id": "283812221682",
@@ -280,7 +293,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "231318714064",
@@ -299,7 +313,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 50
   },
   {
    "id": "157350036175",
@@ -318,7 +333,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 949
   },
   {
    "id": "282225135338",
@@ -337,7 +353,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "278763220702",
@@ -356,7 +373,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 800
   },
   {
    "id": "294162994906",
@@ -375,7 +393,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1300
   },
   {
    "id": "293012799188",
@@ -394,7 +413,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 800
   },
   {
    "id": "289018271479",
@@ -413,7 +433,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1300
   },
   {
    "id": "282276598480",
@@ -432,7 +453,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "281958512372",
@@ -451,7 +473,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "300569655033",
@@ -470,7 +493,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1040
   },
   {
    "id": "302709065405",
@@ -489,7 +513,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "300448832233",
@@ -508,7 +533,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1200
   },
   {
    "id": "293206261487",
@@ -527,7 +553,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1060
   },
   {
    "id": "305110981345",
@@ -546,7 +573,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 50
   },
   {
    "id": "300639819495",
@@ -565,7 +593,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "306622361300",
@@ -584,7 +613,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1300
   },
   {
    "id": "307175168715",
@@ -603,7 +633,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "306865576645",
@@ -622,7 +653,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "299065708228",
@@ -641,7 +673,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "298272641748",
@@ -660,7 +693,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "306428309222",
@@ -679,7 +713,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "300722504381",
@@ -698,7 +733,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "305880983237",
@@ -717,7 +753,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "304350459608",
@@ -736,7 +773,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "310671757025",
@@ -755,7 +793,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 390
   },
   {
    "id": "259871956683",
@@ -774,7 +813,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "278118709977",
@@ -793,7 +833,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "313025002203",
@@ -812,7 +853,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "315440222933",
@@ -831,7 +873,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "315801088700",
@@ -850,7 +893,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "316627553994",
@@ -869,7 +913,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "316633346758",
@@ -888,7 +933,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "316626866887",
@@ -907,7 +953,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "316627588801",
@@ -926,7 +973,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 666.96
   },
   {
    "id": "316632629965",
@@ -945,7 +993,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "302646963942",
@@ -964,7 +1013,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "316626234077",
@@ -983,7 +1033,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 748
   },
   {
    "id": "257171100400",
@@ -1002,7 +1053,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "316332588736",
@@ -1021,7 +1073,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "283785769711",
@@ -1040,7 +1093,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "317196098288",
@@ -1059,7 +1113,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 899
   },
   {
    "id": "313763991229",
@@ -1078,7 +1133,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "300396544699",
@@ -1097,7 +1153,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "305504367335",
@@ -1116,7 +1173,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 200
   },
   {
    "id": "318227642062",
@@ -1135,7 +1193,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 550
   },
   {
    "id": "316275775163",
@@ -1154,7 +1213,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 850
   },
   {
    "id": "318537194207",
@@ -1173,7 +1233,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1700
   },
   {
    "id": "318748048100",
@@ -1192,7 +1253,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "35546445236",
@@ -1211,7 +1273,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 899
   },
   {
    "id": "318928965333",
@@ -1230,7 +1293,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 650
   },
   {
    "id": "288807036656",
@@ -1249,7 +1313,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "318651677374",
@@ -1268,7 +1333,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "317946914540",
@@ -1287,7 +1353,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1750
   },
   {
    "id": "319174864579",
@@ -1306,7 +1373,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "319371355893",
@@ -1325,7 +1393,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "319375684292",
@@ -1344,7 +1413,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "319555085037",
@@ -1363,7 +1433,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 850
   },
   {
    "id": "320114876116",
@@ -1382,7 +1453,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "320340580050",
@@ -1401,7 +1473,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "320341319387",
@@ -1420,7 +1493,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "320343499457",
@@ -1439,7 +1513,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "320622997207",
@@ -1458,7 +1533,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "320623839975",
@@ -1477,7 +1553,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 227.61
   },
   {
    "id": "320838856393",
@@ -1496,7 +1573,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "320837518029",
@@ -1515,7 +1593,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "320838258367",
@@ -1534,7 +1613,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1312.5
   },
   {
    "id": "321010584294",
@@ -1553,7 +1633,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1200
   },
   {
    "id": "320837541611",
@@ -1572,7 +1653,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1050
   },
   {
    "id": "320837542602",
@@ -1591,7 +1673,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1200
   },
   {
    "id": "320837542625",
@@ -1610,7 +1693,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 550
   },
   {
    "id": "320622413498",
@@ -1629,7 +1713,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "321281108666",
@@ -1648,7 +1733,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "321335103209",
@@ -1667,7 +1753,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 600
   },
   {
    "id": "321688747733",
@@ -1686,7 +1773,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "321688026838",
@@ -1705,7 +1793,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "321685866188",
@@ -1724,7 +1813,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "321690951391",
@@ -1743,7 +1833,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 650
   },
   {
    "id": "321923868383",
@@ -1762,7 +1853,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "321926758130",
@@ -1781,7 +1873,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1750
   },
   {
    "id": "322467885760",
@@ -1800,7 +1893,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "322442698463",
@@ -1819,7 +1913,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1647
   },
   {
    "id": "322469491428",
@@ -1838,7 +1933,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 850
   },
   {
    "id": "322574427866",
@@ -1857,7 +1953,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 999
   },
   {
    "id": "322910698187",
@@ -1876,7 +1973,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "323097632481",
@@ -1895,7 +1993,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "322912198340",
@@ -1914,7 +2013,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "322924516073",
@@ -1933,7 +2033,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 800
   },
   {
    "id": "323236745959",
@@ -1952,7 +2053,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 650
   },
   {
    "id": "323231810279",
@@ -1971,7 +2073,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1700
   },
   {
    "id": "323517411043",
@@ -1990,7 +2093,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "323527105216",
@@ -2009,7 +2113,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 800
   },
   {
    "id": "324281334520",
@@ -2028,7 +2133,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "324289980148",
@@ -2047,7 +2153,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "324290744048",
@@ -2066,7 +2173,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "324841500349",
@@ -2085,7 +2193,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "323925487343",
@@ -2104,7 +2213,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "324817877710",
@@ -2123,7 +2233,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "324842335958",
@@ -2142,7 +2253,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "324817984220",
@@ -2161,7 +2273,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "323844588248",
@@ -2180,7 +2293,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "323577102028",
@@ -2199,7 +2313,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1625
   },
   {
    "id": "324940750541",
@@ -2218,7 +2333,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "325649359581",
@@ -2237,7 +2353,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "324940960462",
@@ -2256,7 +2373,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "324807536377",
@@ -2275,7 +2393,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "326058480368",
@@ -2294,7 +2413,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1875
   },
   {
    "id": "326061356738",
@@ -2313,7 +2433,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "326364949183",
@@ -2332,7 +2453,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1300
   },
   {
    "id": "326147988189",
@@ -2351,7 +2473,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "321655286464",
@@ -2370,7 +2493,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1100
   },
   {
    "id": "326811967196",
@@ -2389,7 +2513,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "325355134681",
@@ -2408,7 +2533,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 800
   },
   {
    "id": "326399941349",
@@ -2427,7 +2553,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "327236698860",
@@ -2446,7 +2573,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "326613277397",
@@ -2465,7 +2593,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "328044237498",
@@ -2484,7 +2613,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "328234391278",
@@ -2503,7 +2633,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "327055520487",
@@ -2522,7 +2653,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "328599480023",
@@ -2541,7 +2673,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 7650
   },
   {
    "id": "325223199462",
@@ -2560,7 +2693,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "328509854405",
@@ -2579,7 +2713,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 850
   },
   {
    "id": "330224476915",
@@ -2598,7 +2733,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1050
   },
   {
    "id": "331517474514",
@@ -2617,7 +2753,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "332200791785",
@@ -2636,7 +2773,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1200
   },
   {
    "id": "332203756275",
@@ -2655,7 +2793,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "332304584434",
@@ -2674,7 +2813,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "332471572155",
@@ -2693,7 +2833,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 400
   },
   {
    "id": "332471589563",
@@ -2712,7 +2853,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "332609140453",
@@ -2731,7 +2873,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 850
   },
   {
    "id": "332602667742",
@@ -2750,7 +2893,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "332612073200",
@@ -2769,7 +2913,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 600
   },
   {
    "id": "332612789977",
@@ -2788,7 +2933,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 850
   },
   {
    "id": "332789399230",
@@ -2807,7 +2953,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 600
   },
   {
    "id": "332614228708",
@@ -2826,7 +2973,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "333249611482",
@@ -2845,7 +2993,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "333231488751",
@@ -2864,7 +3013,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "333489346255",
@@ -2883,7 +3033,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "333514572532",
@@ -2902,7 +3053,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "333540493032",
@@ -2921,7 +3073,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 300
   },
   {
    "id": "333814188791",
@@ -2940,7 +3093,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "333774096117",
@@ -2959,7 +3113,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "329059114693",
@@ -2978,7 +3133,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2000
   },
   {
    "id": "334066231003",
@@ -2997,7 +3153,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "333786678987",
@@ -3016,7 +3173,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "334479035121",
@@ -3035,7 +3193,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "335228147398",
@@ -3054,7 +3213,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "335261395701",
@@ -3073,7 +3233,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "335179278052",
@@ -3092,7 +3253,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "335261546181",
@@ -3111,7 +3273,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 7650
   },
   {
    "id": "335881093833",
@@ -3130,7 +3293,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 650
   },
   {
    "id": "335869435578",
@@ -3149,7 +3313,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "336127653616",
@@ -3168,7 +3333,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "336402613952",
@@ -3187,7 +3353,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "334110579435",
@@ -3206,7 +3373,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2000
   },
   {
    "id": "336532815592",
@@ -3225,7 +3393,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "337286792942",
@@ -3244,7 +3413,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "337549597420",
@@ -3263,7 +3433,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "338778824392",
@@ -3282,7 +3453,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "339564094167",
@@ -3301,7 +3473,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "339869113072",
@@ -3320,7 +3493,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "340259951336",
@@ -3339,7 +3513,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "340220473048",
@@ -3358,7 +3533,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1125
   },
   {
    "id": "340614334156",
@@ -3377,7 +3553,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1800
   },
   {
    "id": "340490094305",
@@ -3396,7 +3573,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 3250
   },
   {
    "id": "340489432823",
@@ -3415,7 +3593,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "340266677993",
@@ -3434,7 +3613,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "340924690129",
@@ -3453,7 +3633,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "342014537431",
@@ -3472,7 +3653,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "342174605040",
@@ -3491,7 +3673,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "342172677820",
@@ -3510,7 +3693,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "342008801991",
@@ -3529,7 +3713,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1100
   },
   {
    "id": "342008866525",
@@ -3548,7 +3733,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "342324997846",
@@ -3567,7 +3753,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "342327845579",
@@ -3586,7 +3773,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "342339684049",
@@ -3605,7 +3793,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "342947750649",
@@ -3624,7 +3813,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "342947061461",
@@ -3643,7 +3833,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "343125373634",
@@ -3662,7 +3853,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2000
   },
   {
    "id": "343125412569",
@@ -3681,7 +3873,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "343185352431",
@@ -3700,7 +3893,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "343127537346",
@@ -3719,7 +3913,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "343126337232",
@@ -3738,7 +3933,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "343185498831",
@@ -3757,7 +3953,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "343186224875",
@@ -3776,7 +3973,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "343620756161",
@@ -3795,7 +3993,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "343096616678",
@@ -3814,7 +4013,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "fee waived in Stripe until 2026-12-24",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "343268414159",
@@ -3833,7 +4033,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "on a $0 plan in Stripe, nothing to charge",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "344363319996",
@@ -3852,7 +4053,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "fee waived in Stripe until 2026-12-26",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "344359081681",
@@ -3871,7 +4073,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "344622707395",
@@ -3890,7 +4093,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "on a $0 plan in Stripe, nothing to charge",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "345195881197",
@@ -3909,7 +4113,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "fee waived in Stripe until 2026-12-31",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "345156511459",
@@ -3928,7 +4133,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe charge before month end",
-   "expect": 1000
+   "expect": 1000,
+   "cash": 0
   },
   {
    "id": "345156639476",
@@ -3947,7 +4153,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1125
   },
   {
    "id": "344127407824",
@@ -3966,7 +4173,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "343364380381",
@@ -3985,7 +4193,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "343691524851",
@@ -4004,7 +4213,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "345479681780",
@@ -4023,7 +4233,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "329080054473",
@@ -4042,7 +4253,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "346794732248",
@@ -4061,7 +4273,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2500
   },
   {
    "id": "344101178098",
@@ -4080,7 +4293,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe shows the first charge after month end",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "347718225631",
@@ -4099,7 +4313,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2250
   },
   {
    "id": "348701211325",
@@ -4118,7 +4333,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "348946024152",
@@ -4137,7 +4353,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1250
   },
   {
    "id": "347959838434",
@@ -4156,7 +4373,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "326444040934",
@@ -4175,7 +4393,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "fee waived in Stripe until 2027-01-23",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "349725631176",
@@ -4194,7 +4413,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe charge before month end",
-   "expect": 600
+   "expect": 600,
+   "cash": 0
   },
   {
    "id": "349917387509",
@@ -4213,7 +4433,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "350501964519",
@@ -4232,7 +4453,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "342985373428",
@@ -4251,7 +4473,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe charge before month end",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "348867674813",
@@ -4270,7 +4493,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 625
   },
   {
    "id": "350501348062",
@@ -4289,7 +4513,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe shows the first charge after month end",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "348780512993",
@@ -4308,7 +4533,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2500
   },
   {
    "id": "347971922669",
@@ -4327,7 +4553,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2500
   },
   {
    "id": "351630763752",
@@ -4346,7 +4573,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "349791818428",
@@ -4365,7 +4593,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2000
   },
   {
    "id": "352122371778",
@@ -4384,7 +4613,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 3005
   },
   {
    "id": "350239512309",
@@ -4403,7 +4633,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 3005
   },
   {
    "id": "347172986617",
@@ -4422,7 +4653,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "fee waived in Stripe until 2027-02-06",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "352942956264",
@@ -4441,7 +4673,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 5005
   },
   {
    "id": "353525295846",
@@ -4460,7 +4693,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 3505
   },
   {
    "id": "350291768012",
@@ -4479,7 +4713,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 700
   },
   {
    "id": "348740817614",
@@ -4498,7 +4733,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 4005
   },
   {
    "id": "353380620998",
@@ -4517,7 +4753,8 @@
    "issue": "No Stripe link in HubSpot",
    "issueDays": 34,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "354407388899",
@@ -4536,7 +4773,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2300
   },
   {
    "id": "347243637436",
@@ -4555,7 +4793,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "355849245403",
@@ -4574,7 +4813,8 @@
    "issue": "Not set up in Stripe",
    "issueDays": 30,
    "waitWhy": "won recently, not set up in Stripe yet",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "356394038975",
@@ -4593,7 +4833,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "357325715155",
@@ -4612,7 +4853,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 333.33
   },
   {
    "id": "351741272787",
@@ -4631,7 +4873,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 3000
   },
   {
    "id": "348819027656",
@@ -4650,7 +4893,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "360608249583",
@@ -4669,7 +4913,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1005
   },
   {
    "id": "360608975587",
@@ -4688,7 +4933,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 738
   },
   {
    "id": "360866169556",
@@ -4707,7 +4953,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 2300
   },
   {
    "id": "360608620254",
@@ -4726,7 +4973,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe shows the first charge after month end",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "354245433028",
@@ -4745,7 +4993,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1005
   },
   {
    "id": "360755736284",
@@ -4764,7 +5013,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1355
   },
   {
    "id": "361031392954",
@@ -4783,7 +5033,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 500
   },
   {
    "id": "364182682302",
@@ -4802,7 +5053,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "354207454941",
@@ -4821,7 +5073,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe charge before month end",
-   "expect": 166.65
+   "expect": 166.65,
+   "cash": 0
   },
   {
    "id": "349864941300",
@@ -4840,7 +5093,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "on a $0 plan in Stripe, nothing to charge",
-   "expect": null
+   "expect": null,
+   "cash": 0
   },
   {
    "id": "367461627582",
@@ -4859,7 +5113,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1000
   },
   {
    "id": "370412079812",
@@ -4878,7 +5133,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1280
   },
   {
    "id": "371305249483",
@@ -4897,7 +5153,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 750
   },
   {
    "id": "371354206920",
@@ -4916,7 +5173,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 700
   },
   {
    "id": "371628920568",
@@ -4935,7 +5193,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 800
   },
   {
    "id": "372354172604",
@@ -4954,7 +5213,8 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 1500
   },
   {
    "id": "372112654055",
@@ -4973,7 +5233,8 @@
    "issue": "No Stripe link in HubSpot",
    "issueDays": 0,
    "waitWhy": "",
-   "expect": null
+   "expect": null,
+   "cash": 0
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v63",
-  "builtAt": "2026-11-18T21:43:01.812Z",
+  "version": "sk-v72",
+  "builtAt": "2026-11-18T21:46:36.988Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -32,6 +32,7 @@
    "Expansion"
   ],
   "start": "2026-01-01",
+  "goal": 25000,
   "rule": "A rep is credited with the first month’s MRR of each New Business or Expansion deal they close, in the month the customer first pays."
  },
  "team": {

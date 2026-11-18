@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v63",
-  "builtAt": "2026-11-18T21:43:01.812Z",
+  "version": "sk-v72",
+  "builtAt": "2026-11-18T21:46:36.988Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -32,6 +32,7 @@
    "Expansion"
   ],
   "start": "2026-01-01",
+  "goal": 25000,
   "rule": "A rep is credited with the first month’s MRR of each New Business or Expansion deal they close, in the month the customer first pays."
  },
  "retention": {
@@ -46,6 +47,9 @@
    "rows": [
     {
      "company": "Best Virginia HVAC",
+     "am": "Luciana Flores",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-17, renewal date 2026-12-17",
      "mrr": 950,
      "requested": "2026-10-28",
      "ended": "2026-11-17",
@@ -53,6 +57,9 @@
     },
     {
      "company": "Albiero Plumbing & HVAC",
+     "am": "Korth Rushdi",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-17, renewal date 2026-11-17",
      "mrr": 1050,
      "requested": "2026-10-30",
      "ended": "2026-11-17",
@@ -60,6 +67,9 @@
     },
     {
      "company": "Briggs Mechanical",
+     "am": "Adonis Cermeno",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2026-03-17, ends 2026-11-17 mid-term",
      "mrr": 2250,
      "requested": "2026-11-10",
      "ended": "2026-11-17",
@@ -67,6 +77,9 @@
     },
     {
      "company": "Curran Plumbing, Electrical, Heating & Air",
+     "am": "Josh Smart",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 500,
      "requested": "2026-10-30",
      "ended": "2026-11-16",
@@ -74,6 +87,9 @@
     },
     {
      "company": "Family Heating and Air",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 650,
      "requested": "2026-11-04",
      "ended": "2026-11-16",
@@ -81,6 +97,9 @@
     },
     {
      "company": "Austin Electric",
+     "am": "Adonis Cermeno",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2026-03-16, ends 2026-11-16 mid-term",
      "mrr": 2300,
      "requested": "2026-10-28",
      "ended": "2026-11-16",
@@ -88,6 +107,9 @@
     },
     {
      "company": "Bert Black",
+     "am": "Adonis Cermeno",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-14, renewal date 2026-10-14",
      "mrr": 900,
      "requested": "2026-11-09",
      "ended": "2026-11-14",
@@ -95,6 +117,9 @@
     },
     {
      "company": "TemperaturePro San Antonio",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 450,
      "requested": "2026-10-27",
      "ended": "2026-11-13",
@@ -102,6 +127,9 @@
     },
     {
      "company": "Mallard Air LLC",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-03-13, ends 2026-11-13 mid-term",
      "mrr": 700,
      "requested": "2026-11-04",
      "ended": "2026-11-13",
@@ -109,6 +137,9 @@
     },
     {
      "company": "Phoenix Home Comfort LLC",
+     "am": "Luciana Flores",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-13, renewal date 2026-11-13",
      "mrr": 735,
      "requested": "2026-10-27",
      "ended": "2026-11-13",
@@ -116,6 +147,9 @@
     },
     {
      "company": "Saffer Plumbing and Electric",
+     "am": "Adonis Cermeno",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-11, renewal date 2026-11-11",
      "mrr": 1100,
      "requested": "2026-10-27",
      "ended": "2026-11-11",
@@ -123,6 +157,9 @@
     },
     {
      "company": "Sutton Brothers",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 749,
      "requested": "2026-11-04",
      "ended": "2026-11-10",
@@ -130,6 +167,9 @@
     },
     {
      "company": "Apex Heating and Cooling",
+     "am": "Logun Williamson",
+     "kind": "Month-to-month",
+     "kindWhy": "contract term 1 month",
      "mrr": 2500,
      "requested": "2026-11-10",
      "ended": "2026-11-10",
@@ -137,6 +177,9 @@
     },
     {
      "company": "Service Specialties Inc.",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 550,
      "requested": "2026-11-04",
      "ended": "2026-11-08",
@@ -144,6 +187,9 @@
     },
     {
      "company": "Prime Plumbing",
+     "am": "Adonis Cermeno",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 700,
      "requested": "2026-10-06",
      "ended": "2026-11-05",
@@ -151,6 +197,9 @@
     },
     {
      "company": "Contemporary Plumbing Services",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-04, renewal date 2026-12-04",
      "mrr": 650,
      "requested": "2026-11-02",
      "ended": "2026-11-04",
@@ -158,6 +207,9 @@
     },
     {
      "company": "Davis Heating & Air LLC",
+     "am": "Logun Williamson",
+     "kind": "Opt-out",
+     "kindWhy": "asked 2026-11-04, within the 30-month opt-out from 2026-10-05",
      "mrr": 1500,
      "requested": "2026-11-04",
      "ended": "2026-11-04",
@@ -165,6 +217,9 @@
     },
     {
      "company": "Bill Fry the Plumbing Guy",
+     "am": "Adonis Cermeno",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2024-06-03, ends 2026-11-03 mid-term",
      "mrr": 700,
      "requested": "2026-10-31",
      "ended": "2026-11-03",
@@ -172,6 +227,9 @@
     },
     {
      "company": "Accurate Home Services",
+     "am": "Adonis Cermeno",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 700,
      "requested": "2026-10-31",
      "ended": "2026-11-02",
@@ -179,6 +237,9 @@
     },
     {
      "company": "Matthew Palmieri",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2024-08-02, ends 2026-11-02 mid-term",
      "mrr": 1020.5,
      "requested": "2026-10-31",
      "ended": "2026-11-02",
@@ -186,6 +247,9 @@
     },
     {
      "company": "Southern Air",
+     "am": "Luciana Flores",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-01-07, ends 2026-11-01 mid-term",
      "mrr": 887.5,
      "requested": "2026-10-27",
      "ended": "2026-11-01",
@@ -203,126 +267,189 @@
    "rows": [
     {
      "company": "BEPO LLC",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2024-09-18, ends 2026-11-17 mid-term",
      "mrr": 650,
      "requested": "2026-11-04",
      "endsAt": "2026-11-17"
     },
     {
      "company": "DC ROOFING FL",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-17, renewal date 2026-12-18",
      "mrr": 650,
      "requested": "2026-11-04",
      "endsAt": "2026-11-17"
     },
     {
      "company": "Five Star Pressure Washing",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 200,
      "requested": "2026-11-04",
      "endsAt": "2026-11-17"
     },
     {
      "company": "Salt Lake Plumbing",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-09-18, ends 2026-11-18 mid-term",
      "mrr": 749,
      "requested": "2026-11-04",
      "endsAt": "2026-11-18"
     },
     {
      "company": "Access Heating Air and Plumbing",
+     "am": "Luciana Flores",
+     "kind": "Early cancellation",
+     "kindWhy": "15-month term from 2026-01-19, ends 2026-11-19 mid-term",
      "mrr": 1299,
      "requested": "2026-10-29",
      "endsAt": "2026-11-19"
     },
     {
      "company": "Jeoah Electric",
+     "am": "Adonis Cermeno",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-19, renewal date 2026-12-19",
      "mrr": 949,
      "requested": "2026-10-27",
      "endsAt": "2026-11-19"
     },
     {
      "company": "CONCIERGE HOME REMODELING",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-20, renewal date 2026-10-20",
      "mrr": 450,
      "requested": "2026-11-04",
      "endsAt": "2026-11-20"
     },
     {
      "company": "Oleada Electrical",
+     "am": "Luciana Flores",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2026-01-20, ends 2026-11-20 mid-term",
      "mrr": 1050,
      "requested": "2026-10-29",
      "endsAt": "2026-11-20"
     },
     {
      "company": "Crisafulli Bros",
+     "am": "Korth Rushdi",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-05-22, ends 2026-11-21 mid-term",
      "mrr": 950,
      "requested": "2026-11-12",
      "endsAt": "2026-11-21"
     },
     {
      "company": "Gering Valley Plumbing and Heating",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 550,
      "requested": "2026-11-04",
      "endsAt": "2026-11-22"
     },
     {
      "company": "DT Electric LLC",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-23, renewal date 2026-10-23",
      "mrr": 849,
      "requested": "2026-11-04",
      "endsAt": "2026-11-23"
     },
     {
      "company": "Chem-Dry of Nebraska",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 75,
      "requested": "2026-11-04",
      "endsAt": "2026-11-23"
     },
     {
      "company": "Homestead Home Services",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-09-25, ends 2026-11-25 mid-term",
      "mrr": 800,
      "requested": "2026-11-04",
      "endsAt": "2026-11-25"
     },
     {
      "company": "Service Star Inc",
+     "am": "Korth Rushdi",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 3950,
      "requested": "2026-11-12",
      "endsAt": "2026-11-26"
     },
     {
      "company": "American Trade Partners LLC",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-08-28, ends 2026-11-26 mid-term",
      "mrr": 850,
      "requested": "2026-10-31",
      "endsAt": "2026-11-26"
     },
     {
      "company": "Royalty Carpet",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 200,
      "requested": "2026-10-29",
      "endsAt": "2026-11-26"
     },
     {
      "company": "City Wide Chem-Dry",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 75,
      "requested": "2026-10-28",
      "endsAt": "2026-11-26"
     },
     {
      "company": "Good Times Restoration LLC DBA Good Times Plumbing & Restoration",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2024-08-28, ends 2026-11-28 mid-term",
      "mrr": 935,
      "requested": "2026-11-04",
      "endsAt": "2026-11-28"
     },
     {
      "company": "JW Heating and Air",
+     "am": "Korth Rushdi",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 1250,
      "requested": "2026-11-03",
      "endsAt": "2026-11-29"
     },
     {
      "company": "Popsicle Air",
+     "am": "Adonis Cermeno",
+     "kind": "",
+     "kindWhy": "",
      "mrr": 1650,
      "requested": "2026-11-12",
      "endsAt": "2026-11-30"
     },
     {
      "company": "R&R Plumbing Services Inc.",
+     "am": "Luciana Flores",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-30, renewal date 2026-10-30",
      "mrr": 949,
      "requested": "2026-10-27",
      "endsAt": "2026-11-30"
