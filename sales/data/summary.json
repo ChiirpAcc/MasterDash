@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T17:38:00.875Z",
+  "builtAt": "2026-11-18T17:43:18.965Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -36,15 +36,15 @@
  },
  "team": {
   "thisMonth": {
-   "credited": 10048,
-   "newCredited": 6662,
+   "credited": 11598,
+   "newCredited": 8212,
    "dlcCredited": 924,
    "dlcCount": 77,
    "expCredited": 2462,
-   "dealsCollected": 11,
+   "dealsCollected": 13,
    "dealsWon": 14,
    "booked": 16916.65,
-   "avgDaysToCollect": 31
+   "avgDaysToCollect": 26
   },
   "lastMonth": {
    "credited": 25941.29,
@@ -58,23 +58,23 @@
    "avgDaysToCollect": 24
   },
   "qtd": {
-   "credited": 35989.29,
-   "newCredited": 31391.33,
+   "credited": 37539.29,
+   "newCredited": 32941.33,
    "dlcCredited": 924,
    "dlcCount": 77,
    "expCredited": 3673.96,
-   "dealsCollected": 37,
+   "dealsCollected": 39,
    "dealsWon": 32,
    "booked": 43966.65,
-   "avgDaysToCollect": 26
+   "avgDaysToCollect": 24
   },
   "ytd": {
-   "credited": 350140.36,
-   "newCredited": 333999.9,
+   "credited": 351690.36,
+   "newCredited": 335549.9,
    "dlcCredited": 924,
    "dlcCount": 77,
    "expCredited": 15216.46,
-   "dealsCollected": 364,
+   "dealsCollected": 366,
    "dealsWon": 426,
    "booked": 517784.94,
    "avgDaysToCollect": 8
@@ -158,6 +158,67 @@
   },
   {
    "thisMonth": {
+    "credited": 2550,
+    "newCredited": 2050,
+    "dlcCredited": 0,
+    "dlcCount": 0,
+    "expCredited": 500,
+    "dealsCollected": 4,
+    "dealsWon": 3,
+    "booked": 3550,
+    "avgDaysToCollect": 76
+   },
+   "lastMonth": {
+    "credited": 13324,
+    "newCredited": 13324,
+    "dlcCredited": 0,
+    "dlcCount": 0,
+    "expCredited": 0,
+    "dealsCollected": 9,
+    "dealsWon": 7,
+    "booked": 12600,
+    "avgDaysToCollect": 32
+   },
+   "qtd": {
+    "credited": 15874,
+    "newCredited": 15374,
+    "dlcCredited": 0,
+    "dlcCount": 0,
+    "expCredited": 500,
+    "dealsCollected": 13,
+    "dealsWon": 10,
+    "booked": 16150,
+    "avgDaysToCollect": 46
+   },
+   "ytd": {
+    "credited": 95939.82,
+    "newCredited": 95439.82,
+    "dlcCredited": 0,
+    "dlcCount": 0,
+    "expCredited": 500,
+    "dealsCollected": 78,
+    "dealsWon": 100,
+    "booked": 139270.04,
+    "avgDaysToCollect": 15
+   },
+   "pending": {
+    "deals": 2,
+    "dealAmount": 1600,
+    "dlcCount": 0,
+    "dlcAmount": 0,
+    "amount": 1600
+   },
+   "awaiting": {
+    "deals": 21,
+    "booked": 23093.04,
+    "stale": 17
+   },
+   "collectionRate": 0.791,
+   "ae": "Ky Decker",
+   "onRoster": true
+  },
+  {
+   "thisMonth": {
     "credited": 1362,
     "newCredited": 1362,
     "dlcCredited": 0,
@@ -215,67 +276,6 @@
    },
    "collectionRate": 0.926,
    "ae": "colton lingmann",
-   "onRoster": true
-  },
-  {
-   "thisMonth": {
-    "credited": 1000,
-    "newCredited": 500,
-    "dlcCredited": 0,
-    "dlcCount": 0,
-    "expCredited": 500,
-    "dealsCollected": 2,
-    "dealsWon": 3,
-    "booked": 3550,
-    "avgDaysToCollect": 153
-   },
-   "lastMonth": {
-    "credited": 13324,
-    "newCredited": 13324,
-    "dlcCredited": 0,
-    "dlcCount": 0,
-    "expCredited": 0,
-    "dealsCollected": 9,
-    "dealsWon": 7,
-    "booked": 12600,
-    "avgDaysToCollect": 32
-   },
-   "qtd": {
-    "credited": 14324,
-    "newCredited": 13824,
-    "dlcCredited": 0,
-    "dlcCount": 0,
-    "expCredited": 500,
-    "dealsCollected": 11,
-    "dealsWon": 10,
-    "booked": 16150,
-    "avgDaysToCollect": 54
-   },
-   "ytd": {
-    "credited": 94389.82,
-    "newCredited": 93889.82,
-    "dlcCredited": 0,
-    "dlcCount": 0,
-    "expCredited": 500,
-    "dealsCollected": 76,
-    "dealsWon": 100,
-    "booked": 139270.04,
-    "avgDaysToCollect": 15
-   },
-   "pending": {
-    "deals": 2,
-    "dealAmount": 1600,
-    "dlcCount": 0,
-    "dlcAmount": 0,
-    "amount": 1600
-   },
-   "awaiting": {
-    "deals": 21,
-    "booked": 23093.04,
-    "stale": 17
-   },
-   "collectionRate": 0.791,
-   "ae": "Ky Decker",
    "onRoster": true
   },
   {

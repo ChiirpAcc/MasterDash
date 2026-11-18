@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T17:38:00.875Z",
+  "builtAt": "2026-11-18T17:43:18.965Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4428,15 +4428,15 @@
    "type": "New Business",
    "close": "2026-11-17",
    "booked": 850,
-   "status": "No Stripe link",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-17",
+   "credited": 850,
+   "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
-   "issue": "No Stripe link in HubSpot",
-   "issueDays": 1
+   "issue": "",
+   "issueDays": null
   },
   {
    "id": "371305249483",
@@ -4462,15 +4462,15 @@
    "type": "New Business",
    "close": "2026-11-17",
    "booked": 700,
-   "status": "No Stripe link",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-17",
+   "credited": 700,
+   "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
-   "issue": "No Stripe link in HubSpot",
-   "issueDays": 1
+   "issue": "",
+   "issueDays": null
   },
   {
    "id": "371628920568",

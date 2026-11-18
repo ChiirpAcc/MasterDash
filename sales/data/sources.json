@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T17:38:00.875Z",
+  "builtAt": "2026-11-18T17:43:18.965Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,7 +37,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 9124,
+   "total": 10674,
    "mediums": [
     {
      "medium": "Events",
@@ -46,8 +46,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 3762,
-     "deals": 4
+     "credited": 4462,
+     "deals": 5
     },
     {
      "medium": "Webinars",
@@ -56,8 +56,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 2000,
-     "deals": 3
+     "credited": 2850,
+     "deals": 4
     },
     {
      "medium": "Untagged",
@@ -67,16 +67,16 @@
    ],
    "top": [
     {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 1850,
+     "deals": 3
+    },
+    {
      "source": "Nexstar",
      "medium": "Partners and referrals",
      "credited": 1500,
      "deals": 1
-    },
-    {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 1000,
-     "deals": 2
     },
     {
      "source": "Webinar - KickCharge",
@@ -109,15 +109,15 @@
      "deals": 1
     },
     {
-     "source": "2026 - HSF Freedom",
-     "medium": "Events",
-     "credited": 512,
+     "source": "FieldEdge",
+     "medium": "Partners and referrals",
+     "credited": 700,
      "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 349216.36,
+   "total": 350766.36,
    "mediums": [
     {
      "medium": "Events",
@@ -126,8 +126,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 108195.25,
-     "deals": 117
+     "credited": 108895.25,
+     "deals": 118
     },
     {
      "medium": "Webinars",
@@ -136,8 +136,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 68999,
-     "deals": 64
+     "credited": 69849,
+     "deals": 65
     },
     {
      "medium": "Untagged",
@@ -155,8 +155,8 @@
     {
      "source": "Facebook",
      "medium": "Digital",
-     "credited": 22900,
-     "deals": 24
+     "credited": 23750,
+     "deals": 25
     },
     {
      "source": "LAB",
