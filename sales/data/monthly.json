@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v63",
-  "builtAt": "2026-11-18T20:47:47.456Z",
+  "builtAt": "2026-11-18T20:52:59.493Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -629,11 +629,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 948,
+   "credited": 960,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 948,
-   "dlcCount": 79
+   "dlcCredited": 960,
+   "dlcCount": 80
   },
   {
    "ae": "Ky Decker",
