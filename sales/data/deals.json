@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T06:58:03.002Z",
+  "builtAt": "2026-11-18T07:03:02.184Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -302,7 +302,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 284,
+   "waitingDays": 285,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -608,7 +608,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 260,
+   "waitingDays": 261,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -727,7 +727,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 257,
+   "waitingDays": 258,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -931,7 +931,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 243,
+   "waitingDays": 244,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -1186,7 +1186,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 229,
+   "waitingDays": 230,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -1254,7 +1254,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 223,
+   "waitingDays": 224,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -1271,7 +1271,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 222,
+   "waitingDays": 223,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -1288,7 +1288,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 222,
+   "waitingDays": 223,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -1356,7 +1356,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 216,
+   "waitingDays": 217,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -1696,7 +1696,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 203,
+   "waitingDays": 204,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2036,7 +2036,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 183,
+   "waitingDays": 184,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2206,7 +2206,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 173,
+   "waitingDays": 174,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2274,7 +2274,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 166,
+   "waitingDays": 167,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2308,7 +2308,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 162,
+   "waitingDays": 163,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2563,7 +2563,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 144,
+   "waitingDays": 145,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2580,7 +2580,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 141,
+   "waitingDays": 142,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2631,7 +2631,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 140,
+   "waitingDays": 141,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2682,7 +2682,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 139,
+   "waitingDays": 140,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2733,7 +2733,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 131,
+   "waitingDays": 132,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2801,7 +2801,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 127,
+   "waitingDays": 128,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -2988,7 +2988,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 110,
+   "waitingDays": 111,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3056,7 +3056,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 103,
+   "waitingDays": 104,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3107,7 +3107,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 102,
+   "waitingDays": 103,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3413,7 +3413,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 88,
+   "waitingDays": 89,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3498,7 +3498,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 84,
+   "waitingDays": 85,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3566,7 +3566,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 78,
+   "waitingDays": 79,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3583,7 +3583,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 78,
+   "waitingDays": 79,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3651,7 +3651,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 76,
+   "waitingDays": 77,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -3804,7 +3804,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 56,
+   "waitingDays": 57,
    "billsThisMonth": true,
    "issue": "",
    "issueDays": null
@@ -3821,7 +3821,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 56,
+   "waitingDays": 57,
    "billsThisMonth": true,
    "issue": "",
    "issueDays": null
@@ -3906,7 +3906,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 53,
+   "waitingDays": 54,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -4025,7 +4025,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 42,
+   "waitingDays": 43,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -4113,7 +4113,7 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
-   "issueDays": 33
+   "issueDays": 34
   },
   {
    "id": "354407388899",
@@ -4161,10 +4161,10 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 29,
+   "waitingDays": 30,
    "billsThisMonth": true,
    "issue": "Not set up in Stripe",
-   "issueDays": 29
+   "issueDays": 30
   },
   {
    "id": "356394038975",
@@ -4297,7 +4297,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 14,
+   "waitingDays": 15,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null
@@ -4382,7 +4382,7 @@
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
-   "waitingDays": 8,
+   "waitingDays": 9,
    "billsThisMonth": true,
    "issue": "",
    "issueDays": null
@@ -4402,7 +4402,7 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
-   "issueDays": 4
+   "issueDays": 5
   },
   {
    "id": "367461627582",
@@ -4436,7 +4436,7 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
-   "issueDays": 0
+   "issueDays": 1
   },
   {
    "id": "371305249483",
@@ -4470,7 +4470,7 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
-   "issueDays": 0
+   "issueDays": 1
   },
   {
    "id": "371628920568",

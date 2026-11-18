@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T06:58:03.002Z",
+  "builtAt": "2026-11-18T07:03:02.184Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -545,24 +545,24 @@
    }
   },
   "sales": {
-   "from": "2026-11-11",
-   "to": "2026-11-17",
+   "from": "2026-11-12",
+   "to": "2026-11-18",
    "now": {
-    "dealsWon": 5,
-    "bookedMrr": 5300,
+    "dealsWon": 6,
+    "bookedMrr": 6100,
     "dlcPaid": 65,
     "dlcAmount": 780
    },
    "prev": {
-    "dealsWon": 6,
-    "bookedMrr": 7266.65,
-    "dlcPaid": 8,
-    "dlcAmount": 96
+    "dealsWon": 5,
+    "bookedMrr": 6766.65,
+    "dlcPaid": 6,
+    "dlcAmount": 72
    },
    "from30": "2026-10-20",
    "now30": {
-    "dealsWon": 20,
-    "bookedMrr": 25116.65,
+    "dealsWon": 21,
+    "bookedMrr": 25916.65,
     "dlcPaid": 76,
     "dlcAmount": 912
    },
