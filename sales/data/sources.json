@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v73",
-  "builtAt": "2026-11-18T22:08:24.942Z",
+  "version": "sk-v79",
+  "builtAt": "2026-11-18T22:13:07.726Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -47,8 +47,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 5200,
-     "deals": 6
+     "credited": 6050,
+     "deals": 7
     },
     {
      "medium": "Webinars",
@@ -61,9 +61,14 @@
      "deals": 4
     },
     {
+     "medium": "Account Manager",
+     "credited": 0,
+     "deals": 0
+    },
+    {
      "medium": "Untagged",
-     "credited": 850,
-     "deals": 1
+     "credited": 0,
+     "deals": 0
     }
    ],
    "top": [
@@ -122,13 +127,13 @@
    "mediums": [
     {
      "medium": "Events",
-     "credited": 75720.32,
-     "deals": 69
+     "credited": 88406.82,
+     "deals": 81
     },
     {
      "medium": "Partners and referrals",
-     "credited": 108823.25,
-     "deals": 113
+     "credited": 145550.25,
+     "deals": 159
     },
     {
      "medium": "Webinars",
@@ -137,21 +142,26 @@
     },
     {
      "medium": "Digital",
-     "credited": 69849,
-     "deals": 65
+     "credited": 113164.33,
+     "deals": 110
+    },
+    {
+     "medium": "Account Manager",
+     "credited": 1849.96,
+     "deals": 4
     },
     {
      "medium": "Untagged",
-     "credited": 95228.79,
-     "deals": 108
+     "credited": 650,
+     "deals": 1
     }
    ],
    "top": [
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 29149,
-     "deals": 27
+     "credited": 49949,
+     "deals": 46
     },
     {
      "source": "Facebook",
@@ -160,42 +170,76 @@
      "deals": 25
     },
     {
+     "source": "Partnerships",
+     "medium": "Partners and referrals",
+     "credited": 23347,
+     "deals": 26
+    },
+    {
      "source": "LAB",
      "medium": "Partners and referrals",
      "credited": 12100.25,
      "deals": 17
     },
     {
+     "source": "Referrals",
+     "medium": "Partners and referrals",
+     "credited": 11980,
+     "deals": 13
+    },
+    {
+     "source": "Meta",
+     "medium": "Digital",
+     "credited": 10630.33,
+     "deals": 12
+    },
+    {
+     "source": "Events/Trade Shows",
+     "medium": "Events",
+     "credited": 10436.5,
+     "deals": 11
+    },
+    {
      "source": "2026 - Tommy Mello Podcast",
      "medium": "Events",
      "credited": 10102.61,
      "deals": 9
-    },
-    {
-     "source": "2026 - EGIA Epic Tradeshow",
-     "medium": "Events",
-     "credited": 9250,
-     "deals": 7
-    },
-    {
-     "source": "BDR Co - Business Development Resources",
-     "medium": "Partners and referrals",
-     "credited": 8349,
-     "deals": 8
-    },
-    {
-     "source": "2025 - Home Service Freedom",
-     "medium": "Events",
-     "credited": 7949,
-     "deals": 8
-    },
-    {
-     "source": "Certain Path",
-     "medium": "Partners and referrals",
-     "credited": 7838,
-     "deals": 8
     }
    ]
-  }
+  },
+  "daily": [
+   {
+    "day": "2026-11-02",
+    "amount": 950
+   },
+   {
+    "day": "2026-11-05",
+    "amount": 2850
+   },
+   {
+    "day": "2026-11-06",
+    "amount": 500
+   },
+   {
+    "day": "2026-11-07",
+    "amount": 1000
+   },
+   {
+    "day": "2026-11-08",
+    "amount": 1500
+   },
+   {
+    "day": "2026-11-14",
+    "amount": 500
+   },
+   {
+    "day": "2026-11-17",
+    "amount": 4100
+   },
+   {
+    "day": "2026-11-18",
+    "amount": 1500
+   }
+  ]
  }
 }

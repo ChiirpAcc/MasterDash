@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v73",
-  "builtAt": "2026-11-18T22:08:24.942Z",
+  "version": "sk-v79",
+  "builtAt": "2026-11-18T22:13:07.726Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -53,7 +53,10 @@
      "mrr": 950,
      "requested": "2026-10-28",
      "ended": "2026-11-17",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_RPtEvJgH0jQHWx"
+     ]
     },
     {
      "company": "Albiero Plumbing & HVAC",
@@ -63,7 +66,10 @@
      "mrr": 1050,
      "requested": "2026-10-30",
      "ended": "2026-11-17",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_TRNdrlysFnOnv5"
+     ]
     },
     {
      "company": "Briggs Mechanical",
@@ -73,7 +79,10 @@
      "mrr": 2250,
      "requested": "2026-11-10",
      "ended": "2026-11-17",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_UANDUnS6jO4XrE"
+     ]
     },
     {
      "company": "Curran Plumbing, Electrical, Heating & Air",
@@ -83,7 +92,10 @@
      "mrr": 500,
      "requested": "2026-10-30",
      "ended": "2026-11-16",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_UA4aEtdtH4JYGp"
+     ]
     },
     {
      "company": "Family Heating and Air",
@@ -93,7 +105,10 @@
      "mrr": 650,
      "requested": "2026-11-04",
      "ended": "2026-11-16",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_Pw6GpMy7O4DVQ8"
+     ]
     },
     {
      "company": "Austin Electric",
@@ -103,7 +118,10 @@
      "mrr": 2300,
      "requested": "2026-10-28",
      "ended": "2026-11-16",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_U9x27tNG0xSank"
+     ]
     },
     {
      "company": "Bert Black",
@@ -113,7 +131,10 @@
      "mrr": 900,
      "requested": "2026-11-09",
      "ended": "2026-11-14",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_R1ujsRZ1eUhwvo"
+     ]
     },
     {
      "company": "TemperaturePro San Antonio",
@@ -123,7 +144,10 @@
      "mrr": 450,
      "requested": "2026-10-27",
      "ended": "2026-11-13",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_PYU6fGL6qeiAv6"
+     ]
     },
     {
      "company": "Mallard Air LLC",
@@ -133,7 +157,10 @@
      "mrr": 700,
      "requested": "2026-11-04",
      "ended": "2026-11-13",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_Rw9rNRaHwD25kV"
+     ]
     },
     {
      "company": "Phoenix Home Comfort LLC",
@@ -143,7 +170,10 @@
      "mrr": 735,
      "requested": "2026-10-27",
      "ended": "2026-11-13",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_RD94AmNAEmIbbP"
+     ]
     },
     {
      "company": "Saffer Plumbing and Electric",
@@ -153,7 +183,10 @@
      "mrr": 1100,
      "requested": "2026-10-27",
      "ended": "2026-11-11",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_RCPP46eH4PA92v"
+     ]
     },
     {
      "company": "Sutton Brothers",
@@ -163,7 +196,10 @@
      "mrr": 749,
      "requested": "2026-11-04",
      "ended": "2026-11-10",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_PLnOXqCACfTsbF"
+     ]
     },
     {
      "company": "Apex Heating and Cooling",
@@ -173,7 +209,10 @@
      "mrr": 2500,
      "requested": "2026-11-10",
      "ended": "2026-11-10",
-     "unexpected": true
+     "unexpected": true,
+     "customers": [
+      "cus_VDqa11PcvhMG9U"
+     ]
     },
     {
      "company": "Service Specialties Inc.",
@@ -183,7 +222,10 @@
      "mrr": 550,
      "requested": "2026-11-04",
      "ended": "2026-11-08",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_NUOJySvROL0pyB"
+     ]
     },
     {
      "company": "Prime Plumbing",
@@ -193,7 +235,10 @@
      "mrr": 700,
      "requested": "2026-10-06",
      "ended": "2026-11-05",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_Q3bv4FNcpUcWdC"
+     ]
     },
     {
      "company": "Contemporary Plumbing Services",
@@ -203,7 +248,10 @@
      "mrr": 650,
      "requested": "2026-11-02",
      "ended": "2026-11-04",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_TXpbkpCpk1GGnT"
+     ]
     },
     {
      "company": "Davis Heating & Air LLC",
@@ -213,7 +261,10 @@
      "mrr": 1500,
      "requested": "2026-11-04",
      "ended": "2026-11-04",
-     "unexpected": true
+     "unexpected": true,
+     "customers": [
+      "cus_VO1mjljUkih8O0"
+     ]
     },
     {
      "company": "Bill Fry the Plumbing Guy",
@@ -223,7 +274,10 @@
      "mrr": 700,
      "requested": "2026-10-31",
      "ended": "2026-11-03",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_QE8G5A26h4TzYW"
+     ]
     },
     {
      "company": "Accurate Home Services",
@@ -233,7 +287,10 @@
      "mrr": 700,
      "requested": "2026-10-31",
      "ended": "2026-11-02",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_PqrUvwHKuXxspF"
+     ]
     },
     {
      "company": "Matthew Palmieri",
@@ -243,7 +300,10 @@
      "mrr": 1020.5,
      "requested": "2026-10-31",
      "ended": "2026-11-02",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_QaXvzjXeCgoQUp"
+     ]
     },
     {
      "company": "Southern Air",
@@ -253,7 +313,10 @@
      "mrr": 887.5,
      "requested": "2026-10-27",
      "ended": "2026-11-01",
-     "unexpected": false
+     "unexpected": false,
+     "customers": [
+      "cus_O0Fp2K2YWkno4b"
+     ]
     }
    ]
   },

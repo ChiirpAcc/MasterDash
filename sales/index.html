@@ -44,23 +44,44 @@
            animation: drift 360s ease-in-out infinite; opacity: 0; pointer-events: none; background: var(--ground); z-index: 1; }
   .stage.on { opacity: 1; pointer-events: auto; }
   /* ---------- screen 3: goal */
-  .goal { display: flex; flex-direction: column; justify-content: center; gap: calc(var(--u) * 2.2); padding: 0 calc(var(--u) * 4); min-height: 0; }
-  .goal .lab { color: var(--muted); font-size: calc(var(--u) * 1.4); }
-  .goal .row1 { display: flex; align-items: baseline; gap: calc(var(--u) * 1.6); flex-wrap: wrap; }
-  .goal .big { font-weight: 760; font-size: calc(var(--u) * 7.5); line-height: .95; }
-  .goal .of { color: var(--soft); font-size: calc(var(--u) * 2.6); font-weight: 600; }
-  .goal .pct { margin-left: auto; font-weight: 740; font-size: calc(var(--u) * 3.4); color: var(--deal); }
-  .gbar { position: relative; height: calc(var(--u) * 3.2); border-radius: 99px; background: var(--track); overflow: visible; }
-  .gbar .fill, .gbar .exp { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 99px; }
-  .gbar .fill { background: var(--deal); z-index: 2; }
-  .gbar .exp { background-color: var(--exp); z-index: 1; }
-  .gbar .mark { position: absolute; top: calc(var(--u) * -1); bottom: calc(var(--u) * -1); width: 3px; background: var(--text); z-index: 3; }
+  .goal { display: flex; flex-direction: column; justify-content: center; gap: calc(var(--u) * 1.8); padding: 0 calc(var(--u) * 3); min-height: 0; }
+  .gtop { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: calc(var(--u) * 3); align-items: end; }
+  .gtop .lab { color: var(--muted); font-size: calc(var(--u) * 1.3); margin-bottom: calc(var(--u) * .3); }
+  .gtop .v { font-weight: 760; font-size: calc(var(--u) * 5.4); line-height: .95; }
+  .gtop .v.dim { color: var(--soft); }
+  .gtag { font-weight: 740; font-size: calc(var(--u) * 2.4); padding: calc(var(--u) * .5) calc(var(--u) * 1.4); border-radius: calc(var(--u) * .6); white-space: nowrap; }
+  .gtag.bad { background: rgba(240,138,126,.16); color: var(--late); } .gtag.good { background: rgba(127,209,163,.16); color: var(--good); }
+  .gbarwrap { padding-top: calc(var(--u) * 2.2); }
+  .gbar { position: relative; height: calc(var(--u) * 2.6); border-radius: 99px; background: var(--track); }
+  .gbar .fill, .gbar .exp, .gbar .proj { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 99px; }
+  .gbar .fill { background: var(--deal); z-index: 3; }
+  .gbar .exp { background-color: var(--exp); z-index: 2; }
+  .gbar .proj { background: rgba(122,167,255,.18); border: 1px dashed rgba(122,167,255,.6); z-index: 1; }
+  .gbar .mark { position: absolute; top: calc(var(--u) * -.8); bottom: calc(var(--u) * -.8); width: 3px; background: var(--text); z-index: 4; }
   .gbar .mark span { position: absolute; top: calc(var(--u) * -2.2); left: 50%; transform: translateX(-50%); white-space: nowrap; color: var(--soft); font-size: calc(var(--u) * 1.05); }
-  .gscale { display: flex; justify-content: space-between; color: var(--muted); font-size: calc(var(--u) * 1); margin-top: calc(var(--u) * -1.2); }
-  .gpace { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--u) * 2); border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.6); }
-  .gpace b { display: block; font-weight: 740; font-size: calc(var(--u) * 3); line-height: 1.05; }
-  .gpace span { color: var(--muted); font-size: calc(var(--u) * 1.1); }
-  .gpace .good b { color: var(--good); } .gpace .bad b { color: var(--late); }
+  .gscale { display: flex; justify-content: space-between; color: var(--muted); font-size: calc(var(--u) * 1); margin-top: calc(var(--u) * .6); }
+  .gline { font-size: calc(var(--u) * 1.6); color: var(--soft); }
+  .gline b { color: var(--text); font-weight: 720; }
+  .gline b.bad { color: var(--late); } .gline b.good { color: var(--good); }
+  .gline small { display: block; margin-top: calc(var(--u) * .35); color: var(--muted); font-size: .65em; }
+  .gnet { border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.2); }
+  .gnet .h { font-size: calc(var(--u) * 1.5); color: var(--soft); }
+  .gnet .h b { font-weight: 740; } .gnet .h b.good { color: var(--good); } .gnet .h b.bad { color: var(--late); }
+  .gnet .eq { display: flex; flex-wrap: wrap; gap: calc(var(--u) * 2.4); margin-top: calc(var(--u) * .6); }
+  .gnet .term b { display: block; font-weight: 700; font-size: calc(var(--u) * 1.6); color: var(--text); }
+  .gnet .term small { color: var(--muted); font-size: calc(var(--u) * .9); }
+  .gnet .term.tot b { color: var(--deal); }
+  .gnet .h .lapsed { color: var(--muted); font-size: .7em; }
+  .gnet .eq { gap: calc(var(--u) * 1.8); }
+  .gsrc { border-top: 1px solid var(--rule); padding-top: calc(var(--u) * 1.2); }
+  .gsrc .t { display: flex; justify-content: space-between; color: var(--soft); font-weight: 650; font-size: calc(var(--u) * 1.1); margin-bottom: calc(var(--u) * .5); }
+  .gsrc .t span { color: var(--muted); font-weight: 500; }
+  .gstack { display: flex; height: calc(var(--u) * 1.3); border-radius: calc(var(--u) * .35); overflow: hidden; background: var(--track); }
+  .gstack i { display: block; height: 100%; }
+  .gleg { display: flex; flex-wrap: wrap; gap: calc(var(--u) * .5) calc(var(--u) * 2); margin-top: calc(var(--u) * .6); font-size: calc(var(--u) * 1); color: var(--soft); }
+  .gleg span { display: inline-flex; align-items: center; gap: .45em; }
+  .gleg i { width: .8em; height: .8em; border-radius: 2px; display: inline-block; }
+  .gleg b { color: var(--text); font-weight: 700; }
   /* Screen change: diagonal slice. The incoming screen sits on top and an angled edge sweeps across
      (a clip-path transition, so the burn-in drift animation is never restarted). */
   .stage.wiping { opacity: 1; z-index: 2; }
@@ -400,7 +421,7 @@
     <div class="brand"><span class="logo" role="img" aria-label="CHIIRP"></span><h1 class="wide" id="g-title">Goal</h1></div>
     <p id="g-sub"></p>
   </div>
-  <section class="goal" id="goal" aria-label="Monthly sales goal and pace"></section>
+  <section class="goal" id="goal" aria-label="Monthly sales goal, pace and sources"></section>
   <div></div>
 </div>
 
@@ -797,32 +818,61 @@
   if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fit);
 
   // ======================================================= screen 3: monthly goal and pace
-  function renderGoal(S) {
+  function renderGoal(S, So, Rt) {
     var goal = (S.meta && S.meta.goal) || 0; if (!goal) return false;
     var mk = S.meta.month, now = new Date(), dim = new Date(+mk.slice(0, 4), +mk.slice(5, 7), 0).getDate();
     var today = Math.min(now.getDate(), dim), left = dim - today;
     var t = S.team.thisMonth || {}, tp = S.team.pending || {};
     var got = (t.newCredited || 0) + (t.expCredited || 0); if (!got && t.credited && !(t.dlcCredited)) got = t.credited;
     var exp = tp.dealAmount != null ? tp.dealAmount : Math.max(0, (tp.amount || 0) - (tp.dlcAmount || 0));
-    var shouldBe = goal * today / dim, pace = today ? got / today * dim : 0, need = Math.max(0, goal - got);
+    // Projected month end = collected + payments due this month + new deals at this month's rate
+    // (won AND paid this month, per day so far) for the days left.
+    var rate = today ? (t.inPeriodCredited || 0) / today : 0, fresh = rate * left, proj = got + exp + fresh;
+    var shouldBe = goal * today / dim, ahead = got - shouldBe, need = Math.max(0, goal - got);
     $('g-title').textContent = monthOf(mk) + ' goal';
-    $('g-sub').textContent = 'Day ' + today + ' of ' + dim + '. New MRR collected from deals (10DLC fees not included).';
+    $('g-sub').textContent = 'Day ' + today + ' of ' + dim + '. Goal ' + money.format(goal) + ' new MRR collected from deals; 10DLC fees not included.';
     var g = $('goal'); g.replaceChildren();
-    g.appendChild(el('div', 'lab', 'New MRR collected'));
-    var r1 = el('div', 'row1'); r1.appendChild(el('span', 'big wide', money.format(got))); r1.appendChild(el('span', 'of', 'of ' + money.format(goal)));
-    r1.appendChild(el('span', 'pct wide', Math.round(100 * got / goal) + '%')); g.appendChild(r1);
-    var bar = el('div', 'gbar'), pc = function (v) { return Math.max(0, Math.min(100, 100 * v / goal)) + '%'; };
-    var f = el('i', 'fill'); f.style.width = pc(got); bar.appendChild(f);
+    // collected vs should be, and the tag
+    var top = el('div', 'gtop');
+    function big(lab, v, cls) { var d = el('div'); d.appendChild(el('div', 'lab', lab)); d.appendChild(el('div', 'v wide' + (cls ? ' ' + cls : ''), v)); top.appendChild(d); }
+    big('Collected', money.format(got));
+    big('Should be by today', money.format(Math.round(shouldBe)), 'dim');
+    top.appendChild(el('div', 'gtag ' + (ahead >= 0 ? 'good' : 'bad'), (ahead >= 0 ? money.format(Math.round(ahead)) + ' ahead' : money.format(Math.round(-ahead)) + ' behind')));
+    g.appendChild(top);
+    // the bar: collected, due this month (shaded), projected new (dashed), pace marker
+    var bw = el('div', 'gbarwrap'), bar = el('div', 'gbar'), pc = function (v) { return Math.max(0, Math.min(100, 100 * v / goal)) + '%'; };
+    var pr = el('i', 'proj'); pr.style.width = pc(proj); bar.appendChild(pr);
     if (exp > 0) { var e = el('i', 'exp hatch'); e.style.width = pc(got + exp); bar.appendChild(e); }
-    var m = el('i', 'mark'); m.style.left = pc(shouldBe); m.appendChild(el('span', null, 'Today’s pace ' + money.format(Math.round(shouldBe)))); bar.appendChild(m);
-    g.appendChild(bar);
-    var sc = el('div', 'gscale'); sc.appendChild(el('span', null, '$0')); sc.appendChild(el('span', null, (exp > 0 ? '+' + money.format(exp) + ' more expected this month (shaded) \u00b7 ' : '') + 'goal ' + money.format(goal))); g.appendChild(sc);
-    var ahead = got - shouldBe, pg = el('div', 'gpace');
-    function cell(cls, v, lab) { var d = el('div', cls); d.appendChild(el('b', 'wide', v)); d.appendChild(el('span', null, lab)); pg.appendChild(d); }
-    cell(pace >= goal ? 'good' : 'bad', money.format(Math.round(pace)), 'on pace for by month end, at today\u2019s rate');
-    cell(ahead >= 0 ? 'good' : 'bad', (ahead >= 0 ? '+' : '−') + money.format(Math.abs(Math.round(ahead))), ahead >= 0 ? 'ahead of pace today' : 'behind pace today');
-    cell(need <= 0 ? 'good' : '', need <= 0 ? 'Goal hit' : money.format(Math.round(need / Math.max(1, left))), need <= 0 ? 'goal reached' : 'needed per day, ' + left + ' days left (' + money.format(need) + ' to go)');
-    g.appendChild(pg);
+    var f = el('i', 'fill'); f.style.width = pc(got); bar.appendChild(f);
+    var m = el('i', 'mark'); m.style.left = pc(shouldBe); m.appendChild(el('span', null, 'Today ' + money.format(Math.round(shouldBe)))); bar.appendChild(m);
+    bw.appendChild(bar);
+    var sc = el('div', 'gscale'); sc.appendChild(el('span', null, '$0')); sc.appendChild(el('span', null, 'Goal ' + money.format(goal))); bw.appendChild(sc);
+    g.appendChild(bw);
+    // the pace line
+    var ln = el('div', 'gline');
+    ln.appendChild(document.createTextNode('Projected month end '));
+    ln.appendChild(el('b', proj >= goal ? 'good' : 'bad', money.format(Math.round(proj))));
+    ln.appendChild(document.createTextNode(need > 0 ? ' · need ' : ' · '));
+    ln.appendChild(el('b', null, need > 0 ? money.format(Math.round(need / Math.max(1, left))) + ' a day' : 'goal hit'));
+    if (need > 0) ln.appendChild(document.createTextNode(' for ' + left + (left === 1 ? ' day' : ' days')));
+    ln.appendChild(el('small', null, money.format(got) + ' collected + ' + money.format(exp) + ' due this month (shaded) + ' + money.format(Math.round(fresh)) +
+                                     ' from new deals at this month’s rate (dashed, ' + money.format(Math.round(rate)) + ' a day won and paid)'));
+    g.appendChild(ln);
+    // where it came from
+    var meds = (So && So.thisMonth && So.thisMonth.mediums) || [], tot = meds.reduce(function (s2, x) { return s2 + (x.credited || 0); }, 0);
+    var COL = { 'Events': 'var(--deal)', 'Partners and referrals': 'var(--good)', 'Webinars': 'var(--dlc)', 'Digital': '#B48CF0', 'Account Manager': '#5FC7C9', 'Untagged': 'var(--muted)' };
+    if (tot > 0) {
+      var src = el('div', 'gsrc'), tt = el('div', 't'); tt.appendChild(document.createTextNode('New revenue by source')); tt.appendChild(el('span', null, money.format(tot) + ' this month'));
+      src.appendChild(tt);
+      var st = el('div', 'gstack'), lg = el('div', 'gleg');
+      meds.filter(function (x) { return x.credited > 0; }).sort(function (a2, b2) { return b2.credited - a2.credited; }).forEach(function (x) {
+        var seg = el('i'); seg.style.width = (100 * x.credited / tot) + '%'; seg.style.background = COL[x.medium] || 'var(--soft)'; st.appendChild(seg);
+        var it = el('span'), sw = el('i'); sw.style.background = COL[x.medium] || 'var(--soft)'; it.appendChild(sw);
+        it.appendChild(document.createTextNode(x.medium + ' ')); it.appendChild(el('b', null, money.format(x.credited))); it.appendChild(document.createTextNode(' ' + Math.round(100 * x.credited / tot) + '%'));
+        lg.appendChild(it);
+      });
+      src.appendChild(st); src.appendChild(lg); g.appendChild(src);
+    }
     return true;
   }
 
@@ -1026,7 +1076,7 @@
       if (built && built === lastBuilt) { markStale(); return; }
       try {
         render(r[0], r[1], r[2]); renderTicker(r[2]); fit();
-        try { screen3 = renderGoal(r[0]); } catch (e4) { console.error(e4); screen3 = false; }
+        try { screen3 = renderGoal(r[0], r[4] && r[4].sources, r[3] && r[3].retention); } catch (e4) { console.error(e4); screen3 = false; }
         try { celebrateNew(r[2]); } catch (e3) { console.error(e3); }
         try { celebratePaid(r[2]); } catch (e5) { console.error(e5); }
         screen2 = false;
