@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v62",
-  "builtAt": "2026-11-18T20:42:57.144Z",
+  "version": "sk-v63",
+  "builtAt": "2026-11-18T20:47:47.456Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -2886,6 +2886,25 @@
    "expect": null
   },
   {
+   "id": "333514572532",
+   "ae": "Ky Decker",
+   "company": " Can Do Crew Plumbing, Heating & Air",
+   "type": "Expansion",
+   "close": "2026-06-30",
+   "booked": 550,
+   "status": "Not paid after 60 days",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 141,
+   "billsThisMonth": false,
+   "issue": "",
+   "issueDays": null,
+   "waitWhy": "",
+   "expect": null
+  },
+  {
    "id": "333540493032",
    "ae": "Ky Decker",
    "company": "Podium Garage Doors",
@@ -3906,8 +3925,8 @@
    "daysToCollect": "",
    "waitingDays": 79,
    "billsThisMonth": true,
-   "issue": "Card failed, Stripe retrying",
-   "issueDays": 79,
+   "issue": "",
+   "issueDays": null,
    "waitWhy": "Stripe charge before month end",
    "expect": 1000
   },
