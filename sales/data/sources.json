@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v58",
-  "builtAt": "2026-11-18T20:22:44.522Z",
+  "version": "sk-v59",
+  "builtAt": "2026-11-18T20:28:04.400Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,7 +37,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 10674,
+   "total": 11424,
    "mediums": [
     {
      "medium": "Events",
@@ -46,8 +46,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 4462,
-     "deals": 5
+     "credited": 5212,
+     "deals": 6
     },
     {
      "medium": "Webinars",
@@ -71,6 +71,12 @@
      "medium": "Digital",
      "credited": 1850,
      "deals": 3
+    },
+    {
+     "source": "One-offs",
+     "medium": "Partners and referrals",
+     "credited": 1550,
+     "deals": 2
     },
     {
      "source": "Nexstar",
@@ -103,12 +109,6 @@
      "deals": 1
     },
     {
-     "source": "One-offs",
-     "medium": "Partners and referrals",
-     "credited": 800,
-     "deals": 1
-    },
-    {
      "source": "FieldEdge",
      "medium": "Partners and referrals",
      "credited": 700,
@@ -117,7 +117,7 @@
    ]
   },
   "ytd": {
-   "total": 350766.36,
+   "total": 352466.36,
    "mediums": [
     {
      "medium": "Events",
@@ -141,8 +141,8 @@
     },
     {
      "medium": "Untagged",
-     "credited": 93565.79,
-     "deals": 109
+     "credited": 95265.79,
+     "deals": 110
     }
    ],
    "top": [
@@ -177,12 +177,6 @@
      "deals": 7
     },
     {
-     "source": "Certain Path",
-     "medium": "Partners and referrals",
-     "credited": 8588,
-     "deals": 9
-    },
-    {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
      "credited": 8361,
@@ -192,6 +186,12 @@
      "source": "2025 - Home Service Freedom",
      "medium": "Events",
      "credited": 7949,
+     "deals": 8
+    },
+    {
+     "source": "Certain Path",
+     "medium": "Partners and referrals",
+     "credited": 7838,
      "deals": 8
     }
    ]

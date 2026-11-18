@@ -562,6 +562,9 @@
       if (/not set up in Stripe/.test(w)) return 'Not set up in Stripe yet';
       if (/after month end/.test(w)) return 'Not paid yet, first charge after month end';
       if (/before month end/.test(w)) return 'Not paid yet, charge due this month';
+      var fw = w.match(/waived in Stripe until (\d{4}-\d{2}-\d{2})/);
+      if (fw) return 'Free months in Stripe until ' + day(fw[1]);
+      if (/\$0 plan/.test(w)) return 'On a $0 plan in Stripe';
       return 'Not paid yet';
     }
     function group() {

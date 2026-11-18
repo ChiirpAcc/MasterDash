@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v58",
-  "builtAt": "2026-11-18T20:22:44.522Z",
+  "version": "sk-v59",
+  "builtAt": "2026-11-18T20:28:04.400Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -1302,7 +1302,7 @@
    "type": "Expansion",
    "close": "2026-04-08",
    "booked": 400,
-   "status": "Awaiting first payment",
+   "status": "Not paid after 60 days",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -1311,7 +1311,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end"
+   "waitWhy": ""
   },
   {
    "id": "320340580050",
@@ -2130,16 +2130,16 @@
    "type": "New Business",
    "close": "2026-05-18",
    "booked": 500,
-   "status": "Awaiting first payment",
+   "status": "Not paid after 60 days",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 184,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": ""
   },
   {
    "id": "324807536377",
@@ -2310,16 +2310,16 @@
    "type": "New Business",
    "close": "2026-05-28",
    "booked": 562.5,
-   "status": "Awaiting first payment",
+   "status": "Not paid after 60 days",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 174,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": ""
   },
   {
    "id": "326613277397",
@@ -2670,7 +2670,7 @@
    "type": "New Business",
    "close": "2026-06-26",
    "booked": 1000,
-   "status": "Awaiting first payment",
+   "status": "Not paid after 60 days",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -2679,7 +2679,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end"
+   "waitWhy": ""
   },
   {
    "id": "333249611482",
@@ -3612,10 +3612,10 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 85,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": "on a $0 plan in Stripe, nothing to charge"
   },
   {
    "id": "344363319996",
@@ -3684,10 +3684,10 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 79,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": "fee waived in Stripe until 2026-12-31"
   },
   {
    "id": "345156511459",
@@ -3936,10 +3936,10 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 57,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": "fee waived in Stripe until 2027-01-23"
   },
   {
    "id": "349725631176",
@@ -4173,7 +4173,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end"
+   "waitWhy": "fee waived in Stripe until 2027-02-06"
   },
   {
    "id": "352942956264",
@@ -4569,7 +4569,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end"
+   "waitWhy": "on a $0 plan in Stripe, nothing to charge"
   },
   {
    "id": "367461627582",
@@ -4614,16 +4614,16 @@
    "type": "New Business",
    "close": "2026-11-17",
    "booked": 750,
-   "status": "Awaiting first payment",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 1,
-   "billsThisMonth": true,
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-17",
+   "credited": 750,
+   "daysToCollect": 0,
+   "waitingDays": null,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": ""
   },
   {
    "id": "371354206920",
