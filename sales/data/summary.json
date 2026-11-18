@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T13:02:51.289Z",
+  "builtAt": "2026-11-18T13:07:50.210Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -475,9 +475,9 @@
    "newLogos": 2,
    "churnedAccounts": 5,
    "atRisk": 7688,
-   "pending": 45291,
-   "stale": 25290.5,
-   "active": 715938.89,
+   "pending": 43991,
+   "stale": 27968.5,
+   "active": 713113.89,
    "reactivations": 0
   },
   "prev": {
@@ -495,53 +495,53 @@
   },
   "rolling": {
    "d7": {
-    "from": "2026-11-10",
-    "to": "2026-11-16",
-    "newMrr": 1500,
-    "newLogos": 1,
+    "from": "2026-11-12",
+    "to": "2026-11-18",
+    "newMrr": 5175,
+    "newLogos": 6,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 10584,
+    "churned": 10485,
     "churnedAccounts": 10,
-    "net": -9084,
-    "atRisk": 14564
+    "net": -5310,
+    "atRisk": 19002
    },
-   "through": "2026-11-16",
+   "through": "2026-11-18",
    "p7": {
-    "from": "2026-11-03",
-    "to": "2026-11-09",
+    "from": "2026-11-05",
+    "to": "2026-11-11",
     "newMrr": 2500,
     "newLogos": 2,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 2600,
-    "churnedAccounts": 4,
-    "net": -100,
-    "atRisk": 3150
+    "churned": 5599,
+    "churnedAccounts": 5,
+    "net": -3099,
+    "atRisk": 7688
    },
    "d30": {
-    "from": "2026-10-18",
-    "to": "2026-11-16",
-    "newMrr": 11012,
-    "newLogos": 9,
+    "from": "2026-10-20",
+    "to": "2026-11-18",
+    "newMrr": 14687,
+    "newLogos": 14,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 31515.17,
-    "churnedAccounts": 31,
-    "net": -20503.17,
-    "atRisk": 47055.5
+    "churned": 33515.25,
+    "churnedAccounts": 32,
+    "net": -18828.25,
+    "atRisk": 49667.5
    },
    "p30": {
-    "from": "2026-09-18",
-    "to": "2026-10-17",
-    "newMrr": 28175,
-    "newLogos": 18,
+    "from": "2026-09-20",
+    "to": "2026-10-19",
+    "newMrr": 25925,
+    "newLogos": 16,
     "reactivated": 2512,
     "reactivations": 2,
-    "churned": 52403.99,
-    "churnedAccounts": 60,
-    "net": -21716.99,
-    "atRisk": 41658.89
+    "churned": 48629.41,
+    "churnedAccounts": 56,
+    "net": -20192.41,
+    "atRisk": 45642.89
    }
   },
   "sales": {

@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T13:02:51.289Z",
+  "builtAt": "2026-11-18T13:07:50.210Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,12 +38,33 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 715938.89,
-  "dataThrough": "2026-11-16",
+  "current": 713113.89,
+  "dataThrough": "2026-11-18",
   "churned": {
-   "count": 18,
-   "mrr": 17292,
+   "count": 21,
+   "mrr": 21542,
    "rows": [
+    {
+     "company": "Best Virginia HVAC",
+     "mrr": 950,
+     "requested": "2026-10-28",
+     "ended": "2026-11-17",
+     "unexpected": false
+    },
+    {
+     "company": "Albiero Plumbing & HVAC",
+     "mrr": 1050,
+     "requested": "2026-10-30",
+     "ended": "2026-11-17",
+     "unexpected": false
+    },
+    {
+     "company": "Briggs Mechanical",
+     "mrr": 2250,
+     "requested": "2026-11-10",
+     "ended": "2026-11-17",
+     "unexpected": false
+    },
     {
      "company": "Curran Plumbing, Electrical, Heating & Air",
      "mrr": 500,
@@ -177,15 +198,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 22,
-   "mrr": 21330,
+   "count": 21,
+   "mrr": 19080,
    "rows": [
-    {
-     "company": "Briggs Mechanical",
-     "mrr": 2250,
-     "requested": "2026-11-10",
-     "endsAt": "2026-11-17"
-    },
     {
      "company": "BEPO LLC",
      "mrr": 650,
@@ -315,14 +330,14 @@
    ]
   },
   "endingLater": {
-   "count": 23,
-   "mrr": 22011
+   "count": 24,
+   "mrr": 22961
   },
-  "lostSoFar": 17292,
-  "lostSigma": 19791,
-  "retainedSoFar": 0.976,
-  "retainedIfAllEnd": 0.947,
-  "eomMrr": 694608.89,
+  "lostSoFar": 21542,
+  "lostSigma": 24041,
+  "retainedSoFar": 0.971,
+  "retainedIfAllEnd": 0.945,
+  "eomMrr": 694033.89,
   "trailing": [
    {
     "month": "2026-09",
@@ -332,9 +347,9 @@
    },
    {
     "month": "2026-10",
-    "kept": 0.934,
+    "kept": 0.933,
     "bom": 760881.43,
-    "lost": 50015.51
+    "lost": 50765.51
    }
   ]
  }
