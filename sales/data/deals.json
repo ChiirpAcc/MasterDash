@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v48",
-  "builtAt": "2026-11-17T23:57:53.065Z",
+  "version": "sk-v51",
+  "builtAt": "2026-11-18T00:04:49.607Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -36,6 +36,7 @@
  },
  "rows": [
   {
+   "id": "242355360442",
    "ae": "Blake Fenn",
    "company": "Quality Garage Door Services",
    "type": "New Business",
@@ -52,6 +53,7 @@
    "issueDays": null
   },
   {
+   "id": "260450682599",
    "ae": "colton lingmann",
    "company": "The Flash Electric",
    "type": "New Business",
@@ -68,6 +70,7 @@
    "issueDays": null
   },
   {
+   "id": "257189096168",
    "ae": "Ky Decker",
    "company": "Spectrum Air Condition",
    "type": "New Business",
@@ -84,6 +87,7 @@
    "issueDays": null
   },
   {
+   "id": "242456016618",
    "ae": "colton lingmann",
    "company": "Hudson Valley Powerwashing",
    "type": "New Business",
@@ -100,6 +104,7 @@
    "issueDays": null
   },
   {
+   "id": "251757160152",
    "ae": "Ky Decker",
    "company": "Prolift Garage Doors of Elmhurst",
    "type": "New Business",
@@ -116,6 +121,7 @@
    "issueDays": null
   },
   {
+   "id": "273164630766",
    "ae": "Blake Fenn",
    "company": "Clear Water Concepts",
    "type": "New Business",
@@ -132,6 +138,7 @@
    "issueDays": null
   },
   {
+   "id": "273740275387",
    "ae": "colton lingmann",
    "company": "Precision Washing llc",
    "type": "New Business",
@@ -148,6 +155,7 @@
    "issueDays": null
   },
   {
+   "id": "262711403198",
    "ae": "colton lingmann",
    "company": "MTS Tree and Landscape",
    "type": "New Business",
@@ -164,6 +172,7 @@
    "issueDays": null
   },
   {
+   "id": "252045612758",
    "ae": "Blake Fenn",
    "company": "R3 Heating & Air",
    "type": "New Business",
@@ -180,6 +189,7 @@
    "issueDays": null
   },
   {
+   "id": "276124401352",
    "ae": "colton lingmann",
    "company": "Stuart Services",
    "type": "New Business",
@@ -196,6 +206,7 @@
    "issueDays": null
   },
   {
+   "id": "278206800580",
    "ae": "colton lingmann",
    "company": "Doctor HVAC & Plumbing",
    "type": "New Business",
@@ -212,6 +223,7 @@
    "issueDays": null
   },
   {
+   "id": "279745949386",
    "ae": "Ky Decker",
    "company": "Cool Spaces Insulation",
    "type": "New Business",
@@ -228,6 +240,7 @@
    "issueDays": null
   },
   {
+   "id": "283812221682",
    "ae": "Blake Fenn",
    "company": "Bluegrass Garage Door llc",
    "type": "New Business",
@@ -244,6 +257,7 @@
    "issueDays": null
   },
   {
+   "id": "231318714064",
    "ae": "colton lingmann",
    "company": "Potomac Pool Service, Inc.",
    "type": "New Business",
@@ -260,6 +274,7 @@
    "issueDays": null
   },
   {
+   "id": "157350036175",
    "ae": "colton lingmann",
    "company": "Metro Builders",
    "type": "New Business",
@@ -276,6 +291,7 @@
    "issueDays": null
   },
   {
+   "id": "282225135338",
    "ae": "colton lingmann",
    "company": "Watsons Charging Stations & Electric ",
    "type": "New Business",
@@ -292,6 +308,7 @@
    "issueDays": null
   },
   {
+   "id": "278763220702",
    "ae": "Ky Decker",
    "company": "Pioneer Garage Doors",
    "type": "New Business",
@@ -308,6 +325,7 @@
    "issueDays": null
   },
   {
+   "id": "294162994906",
    "ae": "Ky Decker",
    "company": "PlumbingPro Tampa",
    "type": "New Business",
@@ -324,6 +342,7 @@
    "issueDays": null
   },
   {
+   "id": "293012799188",
    "ae": "Ky Decker",
    "company": "Allegiance heating and cooling",
    "type": "New Business",
@@ -340,6 +359,7 @@
    "issueDays": null
   },
   {
+   "id": "289018271479",
    "ae": "Ky Decker",
    "company": "Avans Electric",
    "type": "New Business",
@@ -356,6 +376,7 @@
    "issueDays": null
   },
   {
+   "id": "282276598480",
    "ae": "Ky Decker",
    "company": "Rapid Response Restoration",
    "type": "New Business",
@@ -372,6 +393,7 @@
    "issueDays": null
   },
   {
+   "id": "281958512372",
    "ae": "colton lingmann",
    "company": "Busby's Heating & Air Conditioning",
    "type": "New Business",
@@ -388,6 +410,7 @@
    "issueDays": null
   },
   {
+   "id": "300569655033",
    "ae": "Blake Fenn",
    "company": "DropStar Plumbing",
    "type": "New Business",
@@ -404,6 +427,7 @@
    "issueDays": null
   },
   {
+   "id": "302709065405",
    "ae": "colton lingmann",
    "company": "Famously Clean ",
    "type": "New Business",
@@ -420,6 +444,7 @@
    "issueDays": null
   },
   {
+   "id": "300448832233",
    "ae": "Blake Fenn",
    "company": "Americas Home Pros",
    "type": "New Business",
@@ -436,6 +461,7 @@
    "issueDays": null
   },
   {
+   "id": "293206261487",
    "ae": "colton lingmann",
    "company": "Comfort Zone Heating & Cooling LLC ",
    "type": "New Business",
@@ -452,6 +478,7 @@
    "issueDays": null
   },
   {
+   "id": "305110981345",
    "ae": "colton lingmann",
    "company": "ETR Air Conditioning and Heating",
    "type": "New Business",
@@ -468,6 +495,7 @@
    "issueDays": null
   },
   {
+   "id": "300639819495",
    "ae": "Blake Fenn",
    "company": "Coast to Coast Restoration ",
    "type": "New Business",
@@ -484,6 +512,7 @@
    "issueDays": null
   },
   {
+   "id": "306622361300",
    "ae": "Ky Decker",
    "company": "Straight Shooter Heating & Cooling",
    "type": "New Business",
@@ -500,6 +529,7 @@
    "issueDays": null
   },
   {
+   "id": "307175168715",
    "ae": "Blake Fenn",
    "company": "Vent Pro: Duct & Vent Care",
    "type": "New Business",
@@ -516,6 +546,7 @@
    "issueDays": null
   },
   {
+   "id": "306865576645",
    "ae": "Blake Fenn",
    "company": "Gillette Heating and Air Conditioning",
    "type": "New Business",
@@ -532,6 +563,7 @@
    "issueDays": null
   },
   {
+   "id": "299065708228",
    "ae": "colton lingmann",
    "company": "Viviano Home Services",
    "type": "New Business",
@@ -548,6 +580,7 @@
    "issueDays": null
   },
   {
+   "id": "298272641748",
    "ae": "colton lingmann",
    "company": "Wash the Flint Hills",
    "type": "New Business",
@@ -564,6 +597,7 @@
    "issueDays": null
   },
   {
+   "id": "306428309222",
    "ae": "Ky Decker",
    "company": "Apollo Plumbing ",
    "type": "New Business",
@@ -580,6 +614,7 @@
    "issueDays": null
   },
   {
+   "id": "300722504381",
    "ae": "colton lingmann",
    "company": "Arctic Air Home Services ",
    "type": "New Business",
@@ -596,6 +631,7 @@
    "issueDays": null
   },
   {
+   "id": "305880983237",
    "ae": "colton lingmann",
    "company": "Graham Heating and Air Conditioning ",
    "type": "New Business",
@@ -612,6 +648,7 @@
    "issueDays": null
   },
   {
+   "id": "304350459608",
    "ae": "Blake Fenn",
    "company": "Pro the Distance Plumbing",
    "type": "New Business",
@@ -628,6 +665,7 @@
    "issueDays": null
   },
   {
+   "id": "310671757025",
    "ae": "colton lingmann",
    "company": "Gold Coast Plumbing & Hot Water",
    "type": "New Business",
@@ -644,6 +682,7 @@
    "issueDays": null
   },
   {
+   "id": "259871956683",
    "ae": "colton lingmann",
    "company": "R.J. Kielty Plumbing, Air & Electric, Inc.",
    "type": "New Business",
@@ -660,6 +699,7 @@
    "issueDays": null
   },
   {
+   "id": "278118709977",
    "ae": "colton lingmann",
    "company": "LocalPro Carpet Cleaning",
    "type": "New Business",
@@ -676,6 +716,7 @@
    "issueDays": null
   },
   {
+   "id": "313025002203",
    "ae": "Ky Decker",
    "company": "On Point Plumbing Electrical Heating & Air",
    "type": "New Business",
@@ -692,6 +733,7 @@
    "issueDays": null
   },
   {
+   "id": "315440222933",
    "ae": "Blake Fenn",
    "company": "Neighbors Heating and Cooling",
    "type": "New Business",
@@ -708,6 +750,7 @@
    "issueDays": null
   },
   {
+   "id": "315801088700",
    "ae": "Ky Decker",
    "company": "Full Spectrum Plumbing Service",
    "type": "New Business",
@@ -724,6 +767,7 @@
    "issueDays": null
   },
   {
+   "id": "316627553994",
    "ae": "colton lingmann",
    "company": "Designing Windows Plus ",
    "type": "New Business",
@@ -740,6 +784,7 @@
    "issueDays": null
   },
   {
+   "id": "316633346758",
    "ae": "Blake Fenn",
    "company": "Utility Plumbing Services",
    "type": "New Business",
@@ -756,6 +801,7 @@
    "issueDays": null
   },
   {
+   "id": "316626866887",
    "ae": "Blake Fenn",
    "company": "Al Coronado Plumbing",
    "type": "New Business",
@@ -772,6 +818,7 @@
    "issueDays": null
   },
   {
+   "id": "316627588801",
    "ae": "Ky Decker",
    "company": "Lamar Heat & Air",
    "type": "New Business",
@@ -788,6 +835,7 @@
    "issueDays": null
   },
   {
+   "id": "316632629965",
    "ae": "Blake Fenn",
    "company": "Millenium A/C",
    "type": "New Business",
@@ -804,6 +852,7 @@
    "issueDays": null
   },
   {
+   "id": "302646963942",
    "ae": "Blake Fenn",
    "company": "Briggs Mechanical ",
    "type": "New Business",
@@ -820,6 +869,7 @@
    "issueDays": null
   },
   {
+   "id": "316626234077",
    "ae": "colton lingmann",
    "company": "Aire-Flo Heating Cooling and Generators ",
    "type": "New Business",
@@ -836,6 +886,7 @@
    "issueDays": null
   },
   {
+   "id": "257171100400",
    "ae": "Ky Decker",
    "company": "Doornbos Heating and Air Conditioning",
    "type": "New Business",
@@ -852,6 +903,7 @@
    "issueDays": null
   },
   {
+   "id": "316332588736",
    "ae": "Blake Fenn",
    "company": "Infinity Air",
    "type": "New Business",
@@ -868,6 +920,7 @@
    "issueDays": null
   },
   {
+   "id": "316929548999",
    "ae": "Ky Decker",
    "company": "Garage Doors Parts & More",
    "type": "New Business",
@@ -884,6 +937,7 @@
    "issueDays": null
   },
   {
+   "id": "283785769711",
    "ae": "Ky Decker",
    "company": "Prostar Services",
    "type": "New Business",
@@ -900,6 +954,7 @@
    "issueDays": null
   },
   {
+   "id": "317196098288",
    "ae": "Ky Decker",
    "company": "Keller Exteriors",
    "type": "New Business",
@@ -916,6 +971,7 @@
    "issueDays": null
   },
   {
+   "id": "313763991229",
    "ae": "Blake Fenn",
    "company": "Aqua Clear Water Systems",
    "type": "New Business",
@@ -932,6 +988,7 @@
    "issueDays": null
   },
   {
+   "id": "300396544699",
    "ae": "Ky Decker",
    "company": "Summers Plumbing Heating & Cooling",
    "type": "New Business",
@@ -948,6 +1005,7 @@
    "issueDays": null
   },
   {
+   "id": "305504367335",
    "ae": "Ky Decker",
    "company": "Get Lit Electrical & Plumbing",
    "type": "New Business",
@@ -964,6 +1022,7 @@
    "issueDays": null
   },
   {
+   "id": "318227642062",
    "ae": "Blake Fenn",
    "company": "Greenleaf Pest Control ",
    "type": "New Business",
@@ -980,6 +1039,7 @@
    "issueDays": null
   },
   {
+   "id": "316275775163",
    "ae": "Blake Fenn",
    "company": "Climate Zone",
    "type": "New Business",
@@ -996,6 +1056,7 @@
    "issueDays": null
   },
   {
+   "id": "318537194207",
    "ae": "Blake Fenn",
    "company": "Chen Plumbing",
    "type": "New Business",
@@ -1012,6 +1073,7 @@
    "issueDays": null
   },
   {
+   "id": "318748048100",
    "ae": "Blake Fenn",
    "company": "Modern Air and Water",
    "type": "New Business",
@@ -1028,6 +1090,7 @@
    "issueDays": null
   },
   {
+   "id": "35546445236",
    "ae": "Ky Decker",
    "company": "Björn's Snow",
    "type": "New Business",
@@ -1044,6 +1107,7 @@
    "issueDays": null
   },
   {
+   "id": "318928965333",
    "ae": "Blake Fenn",
    "company": "Rite NOW AC, Heating & Plumbing",
    "type": "New Business",
@@ -1060,6 +1124,7 @@
    "issueDays": null
   },
   {
+   "id": "288807036656",
    "ae": "colton lingmann",
    "company": "Heatspan",
    "type": "New Business",
@@ -1076,6 +1141,7 @@
    "issueDays": null
   },
   {
+   "id": "318651677374",
    "ae": "colton lingmann",
    "company": "Forever Vent LLC ",
    "type": "New Business",
@@ -1092,6 +1158,7 @@
    "issueDays": null
   },
   {
+   "id": "317946914540",
    "ae": "Ky Decker",
    "company": "Big Mountain Heating & Air",
    "type": "New Business",
@@ -1108,6 +1175,7 @@
    "issueDays": null
   },
   {
+   "id": "319174864579",
    "ae": "Ky Decker",
    "company": "Steve’s Plumbing and Heating",
    "type": "New Business",
@@ -1124,6 +1192,7 @@
    "issueDays": null
   },
   {
+   "id": "319371355893",
    "ae": "Ky Decker",
    "company": "1 Tom Plumber Anaheim",
    "type": "New Business",
@@ -1140,6 +1209,7 @@
    "issueDays": null
   },
   {
+   "id": "319375684292",
    "ae": "Ky Decker",
    "company": "Embrich Plumbing",
    "type": "New Business",
@@ -1156,6 +1226,7 @@
    "issueDays": null
   },
   {
+   "id": "319555085037",
    "ae": "Blake Fenn",
    "company": "Apex East Roofing",
    "type": "New Business",
@@ -1172,6 +1243,7 @@
    "issueDays": null
   },
   {
+   "id": "320114876116",
    "ae": "Blake Fenn",
    "company": "Lokal",
    "type": "Expansion",
@@ -1188,6 +1260,7 @@
    "issueDays": null
   },
   {
+   "id": "320340580050",
    "ae": "Ky Decker",
    "company": "West Houston Electric ",
    "type": "Expansion",
@@ -1204,6 +1277,7 @@
    "issueDays": null
   },
   {
+   "id": "320341319387",
    "ae": "Blake Fenn",
    "company": "Top Hat Chimney & Roofing Inc",
    "type": "New Business",
@@ -1220,6 +1294,7 @@
    "issueDays": null
   },
   {
+   "id": "320343499457",
    "ae": "Blake Fenn",
    "company": "A Plus Heating and Cooling Inc ",
    "type": "New Business",
@@ -1236,6 +1311,7 @@
    "issueDays": null
   },
   {
+   "id": "320622997207",
    "ae": "Blake Fenn",
    "company": "Advanced Heating and Air Pros",
    "type": "New Business",
@@ -1252,6 +1328,7 @@
    "issueDays": null
   },
   {
+   "id": "320623839975",
    "ae": "Ky Decker",
    "company": "WattStar Electric",
    "type": "New Business",
@@ -1268,6 +1345,7 @@
    "issueDays": null
   },
   {
+   "id": "320838856393",
    "ae": "Ky Decker",
    "company": "Free Air Heating & Air Conditioning",
    "type": "New Business",
@@ -1284,6 +1362,7 @@
    "issueDays": null
   },
   {
+   "id": "320837518029",
    "ae": "Ky Decker",
    "company": "Good Day Garage Doors",
    "type": "New Business",
@@ -1300,6 +1379,7 @@
    "issueDays": null
   },
   {
+   "id": "320838258367",
    "ae": "colton lingmann",
    "company": "Eastergard HVAC, Inc. ",
    "type": "New Business",
@@ -1316,6 +1396,7 @@
    "issueDays": null
   },
   {
+   "id": "321010584294",
    "ae": "colton lingmann",
    "company": "Ambient Edge",
    "type": "Expansion",
@@ -1332,6 +1413,7 @@
    "issueDays": null
   },
   {
+   "id": "320837541611",
    "ae": "colton lingmann",
    "company": "Just Right Plumbing, Heating and Cooling",
    "type": "Expansion",
@@ -1348,6 +1430,7 @@
    "issueDays": null
   },
   {
+   "id": "320837542602",
    "ae": "colton lingmann",
    "company": "Day & Night AC and Plumbing",
    "type": "Expansion",
@@ -1364,6 +1447,7 @@
    "issueDays": null
   },
   {
+   "id": "320837542625",
    "ae": "colton lingmann",
    "company": "Western HVAC Services LLC",
    "type": "Expansion",
@@ -1380,6 +1464,7 @@
    "issueDays": null
   },
   {
+   "id": "320622413498",
    "ae": "Blake Fenn",
    "company": "Midway Heating Company",
    "type": "New Business",
@@ -1396,6 +1481,7 @@
    "issueDays": null
   },
   {
+   "id": "321281108666",
    "ae": "Ky Decker",
    "company": "SHWASH",
    "type": "New Business",
@@ -1412,6 +1498,7 @@
    "issueDays": null
   },
   {
+   "id": "321335103209",
    "ae": "Blake Fenn",
    "company": "Healthy Way",
    "type": "New Business",
@@ -1428,6 +1515,7 @@
    "issueDays": null
   },
   {
+   "id": "321688747733",
    "ae": "colton lingmann",
    "company": "Honeycomb heating and cooling ",
    "type": "New Business",
@@ -1444,6 +1532,7 @@
    "issueDays": null
   },
   {
+   "id": "321688026838",
    "ae": "Ky Decker",
    "company": "UBA Heating & Cooling",
    "type": "New Business",
@@ -1460,6 +1549,7 @@
    "issueDays": null
   },
   {
+   "id": "321685866188",
    "ae": "Ky Decker",
    "company": "Plumbing Today HVAC",
    "type": "New Business",
@@ -1476,6 +1566,7 @@
    "issueDays": null
   },
   {
+   "id": "321690951391",
    "ae": "colton lingmann",
    "company": "Florida Storm Protection Unlimited LLC",
    "type": "New Business",
@@ -1492,6 +1583,7 @@
    "issueDays": null
   },
   {
+   "id": "321923868383",
    "ae": "Blake Fenn",
    "company": "Jackson and Foster",
    "type": "New Business",
@@ -1508,6 +1600,7 @@
    "issueDays": null
   },
   {
+   "id": "321926758130",
    "ae": "Ky Decker",
    "company": "Edison Electric",
    "type": "New Business",
@@ -1524,6 +1617,7 @@
    "issueDays": null
   },
   {
+   "id": "322467885760",
    "ae": "Blake Fenn",
    "company": "Mechanical Heating, Cooling & Electrical",
    "type": "New Business",
@@ -1540,6 +1634,7 @@
    "issueDays": null
   },
   {
+   "id": "322442698463",
    "ae": "Ky Decker",
    "company": "Gray Electric & Plumbing",
    "type": "New Business",
@@ -1556,6 +1651,7 @@
    "issueDays": null
   },
   {
+   "id": "322469491428",
    "ae": "colton lingmann",
    "company": "Hero Marketing Agency",
    "type": "New Business",
@@ -1572,6 +1668,7 @@
    "issueDays": null
   },
   {
+   "id": "322574427866",
    "ae": "colton lingmann",
    "company": "Total Air and Plumbing",
    "type": "Expansion",
@@ -1588,6 +1685,7 @@
    "issueDays": null
   },
   {
+   "id": "322910698187",
    "ae": "Blake Fenn",
    "company": "ENS Garage Door",
    "type": "New Business",
@@ -1604,6 +1702,7 @@
    "issueDays": null
   },
   {
+   "id": "323097632481",
    "ae": "Blake Fenn",
    "company": "OCS Contracting Services",
    "type": "New Business",
@@ -1620,6 +1719,7 @@
    "issueDays": null
   },
   {
+   "id": "322912198340",
    "ae": "Ky Decker",
    "company": "Wingman Heating + Cooling",
    "type": "New Business",
@@ -1636,6 +1736,7 @@
    "issueDays": null
   },
   {
+   "id": "322924516073",
    "ae": "Ky Decker",
    "company": "Mitchell Roofing Company LLC",
    "type": "New Business",
@@ -1652,6 +1753,7 @@
    "issueDays": null
   },
   {
+   "id": "323236745959",
    "ae": "colton lingmann",
    "company": "Southsota Benjamin Franklin Plumbing",
    "type": "New Business",
@@ -1668,6 +1770,7 @@
    "issueDays": null
   },
   {
+   "id": "323231810279",
    "ae": "Blake Fenn",
    "company": "Sierra Pacific Home and Comfort",
    "type": "New Business",
@@ -1684,6 +1787,7 @@
    "issueDays": null
   },
   {
+   "id": "323517411043",
    "ae": "Ky Decker",
    "company": "Brubaker Inc.",
    "type": "New Business",
@@ -1700,6 +1804,7 @@
    "issueDays": null
   },
   {
+   "id": "323527105216",
    "ae": "Ky Decker",
    "company": "Hardie & Co Plumbing",
    "type": "New Business",
@@ -1716,6 +1821,7 @@
    "issueDays": null
   },
   {
+   "id": "324281334520",
    "ae": "Blake Fenn",
    "company": "Precision garage door service of Portland ME",
    "type": "New Business",
@@ -1732,6 +1838,7 @@
    "issueDays": null
   },
   {
+   "id": "324289980148",
    "ae": "Blake Fenn",
    "company": "Prudential HVAC",
    "type": "New Business",
@@ -1748,6 +1855,7 @@
    "issueDays": null
   },
   {
+   "id": "324290744048",
    "ae": "colton lingmann",
    "company": "John C. Cassidy Air Conditioning, Inc.",
    "type": "New Business",
@@ -1764,6 +1872,7 @@
    "issueDays": null
   },
   {
+   "id": "324841500349",
    "ae": "Ky Decker",
    "company": "Smooth Plumbing",
    "type": "Expansion",
@@ -1780,6 +1889,7 @@
    "issueDays": null
   },
   {
+   "id": "323925487343",
    "ae": "colton lingmann",
    "company": "Aspen Pressure Washing",
    "type": "New Business",
@@ -1796,6 +1906,7 @@
    "issueDays": null
   },
   {
+   "id": "324817877710",
    "ae": "Ky Decker",
    "company": "Regal, Inc. Plumbing, Heating & A/C",
    "type": "New Business",
@@ -1812,6 +1923,7 @@
    "issueDays": null
   },
   {
+   "id": "324842335958",
    "ae": "Ky Decker",
    "company": "Weathervane",
    "type": "New Business",
@@ -1828,6 +1940,7 @@
    "issueDays": null
   },
   {
+   "id": "324817984220",
    "ae": "Ky Decker",
    "company": "Color Splash Painting",
    "type": "New Business",
@@ -1844,6 +1957,7 @@
    "issueDays": null
   },
   {
+   "id": "323844588248",
    "ae": "colton lingmann",
    "company": "Premier HVAC Services",
    "type": "New Business",
@@ -1860,6 +1974,7 @@
    "issueDays": null
   },
   {
+   "id": "323577102028",
    "ae": "Ky Decker",
    "company": "All Pro Plumbing & Air",
    "type": "New Business",
@@ -1876,6 +1991,7 @@
    "issueDays": null
   },
   {
+   "id": "324940750541",
    "ae": "Ky Decker",
    "company": "Pacific Spray Wash",
    "type": "New Business",
@@ -1892,6 +2008,7 @@
    "issueDays": null
   },
   {
+   "id": "325649359581",
    "ae": "Blake Fenn",
    "company": "Swift Serve",
    "type": "New Business",
@@ -1908,6 +2025,7 @@
    "issueDays": null
   },
   {
+   "id": "324940960462",
    "ae": "Ky Decker",
    "company": "Prime Mobile Detailing",
    "type": "New Business",
@@ -1924,6 +2042,7 @@
    "issueDays": null
   },
   {
+   "id": "324807536377",
    "ae": "Blake Fenn",
    "company": "Fleetwell Air Conditioning ",
    "type": "New Business",
@@ -1940,6 +2059,7 @@
    "issueDays": null
   },
   {
+   "id": "326058480368",
    "ae": "Blake Fenn",
    "company": "Mr. Air Repair",
    "type": "New Business",
@@ -1956,6 +2076,7 @@
    "issueDays": null
   },
   {
+   "id": "326061356738",
    "ae": "colton lingmann",
    "company": "Pioneer Overhead Door",
    "type": "Expansion",
@@ -1972,6 +2093,7 @@
    "issueDays": null
   },
   {
+   "id": "326364949183",
    "ae": "Ky Decker",
    "company": "Ryson Roofing",
    "type": "New Business",
@@ -1988,6 +2110,7 @@
    "issueDays": null
   },
   {
+   "id": "326147988189",
    "ae": "Ky Decker",
    "company": "Spartic Coatings",
    "type": "New Business",
@@ -2004,6 +2127,7 @@
    "issueDays": null
   },
   {
+   "id": "321655286464",
    "ae": "Blake Fenn",
    "company": "Kahuna Comfort",
    "type": "New Business",
@@ -2020,6 +2144,7 @@
    "issueDays": null
   },
   {
+   "id": "326811967196",
    "ae": "Ky Decker",
    "company": "ProLift Garage Doors ",
    "type": "New Business",
@@ -2036,6 +2161,7 @@
    "issueDays": null
   },
   {
+   "id": "325355134681",
    "ae": "Ky Decker",
    "company": "GuttersOK",
    "type": "New Business",
@@ -2052,6 +2178,7 @@
    "issueDays": null
   },
   {
+   "id": "326399941349",
    "ae": "Blake Fenn",
    "company": "Advanced Sanitation ",
    "type": "New Business",
@@ -2068,6 +2195,7 @@
    "issueDays": null
   },
   {
+   "id": "327236698860",
    "ae": "colton lingmann",
    "company": "Nashville Seamless Gutters LLC ",
    "type": "New Business",
@@ -2084,6 +2212,7 @@
    "issueDays": null
   },
   {
+   "id": "326613277397",
    "ae": "Ky Decker",
    "company": "Debug Pest Control",
    "type": "New Business",
@@ -2100,6 +2229,7 @@
    "issueDays": null
   },
   {
+   "id": "328044237498",
    "ae": "Blake Fenn",
    "company": "Cincinnati Custom Concrete ",
    "type": "New Business",
@@ -2116,6 +2246,7 @@
    "issueDays": null
   },
   {
+   "id": "328234391278",
    "ae": "Blake Fenn",
    "company": "All In Heating & Air ",
    "type": "New Business",
@@ -2132,6 +2263,7 @@
    "issueDays": null
   },
   {
+   "id": "327055520487",
    "ae": "Blake Fenn",
    "company": "Staton Heating, Cooling & Plumbing",
    "type": "Expansion",
@@ -2148,6 +2280,7 @@
    "issueDays": null
   },
   {
+   "id": "328599480023",
    "ae": "colton lingmann",
    "company": "Tillman’s Services",
    "type": "New Business",
@@ -2164,6 +2297,7 @@
    "issueDays": null
   },
   {
+   "id": "328510312142",
    "ae": "Ky Decker",
    "company": "Redhammer Roof Group",
    "type": "New Business",
@@ -2180,6 +2314,7 @@
    "issueDays": null
   },
   {
+   "id": "325223199462",
    "ae": "Ky Decker",
    "company": "C&R Heating and Cooling",
    "type": "New Business",
@@ -2196,6 +2331,7 @@
    "issueDays": null
   },
   {
+   "id": "328509854405",
    "ae": "Ky Decker",
    "company": "Alarmex, Inc.",
    "type": "New Business",
@@ -2212,6 +2348,7 @@
    "issueDays": null
   },
   {
+   "id": "330224476915",
    "ae": "colton lingmann",
    "company": "Air-Tro",
    "type": "Expansion",
@@ -2228,6 +2365,7 @@
    "issueDays": null
   },
   {
+   "id": "331517474514",
    "ae": "colton lingmann",
    "company": "Kanon Electric",
    "type": "Expansion",
@@ -2244,6 +2382,7 @@
    "issueDays": null
   },
   {
+   "id": "332200791785",
    "ae": "Ky Decker",
    "company": "KPB Services",
    "type": "New Business",
@@ -2260,6 +2399,7 @@
    "issueDays": null
   },
   {
+   "id": "332203756275",
    "ae": "colton lingmann",
    "company": "One Hour Heating and Cooling",
    "type": "New Business",
@@ -2276,6 +2416,7 @@
    "issueDays": null
   },
   {
+   "id": "332304584434",
    "ae": "colton lingmann",
    "company": "First Rate Plumbing, Heating and Cooling Inc. ",
    "type": "New Business",
@@ -2292,6 +2433,7 @@
    "issueDays": null
   },
   {
+   "id": "332471572155",
    "ae": "Ky Decker",
    "company": "FilterClean",
    "type": "New Business",
@@ -2308,6 +2450,7 @@
    "issueDays": null
   },
   {
+   "id": "332471589563",
    "ae": "Ky Decker",
    "company": "Aqua Flush Plumbing",
    "type": "New Business",
@@ -2324,6 +2467,7 @@
    "issueDays": null
   },
   {
+   "id": "332609140453",
    "ae": "Blake Fenn",
    "company": "Lions Heating and Air Conditioning",
    "type": "New Business",
@@ -2340,6 +2484,7 @@
    "issueDays": null
   },
   {
+   "id": "332602667742",
    "ae": "colton lingmann",
    "company": "Total Air",
    "type": "New Business",
@@ -2356,6 +2501,7 @@
    "issueDays": null
   },
   {
+   "id": "332612073200",
    "ae": "Blake Fenn",
    "company": "Simply Mechanical",
    "type": "New Business",
@@ -2372,6 +2518,7 @@
    "issueDays": null
   },
   {
+   "id": "332612789977",
    "ae": "colton lingmann",
    "company": "Air Comfort Service Heating, Cooling, & insulation",
    "type": "New Business",
@@ -2388,6 +2535,7 @@
    "issueDays": null
   },
   {
+   "id": "332789399230",
    "ae": "Blake Fenn",
    "company": "The Lighting Geek",
    "type": "Expansion",
@@ -2404,6 +2552,7 @@
    "issueDays": null
   },
   {
+   "id": "332614228708",
    "ae": "Ky Decker",
    "company": "A1 Roof Care",
    "type": "New Business",
@@ -2420,6 +2569,7 @@
    "issueDays": null
   },
   {
+   "id": "333249611482",
    "ae": "Ky Decker",
    "company": "Peps Plumbing Service",
    "type": "New Business",
@@ -2436,6 +2586,7 @@
    "issueDays": null
   },
   {
+   "id": "333231488751",
    "ae": "Blake Fenn",
    "company": "Rhoden Roofing",
    "type": "New Business",
@@ -2452,6 +2603,7 @@
    "issueDays": null
   },
   {
+   "id": "333489346255",
    "ae": "colton lingmann",
    "company": "Acosta Heating, Cooling, Electrical & Plumbing",
    "type": "New Business",
@@ -2468,6 +2620,7 @@
    "issueDays": null
   },
   {
+   "id": "333514572532",
    "ae": "Ky Decker",
    "company": " Can Do Crew Plumbing, Heating & Air",
    "type": "Expansion",
@@ -2484,6 +2637,7 @@
    "issueDays": null
   },
   {
+   "id": "333540493032",
    "ae": "Ky Decker",
    "company": "Podium Garage Doors",
    "type": "New Business",
@@ -2500,6 +2654,7 @@
    "issueDays": null
   },
   {
+   "id": "333814188791",
    "ae": "Blake Fenn",
    "company": "First Class Plumbing",
    "type": "New Business",
@@ -2516,6 +2671,7 @@
    "issueDays": null
   },
   {
+   "id": "333774096117",
    "ae": "Blake Fenn",
    "company": "A Clean House by Suzanne",
    "type": "Expansion",
@@ -2532,6 +2688,7 @@
    "issueDays": null
   },
   {
+   "id": "329059114693",
    "ae": "Ky Decker",
    "company": "A1 Plumbing",
    "type": "New Business",
@@ -2548,6 +2705,7 @@
    "issueDays": null
   },
   {
+   "id": "334066231003",
    "ae": "Ky Decker",
    "company": "Premier Plumbing of Florida LLC",
    "type": "New Business",
@@ -2564,6 +2722,7 @@
    "issueDays": null
   },
   {
+   "id": "333786678987",
    "ae": "Blake Fenn",
    "company": "Remember Me Roofing",
    "type": "New Business",
@@ -2580,6 +2739,7 @@
    "issueDays": null
   },
   {
+   "id": "334479035121",
    "ae": "Ky Decker",
    "company": "Az Garage Door Repair",
    "type": "New Business",
@@ -2596,6 +2756,7 @@
    "issueDays": null
   },
   {
+   "id": "335228147398",
    "ae": "Ky Decker",
    "company": "The Building Company",
    "type": "New Business",
@@ -2612,6 +2773,7 @@
    "issueDays": null
   },
   {
+   "id": "335261395701",
    "ae": "Ky Decker",
    "company": "Major League Plumbing",
    "type": "New Business",
@@ -2628,6 +2790,7 @@
    "issueDays": null
   },
   {
+   "id": "335179278052",
    "ae": "Ky Decker",
    "company": "Eretz Operators",
    "type": "New Business",
@@ -2644,6 +2807,7 @@
    "issueDays": null
   },
   {
+   "id": "335261546181",
    "ae": "colton lingmann",
    "company": "Andreas Plumbing, Heating and Air Conditioning, Inc.",
    "type": "New Business",
@@ -2660,6 +2824,7 @@
    "issueDays": null
   },
   {
+   "id": "335881093833",
    "ae": "Blake Fenn",
    "company": "Aurora Painting & Decorating",
    "type": "New Business",
@@ -2676,6 +2841,7 @@
    "issueDays": null
   },
   {
+   "id": "335869435578",
    "ae": "Blake Fenn",
    "company": "Stricklin and Porter Ventures LLC ",
    "type": "New Business",
@@ -2692,6 +2858,7 @@
    "issueDays": null
   },
   {
+   "id": "336127653616",
    "ae": "Blake Fenn",
    "company": "Glass Doctor of Syracuse ",
    "type": "New Business",
@@ -2708,6 +2875,7 @@
    "issueDays": null
   },
   {
+   "id": "336402613952",
    "ae": "Ky Decker",
    "company": "OK HVAC",
    "type": "New Business",
@@ -2724,6 +2892,7 @@
    "issueDays": null
   },
   {
+   "id": "334110579435",
    "ae": "Ky Decker",
    "company": "Mr. Electric",
    "type": "New Business",
@@ -2740,6 +2909,7 @@
    "issueDays": null
   },
   {
+   "id": "336532815592",
    "ae": "Ky Decker",
    "company": "That 1 Painter Seattle",
    "type": "New Business",
@@ -2756,6 +2926,7 @@
    "issueDays": null
   },
   {
+   "id": "337286792942",
    "ae": "Blake Fenn",
    "company": "Country Wide ProServ",
    "type": "New Business",
@@ -2772,6 +2943,7 @@
    "issueDays": null
   },
   {
+   "id": "337549597420",
    "ae": "Blake Fenn",
    "company": "PDS Plumbing & Air ",
    "type": "New Business",
@@ -2788,6 +2960,7 @@
    "issueDays": null
   },
   {
+   "id": "338778824392",
    "ae": "Ky Decker",
    "company": "J.C. Warner Heating & Cooling",
    "type": "New Business",
@@ -2804,6 +2977,7 @@
    "issueDays": null
   },
   {
+   "id": "339564094167",
    "ae": "Ky Decker",
    "company": "Premier Comfort Services, Inc ",
    "type": "New Business",
@@ -2820,6 +2994,7 @@
    "issueDays": null
   },
   {
+   "id": "339869113072",
    "ae": "Ky Decker",
    "company": "Patriot Air LLC",
    "type": "New Business",
@@ -2836,6 +3011,7 @@
    "issueDays": null
   },
   {
+   "id": "340259951336",
    "ae": "Ky Decker",
    "company": "Sharper Look Exteriors",
    "type": "New Business",
@@ -2852,6 +3028,7 @@
    "issueDays": null
   },
   {
+   "id": "340220473048",
    "ae": "colton lingmann",
    "company": "Wolfe Heat & Air ",
    "type": "New Business",
@@ -2868,6 +3045,7 @@
    "issueDays": null
   },
   {
+   "id": "340265864909",
    "ae": "Ky Decker",
    "company": "Vanguard Plumbing Solutions",
    "type": "Expansion",
@@ -2884,6 +3062,7 @@
    "issueDays": null
   },
   {
+   "id": "340614334156",
    "ae": "Ky Decker",
    "company": "5 Star Heating & Air Charleston",
    "type": "New Business",
@@ -2900,6 +3079,7 @@
    "issueDays": null
   },
   {
+   "id": "340490094305",
    "ae": "Ky Decker",
    "company": "Peak Heating and Cooling ",
    "type": "New Business",
@@ -2916,6 +3096,7 @@
    "issueDays": null
   },
   {
+   "id": "340489432774",
    "ae": "Ky Decker",
    "company": "Roman Plumbing and Air",
    "type": "Expansion",
@@ -2932,6 +3113,7 @@
    "issueDays": null
   },
   {
+   "id": "340489432823",
    "ae": "colton lingmann",
    "company": "Cape Fear Pro Wash LLC ",
    "type": "New Business",
@@ -2948,6 +3130,7 @@
    "issueDays": null
   },
   {
+   "id": "340266677993",
    "ae": "colton lingmann",
    "company": "Patriot Illumination",
    "type": "New Business",
@@ -2964,6 +3147,7 @@
    "issueDays": null
   },
   {
+   "id": "340924690129",
    "ae": "Blake Fenn",
    "company": "Dautriel's Plumbing",
    "type": "New Business",
@@ -2980,6 +3164,7 @@
    "issueDays": null
   },
   {
+   "id": "342014537431",
    "ae": "colton lingmann",
    "company": "All Ears Roofing",
    "type": "New Business",
@@ -2996,6 +3181,7 @@
    "issueDays": null
   },
   {
+   "id": "342174605040",
    "ae": "Blake Fenn",
    "company": "Thompson Family Plumbing Heating and Air, LLC ",
    "type": "New Business",
@@ -3012,6 +3198,7 @@
    "issueDays": null
   },
   {
+   "id": "342172677820",
    "ae": "Blake Fenn",
    "company": "Thompson Family Plumbing and Drain LLC ",
    "type": "New Business",
@@ -3028,6 +3215,7 @@
    "issueDays": null
   },
   {
+   "id": "342008801991",
    "ae": "Ky Decker",
    "company": "Veterans Pressure Washing ",
    "type": "New Business",
@@ -3044,6 +3232,7 @@
    "issueDays": null
   },
   {
+   "id": "342008866525",
    "ae": "Blake Fenn",
    "company": "Peerless Plumbing Company, Inc ",
    "type": "New Business",
@@ -3060,6 +3249,7 @@
    "issueDays": null
   },
   {
+   "id": "342324997846",
    "ae": "colton lingmann",
    "company": "RR Electric Heating & Air ",
    "type": "New Business",
@@ -3076,6 +3266,7 @@
    "issueDays": null
   },
   {
+   "id": "342327845579",
    "ae": "Blake Fenn",
    "company": "5 Star Plumbing Heating and Air",
    "type": "New Business",
@@ -3092,6 +3283,7 @@
    "issueDays": null
   },
   {
+   "id": "342339684049",
    "ae": "Blake Fenn",
    "company": "Dean & Co Electrical ",
    "type": "New Business",
@@ -3108,6 +3300,7 @@
    "issueDays": null
   },
   {
+   "id": "342947750649",
    "ae": "colton lingmann",
    "company": "SRG MECHANICAL ",
    "type": "New Business",
@@ -3124,6 +3317,7 @@
    "issueDays": null
   },
   {
+   "id": "342947061461",
    "ae": "Ky Decker",
    "company": "Sunset Gates LLC",
    "type": "New Business",
@@ -3140,6 +3334,7 @@
    "issueDays": null
   },
   {
+   "id": "343125373634",
    "ae": "Blake Fenn",
    "company": "AC Plus Heating & Air",
    "type": "New Business",
@@ -3156,6 +3351,7 @@
    "issueDays": null
   },
   {
+   "id": "343125412569",
    "ae": "Ky Decker",
    "company": "Radlee Heating and Cooling",
    "type": "New Business",
@@ -3172,6 +3368,7 @@
    "issueDays": null
   },
   {
+   "id": "343185352431",
    "ae": "colton lingmann",
    "company": "John's Heating, Cooling, and Plumbing ",
    "type": "New Business",
@@ -3188,6 +3385,7 @@
    "issueDays": null
   },
   {
+   "id": "343127537346",
    "ae": "Blake Fenn",
    "company": "Neighborly of St. Louis",
    "type": "New Business",
@@ -3204,6 +3402,7 @@
    "issueDays": null
   },
   {
+   "id": "343126337232",
    "ae": "colton lingmann",
    "company": "Genteel Plumbers",
    "type": "New Business",
@@ -3220,6 +3419,7 @@
    "issueDays": null
   },
   {
+   "id": "343185498831",
    "ae": "colton lingmann",
    "company": "3R Plumbing and Mechanical ",
    "type": "New Business",
@@ -3236,6 +3436,7 @@
    "issueDays": null
   },
   {
+   "id": "343186224875",
    "ae": "colton lingmann",
    "company": "Above and Beyond Electric with a Splash of Plumbing",
    "type": "New Business",
@@ -3252,6 +3453,7 @@
    "issueDays": null
   },
   {
+   "id": "343620756161",
    "ae": "Blake Fenn",
    "company": "DM ELECTRICAL AND CONSTRUCTION LLC",
    "type": "New Business",
@@ -3268,6 +3470,7 @@
    "issueDays": null
   },
   {
+   "id": "343096616678",
    "ae": "colton lingmann",
    "company": "Ascend Mechanical ",
    "type": "New Business",
@@ -3284,6 +3487,7 @@
    "issueDays": null
   },
   {
+   "id": "343268414159",
    "ae": "colton lingmann",
    "company": "SoGood Inc.",
    "type": "New Business",
@@ -3300,6 +3504,7 @@
    "issueDays": null
   },
   {
+   "id": "344363319996",
    "ae": "colton lingmann",
    "company": "Air Docs Heating & Cooling ",
    "type": "New Business",
@@ -3316,6 +3521,7 @@
    "issueDays": null
   },
   {
+   "id": "344359081681",
    "ae": "colton lingmann",
    "company": "Thermo Direct inc",
    "type": "New Business",
@@ -3332,6 +3538,7 @@
    "issueDays": null
   },
   {
+   "id": "344622707395",
    "ae": "Blake Fenn",
    "company": "W3 Electric Heating & A/C",
    "type": "New Business",
@@ -3348,6 +3555,7 @@
    "issueDays": null
   },
   {
+   "id": "345195881197",
    "ae": "Ky Decker",
    "company": "Mighty Plumbing Heating Air Electric",
    "type": "New Business",
@@ -3364,6 +3572,7 @@
    "issueDays": null
   },
   {
+   "id": "345156511459",
    "ae": "Ky Decker",
    "company": "Regal, Inc. Plumbing, Heating & A/C",
    "type": "Expansion",
@@ -3380,6 +3589,7 @@
    "issueDays": null
   },
   {
+   "id": "345156639476",
    "ae": "colton lingmann",
    "company": "Peak Plumbing Heating & Air, LLC ",
    "type": "New Business",
@@ -3396,6 +3606,7 @@
    "issueDays": null
   },
   {
+   "id": "344127407824",
    "ae": "colton lingmann",
    "company": "Wheeling Heating and Cooling LLC ",
    "type": "New Business",
@@ -3412,6 +3623,7 @@
    "issueDays": null
   },
   {
+   "id": "343364380381",
    "ae": "Blake Fenn",
    "company": "Hunt's Services",
    "type": "New Business",
@@ -3428,6 +3640,7 @@
    "issueDays": null
   },
   {
+   "id": "343691524851",
    "ae": "Blake Fenn",
    "company": "Interstate Heating & Air Conditioning ",
    "type": "New Business",
@@ -3444,6 +3657,7 @@
    "issueDays": null
   },
   {
+   "id": "345479681780",
    "ae": "Blake Fenn",
    "company": "Davis Painting",
    "type": "New Business",
@@ -3460,6 +3674,7 @@
    "issueDays": null
   },
   {
+   "id": "329080054473",
    "ae": "Ky Decker",
    "company": "Hellgate Plumbing, Heating and Cooling",
    "type": "New Business",
@@ -3476,6 +3691,7 @@
    "issueDays": null
   },
   {
+   "id": "346794732248",
    "ae": "Ky Decker",
    "company": "Apex Heating and Cooling",
    "type": "New Business",
@@ -3492,6 +3708,7 @@
    "issueDays": null
   },
   {
+   "id": "344101178098",
    "ae": "Blake Fenn",
    "company": "Bold City Heating and Air",
    "type": "New Business",
@@ -3508,6 +3725,7 @@
    "issueDays": null
   },
   {
+   "id": "347718225631",
    "ae": "Blake Fenn",
    "company": "Definition Heating, Cooling & Plumbing",
    "type": "New Business",
@@ -3524,6 +3742,7 @@
    "issueDays": null
   },
   {
+   "id": "348701211325",
    "ae": "Ky Decker",
    "company": "Spotless Cleaning Chicago",
    "type": "New Business",
@@ -3540,6 +3759,7 @@
    "issueDays": null
   },
   {
+   "id": "348946024152",
    "ae": "Ky Decker",
    "company": "Smart Home Improvements",
    "type": "New Business",
@@ -3556,6 +3776,7 @@
    "issueDays": null
   },
   {
+   "id": "347959838434",
    "ae": "colton lingmann",
    "company": "Efficient Air Service ",
    "type": "New Business",
@@ -3572,6 +3793,7 @@
    "issueDays": null
   },
   {
+   "id": "326444040934",
    "ae": "colton lingmann",
    "company": "Kerr Sprinkler Systems INC ",
    "type": "New Business",
@@ -3588,6 +3810,7 @@
    "issueDays": null
   },
   {
+   "id": "349725631176",
    "ae": "Ky Decker",
    "company": "Cosmic Comfort",
    "type": "Expansion",
@@ -3604,6 +3827,7 @@
    "issueDays": null
   },
   {
+   "id": "349917387509",
    "ae": "colton lingmann",
    "company": "Austin Tree Specialists & Lees Trees",
    "type": "New Business",
@@ -3620,6 +3844,7 @@
    "issueDays": null
   },
   {
+   "id": "350501964519",
    "ae": "Blake Fenn",
    "company": "S.W.A.T. PLUMBING LLC ",
    "type": "New Business",
@@ -3636,6 +3861,7 @@
    "issueDays": null
   },
   {
+   "id": "342985373428",
    "ae": "Ky Decker",
    "company": "Riverstone Plumbing LLC",
    "type": "New Business",
@@ -3652,6 +3878,7 @@
    "issueDays": null
   },
   {
+   "id": "348867674813",
    "ae": "Ky Decker",
    "company": "Bradberry Service Company, Inc",
    "type": "New Business",
@@ -3668,6 +3895,7 @@
    "issueDays": null
   },
   {
+   "id": "350501348062",
    "ae": "Ky Decker",
    "company": "Gianni Electrical Service",
    "type": "Expansion",
@@ -3684,6 +3912,7 @@
    "issueDays": null
   },
   {
+   "id": "348780512993",
    "ae": "Ky Decker",
    "company": "Call the Duck",
    "type": "New Business",
@@ -3700,6 +3929,7 @@
    "issueDays": null
   },
   {
+   "id": "347971922669",
    "ae": "colton lingmann",
    "company": "Mitchell Heating & Cooling, Inc.",
    "type": "New Business",
@@ -3716,6 +3946,7 @@
    "issueDays": null
   },
   {
+   "id": "351630763752",
    "ae": "colton lingmann",
    "company": "Stormgrade LLC",
    "type": "New Business",
@@ -3732,6 +3963,7 @@
    "issueDays": null
   },
   {
+   "id": "349791818428",
    "ae": "Blake Fenn",
    "company": "George Plumbing Heating and Air",
    "type": "Expansion",
@@ -3748,6 +3980,7 @@
    "issueDays": null
   },
   {
+   "id": "352122371778",
    "ae": "Ky Decker",
    "company": "Powerful Electrical LLC",
    "type": "New Business",
@@ -3764,6 +3997,7 @@
    "issueDays": null
   },
   {
+   "id": "350239512309",
    "ae": "colton lingmann",
    "company": "Davis Heating & Air LLC ",
    "type": "New Business",
@@ -3780,6 +4014,7 @@
    "issueDays": null
   },
   {
+   "id": "347172986617",
    "ae": "Ky Decker",
    "company": "American Comfort Experts",
    "type": "New Business",
@@ -3796,6 +4031,7 @@
    "issueDays": null
   },
   {
+   "id": "352942956264",
    "ae": "Ky Decker",
    "company": "Air Adviser LLC",
    "type": "New Business",
@@ -3812,6 +4048,7 @@
    "issueDays": null
   },
   {
+   "id": "353525295846",
    "ae": "Ky Decker",
    "company": "Opus Plumbing and Heating",
    "type": "New Business",
@@ -3828,6 +4065,7 @@
    "issueDays": null
   },
   {
+   "id": "350291768012",
    "ae": "colton lingmann",
    "company": "Mitchell-Itak, Inc., T/A ITAK Heating & Cooling ",
    "type": "Expansion",
@@ -3844,6 +4082,7 @@
    "issueDays": null
   },
   {
+   "id": "348740817614",
    "ae": "Blake Fenn",
    "company": "Beis Plumbing",
    "type": "New Business",
@@ -3860,6 +4099,7 @@
    "issueDays": null
   },
   {
+   "id": "353380620998",
    "ae": "colton lingmann",
    "company": "Sunaura Solar",
    "type": "New Business",
@@ -3876,6 +4116,7 @@
    "issueDays": 33
   },
   {
+   "id": "354407388899",
    "ae": "Ky Decker",
    "company": "Mac 5 Services",
    "type": "New Business",
@@ -3892,6 +4133,7 @@
    "issueDays": null
   },
   {
+   "id": "347243637436",
    "ae": "colton lingmann",
    "company": "RV Service Now",
    "type": "New Business",
@@ -3908,6 +4150,7 @@
    "issueDays": null
   },
   {
+   "id": "355849245403",
    "ae": "Ky Decker",
    "company": "Evolve N Elevate",
    "type": "New Business",
@@ -3924,6 +4167,7 @@
    "issueDays": 29
   },
   {
+   "id": "356394038975",
    "ae": "Blake Fenn",
    "company": "A-1 Heating & Air Conditioning Services",
    "type": "New Business",
@@ -3940,6 +4184,7 @@
    "issueDays": null
   },
   {
+   "id": "357325715155",
    "ae": "colton lingmann",
    "company": "Tex-Turf",
    "type": "New Business",
@@ -3956,6 +4201,7 @@
    "issueDays": null
   },
   {
+   "id": "351741272787",
    "ae": "colton lingmann",
    "company": "Pacific Exteriors LLC ",
    "type": "New Business",
@@ -3972,6 +4218,7 @@
    "issueDays": null
   },
   {
+   "id": "348819027656",
    "ae": "Ky Decker",
    "company": "Caraballo Heating and Air Conditioning LLC",
    "type": "New Business",
@@ -3988,6 +4235,7 @@
    "issueDays": null
   },
   {
+   "id": "360608249583",
    "ae": "colton lingmann",
    "company": "Clean Key, LLC",
    "type": "New Business",
@@ -4004,6 +4252,7 @@
    "issueDays": null
   },
   {
+   "id": "360608975587",
    "ae": "Blake Fenn",
    "company": "GATORWRAPS",
    "type": "New Business",
@@ -4020,6 +4269,7 @@
    "issueDays": null
   },
   {
+   "id": "360866169556",
    "ae": "Blake Fenn",
    "company": "Iceberg Home Services",
    "type": "Expansion",
@@ -4036,6 +4286,7 @@
    "issueDays": null
   },
   {
+   "id": "360608620254",
    "ae": "Blake Fenn",
    "company": "Tennessee Standard Plumbing & Drain",
    "type": "New Business",
@@ -4052,6 +4303,7 @@
    "issueDays": null
   },
   {
+   "id": "354245433028",
    "ae": "Blake Fenn",
    "company": "Modern Air Systems LLC",
    "type": "New Business",
@@ -4068,6 +4320,7 @@
    "issueDays": null
   },
   {
+   "id": "360755736284",
    "ae": "colton lingmann",
    "company": "Spoor’s Heating and Air Conditioning",
    "type": "New Business",
@@ -4084,6 +4337,7 @@
    "issueDays": null
   },
   {
+   "id": "361031392954",
    "ae": "colton lingmann",
    "company": "Empowered Electrical Services LLC ",
    "type": "New Business",
@@ -4100,6 +4354,7 @@
    "issueDays": null
   },
   {
+   "id": "364182682302",
    "ae": "Blake Fenn",
    "company": "Legacy Painting",
    "type": "New Business",
@@ -4116,6 +4371,7 @@
    "issueDays": null
   },
   {
+   "id": "354207454941",
    "ae": "colton lingmann",
    "company": "Anytime Garage Door",
    "type": "New Business",
@@ -4132,6 +4388,7 @@
    "issueDays": null
   },
   {
+   "id": "349864941300",
    "ae": "Ky Decker",
    "company": "Legacy Home",
    "type": "New Business",
@@ -4148,6 +4405,7 @@
    "issueDays": 4
   },
   {
+   "id": "367461627582",
    "ae": "Blake Fenn",
    "company": "Envy Electrical LLC",
    "type": "New Business",
@@ -4164,6 +4422,7 @@
    "issueDays": null
   },
   {
+   "id": "370412079812",
    "ae": "Ky Decker",
    "company": "Seaside Heating and Cooling",
    "type": "New Business",
@@ -4180,6 +4439,7 @@
    "issueDays": 0
   },
   {
+   "id": "371305249483",
    "ae": "Blake Fenn",
    "company": "Watson Home Construction",
    "type": "New Business",
@@ -4196,6 +4456,7 @@
    "issueDays": null
   },
   {
+   "id": "371354206920",
    "ae": "Ky Decker",
    "company": "Mr. Air Air Conditioning & Electrical",
    "type": "New Business",
