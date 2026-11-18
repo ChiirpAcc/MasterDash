@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-18T22:28:00.832Z",
+  "builtAt": "2026-11-18T22:33:48.718Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -46,7 +46,7 @@
    "dealsWon": 16,
    "inPeriodCredited": 10900,
    "booked": 19816.65,
-   "avgDaysToCollect": 22
+   "avgDaysToCollect": 23
   },
   "lastMonth": {
    "credited": 25821.29,
