@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T13:13:37.832Z",
+  "builtAt": "2026-11-18T13:18:02.550Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,7 +37,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 9874,
+   "total": 9124,
    "mediums": [
     {
      "medium": "Events",
@@ -46,8 +46,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 4512,
-     "deals": 5
+     "credited": 3762,
+     "deals": 4
     },
     {
      "medium": "Webinars",
@@ -66,12 +66,6 @@
     }
    ],
    "top": [
-    {
-     "source": "One-offs",
-     "medium": "Partners and referrals",
-     "credited": 1550,
-     "deals": 2
-    },
     {
      "source": "Nexstar",
      "medium": "Partners and referrals",
@@ -109,6 +103,12 @@
      "deals": 1
     },
     {
+     "source": "One-offs",
+     "medium": "Partners and referrals",
+     "credited": 800,
+     "deals": 1
+    },
+    {
      "source": "2026 - HSF Freedom",
      "medium": "Events",
      "credited": 512,
@@ -117,7 +117,7 @@
    ]
   },
   "ytd": {
-   "total": 349966.36,
+   "total": 349216.36,
    "mediums": [
     {
      "medium": "Events",
@@ -126,8 +126,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 108945.25,
-     "deals": 118
+     "credited": 108195.25,
+     "deals": 117
     },
     {
      "medium": "Webinars",
