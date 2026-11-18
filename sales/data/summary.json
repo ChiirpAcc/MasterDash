@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v54",
-  "builtAt": "2026-11-18T18:53:03.574Z",
+  "builtAt": "2026-11-18T18:57:48.843Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -87,8 +87,8 @@
    "amount": 15845.15
   },
   "awaiting": {
-   "deals": 52,
-   "booked": 57096.19,
+   "deals": 53,
+   "booked": 59096.19,
    "stale": 44
   },
   "collectionRate": 0.879,
@@ -209,8 +209,8 @@
     "amount": 6750
    },
    "awaiting": {
-    "deals": 21,
-    "booked": 23093.04,
+    "deals": 22,
+    "booked": 25093.04,
     "stale": 17
    },
    "collectionRate": 0.791,
