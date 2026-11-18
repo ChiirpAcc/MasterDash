@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v59",
-  "builtAt": "2026-11-18T20:28:04.400Z",
+  "version": "sk-v62",
+  "builtAt": "2026-11-18T20:31:37.412Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -51,7 +51,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "260450682599",
@@ -69,7 +70,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "257189096168",
@@ -87,7 +89,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "242456016618",
@@ -105,7 +108,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "251757160152",
@@ -123,7 +127,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "273164630766",
@@ -141,7 +146,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "273740275387",
@@ -159,7 +165,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "262711403198",
@@ -177,7 +184,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "252045612758",
@@ -195,7 +203,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "276124401352",
@@ -213,7 +222,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "278206800580",
@@ -231,7 +241,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "279745949386",
@@ -249,7 +260,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "283812221682",
@@ -267,7 +279,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "231318714064",
@@ -285,7 +298,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "157350036175",
@@ -303,7 +317,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "282225135338",
@@ -321,7 +336,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "278763220702",
@@ -339,7 +355,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "294162994906",
@@ -357,7 +374,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "293012799188",
@@ -375,7 +393,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "289018271479",
@@ -393,7 +412,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "282276598480",
@@ -411,7 +431,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "281958512372",
@@ -429,7 +450,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "300569655033",
@@ -447,7 +469,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "302709065405",
@@ -465,7 +488,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "300448832233",
@@ -483,7 +507,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "293206261487",
@@ -501,7 +526,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "305110981345",
@@ -519,7 +545,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "300639819495",
@@ -537,7 +564,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "306622361300",
@@ -555,7 +583,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "307175168715",
@@ -573,7 +602,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "306865576645",
@@ -591,7 +621,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "299065708228",
@@ -609,7 +640,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "298272641748",
@@ -627,7 +659,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "306428309222",
@@ -645,7 +678,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "300722504381",
@@ -663,7 +697,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "305880983237",
@@ -681,7 +716,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "304350459608",
@@ -699,7 +735,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "310671757025",
@@ -717,7 +754,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "259871956683",
@@ -735,7 +773,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "278118709977",
@@ -753,7 +792,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "313025002203",
@@ -771,7 +811,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "315440222933",
@@ -789,7 +830,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "315801088700",
@@ -807,7 +849,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316627553994",
@@ -825,7 +868,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316633346758",
@@ -843,7 +887,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316626866887",
@@ -861,7 +906,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316627588801",
@@ -879,7 +925,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316632629965",
@@ -897,7 +944,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "302646963942",
@@ -915,7 +963,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316626234077",
@@ -933,7 +982,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "257171100400",
@@ -951,7 +1001,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316332588736",
@@ -969,7 +1020,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "283785769711",
@@ -987,7 +1039,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "317196098288",
@@ -1005,7 +1058,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "313763991229",
@@ -1023,7 +1077,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "300396544699",
@@ -1041,7 +1096,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "305504367335",
@@ -1059,7 +1115,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "318227642062",
@@ -1077,7 +1134,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "316275775163",
@@ -1095,7 +1153,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "318537194207",
@@ -1113,7 +1172,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "318748048100",
@@ -1131,7 +1191,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "35546445236",
@@ -1149,7 +1210,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "318928965333",
@@ -1167,7 +1229,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "288807036656",
@@ -1185,7 +1248,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "318651677374",
@@ -1203,7 +1267,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "317946914540",
@@ -1221,7 +1286,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "319174864579",
@@ -1239,7 +1305,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "319371355893",
@@ -1257,7 +1324,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "319375684292",
@@ -1275,7 +1343,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "319555085037",
@@ -1293,7 +1362,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320114876116",
@@ -1311,7 +1381,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320340580050",
@@ -1329,7 +1400,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320341319387",
@@ -1347,7 +1419,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320343499457",
@@ -1365,7 +1438,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320622997207",
@@ -1383,7 +1457,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320623839975",
@@ -1401,7 +1476,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320838856393",
@@ -1419,7 +1495,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320837518029",
@@ -1437,7 +1514,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320838258367",
@@ -1455,7 +1533,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321010584294",
@@ -1473,7 +1552,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320837541611",
@@ -1491,7 +1571,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320837542602",
@@ -1509,7 +1590,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320837542625",
@@ -1527,7 +1609,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "320622413498",
@@ -1545,7 +1628,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321281108666",
@@ -1563,7 +1647,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321335103209",
@@ -1581,7 +1666,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321688747733",
@@ -1599,7 +1685,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321688026838",
@@ -1617,7 +1704,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321685866188",
@@ -1635,7 +1723,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321690951391",
@@ -1653,7 +1742,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321923868383",
@@ -1671,7 +1761,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321926758130",
@@ -1689,7 +1780,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322467885760",
@@ -1707,7 +1799,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322442698463",
@@ -1725,7 +1818,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322469491428",
@@ -1743,7 +1837,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322574427866",
@@ -1761,7 +1856,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322910698187",
@@ -1779,7 +1875,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323097632481",
@@ -1797,7 +1894,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322912198340",
@@ -1815,7 +1913,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "322924516073",
@@ -1833,7 +1932,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323236745959",
@@ -1851,7 +1951,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323231810279",
@@ -1869,7 +1970,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323517411043",
@@ -1887,7 +1989,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323527105216",
@@ -1905,7 +2008,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324281334520",
@@ -1923,7 +2027,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324289980148",
@@ -1941,7 +2046,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324290744048",
@@ -1959,7 +2065,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324841500349",
@@ -1977,7 +2084,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323925487343",
@@ -1995,7 +2103,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324817877710",
@@ -2013,7 +2122,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324842335958",
@@ -2031,7 +2141,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324817984220",
@@ -2049,7 +2160,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323844588248",
@@ -2067,7 +2179,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "323577102028",
@@ -2085,7 +2198,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324940750541",
@@ -2103,7 +2217,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "325649359581",
@@ -2121,7 +2236,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324940960462",
@@ -2139,7 +2255,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "324807536377",
@@ -2157,7 +2274,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326058480368",
@@ -2175,7 +2293,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326061356738",
@@ -2193,7 +2312,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326364949183",
@@ -2211,7 +2331,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326147988189",
@@ -2229,7 +2350,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "321655286464",
@@ -2247,7 +2369,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326811967196",
@@ -2265,7 +2388,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "325355134681",
@@ -2283,7 +2407,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326399941349",
@@ -2301,7 +2426,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "327236698860",
@@ -2319,7 +2445,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326613277397",
@@ -2337,7 +2464,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "328044237498",
@@ -2355,7 +2483,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "328234391278",
@@ -2373,7 +2502,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "327055520487",
@@ -2391,7 +2521,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "328599480023",
@@ -2409,7 +2540,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "325223199462",
@@ -2427,7 +2559,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "328509854405",
@@ -2445,7 +2578,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "330224476915",
@@ -2463,7 +2597,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "331517474514",
@@ -2481,7 +2616,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332200791785",
@@ -2499,7 +2635,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332203756275",
@@ -2517,7 +2654,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332304584434",
@@ -2535,7 +2673,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332471572155",
@@ -2553,7 +2692,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332471589563",
@@ -2571,7 +2711,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332609140453",
@@ -2589,7 +2730,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332602667742",
@@ -2607,7 +2749,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332612073200",
@@ -2625,7 +2768,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332612789977",
@@ -2643,7 +2787,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332789399230",
@@ -2661,7 +2806,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "332614228708",
@@ -2679,7 +2825,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333249611482",
@@ -2697,7 +2844,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333231488751",
@@ -2715,7 +2863,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333489346255",
@@ -2733,7 +2882,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333540493032",
@@ -2751,7 +2901,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333814188791",
@@ -2769,7 +2920,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333774096117",
@@ -2787,7 +2939,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "329059114693",
@@ -2805,7 +2958,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "334066231003",
@@ -2823,7 +2977,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "333786678987",
@@ -2841,7 +2996,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "334479035121",
@@ -2859,7 +3015,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "335228147398",
@@ -2877,7 +3034,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "335261395701",
@@ -2895,7 +3053,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "335179278052",
@@ -2913,7 +3072,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "335261546181",
@@ -2931,7 +3091,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "335881093833",
@@ -2949,7 +3110,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "335869435578",
@@ -2967,7 +3129,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "336127653616",
@@ -2985,7 +3148,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "336402613952",
@@ -3003,7 +3167,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "334110579435",
@@ -3021,7 +3186,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "336532815592",
@@ -3039,7 +3205,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "337286792942",
@@ -3057,7 +3224,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "337549597420",
@@ -3075,7 +3243,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "338778824392",
@@ -3093,7 +3262,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "339564094167",
@@ -3111,7 +3281,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "339869113072",
@@ -3129,7 +3300,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340259951336",
@@ -3147,7 +3319,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340220473048",
@@ -3165,7 +3338,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340614334156",
@@ -3183,7 +3357,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340490094305",
@@ -3201,7 +3376,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340489432823",
@@ -3219,7 +3395,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340266677993",
@@ -3237,7 +3414,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "340924690129",
@@ -3255,7 +3433,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342014537431",
@@ -3273,7 +3452,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342174605040",
@@ -3291,7 +3471,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342172677820",
@@ -3309,7 +3490,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342008801991",
@@ -3327,7 +3509,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342008866525",
@@ -3345,7 +3528,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342324997846",
@@ -3354,16 +3538,17 @@
    "type": "New Business",
    "close": "2026-08-14",
    "booked": 2250,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-14",
-   "credited": 12,
-   "daysToCollect": 48,
-   "waitingDays": null,
+   "status": "Not paid after 60 days",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 96,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342327845579",
@@ -3381,7 +3566,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342339684049",
@@ -3399,7 +3585,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342947750649",
@@ -3417,7 +3604,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342947061461",
@@ -3435,7 +3623,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343125373634",
@@ -3453,7 +3642,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343125412569",
@@ -3462,16 +3652,17 @@
    "type": "New Business",
    "close": "2026-08-19",
    "booked": 2500,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-19",
-   "credited": 12,
-   "daysToCollect": 43,
-   "waitingDays": null,
+   "status": "Not paid after 60 days",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 91,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343185352431",
@@ -3489,7 +3680,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343127537346",
@@ -3507,7 +3699,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343126337232",
@@ -3525,7 +3718,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343185498831",
@@ -3543,7 +3737,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343186224875",
@@ -3561,7 +3756,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343620756161",
@@ -3579,7 +3775,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343096616678",
@@ -3588,16 +3785,17 @@
    "type": "New Business",
    "close": "2026-08-24",
    "booked": 1750,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-24",
-   "credited": 12,
-   "daysToCollect": 0,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 86,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "fee waived in Stripe until 2026-12-24",
+   "expect": null
   },
   {
    "id": "343268414159",
@@ -3615,7 +3813,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "on a $0 plan in Stripe, nothing to charge"
+   "waitWhy": "on a $0 plan in Stripe, nothing to charge",
+   "expect": null
   },
   {
    "id": "344363319996",
@@ -3624,16 +3823,17 @@
    "type": "New Business",
    "close": "2026-08-26",
    "booked": 2250,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-26",
-   "credited": 12,
-   "daysToCollect": 0,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 84,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "fee waived in Stripe until 2026-12-26",
+   "expect": null
   },
   {
    "id": "344359081681",
@@ -3651,7 +3851,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "344622707395",
@@ -3660,16 +3861,17 @@
    "type": "New Business",
    "close": "2026-08-28",
    "booked": 2500,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-30",
-   "credited": 12,
-   "daysToCollect": 34,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 82,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "on a $0 plan in Stripe, nothing to charge",
+   "expect": null
   },
   {
    "id": "345195881197",
@@ -3687,7 +3889,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "fee waived in Stripe until 2026-12-31"
+   "waitWhy": "fee waived in Stripe until 2026-12-31",
+   "expect": null
   },
   {
    "id": "345156511459",
@@ -3705,7 +3908,8 @@
    "billsThisMonth": true,
    "issue": "Card failed, Stripe retrying",
    "issueDays": 79,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": "Stripe charge before month end",
+   "expect": 1000
   },
   {
    "id": "345156639476",
@@ -3723,7 +3927,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "344127407824",
@@ -3741,7 +3946,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343364380381",
@@ -3759,7 +3965,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "343691524851",
@@ -3777,7 +3984,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "345479681780",
@@ -3795,7 +4003,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "329080054473",
@@ -3813,7 +4022,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "346794732248",
@@ -3831,7 +4041,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "344101178098",
@@ -3840,16 +4051,17 @@
    "type": "New Business",
    "close": "2026-09-10",
    "booked": 2250,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-10",
-   "credited": 12,
-   "daysToCollect": 0,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 69,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "Stripe shows the first charge after month end",
+   "expect": null
   },
   {
    "id": "347718225631",
@@ -3867,7 +4079,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "348701211325",
@@ -3885,7 +4098,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "348946024152",
@@ -3903,7 +4117,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "347959838434",
@@ -3921,7 +4136,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "326444040934",
@@ -3939,7 +4155,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "fee waived in Stripe until 2027-01-23"
+   "waitWhy": "fee waived in Stripe until 2027-01-23",
+   "expect": null
   },
   {
    "id": "349725631176",
@@ -3957,7 +4174,8 @@
    "billsThisMonth": true,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": "Stripe charge before month end",
+   "expect": 600
   },
   {
    "id": "349917387509",
@@ -3975,7 +4193,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "350501964519",
@@ -3993,7 +4212,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "342985373428",
@@ -4002,16 +4222,17 @@
    "type": "New Business",
    "close": "2026-09-24",
    "booked": 1500,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-24",
-   "credited": 12,
-   "daysToCollect": 0,
-   "waitingDays": null,
-   "billsThisMonth": false,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 55,
+   "billsThisMonth": true,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "Stripe charge before month end",
+   "expect": null
   },
   {
    "id": "348867674813",
@@ -4029,7 +4250,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "350501348062",
@@ -4047,7 +4269,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end"
+   "waitWhy": "Stripe shows the first charge after month end",
+   "expect": null
   },
   {
    "id": "348780512993",
@@ -4065,7 +4288,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "347971922669",
@@ -4083,7 +4307,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "351630763752",
@@ -4101,7 +4326,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "349791818428",
@@ -4119,7 +4345,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "352122371778",
@@ -4137,7 +4364,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "350239512309",
@@ -4155,7 +4383,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "347172986617",
@@ -4173,7 +4402,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "fee waived in Stripe until 2027-02-06"
+   "waitWhy": "fee waived in Stripe until 2027-02-06",
+   "expect": null
   },
   {
    "id": "352942956264",
@@ -4191,7 +4421,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "353525295846",
@@ -4209,7 +4440,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "350291768012",
@@ -4221,13 +4453,14 @@
    "status": "Collected",
    "creditedMonth": "2026-10",
    "collectedDate": "2026-10-08",
-   "credited": 612,
+   "credited": 600,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "348740817614",
@@ -4245,7 +4478,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "353380620998",
@@ -4263,7 +4497,8 @@
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
    "issueDays": 34,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "354407388899",
@@ -4281,7 +4516,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "347243637436",
@@ -4299,7 +4535,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "355849245403",
@@ -4317,7 +4554,8 @@
    "billsThisMonth": true,
    "issue": "Not set up in Stripe",
    "issueDays": 30,
-   "waitWhy": "won recently, not set up in Stripe yet"
+   "waitWhy": "won recently, not set up in Stripe yet",
+   "expect": null
   },
   {
    "id": "356394038975",
@@ -4335,7 +4573,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "357325715155",
@@ -4347,13 +4586,14 @@
    "status": "Collected",
    "creditedMonth": "2026-10",
    "collectedDate": "2026-10-23",
-   "credited": 345.33,
+   "credited": 333.33,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "351741272787",
@@ -4371,7 +4611,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "348819027656",
@@ -4389,7 +4630,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "360608249583",
@@ -4407,7 +4649,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "360608975587",
@@ -4419,13 +4662,14 @@
    "status": "Collected",
    "creditedMonth": "2026-10",
    "collectedDate": "2026-10-30",
-   "credited": 750,
+   "credited": 738,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "360866169556",
@@ -4437,13 +4681,14 @@
    "status": "Collected",
    "creditedMonth": "2026-11",
    "collectedDate": "2026-11-02",
-   "credited": 962,
+   "credited": 950,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "360608620254",
@@ -4461,7 +4706,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end"
+   "waitWhy": "Stripe shows the first charge after month end",
+   "expect": null
   },
   {
    "id": "354245433028",
@@ -4479,7 +4725,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "360755736284",
@@ -4497,7 +4744,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "361031392954",
@@ -4509,13 +4757,14 @@
    "status": "Collected",
    "creditedMonth": "2026-11",
    "collectedDate": "2026-11-06",
-   "credited": 512,
+   "credited": 500,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "364182682302",
@@ -4533,7 +4782,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "354207454941",
@@ -4551,7 +4801,8 @@
    "billsThisMonth": true,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end"
+   "waitWhy": "Stripe charge before month end",
+   "expect": 166.65
   },
   {
    "id": "349864941300",
@@ -4569,7 +4820,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "on a $0 plan in Stripe, nothing to charge"
+   "waitWhy": "on a $0 plan in Stripe, nothing to charge",
+   "expect": null
   },
   {
    "id": "367461627582",
@@ -4587,7 +4839,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "370412079812",
@@ -4605,7 +4858,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "371305249483",
@@ -4623,7 +4877,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "371354206920",
@@ -4641,7 +4896,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   },
   {
    "id": "371628920568",
@@ -4659,7 +4915,8 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": ""
+   "waitWhy": "",
+   "expect": null
   }
  ]
 }

@@ -501,7 +501,7 @@
       $('sp-paid-n').textContent = S2.paid.length || ''; $('sp-due-n').textContent = S2.due.length || ''; $('sp-iss-n').textContent = S2.issues.length || '';
       var sum = function (a, k) { return a.reduce(function (t, d) { return t + (d[k] || 0); }, 0); };
       $('sp-paid-t').textContent = S2.paid.length ? money.format(sum(S2.paid, 'credited')) : '';
-      $('sp-due-t').textContent = S2.due.length ? money.format(sum(S2.due, 'booked')) : '';
+      $('sp-due-t').textContent = S2.due.length ? money.format(S2.due.reduce(function (t, d) { return t + (d.expect != null ? d.expect : (d.booked || 0)); }, 0)) : '';
       $('sp-iss-t').textContent = S2.issues.length ? money.format(sum(S2.issues, 'booked')) : '';
       var most = Math.max(S2.paid.length, S2.due.length, S2.issues.length), cols = $('spotcols');
       cols.classList.toggle('roomy', most <= 3); cols.classList.toggle('mid', most > 3 && most <= 5);
@@ -513,8 +513,9 @@
       }, 'Nothing paid yet this month.', 7);
       fillList($('sp-due'), S2.due, function (d) {
         var li = el('li'); var tk = el('span', 'tick hatch'); tk.style.backgroundColor = C.deal; li.appendChild(tk);
-        li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
-        li.appendChild(el('span', 'why', 'won ' + day(d.close))); li.appendChild(el('span', 'side', '')); return li;
+        var exp = d.expect != null ? d.expect : (d.booked || 0);
+        li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(exp)));
+        li.appendChild(el('span', 'why', 'won ' + day(d.close) + (d.expect != null && d.expect !== d.booked ? ', increase on ' + money.format(d.booked) + ' deal' : ''))); li.appendChild(el('span', 'side', '')); return li;
       }, 'Nothing else due this month.', 7);
       fillList($('sp-iss'), S2.issues, function (d) {
         var bad = /failed|stuck/i.test(d.issue);

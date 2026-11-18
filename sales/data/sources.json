@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v59",
-  "builtAt": "2026-11-18T20:28:04.400Z",
+  "version": "sk-v62",
+  "builtAt": "2026-11-18T20:31:37.412Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,16 +37,16 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 11424,
+   "total": 11400,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 1512,
+     "credited": 1500,
      "deals": 2
     },
     {
      "medium": "Partners and referrals",
-     "credited": 5212,
+     "credited": 5200,
      "deals": 6
     },
     {
@@ -105,7 +105,7 @@
     {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
-     "credited": 962,
+     "credited": 950,
      "deals": 1
     },
     {
@@ -117,17 +117,17 @@
    ]
   },
   "ytd": {
-   "total": 352466.36,
+   "total": 352321.36,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 74256.32,
-     "deals": 69
+     "credited": 74220.32,
+     "deals": 68
     },
     {
      "medium": "Partners and referrals",
-     "credited": 108895.25,
-     "deals": 118
+     "credited": 108823.25,
+     "deals": 113
     },
     {
      "medium": "Webinars",
@@ -141,8 +141,8 @@
     },
     {
      "medium": "Untagged",
-     "credited": 95265.79,
-     "deals": 110
+     "credited": 95228.79,
+     "deals": 108
     }
    ],
    "top": [
@@ -179,7 +179,7 @@
     {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
-     "credited": 8361,
+     "credited": 8349,
      "deals": 8
     },
     {
