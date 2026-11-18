@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-18T23:52:44.650Z",
+  "builtAt": "2026-11-18T23:58:17.775Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 12900,
+   "total": 13900,
    "mediums": [
     {
      "medium": "Events",
@@ -57,8 +57,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 2850,
-     "deals": 4
+     "credited": 3850,
+     "deals": 5
     },
     {
      "medium": "Account Manager",
@@ -115,15 +115,15 @@
      "deals": 1
     },
     {
-     "source": "BDR Co - Business Development Resources",
-     "medium": "Partners and referrals",
-     "credited": 950,
+     "source": "Meta",
+     "medium": "Digital",
+     "credited": 1000,
      "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 353821.36,
+   "total": 354821.36,
    "mediums": [
     {
      "medium": "Events",
@@ -142,8 +142,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 113164.33,
-     "deals": 110
+     "credited": 114164.33,
+     "deals": 111
     },
     {
      "medium": "Account Manager",
@@ -190,8 +190,8 @@
     {
      "source": "Meta",
      "medium": "Digital",
-     "credited": 10630.33,
-     "deals": 12
+     "credited": 11630.33,
+     "deals": 13
     },
     {
      "source": "Events/Trade Shows",
@@ -238,7 +238,7 @@
    },
    {
     "day": "2026-11-18",
-    "amount": 2300
+    "amount": 3300
    }
   ]
  }
