@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T13:32:55.203Z",
+  "builtAt": "2026-11-18T13:38:34.396Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -497,13 +497,13 @@
    "d7": {
     "from": "2026-11-12",
     "to": "2026-11-18",
-    "newMrr": 5175,
-    "newLogos": 6,
+    "newMrr": 4425,
+    "newLogos": 5,
     "reactivated": 0,
     "reactivations": 0,
     "churned": 10485,
     "churnedAccounts": 10,
-    "net": -5310,
+    "net": -6060,
     "atRisk": 19002
    },
    "through": "2026-11-18",
@@ -522,13 +522,13 @@
    "d30": {
     "from": "2026-10-20",
     "to": "2026-11-18",
-    "newMrr": 14687,
-    "newLogos": 14,
+    "newMrr": 13937,
+    "newLogos": 13,
     "reactivated": 0,
     "reactivations": 0,
     "churned": 33515.25,
     "churnedAccounts": 32,
-    "net": -18828.25,
+    "net": -19578.25,
     "atRisk": 49667.5
    },
    "p30": {
