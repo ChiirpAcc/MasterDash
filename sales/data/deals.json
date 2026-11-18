@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-18T23:47:49.925Z",
+  "builtAt": "2026-11-18T23:52:44.650Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5233,6 +5233,26 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "fee waived in Stripe until 2027-01-18",
+   "expect": null,
+   "cash": 0
+  },
+  {
+   "id": "372470415049",
+   "ae": "colton lingmann",
+   "company": "Greenway Heating and Cooling",
+   "type": "New Business",
+   "close": "2026-11-18",
+   "booked": 1000,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0,
+   "waitWhy": "",
    "expect": null,
    "cash": 0
   }
