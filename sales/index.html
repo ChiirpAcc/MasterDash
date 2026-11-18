@@ -316,6 +316,13 @@
   .pcard .amt small { color: var(--muted); font-weight: 500; font-size: .32em; margin-left: .4em; }
   .lane.golden { background: rgba(255,206,92,.14); border-left-color: var(--gold); box-shadow: inset 0 0 0 1px rgba(255,206,92,.6); transition: background .4s; }
   .lane.golden .amt { color: var(--gold); }
+  /* ---------- payment collected: "cash in" (green bills) */
+  .party.paid .gring { border-color: var(--good); }
+  .party.paid .gflash { background: var(--good); }
+  .party.paid .pcard .kick, .party.paid .pcard .amt { color: var(--good); }
+  .pcard .when { margin-top: calc(var(--u) * .6); color: var(--soft); font-size: calc(var(--u) * 1.15); }
+  .lane.cashed { background: rgba(127,209,163,.14); border-left-color: var(--good); box-shadow: inset 0 0 0 1px rgba(127,209,163,.6); transition: background .4s; }
+  .lane.cashed .amt { color: var(--good); }
 
   /* ---------- 7-day banner (both screens) */
   @keyframes tick { from{transform:translateX(0)} to{transform:translateX(-50%)} }
@@ -853,7 +860,23 @@
   // celebrates the backlog. Several new deals at once play one after another.
   var CELEBRATE_SKIP = ['josh anderson'], CELEBRATE_DAYS = 3, CELEBRATE_MS = 10000, SEEN_KEY = 'skSeenDeals:v1';
   var seen = null, partyQueue = [], partyOn = false;
-  function store(get, val) { try { if (get) return localStorage.getItem(SEEN_KEY); localStorage.setItem(SEEN_KEY, val); } catch (e) { return null; } }
+  function store(get, val, key) { key = key || SEEN_KEY; try { if (get) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) { return null; } }
+  // Payments: a deal's first payment showing up (status Collected this month) gets its own "cash in" moment.
+  var PAID_KEY = 'skSeenPaid:v1', seenPaid = null;
+  function celebratePaid(D) {
+    var mk = D && D.meta && D.meta.month;
+    var rows = ((D && D.rows) || []).filter(function (r) { return r.id && r.status === 'Collected' && r.creditedMonth === mk && !r.isDlc &&
+                                                                  CELEBRATE_SKIP.indexOf(String(r.ae || '').toLowerCase().trim()) < 0; });
+    if (seenPaid === null) { try { seenPaid = JSON.parse(store(true, null, PAID_KEY) || 'null'); } catch (e) { seenPaid = null; } }
+    if (!seenPaid) { seenPaid = {}; rows.forEach(function (r) { seenPaid[r.id] = 1; }); store(false, JSON.stringify(seenPaid), PAID_KEY); return; }
+    rows.forEach(function (r) {
+      if (seenPaid[r.id]) return;
+      seenPaid[r.id] = 1;
+      partyQueue.push({ kind: 'paid', ae: r.ae, company: r.company, booked: r.credited || r.booked, close: r.close, paid: r.collectedDate, type: r.type });
+    });
+    store(false, JSON.stringify(seenPaid), PAID_KEY);
+    nextParty();
+  }
   function celebrateNew(D) {
     var rows = ((D && D.rows) || []).filter(function (r) { return r.id && CELEBRATE_SKIP.indexOf(String(r.ae || '').toLowerCase().trim()) < 0; });
     if (!rows.length) return;
@@ -874,15 +897,21 @@
   function nextParty() {
     if (partyOn || !partyQueue.length) return;
     partyOn = true;
-    var r = partyQueue.shift(), box = $('party'), card = $('pcard');
-    card.replaceChildren();
-    card.appendChild(el('div', 'kick', r.type === 'Expansion' ? 'New expansion' : 'New sale'));
+    var r = partyQueue.shift(), box = $('party'), card = $('pcard'), paid = r.kind === 'paid';
+    card.replaceChildren(); box.classList.toggle('paid', paid);
+    card.appendChild(el('div', 'kick', paid ? 'Payment collected' : r.type === 'Expansion' ? 'New expansion' : 'New sale'));
     card.appendChild(el('div', 'who wide', nice(r.ae)));
     card.appendChild(el('div', 'what', r.company));
     var amt = null;
-    if (r.booked) { amt = el('div', 'amt wide', money.format(0)); amt.appendChild(el('small', null, 'MRR booked')); card.appendChild(amt); }
+    if (r.booked) { amt = el('div', 'amt wide', money.format(0)); amt.appendChild(el('small', null, paid ? 'MRR collected' : 'MRR booked')); card.appendChild(amt); }
+    if (paid) {
+      var dd = r.close && r.paid ? Math.max(0, Math.round((new Date(r.paid + 'T12:00') - new Date(r.close + 'T12:00')) / 864e5)) : null;
+      card.appendChild(el('div', 'when', (r.close ? 'Won ' + day(r.close) : '') + (r.paid ? ', paid ' + day(r.paid) : '') + (dd != null ? ' (' + (dd === 0 ? 'same day' : dd + (dd === 1 ? ' day' : ' days')) + ')' : '')));
+    }
+    var fw = null, pay = '';
+    if (!paid) {
     // What Stripe actually shows, so a couponed first month isn't read as the full amount charged
-    var fw = String(r.waitWhy || '').match(/waived in Stripe until (\d{4}-\d{2}-\d{2})/), pay = '';
+    fw = String(r.waitWhy || '').match(/waived in Stripe until (\d{4}-\d{2}-\d{2})/);
     if (fw) pay = 'Free months in Stripe until ' + day(fw[1]);
     else if (/\$0 plan/.test(r.waitWhy || '')) pay = 'On a $0 plan in Stripe';
     else if (r.status === 'Collected' && r.cash) pay = 'First payment ' + money.format(r.cash) + (r.cash < (r.booked || 0) * 0.95 ? ' (discounted)' : '');
@@ -890,10 +919,11 @@
     else if (r.status === 'No Stripe link' || /not set up/.test(r.waitWhy || '')) pay = 'Not billed in Stripe yet';
     else if (r.status === 'Awaiting first payment') pay = 'First payment not in yet';
     if (pay) card.appendChild(el('div', 'paynote', pay));
+    }
     box.classList.add('on'); void box.offsetWidth; box.classList.add('show');
     if (!reduceMotion) {
       ['stage', 'stage2', 'stage3', 'ticker'].forEach(function (id) { var x = $(id); if (x) { x.classList.remove('gshake'); void x.offsetWidth; x.classList.add('gshake'); } });
-      goldRush($('confetti'), CELEBRATE_MS - 1000);
+      (paid ? cashIn : goldRush)($('confetti'), CELEBRATE_MS - 1000);
     }
     if (amt) countUp(amt, r.booked, reduceMotion ? 0 : 2200, 600);
     setTimeout(function () {
@@ -903,7 +933,7 @@
         // then the rep's row on the leaderboard glows gold for a few seconds
         [].forEach.call(document.querySelectorAll('#reps .lane'), function (l) {
           if (String(l.dataset.ae).toLowerCase() !== String(r.ae).toLowerCase()) return;
-          l.classList.add('golden'); setTimeout(function () { l.classList.remove('golden'); }, 6000);
+          var gl = paid ? 'cashed' : 'golden'; l.classList.add(gl); setTimeout(function () { l.classList.remove(gl); }, 6000);
         });
         setTimeout(nextParty, 900);
       }, 550);
@@ -948,6 +978,35 @@
       if (e < ms) requestAnimationFrame(frame); else ctx.clearRect(0, 0, W, H);
     })(t0);
   }
+  // Cash in: green bills burst up from the bottom, flip, and drift down.
+  function cashIn(cv, ms) {
+    var ctx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1, W = cv.width = innerWidth * dpr, H = cv.height = innerHeight * dpr;
+    var GREEN = ['#7FD1A3', '#5FBF8A', '#A8E3C1', '#4FA878', '#C9F0D9'], P = [], t0 = performance.now(), u = Math.min(W, H);
+    for (var i = 0; i < 220; i++) {                         // the burst from the bottom edge
+      var x = Math.random() * W, an = -1.571 + (Math.random() - .5) * 0.9, sp = (0.7 + Math.random() * 0.7) * u * 0.03;
+      P.push({ x: x, y: H + 20, vx: Math.cos(an) * sp, vy: Math.sin(an) * sp, w: (0.03 + Math.random() * 0.015) * u, c: GREEN[i % 5], ph: Math.random() * 6.3, rot: Math.random() * 6.3, vr: (Math.random() - .5) * 0.08, at: Math.random() * 500 });
+    }
+    (function frame(now) {
+      var e = now - t0, fade = Math.max(0, Math.min(1, (ms - e) / 900));
+      ctx.clearRect(0, 0, W, H);
+      P.forEach(function (p) {
+        if (e < p.at) return;
+        p.vy += u * 0.00045; p.vx *= 0.985; p.vy = Math.min(p.vy, u * 0.006);   // rise, then float down slowly like paper
+        p.x += p.vx + Math.sin(e / 280 + p.ph) * dpr * (p.vy > 0 ? 1.6 : 0); p.y += p.vy; p.rot += p.vr; p.ph += 0.12;
+        if (p.y > H + 80 && p.vy > 0) return;
+        var flip = Math.cos(p.ph), w = p.w, h = w * 0.46;
+        ctx.save(); ctx.globalAlpha = fade; ctx.translate(p.x, p.y); ctx.rotate(p.rot); ctx.scale(1, Math.max(0.15, Math.abs(flip)));
+        ctx.fillStyle = p.c; ctx.fillRect(-w / 2, -h / 2, w, h);
+        ctx.strokeStyle = 'rgba(15,40,25,.55)'; ctx.lineWidth = Math.max(1, w * 0.05); ctx.strokeRect(-w / 2 + w * 0.1, -h / 2 + h * 0.18, w * 0.8, h * 0.64);
+        ctx.fillStyle = 'rgba(15,40,25,.6)'; ctx.beginPath(); ctx.arc(0, 0, h * 0.2, 0, 6.283); ctx.fill();
+        ctx.restore();
+      });
+      if (e < ms) requestAnimationFrame(frame); else ctx.clearRect(0, 0, W, H);
+    })(t0);
+  }
+  if (location.hash === '#paid-test') setTimeout(function () {
+    partyQueue.push({ kind: 'paid', ae: 'Ky Decker', company: 'Test Heating & Air', booked: 1200, close: '2026-11-09', paid: '2026-11-18' }); nextParty();
+  }, 2500);
   // Preview on any screen: open the page with #celebrate-test
   if (location.hash === '#celebrate-test') setTimeout(function () {
     partyQueue.push({ ae: 'Blake Fenn', company: 'Test Plumbing & Air', booked: 1500, type: 'New Business' }); nextParty();
@@ -969,6 +1028,7 @@
         render(r[0], r[1], r[2]); renderTicker(r[2]); fit();
         try { screen3 = renderGoal(r[0]); } catch (e4) { console.error(e4); screen3 = false; }
         try { celebrateNew(r[2]); } catch (e3) { console.error(e3); }
+        try { celebratePaid(r[2]); } catch (e5) { console.error(e5); }
         screen2 = false;
         if (r[3] && r[3].retention && r[4] && r[4].sources) {
           try { renderRetention(r[3].retention, r[4].sources); screen2 = true; fitBig(); } catch (e2) { console.error(e2); }
