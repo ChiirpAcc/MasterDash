@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v63",
-  "builtAt": "2026-11-18T20:52:59.493Z",
+  "builtAt": "2026-11-18T20:56:03.438Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,12 +37,12 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 11400,
+   "total": 12900,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 1500,
-     "deals": 2
+     "credited": 3000,
+     "deals": 3
     },
     {
      "medium": "Partners and referrals",
@@ -85,6 +85,12 @@
      "deals": 1
     },
     {
+     "source": "2026 - CertainPath Partner Jam",
+     "medium": "Events",
+     "credited": 1500,
+     "deals": 1
+    },
+    {
      "source": "Webinar - KickCharge",
      "medium": "Webinars",
      "credited": 1000,
@@ -107,22 +113,16 @@
      "medium": "Partners and referrals",
      "credited": 950,
      "deals": 1
-    },
-    {
-     "source": "FieldEdge",
-     "medium": "Partners and referrals",
-     "credited": 700,
-     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 352321.36,
+   "total": 353821.36,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 74220.32,
-     "deals": 68
+     "credited": 75720.32,
+     "deals": 69
     },
     {
      "medium": "Partners and referrals",

@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v63",
-  "builtAt": "2026-11-18T20:52:59.493Z",
+  "builtAt": "2026-11-18T20:56:03.438Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4944,15 +4944,15 @@
    "type": "New Business",
    "close": "2026-11-18",
    "booked": 1500,
-   "status": "No Stripe link",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-18",
+   "credited": 1500,
+   "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
-   "issue": "No Stripe link in HubSpot",
-   "issueDays": 0,
+   "issue": "",
+   "issueDays": null,
    "waitWhy": "",
    "expect": null
   }
