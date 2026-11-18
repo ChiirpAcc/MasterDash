@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v51",
-  "builtAt": "2026-11-18T18:28:25.016Z",
+  "version": "sk-v54",
+  "builtAt": "2026-11-18T18:32:55.133Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -50,7 +50,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "260450682599",
@@ -67,7 +68,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "257189096168",
@@ -84,7 +86,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "242456016618",
@@ -101,7 +104,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "251757160152",
@@ -118,14 +122,15 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "273164630766",
    "ae": "Blake Fenn",
    "company": "Clear Water Concepts",
    "type": "New Business",
-   "close": "2026-01-27",
+   "close": "2026-01-26",
    "booked": 2250,
    "status": "Collected",
    "creditedMonth": "2026-01",
@@ -135,7 +140,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "273740275387",
@@ -152,7 +158,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "262711403198",
@@ -169,7 +176,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "252045612758",
@@ -186,7 +194,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "276124401352",
@@ -203,7 +212,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "278206800580",
@@ -220,7 +230,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "279745949386",
@@ -237,7 +248,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "283812221682",
@@ -254,7 +266,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "231318714064",
@@ -271,7 +284,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "157350036175",
@@ -288,7 +302,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "282225135338",
@@ -305,7 +320,8 @@
    "waitingDays": 285,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "278763220702",
@@ -322,7 +338,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "294162994906",
@@ -339,7 +356,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "293012799188",
@@ -356,7 +374,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "289018271479",
@@ -373,7 +392,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "282276598480",
@@ -390,7 +410,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "281958512372",
@@ -407,7 +428,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "300569655033",
@@ -424,7 +446,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "302709065405",
@@ -441,7 +464,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "300448832233",
@@ -458,7 +482,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "293206261487",
@@ -475,7 +500,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "305110981345",
@@ -492,7 +518,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "300639819495",
@@ -509,7 +536,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "306622361300",
@@ -526,7 +554,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "307175168715",
@@ -543,7 +572,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "306865576645",
@@ -560,7 +590,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "299065708228",
@@ -577,7 +608,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "298272641748",
@@ -594,7 +626,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "306428309222",
@@ -611,7 +644,8 @@
    "waitingDays": 261,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "300722504381",
@@ -628,7 +662,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "305880983237",
@@ -645,7 +680,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "304350459608",
@@ -662,7 +698,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "310671757025",
@@ -679,7 +716,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "259871956683",
@@ -696,7 +734,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "278118709977",
@@ -713,7 +752,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "313025002203",
@@ -730,7 +770,8 @@
    "waitingDays": 258,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "315440222933",
@@ -747,7 +788,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "315801088700",
@@ -764,7 +806,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316627553994",
@@ -781,7 +824,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316633346758",
@@ -798,7 +842,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316626866887",
@@ -815,7 +860,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316627588801",
@@ -832,7 +878,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316632629965",
@@ -849,7 +896,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "302646963942",
@@ -866,7 +914,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316626234077",
@@ -883,7 +932,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "257171100400",
@@ -900,7 +950,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316332588736",
@@ -917,7 +968,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316929548999",
@@ -934,7 +986,8 @@
    "waitingDays": 244,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "283785769711",
@@ -951,7 +1004,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "317196098288",
@@ -968,7 +1022,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "313763991229",
@@ -985,7 +1040,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "300396544699",
@@ -1002,7 +1058,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "305504367335",
@@ -1019,7 +1076,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "318227642062",
@@ -1036,7 +1094,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "316275775163",
@@ -1053,7 +1112,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "318537194207",
@@ -1070,7 +1130,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "318748048100",
@@ -1087,7 +1148,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "35546445236",
@@ -1104,7 +1166,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "318928965333",
@@ -1121,7 +1184,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "288807036656",
@@ -1138,7 +1202,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "318651677374",
@@ -1155,7 +1220,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "317946914540",
@@ -1172,7 +1238,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "319174864579",
@@ -1189,7 +1256,8 @@
    "waitingDays": 230,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "319371355893",
@@ -1206,7 +1274,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "319375684292",
@@ -1223,7 +1292,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "319555085037",
@@ -1240,7 +1310,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320114876116",
@@ -1249,7 +1320,7 @@
    "type": "Expansion",
    "close": "2026-04-08",
    "booked": 400,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -1257,7 +1328,8 @@
    "waitingDays": 224,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe shows the first charge after month end"
   },
   {
    "id": "320340580050",
@@ -1274,7 +1346,8 @@
    "waitingDays": 223,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320341319387",
@@ -1291,24 +1364,26 @@
    "waitingDays": 223,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320343499457",
    "ae": "Blake Fenn",
    "company": "A Plus Heating and Cooling Inc ",
    "type": "New Business",
-   "close": "2026-04-10",
+   "close": "2026-04-09",
    "booked": 1000,
    "status": "Collected",
    "creditedMonth": "2026-04",
    "collectedDate": "2026-04-10",
    "credited": 750,
-   "daysToCollect": 0,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320622997207",
@@ -1325,7 +1400,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320623839975",
@@ -1342,7 +1418,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320838856393",
@@ -1359,7 +1436,8 @@
    "waitingDays": 217,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320837518029",
@@ -1376,7 +1454,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320838258367",
@@ -1393,7 +1472,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321010584294",
@@ -1410,7 +1490,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320837541611",
@@ -1427,7 +1508,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320837542602",
@@ -1444,7 +1526,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320837542625",
@@ -1461,7 +1544,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "320622413498",
@@ -1478,7 +1562,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321281108666",
@@ -1495,7 +1580,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321335103209",
@@ -1512,7 +1598,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321688747733",
@@ -1529,7 +1616,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321688026838",
@@ -1546,7 +1634,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321685866188",
@@ -1563,7 +1652,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321690951391",
@@ -1580,7 +1670,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321923868383",
@@ -1597,7 +1688,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321926758130",
@@ -1614,7 +1706,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322467885760",
@@ -1631,7 +1724,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322442698463",
@@ -1648,7 +1742,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322469491428",
@@ -1665,7 +1760,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322574427866",
@@ -1682,7 +1778,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322910698187",
@@ -1699,7 +1796,8 @@
    "waitingDays": 204,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323097632481",
@@ -1716,7 +1814,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322912198340",
@@ -1733,7 +1832,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "322924516073",
@@ -1750,7 +1850,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323236745959",
@@ -1767,7 +1868,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323231810279",
@@ -1784,7 +1886,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323517411043",
@@ -1801,7 +1904,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323527105216",
@@ -1818,7 +1922,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324281334520",
@@ -1835,7 +1940,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324289980148",
@@ -1852,7 +1958,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324290744048",
@@ -1869,7 +1976,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324841500349",
@@ -1886,7 +1994,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323925487343",
@@ -1903,7 +2012,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324817877710",
@@ -1920,7 +2030,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324842335958",
@@ -1937,7 +2048,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324817984220",
@@ -1954,7 +2066,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323844588248",
@@ -1971,7 +2084,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "323577102028",
@@ -1988,24 +2102,26 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324940750541",
    "ae": "Ky Decker",
    "company": "Pacific Spray Wash",
    "type": "New Business",
-   "close": "2026-05-16",
+   "close": "2026-05-15",
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-05",
    "collectedDate": "2026-05-18",
    "credited": 1250,
-   "daysToCollect": 2,
+   "daysToCollect": 3,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "325649359581",
@@ -2022,7 +2138,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "324940960462",
@@ -2031,15 +2148,16 @@
    "type": "New Business",
    "close": "2026-05-18",
    "booked": 500,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 184,
-   "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null
+   "billsThisMonth": true,
+   "issue": "Card failed, Stripe retrying",
+   "issueDays": 184,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "324807536377",
@@ -2056,7 +2174,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326058480368",
@@ -2073,7 +2192,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326061356738",
@@ -2090,7 +2210,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326364949183",
@@ -2107,7 +2228,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326147988189",
@@ -2124,24 +2246,26 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "321655286464",
    "ae": "Blake Fenn",
    "company": "Kahuna Comfort",
    "type": "New Business",
-   "close": "2026-05-23",
+   "close": "2026-05-22",
    "booked": 1100,
    "status": "Collected",
    "creditedMonth": "2026-05",
    "collectedDate": "2026-05-23",
    "credited": 1100,
-   "daysToCollect": 0,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326811967196",
@@ -2158,7 +2282,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "325355134681",
@@ -2175,7 +2300,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326399941349",
@@ -2192,7 +2318,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "327236698860",
@@ -2201,15 +2328,16 @@
    "type": "New Business",
    "close": "2026-05-28",
    "booked": 562.5,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 174,
-   "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null
+   "billsThisMonth": true,
+   "issue": "Card failed, Stripe retrying",
+   "issueDays": 174,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "326613277397",
@@ -2226,7 +2354,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "328044237498",
@@ -2243,7 +2372,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "328234391278",
@@ -2260,7 +2390,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "327055520487",
@@ -2277,7 +2408,8 @@
    "waitingDays": 167,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "328599480023",
@@ -2294,7 +2426,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "328510312142",
@@ -2311,7 +2444,8 @@
    "waitingDays": 163,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "325223199462",
@@ -2328,7 +2462,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "328509854405",
@@ -2345,7 +2480,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "330224476915",
@@ -2362,7 +2498,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "331517474514",
@@ -2379,7 +2516,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332200791785",
@@ -2396,7 +2534,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332203756275",
@@ -2413,7 +2552,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332304584434",
@@ -2430,7 +2570,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332471572155",
@@ -2447,7 +2588,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332471589563",
@@ -2464,7 +2606,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332609140453",
@@ -2481,7 +2624,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332602667742",
@@ -2498,7 +2642,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332612073200",
@@ -2515,7 +2660,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332612789977",
@@ -2532,7 +2678,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332789399230",
@@ -2549,7 +2696,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "332614228708",
@@ -2558,7 +2706,7 @@
    "type": "New Business",
    "close": "2026-06-26",
    "booked": 1000,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -2566,7 +2714,8 @@
    "waitingDays": 145,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe shows the first charge after month end"
   },
   {
    "id": "333249611482",
@@ -2583,7 +2732,8 @@
    "waitingDays": 142,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333231488751",
@@ -2600,7 +2750,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333489346255",
@@ -2617,7 +2768,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333514572532",
@@ -2634,24 +2786,26 @@
    "waitingDays": 141,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333540493032",
    "ae": "Ky Decker",
    "company": "Podium Garage Doors",
    "type": "New Business",
-   "close": "2026-07-01",
+   "close": "2026-06-30",
    "booked": 300,
    "status": "Collected",
    "creditedMonth": "2026-07",
    "collectedDate": "2026-07-01",
    "credited": 300,
-   "daysToCollect": 0,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333814188791",
@@ -2668,7 +2822,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333774096117",
@@ -2685,7 +2840,8 @@
    "waitingDays": 140,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "329059114693",
@@ -2702,7 +2858,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "334066231003",
@@ -2719,7 +2876,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "333786678987",
@@ -2736,7 +2894,8 @@
    "waitingDays": 132,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "334479035121",
@@ -2753,7 +2912,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "335228147398",
@@ -2770,7 +2930,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "335261395701",
@@ -2787,7 +2948,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "335179278052",
@@ -2804,7 +2966,8 @@
    "waitingDays": 128,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "335261546181",
@@ -2821,7 +2984,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "335881093833",
@@ -2838,7 +3002,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "335869435578",
@@ -2855,7 +3020,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "336127653616",
@@ -2872,7 +3038,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "336402613952",
@@ -2889,7 +3056,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "334110579435",
@@ -2906,7 +3074,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "336532815592",
@@ -2923,7 +3092,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "337286792942",
@@ -2940,7 +3110,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "337549597420",
@@ -2957,7 +3128,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "338778824392",
@@ -2974,7 +3146,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "339564094167",
@@ -2991,7 +3164,8 @@
    "waitingDays": 111,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "339869113072",
@@ -3008,7 +3182,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340259951336",
@@ -3025,7 +3200,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340220473048",
@@ -3042,7 +3218,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340265864909",
@@ -3051,32 +3228,34 @@
    "type": "Expansion",
    "close": "2026-08-06",
    "booked": 650,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 104,
-   "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null
+   "billsThisMonth": true,
+   "issue": "Card failed, Stripe retrying",
+   "issueDays": 104,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "340614334156",
    "ae": "Ky Decker",
    "company": "5 Star Heating & Air Charleston",
    "type": "New Business",
-   "close": "2026-08-07",
+   "close": "2026-08-06",
    "booked": 1800,
    "status": "Collected",
    "creditedMonth": "2026-08",
    "collectedDate": "2026-08-07",
    "credited": 1800,
-   "daysToCollect": 0,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340490094305",
@@ -3093,7 +3272,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340489432774",
@@ -3102,15 +3282,16 @@
    "type": "Expansion",
    "close": "2026-08-07",
    "booked": 500,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 103,
-   "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null
+   "billsThisMonth": true,
+   "issue": "Card failed, Stripe retrying",
+   "issueDays": 103,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "340489432823",
@@ -3127,7 +3308,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340266677993",
@@ -3144,7 +3326,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "340924690129",
@@ -3161,7 +3344,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342014537431",
@@ -3178,7 +3362,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342174605040",
@@ -3195,7 +3380,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342172677820",
@@ -3212,7 +3398,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342008801991",
@@ -3229,7 +3416,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342008866525",
@@ -3246,7 +3434,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342324997846",
@@ -3263,7 +3452,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342327845579",
@@ -3280,7 +3470,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342339684049",
@@ -3297,7 +3488,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342947750649",
@@ -3314,7 +3506,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342947061461",
@@ -3331,7 +3524,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343125373634",
@@ -3348,7 +3542,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343125412569",
@@ -3365,7 +3560,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343185352431",
@@ -3382,7 +3578,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343127537346",
@@ -3399,7 +3596,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343126337232",
@@ -3416,7 +3614,8 @@
    "waitingDays": 89,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343185498831",
@@ -3433,7 +3632,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343186224875",
@@ -3450,7 +3650,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343620756161",
@@ -3467,7 +3668,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343096616678",
@@ -3484,7 +3686,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343268414159",
@@ -3493,15 +3696,16 @@
    "type": "New Business",
    "close": "2026-08-25",
    "booked": 1500,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 85,
-   "billsThisMonth": false,
+   "billsThisMonth": true,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "344363319996",
@@ -3518,7 +3722,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "344359081681",
@@ -3535,7 +3740,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "344622707395",
@@ -3552,7 +3758,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "345195881197",
@@ -3561,15 +3768,16 @@
    "type": "New Business",
    "close": "2026-08-31",
    "booked": 2500,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 79,
-   "billsThisMonth": false,
+   "billsThisMonth": true,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "345156511459",
@@ -3578,15 +3786,16 @@
    "type": "Expansion",
    "close": "2026-08-31",
    "booked": 1000,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 79,
-   "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null
+   "billsThisMonth": true,
+   "issue": "Card failed, Stripe retrying",
+   "issueDays": 79,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "345156639476",
@@ -3603,7 +3812,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "344127407824",
@@ -3620,7 +3830,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343364380381",
@@ -3637,7 +3848,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "343691524851",
@@ -3654,7 +3866,8 @@
    "waitingDays": 77,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "345479681780",
@@ -3671,7 +3884,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "329080054473",
@@ -3688,7 +3902,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "346794732248",
@@ -3705,7 +3920,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "344101178098",
@@ -3722,7 +3938,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "347718225631",
@@ -3739,7 +3956,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "348701211325",
@@ -3756,7 +3974,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "348946024152",
@@ -3773,7 +3992,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "347959838434",
@@ -3790,7 +4010,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "326444040934",
@@ -3807,7 +4028,8 @@
    "waitingDays": 57,
    "billsThisMonth": true,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "349725631176",
@@ -3824,7 +4046,8 @@
    "waitingDays": 57,
    "billsThisMonth": true,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "349917387509",
@@ -3841,7 +4064,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "350501964519",
@@ -3858,7 +4082,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "342985373428",
@@ -3875,24 +4100,26 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "348867674813",
    "ae": "Ky Decker",
    "company": "Bradberry Service Company, Inc",
    "type": "New Business",
-   "close": "2026-09-25",
+   "close": "2026-09-24",
    "booked": 1250,
    "status": "Collected",
    "creditedMonth": "2026-09",
    "collectedDate": "2026-09-25",
    "credited": 625,
-   "daysToCollect": 0,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "350501348062",
@@ -3909,7 +4136,8 @@
    "waitingDays": 54,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe shows the first charge after month end"
   },
   {
    "id": "348780512993",
@@ -3926,7 +4154,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "347971922669",
@@ -3943,7 +4172,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "351630763752",
@@ -3960,7 +4190,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "349791818428",
@@ -3977,7 +4208,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "352122371778",
@@ -3994,7 +4226,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "350239512309",
@@ -4011,7 +4244,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "347172986617",
@@ -4028,7 +4262,8 @@
    "waitingDays": 43,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe shows the first charge after month end"
   },
   {
    "id": "352942956264",
@@ -4045,7 +4280,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "353525295846",
@@ -4062,7 +4298,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "350291768012",
@@ -4079,7 +4316,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "348740817614",
@@ -4096,7 +4334,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "353380620998",
@@ -4113,7 +4352,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
-   "issueDays": 34
+   "issueDays": 34,
+   "waitWhy": ""
   },
   {
    "id": "354407388899",
@@ -4130,7 +4370,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "347243637436",
@@ -4147,7 +4388,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "355849245403",
@@ -4164,7 +4406,8 @@
    "waitingDays": 30,
    "billsThisMonth": true,
    "issue": "Not set up in Stripe",
-   "issueDays": 30
+   "issueDays": 30,
+   "waitWhy": "won recently, not set up in Stripe yet"
   },
   {
    "id": "356394038975",
@@ -4181,7 +4424,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "357325715155",
@@ -4198,7 +4442,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "351741272787",
@@ -4215,7 +4460,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "348819027656",
@@ -4232,7 +4478,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "360608249583",
@@ -4249,7 +4496,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "360608975587",
@@ -4266,7 +4514,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "360866169556",
@@ -4283,7 +4532,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "360608620254",
@@ -4300,7 +4550,8 @@
    "waitingDays": 15,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe shows the first charge after month end"
   },
   {
    "id": "354245433028",
@@ -4317,7 +4568,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "360755736284",
@@ -4334,7 +4586,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "361031392954",
@@ -4351,7 +4604,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "364182682302",
@@ -4368,7 +4622,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "354207454941",
@@ -4385,7 +4640,8 @@
    "waitingDays": 9,
    "billsThisMonth": true,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "349864941300",
@@ -4402,7 +4658,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "No Stripe link in HubSpot",
-   "issueDays": 5
+   "issueDays": 5,
+   "waitWhy": ""
   },
   {
    "id": "367461627582",
@@ -4419,7 +4676,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "370412079812",
@@ -4436,7 +4694,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "371305249483",
@@ -4453,7 +4712,8 @@
    "waitingDays": 1,
    "billsThisMonth": true,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end"
   },
   {
    "id": "371354206920",
@@ -4470,14 +4730,15 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   },
   {
    "id": "371628920568",
    "ae": "Blake Fenn",
    "company": "Paramount Plumbing Services",
    "type": "New Business",
-   "close": "2026-11-18",
+   "close": "2026-11-17",
    "booked": 800,
    "status": "Collected",
    "creditedMonth": "2026-11",
@@ -4487,7 +4748,8 @@
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
-   "issueDays": null
+   "issueDays": null,
+   "waitWhy": ""
   }
  ]
 }
