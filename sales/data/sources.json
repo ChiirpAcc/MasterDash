@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v51",
-  "builtAt": "2026-11-18T07:27:46.697Z",
+  "builtAt": "2026-11-18T07:33:05.614Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,17 +37,17 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 9874,
+   "total": 7300,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 1512,
+     "credited": 1500,
      "deals": 2
     },
     {
      "medium": "Partners and referrals",
-     "credited": 4512,
-     "deals": 5
+     "credited": 2950,
+     "deals": 3
     },
     {
      "medium": "Webinars",
@@ -56,8 +56,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 2000,
-     "deals": 3
+     "credited": 1000,
+     "deals": 2
     },
     {
      "medium": "Untagged",
@@ -66,12 +66,6 @@
     }
    ],
    "top": [
-    {
-     "source": "One-offs",
-     "medium": "Partners and referrals",
-     "credited": 1550,
-     "deals": 2
-    },
     {
      "source": "Nexstar",
      "medium": "Partners and referrals",
@@ -97,37 +91,37 @@
      "deals": 1
     },
     {
-     "source": "Direct Traffic",
-     "medium": "Digital",
-     "credited": 1000,
+     "source": "BDR Co - Business Development Resources",
+     "medium": "Partners and referrals",
+     "credited": 950,
      "deals": 1
     },
     {
-     "source": "BDR Co - Business Development Resources",
+     "source": "Tool Vault",
      "medium": "Partners and referrals",
-     "credited": 962,
+     "credited": 500,
      "deals": 1
     },
     {
      "source": "2026 - HSF Freedom",
      "medium": "Events",
-     "credited": 512,
+     "credited": 500,
      "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 349966.36,
+   "total": 345522.36,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 74256.32,
-     "deals": 69
+     "credited": 74220.32,
+     "deals": 68
     },
     {
      "medium": "Partners and referrals",
-     "credited": 108945.25,
-     "deals": 118
+     "credited": 107323.25,
+     "deals": 111
     },
     {
      "medium": "Webinars",
@@ -136,13 +130,13 @@
     },
     {
      "medium": "Digital",
-     "credited": 68999,
-     "deals": 64
+     "credited": 67249,
+     "deals": 62
     },
     {
      "medium": "Untagged",
-     "credited": 93565.79,
-     "deals": 109
+     "credited": 92529.79,
+     "deals": 107
     }
    ],
    "top": [
@@ -185,7 +179,7 @@
     {
      "source": "BDR Co - Business Development Resources",
      "medium": "Partners and referrals",
-     "credited": 8361,
+     "credited": 8349,
      "deals": 8
     },
     {
