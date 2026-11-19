@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T02:53:12.191Z",
+  "builtAt": "2026-11-19T02:58:18.024Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 13900,
+   "total": 15000,
    "mediums": [
     {
      "medium": "Events",
@@ -47,8 +47,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 6050,
-     "deals": 7
+     "credited": 7150,
+     "deals": 8
     },
     {
      "medium": "Webinars",
@@ -77,6 +77,12 @@
      "medium": "Digital",
      "credited": 1850,
      "deals": 3
+    },
+    {
+     "source": "FieldEdge",
+     "medium": "Partners and referrals",
+     "credited": 1800,
+     "deals": 2
     },
     {
      "source": "One-offs",
@@ -113,17 +119,11 @@
      "medium": "Digital",
      "credited": 1000,
      "deals": 1
-    },
-    {
-     "source": "Meta",
-     "medium": "Digital",
-     "credited": 1000,
-     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 354821.36,
+   "total": 355921.36,
    "mediums": [
     {
      "medium": "Events",
@@ -132,8 +132,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 145550.25,
-     "deals": 159
+     "credited": 146650.25,
+     "deals": 160
     },
     {
      "medium": "Webinars",
@@ -238,7 +238,7 @@
    },
    {
     "day": "2026-11-18",
-    "amount": 3300
+    "amount": 4400
    }
   ]
  }
