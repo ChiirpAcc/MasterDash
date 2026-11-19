@@ -599,9 +599,23 @@
 
   // ======================================================= spotlight: one rep at a time, 20 seconds each
   var spot = { order: [], data: {}, idx: 0, current: null, mk: '', dwell: 20, elapsed: 0 };
+  // The rotation survives a page reload (a new page version, the nightly reload, a TV restart). Before, every
+  // reload started over at the top rep, and with long scrolling lists the third rep's turn came ~6 minutes in,
+  // so after a reload or two Colton (3rd) never got a turn. Saved in this browser only; older than 30 minutes = start over.
+  var SPOT_KEY = 'skSpot:v1';
+  function spotSaved() {
+    try { var v = JSON.parse(localStorage.getItem(SPOT_KEY) || 'null'); return v && Date.now() - v.at < 30 * 60000 ? v : null; } catch (e) { return null; }
+  }
+  function spotSave() {
+    try { if (spot.current) localStorage.setItem(SPOT_KEY, JSON.stringify({ ae: spot.current, elapsed: spot.elapsed, at: Date.now() })); } catch (e) {}
+  }
   function renderSpot(advance) {
     if (!spot.order.length) { $('spothead').replaceChildren(el('h2', 'wide', 'No deals yet')); return; }
     if (advance) spot.idx = (spot.idx + 1) % spot.order.length;
+    else if (spot.current === null) {                     // page just loaded: pick up the rotation where it left off
+      var sv = spotSaved(), at = sv ? spot.order.indexOf(sv.ae) : -1;
+      spot.idx = at > -1 ? at : 0; spot.elapsed = at > -1 ? (sv.elapsed || 0) : 0;
+    }
     else { var keep = spot.order.indexOf(spot.current); spot.idx = keep > -1 ? keep : 0; }   // a data refresh keeps the same rep
     var ae = spot.order[spot.idx], S2 = spot.data[ae], r = S2.rep, x = r.thisMonth, pd = r.pending || {};
     var changing = spot.current !== null && spot.current !== ae; spot.current = ae;
@@ -644,6 +658,7 @@
       var longest = Math.max.apply(null, passes);
       spot.dwell = longest > 0 ? longest : Math.min(20, 8 + 2 * most);
       if (fresh) spot.elapsed = 0;
+      spotSave();
       // dots and the race highlight
       var dots = $('spotdots'); dots.replaceChildren(); spot.order.forEach(function (n, i) { dots.appendChild(el('i', i === spot.idx ? 'on' : '')); });
       [].forEach.call(document.querySelectorAll('#reps .lane'), function (l) { l.classList.toggle('on', l.dataset.ae === ae); });
@@ -662,7 +677,7 @@
     if (cols) cols.classList.toggle('paused', !on);
     if (!on) return;
     spot.elapsed += 1;
-    if (spot.order.length > 1 && spot.elapsed >= spot.dwell) renderSpot(true);
+    if (spot.order.length > 1 && spot.elapsed >= spot.dwell) renderSpot(true); else if (spot.elapsed % 5 === 0) spotSave();
   }, 1000);
 
   // ======================================================= last refreshed clock (Mountain time: MST, MDT in summer)
