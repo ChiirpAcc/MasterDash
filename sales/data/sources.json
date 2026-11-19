@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T19:22:55.361Z",
+  "builtAt": "2026-11-19T19:27:48.505Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 15750,
+   "total": 13475,
    "mediums": [
     {
      "medium": "Events",
@@ -47,8 +47,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 7900,
-     "deals": 9
+     "credited": 6050,
+     "deals": 7
     },
     {
      "medium": "Webinars",
@@ -57,7 +57,7 @@
     },
     {
      "medium": "Digital",
-     "credited": 3850,
+     "credited": 3425,
      "deals": 5
     },
     {
@@ -75,19 +75,7 @@
     {
      "source": "One-offs",
      "medium": "Partners and referrals",
-     "credited": 2300,
-     "deals": 3
-    },
-    {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 1850,
-     "deals": 3
-    },
-    {
-     "source": "FieldEdge",
-     "medium": "Partners and referrals",
-     "credited": 1800,
+     "credited": 1550,
      "deals": 2
     },
     {
@@ -101,6 +89,12 @@
      "medium": "Events",
      "credited": 1500,
      "deals": 1
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 1425,
+     "deals": 3
     },
     {
      "source": "Webinar - KickCharge",
@@ -119,11 +113,17 @@
      "medium": "Digital",
      "credited": 1000,
      "deals": 1
+    },
+    {
+     "source": "Meta",
+     "medium": "Digital",
+     "credited": 1000,
+     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 356671.36,
+   "total": 352646.36,
    "mediums": [
     {
      "medium": "Events",
@@ -132,8 +132,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 147400.25,
-     "deals": 161
+     "credited": 145550.25,
+     "deals": 159
     },
     {
      "medium": "Webinars",
@@ -142,8 +142,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 114164.33,
-     "deals": 111
+     "credited": 111989.33,
+     "deals": 109
     },
     {
      "medium": "Account Manager",
@@ -160,20 +160,20 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 49949,
-     "deals": 46
-    },
-    {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 23750,
-     "deals": 25
+     "credited": 48949,
+     "deals": 45
     },
     {
      "source": "Partnerships",
      "medium": "Partners and referrals",
      "credited": 23347,
      "deals": 26
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 23325,
+     "deals": 25
     },
     {
      "source": "LAB",
@@ -234,15 +234,11 @@
    },
    {
     "day": "2026-11-17",
-    "amount": 3300
+    "amount": 2875
    },
    {
     "day": "2026-11-18",
-    "amount": 4400
-   },
-   {
-    "day": "2026-11-19",
-    "amount": 750
+    "amount": 3300
    }
   ]
  }
