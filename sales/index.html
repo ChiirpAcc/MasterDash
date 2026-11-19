@@ -683,10 +683,12 @@
     var bar = $('ticker'), track = $('tickTrack'), root = document.documentElement;
     var cut = new Date(); cut.setHours(12, 0, 0, 0); cut.setDate(cut.getDate() - 30);
     var cutDay = cut.getFullYear() + '-' + String(cut.getMonth() + 1).padStart(2, '0') + '-' + String(cut.getDate()).padStart(2, '0');
-    var rows = ((D && D.rows) || []).filter(function (d) {
+    // From Stripe's failed charges (deals.json failedFirst); the older issue flags are the fallback.
+    var rows = (D && D.failedFirst) ? D.failedFirst.slice() : ((D && D.rows) || []).filter(function (d) {
       if (!/failed|stuck/i.test(d.issue || '')) return false;
       return d.failDay ? d.failDay >= cutDay : (d.issueDays == null || d.issueDays <= 30);
-    }).sort(function (a, b) { return (b.failDay || '') < (a.failDay || '') ? -1 : (b.failDay || '') > (a.failDay || '') ? 1 : (b.booked || 0) - (a.booked || 0); });
+    });
+    rows.sort(function (a, b) { return (b.lastFail || b.failDay || '') < (a.lastFail || a.failDay || '') ? -1 : (b.lastFail || b.failDay || '') > (a.lastFail || a.failDay || '') ? 1 : (b.booked || 0) - (a.booked || 0); });
     root.style.setProperty('--tickh', 'calc(min(1vw, 1.75vh) * 4.6)');
     bar.classList.add('on');
     function group() {
@@ -703,7 +705,9 @@
         it.appendChild(el('b', 'co', d.company || 'Unnamed company'));
         it.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
         it.appendChild(el('span', 'who', first(d.ae) + ', sold ' + day(d.close)));
-        it.appendChild(el('span', 'st', d.issue + (d.failDay ? ', failed ' + day(d.failDay) : '')));
+        it.appendChild(el('span', 'st', d.reason
+          ? 'First payment failed ' + day(d.failDay) + (d.tries > 1 ? ', ' + d.tries + ' tries, last ' + day(d.lastFail) : '') + ' (' + d.reason + ')'
+          : d.issue + (d.failDay ? ', failed ' + day(d.failDay) : '')));
         g.appendChild(it);
       });
       return g;

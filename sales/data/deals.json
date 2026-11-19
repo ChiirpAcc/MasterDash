@@ -1,7 +1,7 @@
 {
  "meta": {
-  "version": "sk-v82",
-  "builtAt": "2026-11-19T23:02:45.782Z",
+  "version": "sk-v83",
+  "builtAt": "2026-11-19T23:05:24.056Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5559,5 +5559,6 @@
    "cash": 1505,
    "failDay": ""
   }
- ]
+ ],
+ "failedFirst": []
 }
