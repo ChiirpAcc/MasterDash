@@ -217,6 +217,7 @@
   .scol .list li { padding-left: 0; padding-right: 0; grid-template-columns: calc(var(--u) * .4) minmax(0, 1fr) auto; }
   .spotcols { --sz: 1; }
   .spotcols.roomy { --sz: 1.5; } .spotcols.mid { --sz: 1.25; }
+  .spotcols.paused .moving { animation-play-state: paused; }
   .scol h3 { font-size: calc(var(--u) * 1.1 * var(--sz)); }
   .scol h3 em { display: block; font-style: normal; color: var(--soft); font-weight: 700; font-size: 1.25em; margin-top: .15em; }
   .scol .list li { padding-top: calc(var(--u) * .95 * var(--sz)); padding-bottom: calc(var(--u) * .95 * var(--sz)); column-gap: calc(var(--u) * .8); }
@@ -328,7 +329,8 @@
   @keyframes gshake { 0%,100% { transform: none } 20% { transform: translate(-.6vmin,.3vmin) } 40% { transform: translate(.5vmin,-.4vmin) } 60% { transform: translate(-.4vmin,-.2vmin) } 80% { transform: translate(.3vmin,.4vmin) } }
   .pcard { position: relative; text-align: center; max-width: 84vw; opacity: 0; transition: opacity .5s ease .45s; }
   .party.show .pcard { opacity: 1; }
-  .pcard .kick { color: var(--gold); font-weight: 700; letter-spacing: .22em; text-transform: uppercase; font-size: calc(var(--u) * 1.4); }
+  .pcard .kick { color: var(--gold); font-weight: 800; letter-spacing: .16em; text-transform: uppercase; font-size: calc(var(--u) * 3); line-height: 1.1; margin-bottom: calc(var(--u) * .6); }
+  .pcard .kick small { display: block; font-size: .42em; letter-spacing: .22em; font-weight: 700; opacity: .85; margin-top: calc(var(--u) * .3); }
   .pcard .who { font-weight: 760; font-size: calc(var(--u) * 6.4); line-height: 1.05; margin: calc(var(--u) * .5) 0 calc(var(--u) * .6); color: var(--text);
                 transform: scale(.6); transition: transform .75s cubic-bezier(.2, 1.5, .4, 1) .45s; }
   .party.show .pcard .who { transform: none; }
@@ -476,17 +478,22 @@
     requestAnimationFrame(function () { var a = el.getAnimations && el.getAnimations()[0];
       if (a) a.currentTime = pos * a.effect.getTiming().duration; });
   }
-  function fillList(ul, rows, make, empty, secsPerRow) {
-    var pos = loopPos(ul);
+  // Returns the seconds one full pass of the scroll takes (0 when the list fits and does not scroll).
+  // restart: start the scroll from the top (a new rep in the spotlight) instead of where it was.
+  function fillList(ul, rows, make, empty, secsPerRow, restart) {
+    var pos = restart ? null : loopPos(ul);
     ul.replaceChildren(); ul.classList.remove('moving');
-    if (!rows.length) { ul.appendChild(el('li', 'empty', empty)); return; }
+    if (!rows.length) { ul.appendChild(el('li', 'empty', empty)); return 0; }
     var box = ul.parentNode;
     rows.forEach(function (r) { ul.appendChild(make(r)); });
     if (ul.scrollHeight > box.clientHeight + 4) {              // scroll only when it doesn't fit
       rows.forEach(function (r) { ul.appendChild(make(r)); });
-      ul.style.setProperty('--feedtime', (Math.max(40, rows.length * (secsPerRow || 8)) / SPEED).toFixed(1) + 's'); ul.classList.add('moving');
-      resumeAt(ul, pos);
+      var secs = Math.max(40, rows.length * (secsPerRow || 8)) / SPEED;
+      ul.style.setProperty('--feedtime', secs.toFixed(1) + 's'); ul.classList.add('moving');
+      if (restart) { void ul.offsetWidth; } else resumeAt(ul, pos);
+      return secs;
     }
+    return 0;
   }
 
 
@@ -584,14 +591,14 @@
     var foot = $('foot'); foot.replaceChildren();
     var fl = el('div', 'foot narrow');
     fl.appendChild(el('span', null, 'Revenue counts in the month it\u2019s collected: a deal\u2019s first month of MRR when the customer first pays. 10DLC fees are not MRR. ' +
-      'The spotlight changes every 20 seconds.' + (orphanIssues ? ' ' + plural(orphanIssues, 'first-payment issue is', 'first-payment issues are') + ' on deals with no rep: see the Data Issues tab.' : '')));
+      'Each rep stays up until their lists scroll through.' + (orphanIssues ? ' ' + plural(orphanIssues, 'first-payment issue is', 'first-payment issues are') + ' on deals with no rep: see the Data Issues tab.' : '')));
     var key = el('span', 'key'); var k1 = el('span'); k1.appendChild(el('i')); k1.appendChild(document.createTextNode('Collected'));
     var k2 = el('span'); k2.appendChild(el('i', 'hatch')); k2.appendChild(document.createTextNode('Expected this month')); key.appendChild(k1); key.appendChild(k2);
     fl.appendChild(key); foot.appendChild(fl);
   }
 
   // ======================================================= spotlight: one rep at a time, 20 seconds each
-  var spot = { order: [], data: {}, idx: 0, current: null, mk: '' };
+  var spot = { order: [], data: {}, idx: 0, current: null, mk: '', dwell: 20, elapsed: 0 };
   function renderSpot(advance) {
     if (!spot.order.length) { $('spothead').replaceChildren(el('h2', 'wide', 'No deals yet')); return; }
     if (advance) spot.idx = (spot.idx + 1) % spot.order.length;
@@ -613,24 +620,30 @@
       $('sp-iss-t').textContent = S2.issues.length ? money.format(sum(S2.issues, 'booked')) : '';
       var most = Math.max(S2.paid.length, S2.due.length, S2.issues.length), cols = $('spotcols');
       cols.classList.toggle('roomy', most <= 3); cols.classList.toggle('mid', most > 3 && most <= 5);
-      fillList($('sp-paid'), S2.paid, function (d) {
+      var fresh = changing || advance, passes = [];
+      passes.push(fillList($('sp-paid'), S2.paid, function (d) {
         var li = el('li'); var tk = el('span', 'tick'); tk.style.background = d.type === 'Expansion' ? C.exp : C.deal; li.appendChild(tk);
         li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.credited)));
         li.appendChild(el('span', 'why', (d.type === 'Expansion' ? 'Expansion, ' : '') + (d.collectedDate ? 'paid ' + day(d.collectedDate) : 'paid in ' + monthOf(spot.mk))));
         li.appendChild(el('span', 'side', '')); return li;
-      }, 'Nothing paid yet this month.', 7);
-      fillList($('sp-due'), S2.due, function (d) {
+      }, 'Nothing paid yet this month.', 7, fresh));
+      passes.push(fillList($('sp-due'), S2.due, function (d) {
         var li = el('li'); var tk = el('span', 'tick hatch'); tk.style.backgroundColor = C.deal; li.appendChild(tk);
         var exp = d.expect != null ? d.expect : (d.booked || 0);
         li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(exp)));
         li.appendChild(el('span', 'why', 'won ' + day(d.close) + (d.expect != null && d.expect !== d.booked ? ', increase on ' + money.format(d.booked) + ' deal' : ''))); li.appendChild(el('span', 'side', '')); return li;
-      }, 'Nothing else due this month.', 7);
-      fillList($('sp-iss'), S2.issues, function (d) {
+      }, 'Nothing else due this month.', 7, fresh));
+      passes.push(fillList($('sp-iss'), S2.issues, function (d) {
         var bad = /failed|stuck/i.test(d.issue);
         var li = el('li'); var tk = el('span', 'tick'); tk.style.background = bad ? 'var(--late)' : 'var(--dlc)'; li.appendChild(tk);
         li.appendChild(el('span', 'co', d.company || 'Unnamed company')); li.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
         li.appendChild(el('span', 'why' + (bad ? ' bad' : ''), d.issue + (d.issueDays != null ? ', ' + d.issueDays + 'd' : ''))); li.appendChild(el('span', 'side', '')); return li;
-      }, 'No first-payment problems.', 7);
+      }, 'No first-payment problems.', 7, fresh));
+      // How long this rep stays up: until the longest scrolling list has gone all the way round once;
+      // when nothing scrolls, 8 s plus 2 s per row on the longest list (at most 20 s).
+      var longest = Math.max.apply(null, passes);
+      spot.dwell = longest > 0 ? longest : Math.min(20, 8 + 2 * most);
+      if (fresh) spot.elapsed = 0;
       // dots and the race highlight
       var dots = $('spotdots'); dots.replaceChildren(); spot.order.forEach(function (n, i) { dots.appendChild(el('i', i === spot.idx ? 'on' : '')); });
       [].forEach.call(document.querySelectorAll('#reps .lane'), function (l) { l.classList.toggle('on', l.dataset.ae === ae); });
@@ -642,8 +655,15 @@
   // Advance only while the sales screen is on. It was ticking while the other screens showed: with 3 reps
   // at 20 s each (60 s) and the sales screen on 40 s of every 120 s, the same two reps always showed and the
   // third (Colton) never did.
-  function spotTick() { if (spot.order.length > 1 && showing === 1) renderSpot(true); }
-  var spotTimer = setInterval(spotTick, 20000);
+  // The clock only runs while the sales screen is up; the lists pause with it, so a rep picks up where it
+  // left off when the screen comes back, and every rep gets its turn.
+  setInterval(function () {
+    var on = showing === 1, cols = $('spotcols');
+    if (cols) cols.classList.toggle('paused', !on);
+    if (!on) return;
+    spot.elapsed += 1;
+    if (spot.order.length > 1 && spot.elapsed >= spot.dwell) renderSpot(true);
+  }, 1000);
 
   // ======================================================= last refreshed clock (Mountain time: MST, MDT in summer)
   var builtAt = null;
@@ -873,9 +893,7 @@
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function showScreen(n) {
     if (n === showing) return;
-    if (n === 1 && spot.order.length > 1) {                    // the next rep each time the sales screen comes back,
-      renderSpot(true); clearInterval(spotTimer); spotTimer = setInterval(spotTick, 20000);   // then a full 20 s each
-    }
+
     var inc = $(IDS[n]), out = $(IDS[showing]);
     showing = n;
     inc.setAttribute('aria-hidden', 'false'); out.setAttribute('aria-hidden', 'true');
@@ -943,7 +961,10 @@
     partyOn = true;
     var r = partyQueue.shift(), box = $('party'), card = $('pcard'), paid = r.kind === 'paid';
     card.replaceChildren(); box.classList.toggle('paid', paid);
-    card.appendChild(el('div', 'kick', paid ? 'Payment collected' : r.type === 'Expansion' ? 'New expansion' : 'New sale'));
+    // The header says which of the two it is, so nobody mixes a signed deal up with money in the bank
+    var kick = el('div', 'kick', paid ? 'Revenue collected' : 'Deal closed');
+    if (!paid && r.type === 'Expansion') kick.appendChild(el('small', null, 'Expansion'));
+    card.appendChild(kick);
     card.appendChild(el('div', 'who wide', nice(r.ae)));
     card.appendChild(el('div', 'what', r.company));
     var amt = null;
