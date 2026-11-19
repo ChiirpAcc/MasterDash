@@ -691,23 +691,30 @@
     rows.sort(function (a, b) { return (b.lastFail || b.failDay || '') < (a.lastFail || a.failDay || '') ? -1 : (b.lastFail || b.failDay || '') > (a.lastFail || a.failDay || '') ? 1 : (b.booked || 0) - (a.booked || 0); });
     root.style.setProperty('--tickh', 'calc(min(1vw, 1.75vh) * 4.6)');
     bar.classList.add('on');
+    function problemText(d) {
+      var k = d.kind || (d.reason ? 'declined' : '');
+      if (k === 'declined') return 'First payment declined ' + day(d.failDay) + (d.tries > 1 ? ', ' + d.tries + ' tries, last ' + day(d.lastFail) : '') + (d.reason ? ' (' + d.reason + ')' : '');
+      if (k === 'confirm') return 'Card not confirmed, first charge waiting since ' + day(d.failDay);
+      if (k === 'nocard') return 'No card on file, first invoice unpaid since ' + day(d.failDay);
+      if (k === 'expired') return 'Signup expired unpaid ' + day(d.failDay) + ', Stripe dropped the subscription';
+      if (k === 'refund') return 'First payment ' + (d.reason || 'refunded') + ' ' + day(d.failDay) + (d.amount ? ' (' + money.format(d.amount) + ')' : '');
+      return d.issue + (d.failDay ? ', failed ' + day(d.failDay) : '');
+    }
     function group() {
       var g = el('div', 'grp');
       var total = rows.reduce(function (t, d) { return t + (d.booked || 0); }, 0);
       var hd = el('span', 'hd');
-      hd.appendChild(document.createTextNode('First payments failed, last 30 days '));
+      hd.appendChild(document.createTextNode('First-payment problems, last 30 days '));
       hd.appendChild(el('b', null, rows.length ? plural(rows.length, 'deal', 'deals') + ', ' + money.format(total) : 'none'));
       g.appendChild(hd);
-      if (!rows.length) { var ok = el('span', 'dl paid'); ok.appendChild(el('span', 'mk', '✓')); ok.appendChild(el('span', 'st', 'Every first payment in the last 30 days went through')); g.appendChild(ok); return g; }
+      if (!rows.length) { var ok = el('span', 'dl paid'); ok.appendChild(el('span', 'mk', '✓')); ok.appendChild(el('span', 'st', 'No first-payment problems in the last 30 days')); g.appendChild(ok); return g; }
       rows.forEach(function (d) {
         var it = el('span', 'dl bad');
         it.appendChild(el('span', 'mk', '!'));
         it.appendChild(el('b', 'co', d.company || 'Unnamed company'));
         it.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
         it.appendChild(el('span', 'who', first(d.ae) + ', sold ' + day(d.close)));
-        it.appendChild(el('span', 'st', d.reason
-          ? 'First payment failed ' + day(d.failDay) + (d.tries > 1 ? ', ' + d.tries + ' tries, last ' + day(d.lastFail) : '') + ' (' + d.reason + ')'
-          : d.issue + (d.failDay ? ', failed ' + day(d.failDay) : '')));
+        it.appendChild(el('span', 'st', problemText(d)));
         g.appendChild(it);
       });
       return g;
