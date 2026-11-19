@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T11:23:33.397Z",
+  "builtAt": "2026-11-19T11:27:57.301Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,17 +38,17 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 10975,
+   "total": 15000,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 1500,
-     "deals": 2
+     "credited": 3000,
+     "deals": 3
     },
     {
      "medium": "Partners and referrals",
-     "credited": 6050,
-     "deals": 7
+     "credited": 7150,
+     "deals": 8
     },
     {
      "medium": "Webinars",
@@ -57,8 +57,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 2425,
-     "deals": 4
+     "credited": 3850,
+     "deals": 5
     },
     {
      "medium": "Account Manager",
@@ -73,6 +73,18 @@
    ],
    "top": [
     {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 1850,
+     "deals": 3
+    },
+    {
+     "source": "FieldEdge",
+     "medium": "Partners and referrals",
+     "credited": 1800,
+     "deals": 2
+    },
+    {
      "source": "One-offs",
      "medium": "Partners and referrals",
      "credited": 1550,
@@ -85,10 +97,10 @@
      "deals": 1
     },
     {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 1425,
-     "deals": 3
+     "source": "2026 - CertainPath Partner Jam",
+     "medium": "Events",
+     "credited": 1500,
+     "deals": 1
     },
     {
      "source": "Webinar - KickCharge",
@@ -107,33 +119,21 @@
      "medium": "Digital",
      "credited": 1000,
      "deals": 1
-    },
-    {
-     "source": "BDR Co - Business Development Resources",
-     "medium": "Partners and referrals",
-     "credited": 950,
-     "deals": 1
-    },
-    {
-     "source": "Referrals",
-     "medium": "Partners and referrals",
-     "credited": 850,
-     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 350146.36,
+   "total": 355921.36,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 86906.82,
-     "deals": 80
+     "credited": 88406.82,
+     "deals": 81
     },
     {
      "medium": "Partners and referrals",
-     "credited": 145550.25,
-     "deals": 159
+     "credited": 146650.25,
+     "deals": 160
     },
     {
      "medium": "Webinars",
@@ -142,8 +142,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 110989.33,
-     "deals": 108
+     "credited": 114164.33,
+     "deals": 111
     },
     {
      "medium": "Account Manager",
@@ -160,20 +160,20 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 48949,
-     "deals": 45
+     "credited": 49949,
+     "deals": 46
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 23750,
+     "deals": 25
     },
     {
      "source": "Partnerships",
      "medium": "Partners and referrals",
      "credited": 23347,
      "deals": 26
-    },
-    {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 23325,
-     "deals": 25
     },
     {
      "source": "LAB",
@@ -190,8 +190,8 @@
     {
      "source": "Meta",
      "medium": "Digital",
-     "credited": 10630.33,
-     "deals": 12
+     "credited": 11630.33,
+     "deals": 13
     },
     {
      "source": "Events/Trade Shows",
@@ -234,11 +234,11 @@
    },
    {
     "day": "2026-11-17",
-    "amount": 2875
+    "amount": 3300
    },
    {
     "day": "2026-11-18",
-    "amount": 800
+    "amount": 4400
    }
   ]
  }
