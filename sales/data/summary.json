@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T13:03:52.083Z",
+  "builtAt": "2026-11-19T13:12:45.153Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -497,16 +497,16 @@
   "start": "2026-11-12",
   "end": "2026-11-18",
   "metrics": {
-   "newMrr": 4425,
+   "newMrr": 8325,
    "reactivated": 0,
-   "churned": 10485,
-   "net": -6060,
-   "newLogos": 5,
-   "churnedAccounts": 10,
-   "atRisk": 19002,
-   "pending": 43991,
-   "stale": 27968.5,
-   "active": 713113.89,
+   "churned": 12734,
+   "net": -4409,
+   "newLogos": 8,
+   "churnedAccounts": 14,
+   "atRisk": 20839,
+   "pending": 41742,
+   "stale": 26818.5,
+   "active": 713814.89,
    "reactivations": 0
   },
   "prev": {
@@ -526,14 +526,14 @@
    "d7": {
     "from": "2026-11-12",
     "to": "2026-11-18",
-    "newMrr": 4425,
-    "newLogos": 5,
+    "newMrr": 8325,
+    "newLogos": 8,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 10485,
-    "churnedAccounts": 10,
-    "net": -6060,
-    "atRisk": 19002
+    "churned": 12734,
+    "churnedAccounts": 14,
+    "net": -4409,
+    "atRisk": 20839
    },
    "through": "2026-11-18",
    "p7": {
@@ -551,14 +551,14 @@
    "d30": {
     "from": "2026-10-20",
     "to": "2026-11-18",
-    "newMrr": 13937,
-    "newLogos": 13,
+    "newMrr": 17837,
+    "newLogos": 16,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 33515.25,
-    "churnedAccounts": 32,
-    "net": -19578.25,
-    "atRisk": 49667.5
+    "churned": 35764.25,
+    "churnedAccounts": 36,
+    "net": -17927.25,
+    "atRisk": 51504.5
    },
    "p30": {
     "from": "2026-09-20",

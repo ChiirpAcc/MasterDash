@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T13:03:52.083Z",
+  "builtAt": "2026-11-19T13:12:45.153Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,64 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 713113.89,
+  "current": 713814.89,
   "dataThrough": "2026-11-18",
   "churned": {
-   "count": 21,
-   "mrr": 21542,
+   "count": 25,
+   "mrr": 23791,
    "rows": [
+    {
+     "company": "Five Star Pressure Washing",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
+     "mrr": 200,
+     "requested": "2026-11-04",
+     "ended": "2026-11-18",
+     "unexpected": false,
+     "customers": [
+      "cus_LiFj1HBZSdLQEy"
+     ]
+    },
+    {
+     "company": "DC ROOFING FL",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-18, renewal date 2026-12-18",
+     "mrr": 650,
+     "requested": "2026-11-04",
+     "ended": "2026-11-18",
+     "unexpected": false,
+     "customers": [
+      "cus_RQFssGloVoIJF7"
+     ]
+    },
+    {
+     "company": "BEPO LLC",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2024-09-18, ends 2026-11-18 mid-term",
+     "mrr": 650,
+     "requested": "2026-11-04",
+     "ended": "2026-11-18",
+     "unexpected": false,
+     "customers": [
+      "cus_QsEZY3JExuxjeS"
+     ]
+    },
+    {
+     "company": "Salt Lake Plumbing",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-09-18, ends 2026-11-18 mid-term",
+     "mrr": 749,
+     "requested": "2026-11-04",
+     "ended": "2026-11-18",
+     "unexpected": false,
+     "customers": [
+      "cus_T4zmlJQW2SMcKO"
+     ]
+    },
     {
      "company": "Best Virginia HVAC",
      "am": "Luciana Flores",
@@ -325,45 +377,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 21,
-   "mrr": 19080,
+   "count": 17,
+   "mrr": 16831,
    "rows": [
-    {
-     "company": "BEPO LLC",
-     "am": "Zeus Acosta",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2024-09-18, ends 2026-11-17 mid-term",
-     "mrr": 650,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-17"
-    },
-    {
-     "company": "DC ROOFING FL",
-     "am": "Zeus Acosta",
-     "kind": "Non-renewal",
-     "kindWhy": "ends 2026-11-17, renewal date 2026-12-18",
-     "mrr": 650,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-17"
-    },
-    {
-     "company": "Five Star Pressure Washing",
-     "am": "Zeus Acosta",
-     "kind": "",
-     "kindWhy": "",
-     "mrr": 200,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-17"
-    },
-    {
-     "company": "Salt Lake Plumbing",
-     "am": "Zeus Acosta",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2025-09-18, ends 2026-11-18 mid-term",
-     "mrr": 749,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-18"
-    },
     {
      "company": "Access Heating Air and Plumbing",
      "am": "Luciana Flores",
@@ -523,11 +539,11 @@
    "count": 24,
    "mrr": 22961
   },
-  "lostSoFar": 21542,
-  "lostSigma": 24041,
-  "retainedSoFar": 0.971,
+  "lostSoFar": 23791,
+  "lostSigma": 25640,
+  "retainedSoFar": 0.968,
   "retainedIfAllEnd": 0.945,
-  "eomMrr": 694033.89,
+  "eomMrr": 696983.89,
   "trailing": [
    {
     "month": "2026-09",
