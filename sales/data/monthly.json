@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T16:52:50.910Z",
+  "builtAt": "2026-11-19T16:57:42.652Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -617,9 +617,9 @@
    "month": "2026-11",
    "won": 8,
    "booked": 8350,
-   "collectedDeals": 7,
-   "credited": 6000,
-   "newCredited": 4050,
+   "collectedDeals": 8,
+   "credited": 6750,
+   "newCredited": 4800,
    "expCredited": 1950,
    "dlcCredited": 0,
    "dlcCount": 0
