@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T16:28:50.483Z",
+  "builtAt": "2026-11-19T16:38:04.301Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5275,6 +5275,26 @@
    "waitWhy": "",
    "expect": null,
    "cash": 1100
+  },
+  {
+   "id": "372386256596",
+   "ae": "Blake Fenn",
+   "company": "Brave Roofing",
+   "type": "New Business",
+   "close": "2026-11-19",
+   "booked": 750,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0,
+   "waitWhy": "",
+   "expect": null,
+   "cash": 0
   }
  ]
 }
