@@ -715,14 +715,54 @@
       if (k === 'refund') return 'First payment ' + (d.reason || 'refunded') + ' ' + day(d.failDay) + (d.amount ? ' (' + money.format(d.amount) + ')' : '');
       return d.issue + (d.failDay ? ', failed ' + day(d.failDay) : '');
     }
+    // No first-payment problems: the banner goes back to what it showed before, deals sold in the last 7 days.
+    var cut7 = new Date(); cut7.setHours(12, 0, 0, 0); cut7.setDate(cut7.getDate() - 7);
+    var cut7Day = cut7.getFullYear() + '-' + String(cut7.getMonth() + 1).padStart(2, '0') + '-' + String(cut7.getDate()).padStart(2, '0');
+    var sold = ((D && D.rows) || []).filter(function (d) { return d.close && d.close > cut7Day; })
+                                    .sort(function (a, b) { return a.close < b.close ? 1 : a.close > b.close ? -1 : (b.booked || 0) - (a.booked || 0); });
+    function soldProblem(d) {
+      if (d.issue) return d.issue;
+      if (/^Not paid after/.test(d.status || '')) return d.status;
+      if (d.status === 'No Stripe link') return 'No Stripe link in HubSpot';
+      var w = d.waitWhy || '';
+      if (/not set up in Stripe/.test(w)) return 'Not set up in Stripe yet';
+      if (/after month end/.test(w)) return 'Not paid yet, first charge after month end';
+      if (/before month end/.test(w)) return 'Not paid yet, charge due this month';
+      var fw = w.match(/waived in Stripe until (\d{4}-\d{2}-\d{2})/);
+      if (fw) return 'Free months in Stripe until ' + day(fw[1]);
+      if (/\$0 plan/.test(w)) return 'On a $0 plan in Stripe';
+      return 'Not paid yet';
+    }
+    function soldGroup() {
+      var g = el('div', 'grp');
+      var total = sold.reduce(function (t, d) { return t + (d.booked || 0); }, 0);
+      var paidN = sold.filter(function (d) { return d.status === 'Collected'; }).length;
+      var hd = el('span', 'hd');
+      hd.appendChild(document.createTextNode('Sold in the last 7 days '));
+      hd.appendChild(el('b', null, plural(sold.length, 'deal', 'deals') + (sold.length ? ', ' + money.format(total) : '')));
+      if (sold.length) hd.appendChild(document.createTextNode(', ' + paidN + ' paid'));
+      g.appendChild(hd);
+      if (!sold.length) { g.appendChild(el('span', 'dl', 'No deals sold in the last 7 days')); return g; }
+      sold.forEach(function (d) {
+        var paid = d.status === 'Collected', it = el('span', 'dl' + (paid ? ' paid' : ' bad'));
+        it.appendChild(el('span', 'mk', paid ? '✓' : '!'));
+        it.appendChild(el('b', 'co', d.company || 'Unnamed company'));
+        it.appendChild(el('span', 'v wide', money.format(d.booked || 0)));
+        it.appendChild(el('span', 'who', first(d.ae) + ', sold ' + day(d.close)));
+        it.appendChild(el('span', 'st', paid ? 'Paid' + (d.collectedDate ? ' ' + day(d.collectedDate) : '') : soldProblem(d)));
+        g.appendChild(it);
+      });
+      return g;
+    }
     function group() {
+      if (!rows.length) return soldGroup();
       var g = el('div', 'grp');
       var total = rows.reduce(function (t, d) { return t + (d.booked || 0); }, 0);
       var hd = el('span', 'hd');
       hd.appendChild(document.createTextNode('First-payment problems, last 30 days '));
       hd.appendChild(el('b', null, rows.length ? plural(rows.length, 'deal', 'deals') + ', ' + money.format(total) : 'none'));
       g.appendChild(hd);
-      if (!rows.length) { var ok = el('span', 'dl paid'); ok.appendChild(el('span', 'mk', '✓')); ok.appendChild(el('span', 'st', 'No first-payment problems in the last 30 days')); g.appendChild(ok); return g; }
+
       rows.forEach(function (d) {
         var it = el('span', 'dl bad');
         it.appendChild(el('span', 'mk', '!'));
