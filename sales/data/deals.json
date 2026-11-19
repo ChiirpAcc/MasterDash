@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v79",
-  "builtAt": "2026-11-19T02:02:44.879Z",
+  "builtAt": "2026-11-19T02:08:12.407Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5255,6 +5255,26 @@
    "waitWhy": "",
    "expect": null,
    "cash": 1000
+  },
+  {
+   "id": "371186121420",
+   "ae": "Ky Decker",
+   "company": "ProMan HVAC and Mechanical",
+   "type": "New Business",
+   "close": "2026-11-18",
+   "booked": 1100,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0,
+   "waitWhy": "",
+   "expect": null,
+   "cash": 0
   }
  ]
 }
