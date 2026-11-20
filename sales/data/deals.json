@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T22:13:00.533Z",
+  "builtAt": "2026-11-20T22:17:52.626Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5639,6 +5639,27 @@
    "issue": "No Stripe link in HubSpot",
    "issueDays": 0,
    "waitWhy": "",
+   "expect": null,
+   "cash": 0,
+   "failDay": ""
+  },
+  {
+   "id": "349301400292",
+   "ae": "Ky Decker",
+   "company": "Moss Mechanical, LLC",
+   "type": "Expansion",
+   "close": "2026-11-20",
+   "booked": 2650,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": true,
+   "issue": "",
+   "issueDays": null,
+   "waitWhy": "Stripe charge before month end",
    "expect": null,
    "cash": 0,
    "failDay": ""

@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T22:13:00.533Z",
+  "builtAt": "2026-11-20T22:17:52.626Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -639,8 +639,8 @@
   {
    "ae": "Ky Decker",
    "month": "2026-11",
-   "won": 6,
-   "booked": 7550,
+   "won": 7,
+   "booked": 10200,
    "collectedDeals": 7,
    "credited": 5650,
    "newCredited": 4650,
