@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T22:37:56.237Z",
+  "builtAt": "2026-11-20T22:42:50.907Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5547,9 +5547,9 @@
    "booked": 1100,
    "status": "Collected",
    "creditedMonth": "2026-11",
-   "collectedDate": "2026-11-18",
+   "collectedDate": "2026-11-19",
    "credited": 1100,
-   "daysToCollect": 0,
+   "daysToCollect": 1,
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
