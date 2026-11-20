@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T00:22:44.599Z",
+  "builtAt": "2026-11-20T10:28:45.667Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -377,27 +377,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 17,
-   "mrr": 16831,
+   "count": 15,
+   "mrr": 14583,
    "rows": [
-    {
-     "company": "Access Heating Air and Plumbing",
-     "am": "Luciana Flores",
-     "kind": "Early cancellation",
-     "kindWhy": "15-month term from 2026-01-19, ends 2026-11-19 mid-term",
-     "mrr": 1299,
-     "requested": "2026-10-29",
-     "endsAt": "2026-11-19"
-    },
-    {
-     "company": "Jeoah Electric",
-     "am": "Adonis Cermeno",
-     "kind": "Non-renewal",
-     "kindWhy": "ends 2026-11-19, renewal date 2026-12-19",
-     "mrr": 949,
-     "requested": "2026-10-27",
-     "endsAt": "2026-11-19"
-    },
     {
      "company": "CONCIERGE HOME REMODELING",
      "am": "Zeus Acosta",
@@ -536,14 +518,14 @@
    ]
   },
   "endingLater": {
-   "count": 24,
-   "mrr": 22961
+   "count": 26,
+   "mrr": 25209
   },
   "lostSoFar": 23791,
   "lostSigma": 25640,
   "retainedSoFar": 0.968,
-  "retainedIfAllEnd": 0.945,
-  "eomMrr": 696983.89,
+  "retainedIfAllEnd": 0.948,
+  "eomMrr": 699231.89,
   "trailing": [
    {
     "month": "2026-09",
