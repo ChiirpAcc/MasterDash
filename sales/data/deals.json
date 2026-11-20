@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T14:32:54.382Z",
+  "builtAt": "2026-11-20T14:39:10.906Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -3751,6 +3751,27 @@
    "waitWhy": "",
    "expect": null,
    "cash": 3250,
+   "failDay": ""
+  },
+  {
+   "id": "340489432774",
+   "ae": "Ky Decker",
+   "company": "Roman Plumbing and Air",
+   "type": "Expansion",
+   "close": "2026-08-07",
+   "booked": 500,
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-19",
+   "credited": 500,
+   "daysToCollect": 86,
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "",
+   "issueDays": null,
+   "waitWhy": "",
+   "expect": null,
+   "cash": 1200,
    "failDay": ""
   },
   {
