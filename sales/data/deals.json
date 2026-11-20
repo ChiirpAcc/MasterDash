@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T21:03:17.142Z",
+  "builtAt": "2026-11-20T21:08:12.491Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5625,7 +5625,7 @@
   {
    "id": "371255114455",
    "ae": "colton lingmann",
-   "company": "Barnacle King",
+   "company": "Barnacle King LLC ",
    "type": "New Business",
    "close": "2026-11-20",
    "booked": 1250,
