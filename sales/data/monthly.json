@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T16:33:03.084Z",
+  "builtAt": "2026-11-20T16:37:51.293Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -663,8 +663,8 @@
   {
    "ae": "colton lingmann",
    "month": "2026-11",
-   "won": 4,
-   "booked": 5266.65,
+   "won": 5,
+   "booked": 6266.65,
    "collectedDeals": 3,
    "credited": 2350,
    "newCredited": 2350,

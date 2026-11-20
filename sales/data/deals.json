@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T16:33:03.084Z",
+  "builtAt": "2026-11-20T16:37:51.293Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5578,6 +5578,27 @@
    "waitWhy": "",
    "expect": null,
    "cash": 1505,
+   "failDay": ""
+  },
+  {
+   "id": "310071424711",
+   "ae": "colton lingmann",
+   "company": "Wize Home Services ",
+   "type": "New Business",
+   "close": "2026-11-20",
+   "booked": 1000,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": true,
+   "issue": "",
+   "issueDays": null,
+   "waitWhy": "won recently, not set up in Stripe yet",
+   "expect": null,
+   "cash": 0,
    "failDay": ""
   }
  ],
