@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-19T23:48:52.997Z",
+  "builtAt": "2026-11-20T00:07:40.108Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4842,7 +4842,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 3005,
+   "cash": 2000,
    "failDay": ""
   },
   {
@@ -4863,7 +4863,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 3005,
+   "cash": 1500,
    "failDay": ""
   },
   {
@@ -4905,7 +4905,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 5005,
+   "cash": 2500,
    "failDay": ""
   },
   {
@@ -4926,7 +4926,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 3505,
+   "cash": 2500,
    "failDay": ""
   },
   {
@@ -4968,7 +4968,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 4005,
+   "cash": 2500,
    "failDay": ""
   },
   {
@@ -5020,18 +5020,18 @@
    "type": "New Business",
    "close": "2026-10-19",
    "booked": 750,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-21",
-   "credited": 750,
-   "daysToCollect": 2,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 31,
    "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null,
-   "waitWhy": "",
+   "issue": "Not set up in Stripe",
+   "issueDays": 31,
+   "waitWhy": "won over 30 days ago, nothing set up in Stripe",
    "expect": null,
-   "cash": 750,
+   "cash": 0,
    "failDay": ""
   },
   {
@@ -5115,7 +5115,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 3000,
+   "cash": 1500,
    "failDay": ""
   },
   {
@@ -5146,18 +5146,18 @@
    "type": "New Business",
    "close": "2026-10-30",
    "booked": 1000,
-   "status": "Collected",
-   "creditedMonth": "2026-10",
-   "collectedDate": "2026-10-30",
-   "credited": 1000,
-   "daysToCollect": 0,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 20,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "fee waived in Stripe until 2027-01-30",
    "expect": null,
-   "cash": 1005,
+   "cash": 0,
    "failDay": ""
   },
   {
@@ -5241,7 +5241,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 1005,
+   "cash": 500,
    "failDay": ""
   },
   {
@@ -5262,7 +5262,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 1355,
+   "cash": 850,
    "failDay": ""
   },
   {
@@ -5380,7 +5380,7 @@
    "status": "Collected",
    "creditedMonth": "2026-11",
    "collectedDate": "2026-11-17",
-   "credited": 850,
+   "credited": 425,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
@@ -5388,7 +5388,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 1280,
+   "cash": 425,
    "failDay": ""
   },
   {
@@ -5524,18 +5524,18 @@
    "type": "New Business",
    "close": "2026-11-18",
    "booked": 1100,
-   "status": "Collected",
-   "creditedMonth": "2026-11",
-   "collectedDate": "2026-11-18",
-   "credited": 1100,
-   "daysToCollect": 0,
-   "waitingDays": null,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": 1,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "Stripe shows the first charge after month end",
    "expect": null,
-   "cash": 1100,
+   "cash": 0,
    "failDay": ""
   },
   {
@@ -5545,18 +5545,18 @@
    "type": "New Business",
    "close": "2026-11-19",
    "booked": 750,
-   "status": "Collected",
-   "creditedMonth": "2026-11",
-   "collectedDate": "2026-11-19",
-   "credited": 750,
-   "daysToCollect": 0,
+   "status": "Awaiting first payment",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
    "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "Stripe shows the first charge after month end",
    "expect": null,
-   "cash": 1505,
+   "cash": 0,
    "failDay": ""
   }
  ],
