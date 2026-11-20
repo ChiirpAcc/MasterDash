@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T12:59:10.532Z",
+  "builtAt": "2026-11-20T13:07:51.528Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,51 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 713814.89,
-  "dataThrough": "2026-11-18",
+  "current": 716366.89,
+  "dataThrough": "2026-11-19",
   "churned": {
-   "count": 25,
-   "mrr": 23791,
+   "count": 28,
+   "mrr": 26047,
    "rows": [
+    {
+     "company": "Luxor Garage Door",
+     "am": "Adonis Cermeno",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2026-06-19, ends 2026-11-19 mid-term",
+     "mrr": 8,
+     "requested": "2026-10-27",
+     "ended": "2026-11-19",
+     "unexpected": false,
+     "customers": [
+      "cus_UjUuKNG1w93E81"
+     ]
+    },
+    {
+     "company": "Jeoah Electric",
+     "am": "Adonis Cermeno",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-19, renewal date 2026-12-19",
+     "mrr": 949,
+     "requested": "2026-10-27",
+     "ended": "2026-11-19",
+     "unexpected": false,
+     "customers": [
+      "cus_TdRDjl8yGKjoam"
+     ]
+    },
+    {
+     "company": "Access Heating Air and Plumbing",
+     "am": "Luciana Flores",
+     "kind": "Early cancellation",
+     "kindWhy": "15-month term from 2026-01-19, ends 2026-11-19 mid-term",
+     "mrr": 1299,
+     "requested": "2026-10-29",
+     "ended": "2026-11-19",
+     "unexpected": false,
+     "customers": [
+      "cus_Tp1ERCJC5RH2gp"
+     ]
+    },
     {
      "company": "Five Star Pressure Washing",
      "am": "Zeus Acosta",
@@ -519,18 +558,18 @@
   },
   "endingLater": {
    "count": 26,
-   "mrr": 25209
+   "mrr": 24361
   },
-  "lostSoFar": 23791,
-  "lostSigma": 25640,
-  "retainedSoFar": 0.968,
-  "retainedIfAllEnd": 0.948,
-  "eomMrr": 699231.89,
+  "lostSoFar": 26047,
+  "lostSigma": 27888,
+  "retainedSoFar": 0.964,
+  "retainedIfAllEnd": 0.945,
+  "eomMrr": 701783.89,
   "trailing": [
    {
     "month": "2026-09",
     "kept": 0.939,
-    "bom": 792572.38,
+    "bom": 791322.38,
     "lost": 48081.5
    },
    {
