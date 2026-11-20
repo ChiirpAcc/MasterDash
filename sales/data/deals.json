@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T20:57:47.676Z",
+  "builtAt": "2026-11-20T21:03:17.142Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5608,6 +5608,27 @@
    "type": "New Business",
    "close": "2026-11-20",
    "booked": 1500,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0,
+   "waitWhy": "",
+   "expect": null,
+   "cash": 0,
+   "failDay": ""
+  },
+  {
+   "id": "371255114455",
+   "ae": "colton lingmann",
+   "company": "Barnacle King",
+   "type": "New Business",
+   "close": "2026-11-20",
+   "booked": 1250,
    "status": "No Stripe link",
    "creditedMonth": "",
    "collectedDate": "",
