@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-20T22:22:49.273Z",
+  "builtAt": "2026-11-20T22:27:47.355Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -615,8 +615,8 @@
   {
    "ae": "Blake Fenn",
    "month": "2026-11",
-   "won": 8,
-   "booked": 8350,
+   "won": 9,
+   "booked": 10350,
    "collectedDeals": 8,
    "credited": 6750,
    "newCredited": 4800,
@@ -630,11 +630,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 1140,
+   "credited": 1152,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 1140,
-   "dlcCount": 95
+   "dlcCredited": 1152,
+   "dlcCount": 96
   },
   {
    "ae": "Ky Decker",
