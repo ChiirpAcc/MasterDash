@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-21T13:02:43.254Z",
+  "builtAt": "2026-11-21T13:07:45.310Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,38 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 716366.89,
-  "dataThrough": "2026-11-19",
+  "current": 722024.39,
+  "dataThrough": "2026-11-20",
   "churned": {
-   "count": 28,
-   "mrr": 26047,
+   "count": 30,
+   "mrr": 27547,
    "rows": [
+    {
+     "company": "CONCIERGE HOME REMODELING",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-20, renewal date 2026-10-20",
+     "mrr": 450,
+     "requested": "2026-11-04",
+     "ended": "2026-11-20",
+     "unexpected": false,
+     "customers": [
+      "cus_TGsJY224yndfUO"
+     ]
+    },
+    {
+     "company": "Oleada Electrical",
+     "am": "Luciana Flores",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2026-01-20, ends 2026-11-20 mid-term",
+     "mrr": 1050,
+     "requested": "2026-10-29",
+     "ended": "2026-11-20",
+     "unexpected": false,
+     "customers": [
+      "cus_TpSBILyupBYZlb"
+     ]
+    },
     {
      "company": "Luxor Garage Door",
      "am": "Adonis Cermeno",
@@ -539,14 +565,14 @@
    ]
   },
   "endingLater": {
-   "count": 28,
-   "mrr": 25861
+   "count": 26,
+   "mrr": 24361
   },
-  "lostSoFar": 26047,
-  "lostSigma": 27888,
-  "retainedSoFar": 0.964,
-  "retainedIfAllEnd": 0.947,
-  "eomMrr": 703283.89,
+  "lostSoFar": 27547,
+  "lostSigma": 29388,
+  "retainedSoFar": 0.962,
+  "retainedIfAllEnd": 0.945,
+  "eomMrr": 708941.39,
   "trailing": [
    {
     "month": "2026-09",
