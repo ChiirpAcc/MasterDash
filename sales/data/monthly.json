@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-21T21:43:40.888Z",
+  "builtAt": "2026-11-21T21:47:55.557Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -623,6 +623,18 @@
    "expCredited": 1950,
    "dlcCredited": 0,
    "dlcCount": 0
+  },
+  {
+   "ae": "Josh Anderson",
+   "month": "2026-11",
+   "won": 0,
+   "booked": 0,
+   "collectedDeals": 0,
+   "credited": 1236,
+   "newCredited": 0,
+   "expCredited": 0,
+   "dlcCredited": 1236,
+   "dlcCount": 103
   },
   {
    "ae": "Ky Decker",
