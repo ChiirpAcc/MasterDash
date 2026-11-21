@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-21T01:33:02.424Z",
+  "builtAt": "2026-11-21T10:30:47.358Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -416,27 +416,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 15,
-   "mrr": 14583,
+   "count": 13,
+   "mrr": 13083,
    "rows": [
-    {
-     "company": "CONCIERGE HOME REMODELING",
-     "am": "Zeus Acosta",
-     "kind": "Non-renewal",
-     "kindWhy": "ends 2026-11-20, renewal date 2026-10-20",
-     "mrr": 450,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-20"
-    },
-    {
-     "company": "Oleada Electrical",
-     "am": "Luciana Flores",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2026-01-20, ends 2026-11-20 mid-term",
-     "mrr": 1050,
-     "requested": "2026-10-29",
-     "endsAt": "2026-11-20"
-    },
     {
      "company": "Crisafulli Bros",
      "am": "Korth Rushdi",
@@ -557,14 +539,14 @@
    ]
   },
   "endingLater": {
-   "count": 26,
-   "mrr": 24361
+   "count": 28,
+   "mrr": 25861
   },
   "lostSoFar": 26047,
   "lostSigma": 27888,
   "retainedSoFar": 0.964,
-  "retainedIfAllEnd": 0.945,
-  "eomMrr": 701783.89,
+  "retainedIfAllEnd": 0.947,
+  "eomMrr": 703283.89,
   "trailing": [
    {
     "month": "2026-09",
