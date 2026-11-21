@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-21T15:17:59.930Z",
+  "builtAt": "2026-11-21T15:23:39.540Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 16250,
+   "total": 15825,
    "mediums": [
     {
      "medium": "Events",
@@ -57,7 +57,7 @@
     },
     {
      "medium": "Digital",
-     "credited": 4350,
+     "credited": 3925,
      "deals": 6
     },
     {
@@ -73,16 +73,16 @@
    ],
    "top": [
     {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 2350,
-     "deals": 4
-    },
-    {
      "source": "One-offs",
      "medium": "Partners and referrals",
      "credited": 2300,
      "deals": 3
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 1925,
+     "deals": 4
     },
     {
      "source": "FieldEdge",
@@ -123,7 +123,7 @@
    ]
   },
   "ytd": {
-   "total": 357171.36,
+   "total": 354996.36,
    "mediums": [
     {
      "medium": "Events",
@@ -142,8 +142,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 114664.33,
-     "deals": 112
+     "credited": 112489.33,
+     "deals": 110
     },
     {
      "medium": "Account Manager",
@@ -160,13 +160,13 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 49949,
-     "deals": 46
+     "credited": 48949,
+     "deals": 45
     },
     {
      "source": "Facebook",
      "medium": "Digital",
-     "credited": 24250,
+     "credited": 23825,
      "deals": 26
     },
     {
@@ -234,7 +234,7 @@
    },
    {
     "day": "2026-11-17",
-    "amount": 3300
+    "amount": 2875
    },
    {
     "day": "2026-11-18",
