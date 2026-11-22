@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-22T13:02:47.574Z",
+  "builtAt": "2026-11-22T13:07:38.900Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,26 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 722024.39,
-  "dataThrough": "2026-11-20",
+  "current": 722224.39,
+  "dataThrough": "2026-11-21",
   "churned": {
-   "count": 30,
-   "mrr": 27547,
+   "count": 31,
+   "mrr": 28597,
    "rows": [
+    {
+     "company": "Service Now Home Services",
+     "am": "Korth Rushdi",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-21, renewal date 2026-10-21",
+     "mrr": 1050,
+     "requested": "2026-10-30",
+     "ended": "2026-11-21",
+     "unexpected": false,
+     "customers": [
+      "cus_THFY3BTjJJiasE",
+      "cus_QUYyaibLB2ny8T"
+     ]
+    },
     {
      "company": "CONCIERGE HOME REMODELING",
      "am": "Zeus Acosta",
@@ -559,11 +573,11 @@
    "count": 27,
    "mrr": 25311
   },
-  "lostSoFar": 27547,
-  "lostSigma": 29388,
-  "retainedSoFar": 0.962,
-  "retainedIfAllEnd": 0.946,
-  "eomMrr": 709891.39,
+  "lostSoFar": 28597,
+  "lostSigma": 31438,
+  "retainedSoFar": 0.961,
+  "retainedIfAllEnd": 0.944,
+  "eomMrr": 710091.39,
   "trailing": [
    {
     "month": "2026-09",
