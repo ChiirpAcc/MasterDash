@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-21T23:43:08.745Z",
+  "builtAt": "2026-11-22T00:23:14.938Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4642,18 +4642,18 @@
    "type": "Expansion",
    "close": "2026-09-22",
    "booked": 600,
-   "status": "Awaiting first payment",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 60,
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-21",
+   "credited": 600,
+   "daysToCollect": 40,
+   "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end",
+   "waitWhy": "",
    "expect": null,
-   "cash": 0,
+   "cash": 1500,
    "failDay": ""
   },
   {
