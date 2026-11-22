@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-22T14:28:08.628Z",
+  "builtAt": "2026-11-22T14:33:00.963Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 16250,
+   "total": 18650,
    "mediums": [
     {
      "medium": "Events",
@@ -47,18 +47,18 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 7900,
-     "deals": 9
+     "credited": 8900,
+     "deals": 10
     },
     {
      "medium": "Webinars",
-     "credited": 1000,
-     "deals": 1
+     "credited": 1800,
+     "deals": 2
     },
     {
      "medium": "Digital",
-     "credited": 4350,
-     "deals": 6
+     "credited": 4950,
+     "deals": 7
     },
     {
      "medium": "Account Manager",
@@ -103,6 +103,12 @@
      "deals": 1
     },
     {
+     "source": "Vault",
+     "medium": "Partners and referrals",
+     "credited": 1000,
+     "deals": 1
+    },
+    {
      "source": "Webinar - KickCharge",
      "medium": "Webinars",
      "credited": 1000,
@@ -113,17 +119,11 @@
      "medium": "Events",
      "credited": 1000,
      "deals": 1
-    },
-    {
-     "source": "Direct Traffic",
-     "medium": "Digital",
-     "credited": 1000,
-     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 357171.36,
+   "total": 359571.36,
    "mediums": [
     {
      "medium": "Events",
@@ -132,18 +132,18 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 147400.25,
-     "deals": 161
+     "credited": 148400.25,
+     "deals": 162
     },
     {
      "medium": "Webinars",
-     "credited": 4200,
-     "deals": 5
+     "credited": 5000,
+     "deals": 6
     },
     {
      "medium": "Digital",
-     "credited": 114664.33,
-     "deals": 112
+     "credited": 115264.33,
+     "deals": 113
     },
     {
      "medium": "Account Manager",
@@ -160,8 +160,8 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 49949,
-     "deals": 46
+     "credited": 50549,
+     "deals": 47
     },
     {
      "source": "Facebook",
@@ -243,6 +243,10 @@
    {
     "day": "2026-11-19",
     "amount": 2350
+   },
+   {
+    "day": "2026-11-21",
+    "amount": 2400
    }
   ]
  }
