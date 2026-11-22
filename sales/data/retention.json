@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-22T00:38:08.367Z",
+  "builtAt": "2026-11-22T10:28:58.666Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -442,18 +442,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 13,
-   "mrr": 13083,
+   "count": 12,
+   "mrr": 12133,
    "rows": [
-    {
-     "company": "Crisafulli Bros",
-     "am": "Korth Rushdi",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2025-05-22, ends 2026-11-21 mid-term",
-     "mrr": 950,
-     "requested": "2026-11-12",
-     "endsAt": "2026-11-21"
-    },
     {
      "company": "Gering Valley Plumbing and Heating",
      "am": "Zeus Acosta",
@@ -565,14 +556,14 @@
    ]
   },
   "endingLater": {
-   "count": 26,
-   "mrr": 24361
+   "count": 27,
+   "mrr": 25311
   },
   "lostSoFar": 27547,
   "lostSigma": 29388,
   "retainedSoFar": 0.962,
-  "retainedIfAllEnd": 0.945,
-  "eomMrr": 708941.39,
+  "retainedIfAllEnd": 0.946,
+  "eomMrr": 709891.39,
   "trailing": [
    {
     "month": "2026-09",

@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-22T00:38:08.367Z",
+  "builtAt": "2026-11-22T10:28:58.666Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 16850,
+   "total": 16250,
    "mediums": [
     {
      "medium": "Events",
@@ -57,8 +57,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 4950,
-     "deals": 7
+     "credited": 4350,
+     "deals": 6
     },
     {
      "medium": "Account Manager",
@@ -123,7 +123,7 @@
    ]
   },
   "ytd": {
-   "total": 357771.36,
+   "total": 357171.36,
    "mediums": [
     {
      "medium": "Events",
@@ -142,8 +142,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 115264.33,
-     "deals": 113
+     "credited": 114664.33,
+     "deals": 112
     },
     {
      "medium": "Account Manager",
@@ -160,8 +160,8 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 50549,
-     "deals": 47
+     "credited": 49949,
+     "deals": 46
     },
     {
      "source": "Facebook",
@@ -243,10 +243,6 @@
    {
     "day": "2026-11-19",
     "amount": 2350
-   },
-   {
-    "day": "2026-11-21",
-    "amount": 600
    }
   ]
  }
