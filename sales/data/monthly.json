@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-23T21:07:54.475Z",
+  "builtAt": "2026-11-23T21:12:57.633Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -615,8 +615,8 @@
   {
    "ae": "Blake Fenn",
    "month": "2026-11",
-   "won": 9,
-   "booked": 10350,
+   "won": 10,
+   "booked": 12350,
    "collectedDeals": 8,
    "credited": 6750,
    "newCredited": 4800,

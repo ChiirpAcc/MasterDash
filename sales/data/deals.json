@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-23T21:07:54.475Z",
+  "builtAt": "2026-11-23T21:12:57.633Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -5702,6 +5702,27 @@
    "issue": "",
    "issueDays": null,
    "waitWhy": "Stripe charge before month end",
+   "expect": null,
+   "cash": 0,
+   "failDay": ""
+  },
+  {
+   "id": "363262839531",
+   "ae": "Blake Fenn",
+   "company": "BN Covered Exteriors",
+   "type": "New Business",
+   "close": "2026-11-23",
+   "booked": 2000,
+   "status": "No Stripe link",
+   "creditedMonth": "",
+   "collectedDate": "",
+   "credited": 0,
+   "daysToCollect": "",
+   "waitingDays": null,
+   "billsThisMonth": false,
+   "issue": "No Stripe link in HubSpot",
+   "issueDays": 0,
+   "waitWhy": "",
    "expect": null,
    "cash": 0,
    "failDay": ""
