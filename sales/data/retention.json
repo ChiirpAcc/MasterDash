@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-23T00:12:45.998Z",
+  "builtAt": "2026-11-23T10:28:57.220Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -456,18 +456,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 12,
-   "mrr": 12133,
+   "count": 11,
+   "mrr": 11583,
    "rows": [
-    {
-     "company": "Gering Valley Plumbing and Heating",
-     "am": "Zeus Acosta",
-     "kind": "",
-     "kindWhy": "",
-     "mrr": 550,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-22"
-    },
     {
      "company": "DT Electric LLC",
      "am": "Zeus Acosta",
@@ -570,14 +561,14 @@
    ]
   },
   "endingLater": {
-   "count": 27,
-   "mrr": 25311
+   "count": 28,
+   "mrr": 25861
   },
   "lostSoFar": 28597,
   "lostSigma": 31438,
   "retainedSoFar": 0.961,
-  "retainedIfAllEnd": 0.944,
-  "eomMrr": 710091.39,
+  "retainedIfAllEnd": 0.945,
+  "eomMrr": 710641.39,
   "trailing": [
    {
     "month": "2026-09",
