@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-23T18:07:41.559Z",
+  "builtAt": "2026-11-23T18:13:27.925Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,10 +37,10 @@
  },
  "team": {
   "thisMonth": {
-   "credited": 20114,
+   "credited": 20126,
    "newCredited": 13300,
-   "dlcCredited": 1464,
-   "dlcCount": 122,
+   "dlcCredited": 1476,
+   "dlcCount": 123,
    "expCredited": 5350,
    "dealsCollected": 22,
    "dealsWon": 25,
@@ -61,10 +61,10 @@
    "avgDaysToCollect": 26
   },
   "qtd": {
-   "credited": 45935.29,
+   "credited": 45947.29,
    "newCredited": 37921.33,
-   "dlcCredited": 1464,
-   "dlcCount": 122,
+   "dlcCredited": 1476,
+   "dlcCount": 123,
    "expCredited": 6549.96,
    "dealsCollected": 41,
    "dealsWon": 43,
@@ -73,10 +73,10 @@
    "avgDaysToCollect": 27
   },
   "ytd": {
-   "credited": 361035.36,
+   "credited": 361047.36,
    "newCredited": 341478.9,
-   "dlcCredited": 1464,
-   "dlcCount": 122,
+   "dlcCredited": 1476,
+   "dlcCount": 123,
    "expCredited": 18092.46,
    "dealsCollected": 367,
    "dealsWon": 438,
@@ -87,9 +87,9 @@
   "pending": {
    "deals": 4,
    "dealAmount": 3166.65,
-   "dlcCount": 55,
-   "dlcAmount": 672,
-   "amount": 3838.65
+   "dlcCount": 54,
+   "dlcAmount": 660,
+   "amount": 3826.65
   },
   "awaiting": {
    "deals": 61,
@@ -297,10 +297,10 @@
   },
   {
    "thisMonth": {
-    "credited": 1464,
+    "credited": 1476,
     "newCredited": 0,
-    "dlcCredited": 1464,
-    "dlcCount": 122,
+    "dlcCredited": 1476,
+    "dlcCount": 123,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -321,10 +321,10 @@
     "avgDaysToCollect": null
    },
    "qtd": {
-    "credited": 1464,
+    "credited": 1476,
     "newCredited": 0,
-    "dlcCredited": 1464,
-    "dlcCount": 122,
+    "dlcCredited": 1476,
+    "dlcCount": 123,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -333,10 +333,10 @@
     "avgDaysToCollect": null
    },
    "ytd": {
-    "credited": 1464,
+    "credited": 1476,
     "newCredited": 0,
-    "dlcCredited": 1464,
-    "dlcCount": 122,
+    "dlcCredited": 1476,
+    "dlcCount": 123,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -347,11 +347,11 @@
    "pending": {
     "deals": 0,
     "dealAmount": 0,
-    "dlcCount": 55,
-    "dlcAmount": 672,
+    "dlcCount": 54,
+    "dlcAmount": 660,
     "dlcLaterCount": 113,
     "dlcLaterAmount": 1380,
-    "amount": 672
+    "amount": 660
    },
    "awaiting": {
     "deals": 0,
@@ -579,8 +579,8 @@
    "now": {
     "dealsWon": 15,
     "bookedMrr": 17750,
-    "dlcPaid": 61,
-    "dlcAmount": 732
+    "dlcPaid": 62,
+    "dlcAmount": 744
    },
    "prev": {
     "dealsWon": 2,
@@ -592,8 +592,8 @@
    "now30": {
     "dealsWon": 30,
     "bookedMrr": 37816.65,
-    "dlcPaid": 122,
-    "dlcAmount": 1464
+    "dlcPaid": 123,
+    "dlcAmount": 1476
    },
    "prev30": {
     "dealsWon": 18,
