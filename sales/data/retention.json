@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-23T13:02:48.654Z",
+  "builtAt": "2026-11-23T13:07:50.735Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,25 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 722224.39,
-  "dataThrough": "2026-11-21",
+  "current": 721099.39,
+  "dataThrough": "2026-11-22",
   "churned": {
-   "count": 31,
-   "mrr": 28597,
+   "count": 32,
+   "mrr": 29547,
    "rows": [
+    {
+     "company": "Crisafulli Bros",
+     "am": "Korth Rushdi",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-05-22, ends 2026-11-22 mid-term",
+     "mrr": 950,
+     "requested": "2026-11-12",
+     "ended": "2026-11-22",
+     "unexpected": false,
+     "customers": [
+      "cus_SMNoD61Gr9p2vb"
+     ]
+    },
     {
      "company": "Service Now Home Services",
      "am": "Korth Rushdi",
@@ -561,14 +574,14 @@
    ]
   },
   "endingLater": {
-   "count": 28,
-   "mrr": 25861
+   "count": 27,
+   "mrr": 24911
   },
-  "lostSoFar": 28597,
-  "lostSigma": 31438,
-  "retainedSoFar": 0.961,
-  "retainedIfAllEnd": 0.945,
-  "eomMrr": 710641.39,
+  "lostSoFar": 29547,
+  "lostSigma": 32388,
+  "retainedSoFar": 0.96,
+  "retainedIfAllEnd": 0.944,
+  "eomMrr": 709516.39,
   "trailing": [
    {
     "month": "2026-09",
