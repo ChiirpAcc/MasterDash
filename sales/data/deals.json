@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T21:43:02.395Z",
+  "builtAt": "2026-11-24T21:47:50.750Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -3252,7 +3252,7 @@
   {
    "id": "333774096117",
    "ae": "Blake Fenn",
-   "company": "A Clean House by Suzanne",
+   "company": "A clean house by Suzann",
    "type": "Expansion",
    "close": "2026-07-01",
    "booked": 500,
