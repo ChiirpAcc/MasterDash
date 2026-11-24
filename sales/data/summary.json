@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T13:02:58.358Z",
+  "builtAt": "2026-11-24T13:07:52.272Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -494,29 +494,29 @@
   }
  ],
  "week": {
-  "start": "2026-11-16",
-  "end": "2026-11-22",
+  "start": "2026-11-17",
+  "end": "2026-11-23",
   "metrics": {
-   "newMrr": 13675,
+   "newMrr": 16675,
    "reactivated": 0,
-   "churned": 15705,
-   "net": -2030,
-   "newLogos": 13,
+   "churned": 14354,
+   "net": 2321,
+   "newLogos": 15,
    "churnedAccounts": 17,
-   "atRisk": 19151,
-   "pending": 37394,
+   "atRisk": 14758,
+   "pending": 36395,
    "stale": 25568.5,
-   "active": 721099.39,
+   "active": 726829.39,
    "reactivations": 0
   },
   "prev": {
    "newMrr": 1500,
    "reactivated": 0,
-   "churned": 7134,
-   "net": -5634,
+   "churned": 10584,
+   "net": -9084,
    "newLogos": 1,
-   "churnedAccounts": 7,
-   "atRisk": 10764,
+   "churnedAccounts": 10,
+   "atRisk": 11264,
    "pending": 0,
    "stale": 0,
    "active": 0,
@@ -524,53 +524,53 @@
   },
   "rolling": {
    "d7": {
-    "from": "2026-11-16",
-    "to": "2026-11-22",
-    "newMrr": 13675,
-    "newLogos": 13,
+    "from": "2026-11-17",
+    "to": "2026-11-23",
+    "newMrr": 16675,
+    "newLogos": 15,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 15705,
+    "churned": 14354,
     "churnedAccounts": 17,
-    "net": -2030,
-    "atRisk": 19151
+    "net": 2321,
+    "atRisk": 14758
    },
-   "through": "2026-11-22",
+   "through": "2026-11-23",
    "p7": {
-    "from": "2026-11-09",
-    "to": "2026-11-15",
+    "from": "2026-11-10",
+    "to": "2026-11-16",
     "newMrr": 1500,
     "newLogos": 1,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 7134,
-    "churnedAccounts": 7,
-    "net": -5634,
-    "atRisk": 10764
+    "churned": 10584,
+    "churnedAccounts": 10,
+    "net": -9084,
+    "atRisk": 11264
    },
    "d30": {
-    "from": "2026-10-24",
-    "to": "2026-11-22",
-    "newMrr": 22437,
-    "newLogos": 20,
+    "from": "2026-10-25",
+    "to": "2026-11-23",
+    "newMrr": 25437,
+    "newLogos": 22,
     "reactivated": 0,
     "reactivations": 0,
-    "churned": 34121.25,
-    "churnedAccounts": 37,
-    "net": -11684.25,
-    "atRisk": 56042.5
+    "churned": 36220.25,
+    "churnedAccounts": 40,
+    "net": -10783.25,
+    "atRisk": 47435.5
    },
    "p30": {
-    "from": "2026-09-24",
-    "to": "2026-10-23",
-    "newMrr": 26675,
-    "newLogos": 17,
+    "from": "2026-09-25",
+    "to": "2026-10-24",
+    "newMrr": 23675,
+    "newLogos": 15,
     "reactivated": 2512,
     "reactivations": 2,
-    "churned": 52804.41,
-    "churnedAccounts": 56,
-    "net": -23617.41,
-    "atRisk": 39232.5
+    "churned": 51854.41,
+    "churnedAccounts": 54,
+    "net": -25667.41,
+    "atRisk": 40020.5
    }
   },
   "sales": {

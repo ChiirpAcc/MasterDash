@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T13:02:58.358Z",
+  "builtAt": "2026-11-24T13:07:52.272Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,52 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 721099.39,
-  "dataThrough": "2026-11-22",
+  "current": 726829.39,
+  "dataThrough": "2026-11-23",
   "churned": {
-   "count": 32,
-   "mrr": 29547,
+   "count": 35,
+   "mrr": 31646,
    "rows": [
+    {
+     "company": "Gering Valley Plumbing and Heating",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
+     "mrr": 550,
+     "requested": "2026-11-04",
+     "ended": "2026-11-23",
+     "unexpected": false,
+     "customers": [
+      "cus_PQiFSidOO1DVwb"
+     ]
+    },
+    {
+     "company": "West Houston Electric",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
+     "mrr": 700,
+     "requested": "2026-10-27",
+     "ended": "2026-11-23",
+     "unexpected": false,
+     "customers": [
+      "cus_PQiQ6FikxoINIX",
+      "cus_UTromZ0VY3KQvC"
+     ]
+    },
+    {
+     "company": "DT Electric LLC",
+     "am": "Zeus Acosta",
+     "kind": "Non-renewal",
+     "kindWhy": "ends 2026-11-23, renewal date 2026-10-23",
+     "mrr": 849,
+     "requested": "2026-11-04",
+     "ended": "2026-11-23",
+     "unexpected": false,
+     "customers": [
+      "cus_TI2gRDofeoQQUb"
+     ]
+    },
     {
      "company": "Crisafulli Bros",
      "am": "Korth Rushdi",
@@ -556,26 +596,26 @@
    ]
   },
   "endingLater": {
-   "count": 29,
-   "mrr": 25835
+   "count": 28,
+   "mrr": 24836
   },
-  "lostSoFar": 29547,
-  "lostSigma": 32388,
-  "retainedSoFar": 0.96,
-  "retainedIfAllEnd": 0.945,
-  "eomMrr": 710440.39,
+  "lostSoFar": 31646,
+  "lostSigma": 33787,
+  "retainedSoFar": 0.957,
+  "retainedIfAllEnd": 0.942,
+  "eomMrr": 716170.39,
   "trailing": [
    {
     "month": "2026-09",
     "kept": 0.939,
-    "bom": 792572.38,
+    "bom": 791322.38,
     "lost": 48081.5
    },
    {
     "month": "2026-10",
-    "kept": 0.933,
+    "kept": 0.934,
     "bom": 760881.43,
-    "lost": 50765.51
+    "lost": 50065.51
    }
   ]
  }
