@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T20:57:44.108Z",
+  "builtAt": "2026-11-24T21:03:17.423Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4711,10 +4711,10 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 61,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe charge before month end",
+   "waitWhy": "Stripe shows the first charge after month end",
    "expect": null,
    "cash": 0,
    "failDay": ""
