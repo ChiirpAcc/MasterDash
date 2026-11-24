@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T22:03:25.236Z",
+  "builtAt": "2026-11-24T22:07:53.064Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,12 +38,12 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 18650,
+   "total": 20150,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 3000,
-     "deals": 3
+     "credited": 4500,
+     "deals": 4
     },
     {
      "medium": "Partners and referrals",
@@ -91,6 +91,12 @@
      "deals": 2
     },
     {
+     "source": "2026 - Home Service Hoorah",
+     "medium": "Events",
+     "credited": 1500,
+     "deals": 1
+    },
+    {
      "source": "Nexstar",
      "medium": "Partners and referrals",
      "credited": 1500,
@@ -113,22 +119,16 @@
      "medium": "Webinars",
      "credited": 1000,
      "deals": 1
-    },
-    {
-     "source": "2026 - Home Service Freedom",
-     "medium": "Events",
-     "credited": 1000,
-     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 359571.36,
+   "total": 361071.36,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 88406.82,
-     "deals": 81
+     "credited": 89906.82,
+     "deals": 82
     },
     {
      "medium": "Partners and referrals",
@@ -247,6 +247,10 @@
    {
     "day": "2026-11-21",
     "amount": 2400
+   },
+   {
+    "day": "2026-11-24",
+    "amount": 1500
    }
   ]
  }

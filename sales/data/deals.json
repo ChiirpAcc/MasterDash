@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T22:03:25.236Z",
+  "builtAt": "2026-11-24T22:07:53.064Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -4705,18 +4705,18 @@
    "type": "New Business",
    "close": "2026-09-24",
    "booked": 1500,
-   "status": "Awaiting first payment",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 61,
+   "status": "Collected",
+   "creditedMonth": "2026-11",
+   "collectedDate": "2026-11-24",
+   "credited": 1500,
+   "daysToCollect": 0,
+   "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "Stripe shows the first charge after month end",
+   "waitWhy": "",
    "expect": null,
-   "cash": 0,
+   "cash": 1500,
    "failDay": ""
   },
   {
