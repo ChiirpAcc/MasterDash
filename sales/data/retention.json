@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T00:38:32.861Z",
+  "builtAt": "2026-11-24T10:28:50.399Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -469,27 +469,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 11,
-   "mrr": 11583,
+   "count": 9,
+   "mrr": 10659,
    "rows": [
-    {
-     "company": "DT Electric LLC",
-     "am": "Zeus Acosta",
-     "kind": "Non-renewal",
-     "kindWhy": "ends 2026-11-23, renewal date 2026-10-23",
-     "mrr": 849,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-23"
-    },
-    {
-     "company": "Chem-Dry of Nebraska",
-     "am": "Zeus Acosta",
-     "kind": "",
-     "kindWhy": "",
-     "mrr": 75,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-23"
-    },
     {
      "company": "Homestead Home Services",
      "am": "Zeus Acosta",
@@ -574,14 +556,14 @@
    ]
   },
   "endingLater": {
-   "count": 27,
-   "mrr": 24911
+   "count": 29,
+   "mrr": 25835
   },
   "lostSoFar": 29547,
   "lostSigma": 32388,
   "retainedSoFar": 0.96,
-  "retainedIfAllEnd": 0.944,
-  "eomMrr": 709516.39,
+  "retainedIfAllEnd": 0.945,
+  "eomMrr": 710440.39,
   "trailing": [
    {
     "month": "2026-09",
