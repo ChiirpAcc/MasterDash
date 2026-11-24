@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-24T16:57:52.788Z",
+  "builtAt": "2026-11-24T17:03:02.690Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -43,9 +43,9 @@
    "dlcCount": 130,
    "expCredited": 5350,
    "dealsCollected": 22,
-   "dealsWon": 28,
+   "dealsWon": 29,
    "inPeriodCredited": 13750,
-   "booked": 36316.65,
+   "booked": 37066.65,
    "avgDaysToCollect": 29
   },
   "lastMonth": {
@@ -67,9 +67,9 @@
    "dlcCount": 130,
    "expCredited": 6549.96,
    "dealsCollected": 41,
-   "dealsWon": 46,
+   "dealsWon": 47,
    "inPeriodCredited": 36471.33,
-   "booked": 63366.65,
+   "booked": 64116.65,
    "avgDaysToCollect": 27
   },
   "ytd": {
@@ -79,21 +79,21 @@
    "dlcCount": 130,
    "expCredited": 18092.46,
    "dealsCollected": 367,
-   "dealsWon": 441,
+   "dealsWon": 442,
    "inPeriodCredited": 359571.36,
-   "booked": 537984.94,
+   "booked": 538734.94,
    "avgDaysToCollect": 9
   },
   "pending": {
-   "deals": 4,
-   "dealAmount": 3121.65,
+   "deals": 5,
+   "dealAmount": 3871.65,
    "dlcCount": 44,
    "dlcAmount": 540,
-   "amount": 3661.65
+   "amount": 4411.65
   },
   "awaiting": {
-   "deals": 61,
-   "booked": 76697.19,
+   "deals": 62,
+   "booked": 77447.19,
    "stale": 51
   },
   "collectionRate": 0.865,
@@ -238,9 +238,9 @@
     "dlcCount": 0,
     "expCredited": 0,
     "dealsCollected": 3,
-    "dealsWon": 7,
+    "dealsWon": 8,
     "inPeriodCredited": 2350,
-    "booked": 9016.65,
+    "booked": 9766.65,
     "avgDaysToCollect": 0
    },
    "lastMonth": {
@@ -262,9 +262,9 @@
     "dlcCount": 0,
     "expCredited": 600,
     "dealsCollected": 9,
-    "dealsWon": 14,
+    "dealsWon": 15,
     "inPeriodCredited": 8033.33,
-    "booked": 17216.65,
+    "booked": 17966.65,
     "avgDaysToCollect": 0
    },
    "ytd": {
@@ -274,21 +274,21 @@
     "dlcCount": 0,
     "expCredited": 3227.5,
     "dealsCollected": 69,
-    "dealsWon": 83,
+    "dealsWon": 84,
     "inPeriodCredited": 53284.33,
-    "booked": 95808.9,
+    "booked": 96558.9,
     "avgDaysToCollect": 7
    },
    "pending": {
-    "deals": 2,
-    "dealAmount": 1166.65,
+    "deals": 3,
+    "dealAmount": 1916.65,
     "dlcCount": 0,
     "dlcAmount": 0,
-    "amount": 1166.65
+    "amount": 1916.65
    },
    "awaiting": {
-    "deals": 10,
-    "booked": 16979.15,
+    "deals": 11,
+    "booked": 17729.15,
     "stale": 8
    },
    "collectionRate": 0.884,
@@ -577,8 +577,8 @@
    "from": "2026-11-18",
    "to": "2026-11-24",
    "now": {
-    "dealsWon": 14,
-    "bookedMrr": 19400,
+    "dealsWon": 15,
+    "bookedMrr": 20150,
     "dlcPaid": 54,
     "dlcAmount": 648
    },
@@ -590,8 +590,8 @@
    },
    "from30": "2026-10-26",
    "now30": {
-    "dealsWon": 33,
-    "bookedMrr": 42566.65,
+    "dealsWon": 34,
+    "bookedMrr": 43316.65,
     "dlcPaid": 130,
     "dlcAmount": 1560
    },
