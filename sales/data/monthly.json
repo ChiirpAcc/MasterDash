@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-25T15:18:03.093Z",
+  "builtAt": "2026-11-25T15:22:40.274Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -605,9 +605,9 @@
    "month": "2026-10",
    "won": 7,
    "booked": 8200,
-   "collectedDeals": 4,
-   "credited": 3933.33,
-   "newCredited": 3333.33,
+   "collectedDeals": 6,
+   "credited": 5683.33,
+   "newCredited": 5083.33,
    "expCredited": 600,
    "dlcCredited": 0,
    "dlcCount": 0
@@ -642,8 +642,8 @@
    "won": 11,
    "booked": 14450,
    "collectedDeals": 10,
-   "credited": 8325,
-   "newCredited": 5725,
+   "credited": 8750,
+   "newCredited": 6150,
    "expCredited": 2600,
    "dlcCredited": 0,
    "dlcCount": 0
