@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-26T14:08:38.304Z",
+  "builtAt": "2026-11-26T14:13:02.788Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,17 +38,17 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 19725,
+   "total": 21355,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 4500,
-     "deals": 4
+     "credited": 5250,
+     "deals": 5
     },
     {
      "medium": "Partners and referrals",
-     "credited": 8900,
-     "deals": 10
+     "credited": 9355,
+     "deals": 11
     },
     {
      "medium": "Webinars",
@@ -57,7 +57,7 @@
     },
     {
      "medium": "Digital",
-     "credited": 4525,
+     "credited": 4950,
      "deals": 7
     },
     {
@@ -73,21 +73,27 @@
    ],
    "top": [
     {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 2350,
+     "deals": 4
+    },
+    {
      "source": "One-offs",
      "medium": "Partners and referrals",
      "credited": 2300,
      "deals": 3
     },
     {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 1925,
-     "deals": 4
-    },
-    {
      "source": "FieldEdge",
      "medium": "Partners and referrals",
      "credited": 1800,
+     "deals": 2
+    },
+    {
+     "source": "2026 - Home Service Freedom",
+     "medium": "Events",
+     "credited": 1750,
      "deals": 2
     },
     {
@@ -113,27 +119,21 @@
      "medium": "Partners and referrals",
      "credited": 1000,
      "deals": 1
-    },
-    {
-     "source": "Webinar - KickCharge",
-     "medium": "Webinars",
-     "credited": 1000,
-     "deals": 1
     }
    ]
   },
   "ytd": {
-   "total": 358896.36,
+   "total": 362276.36,
    "mediums": [
     {
      "medium": "Events",
-     "credited": 89906.82,
-     "deals": 82
+     "credited": 90656.82,
+     "deals": 83
     },
     {
      "medium": "Partners and referrals",
-     "credited": 148400.25,
-     "deals": 162
+     "credited": 148855.25,
+     "deals": 163
     },
     {
      "medium": "Webinars",
@@ -142,8 +142,8 @@
     },
     {
      "medium": "Digital",
-     "credited": 113089.33,
-     "deals": 111
+     "credited": 115264.33,
+     "deals": 113
     },
     {
      "medium": "Account Manager",
@@ -160,13 +160,13 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 49549,
-     "deals": 46
+     "credited": 50549,
+     "deals": 47
     },
     {
      "source": "Facebook",
      "medium": "Digital",
-     "credited": 23825,
+     "credited": 24250,
      "deals": 26
     },
     {
@@ -178,8 +178,8 @@
     {
      "source": "LAB",
      "medium": "Partners and referrals",
-     "credited": 12100.25,
-     "deals": 17
+     "credited": 12555.25,
+     "deals": 18
     },
     {
      "source": "Referrals",
@@ -213,6 +213,10 @@
     "amount": 950
    },
    {
+    "day": "2026-11-04",
+    "amount": 750
+   },
+   {
     "day": "2026-11-05",
     "amount": 2850
    },
@@ -233,8 +237,12 @@
     "amount": 500
    },
    {
+    "day": "2026-11-16",
+    "amount": 455
+   },
+   {
     "day": "2026-11-17",
-    "amount": 2875
+    "amount": 3300
    },
    {
     "day": "2026-11-18",
