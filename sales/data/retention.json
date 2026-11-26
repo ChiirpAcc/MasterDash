@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-26T13:07:56.125Z",
+  "builtAt": "2026-11-26T13:12:48.752Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,25 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 731629.39,
-  "dataThrough": "2026-11-24",
+  "current": 735179.39,
+  "dataThrough": "2026-11-25",
   "churned": {
-   "count": 37,
-   "mrr": 32721,
+   "count": 38,
+   "mrr": 33521,
    "rows": [
+    {
+     "company": "Homestead Home Services",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-09-25, ends 2026-11-25 mid-term",
+     "mrr": 800,
+     "requested": "2026-11-04",
+     "ended": "2026-11-25",
+     "unexpected": false,
+     "customers": [
+      "cus_T7VRPZOLAAzd9e"
+     ]
+    },
     {
      "company": "Chem-Dry of Nebraska",
      "am": "Zeus Acosta",
@@ -604,19 +617,19 @@
    ]
   },
   "endingLater": {
-   "count": 31,
-   "mrr": 28136
+   "count": 32,
+   "mrr": 29036
   },
-  "lostSoFar": 32721,
-  "lostSigma": 33862,
-  "retainedSoFar": 0.955,
-  "retainedIfAllEnd": 0.942,
-  "eomMrr": 721845.39,
+  "lostSoFar": 33521,
+  "lostSigma": 34662,
+  "retainedSoFar": 0.954,
+  "retainedIfAllEnd": 0.941,
+  "eomMrr": 725395.39,
   "trailing": [
    {
     "month": "2026-09",
     "kept": 0.939,
-    "bom": 792572.38,
+    "bom": 791322.38,
     "lost": 48081.5
    },
    {
