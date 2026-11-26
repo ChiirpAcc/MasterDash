@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-26T12:57:39.661Z",
+  "builtAt": "2026-11-26T13:02:57.331Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 20900,
+   "total": 21355,
    "mediums": [
     {
      "medium": "Events",
@@ -47,8 +47,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 8900,
-     "deals": 10
+     "credited": 9355,
+     "deals": 11
     },
     {
      "medium": "Webinars",
@@ -123,7 +123,7 @@
    ]
   },
   "ytd": {
-   "total": 361821.36,
+   "total": 362276.36,
    "mediums": [
     {
      "medium": "Events",
@@ -132,8 +132,8 @@
     },
     {
      "medium": "Partners and referrals",
-     "credited": 148400.25,
-     "deals": 162
+     "credited": 148855.25,
+     "deals": 163
     },
     {
      "medium": "Webinars",
@@ -178,8 +178,8 @@
     {
      "source": "LAB",
      "medium": "Partners and referrals",
-     "credited": 12100.25,
-     "deals": 17
+     "credited": 12555.25,
+     "deals": 18
     },
     {
      "source": "Referrals",
@@ -235,6 +235,10 @@
    {
     "day": "2026-11-14",
     "amount": 500
+   },
+   {
+    "day": "2026-11-16",
+    "amount": 455
    },
    {
     "day": "2026-11-17",
