@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-26T00:52:43.569Z",
+  "builtAt": "2026-11-26T10:30:12.471Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -535,18 +535,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 9,
-   "mrr": 10659,
+   "count": 7,
+   "mrr": 9784,
    "rows": [
-    {
-     "company": "Homestead Home Services",
-     "am": "Zeus Acosta",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2025-09-25, ends 2026-11-25 mid-term",
-     "mrr": 800,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-25"
-    },
     {
      "company": "Service Star Inc",
      "am": "Korth Rushdi",
@@ -572,15 +563,6 @@
      "kindWhy": "",
      "mrr": 200,
      "requested": "2026-10-29",
-     "endsAt": "2026-11-26"
-    },
-    {
-     "company": "City Wide Chem-Dry",
-     "am": "Zeus Acosta",
-     "kind": "",
-     "kindWhy": "",
-     "mrr": 75,
-     "requested": "2026-10-28",
      "endsAt": "2026-11-26"
     },
     {
@@ -622,14 +604,14 @@
    ]
   },
   "endingLater": {
-   "count": 29,
-   "mrr": 27261
+   "count": 31,
+   "mrr": 28136
   },
   "lostSoFar": 32721,
   "lostSigma": 33862,
   "retainedSoFar": 0.955,
-  "retainedIfAllEnd": 0.941,
-  "eomMrr": 720970.39,
+  "retainedIfAllEnd": 0.942,
+  "eomMrr": 721845.39,
   "trailing": [
    {
     "month": "2026-09",
