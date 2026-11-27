@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-27T00:38:36.566Z",
+  "builtAt": "2026-11-27T10:28:57.179Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -37,10 +37,10 @@
  },
  "team": {
   "thisMonth": {
-   "credited": 23107,
+   "credited": 23143,
    "newCredited": 14800,
-   "dlcCredited": 1752,
-   "dlcCount": 146,
+   "dlcCredited": 1788,
+   "dlcCount": 149,
    "expCredited": 6555,
    "dealsCollected": 25,
    "dealsWon": 32,
@@ -61,10 +61,10 @@
    "avgDaysToCollect": 26
   },
   "qtd": {
-   "credited": 48928.29,
+   "credited": 48964.29,
    "newCredited": 39421.33,
-   "dlcCredited": 1752,
-   "dlcCount": 146,
+   "dlcCredited": 1788,
+   "dlcCount": 149,
    "expCredited": 7754.96,
    "dealsCollected": 44,
    "dealsWon": 50,
@@ -73,10 +73,10 @@
    "avgDaysToCollect": 26
   },
   "ytd": {
-   "credited": 364028.36,
+   "credited": 364064.36,
    "newCredited": 342978.9,
-   "dlcCredited": 1752,
-   "dlcCount": 146,
+   "dlcCredited": 1788,
+   "dlcCount": 149,
    "expCredited": 19297.46,
    "dealsCollected": 370,
    "dealsWon": 445,
@@ -85,18 +85,18 @@
    "avgDaysToCollect": 9
   },
   "pending": {
-   "deals": 2,
-   "dealAmount": 1166.65,
-   "dlcCount": 29,
-   "dlcAmount": 360,
-   "amount": 1526.65
+   "deals": 1,
+   "dealAmount": 166.65,
+   "dlcCount": 26,
+   "dlcAmount": 324,
+   "amount": 490.65
   },
   "awaiting": {
    "deals": 59,
    "booked": 74697.19,
    "stale": 51
   },
-  "collectionRate": 0.868,
+  "collectionRate": 0.869,
   "ae": "Team total"
  },
  "reps": [
@@ -226,7 +226,7 @@
     "booked": 13149,
     "stale": 9
    },
-   "collectionRate": 0.875,
+   "collectionRate": 0.877,
    "ae": "Blake Fenn",
    "onRoster": true
   },
@@ -280,27 +280,27 @@
     "avgDaysToCollect": 7
    },
    "pending": {
-    "deals": 2,
-    "dealAmount": 1166.65,
+    "deals": 1,
+    "dealAmount": 166.65,
     "dlcCount": 0,
     "dlcAmount": 0,
-    "amount": 1166.65
+    "amount": 166.65
    },
    "awaiting": {
     "deals": 10,
     "booked": 16979.15,
     "stale": 8
    },
-   "collectionRate": 0.884,
+   "collectionRate": 0.886,
    "ae": "colton lingmann",
    "onRoster": true
   },
   {
    "thisMonth": {
-    "credited": 1752,
+    "credited": 1788,
     "newCredited": 0,
-    "dlcCredited": 1752,
-    "dlcCount": 146,
+    "dlcCredited": 1788,
+    "dlcCount": 149,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -321,10 +321,10 @@
     "avgDaysToCollect": null
    },
    "qtd": {
-    "credited": 1752,
+    "credited": 1788,
     "newCredited": 0,
-    "dlcCredited": 1752,
-    "dlcCount": 146,
+    "dlcCredited": 1788,
+    "dlcCount": 149,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -333,10 +333,10 @@
     "avgDaysToCollect": null
    },
    "ytd": {
-    "credited": 1752,
+    "credited": 1788,
     "newCredited": 0,
-    "dlcCredited": 1752,
-    "dlcCount": 146,
+    "dlcCredited": 1788,
+    "dlcCount": 149,
     "expCredited": 0,
     "dealsCollected": 0,
     "dealsWon": 0,
@@ -347,11 +347,11 @@
    "pending": {
     "deals": 0,
     "dealAmount": 0,
-    "dlcCount": 29,
-    "dlcAmount": 360,
-    "dlcLaterCount": 113,
-    "dlcLaterAmount": 1380,
-    "amount": 360
+    "dlcCount": 26,
+    "dlcAmount": 324,
+    "dlcLaterCount": 115,
+    "dlcLaterAmount": 1404,
+    "amount": 324
    },
    "awaiting": {
     "deals": 0,
@@ -574,26 +574,26 @@
    }
   },
   "sales": {
-   "from": "2026-11-20",
-   "to": "2026-11-26",
+   "from": "2026-11-21",
+   "to": "2026-11-27",
    "now": {
-    "dealsWon": 13,
-    "bookedMrr": 17650,
-    "dlcPaid": 54,
-    "dlcAmount": 648
+    "dealsWon": 8,
+    "bookedMrr": 9250,
+    "dlcPaid": 52,
+    "dlcAmount": 624
    },
    "prev": {
-    "dealsWon": 11,
-    "bookedMrr": 11850,
-    "dlcPaid": 78,
-    "dlcAmount": 936
+    "dealsWon": 15,
+    "bookedMrr": 18250,
+    "dlcPaid": 70,
+    "dlcAmount": 840
    },
-   "from30": "2026-10-28",
+   "from30": "2026-10-29",
    "now30": {
     "dealsWon": 36,
     "bookedMrr": 45066.65,
-    "dlcPaid": 146,
-    "dlcAmount": 1752
+    "dlcPaid": 149,
+    "dlcAmount": 1788
    },
    "prev30": {
     "dealsWon": 16,

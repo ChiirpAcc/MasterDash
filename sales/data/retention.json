@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-27T00:38:36.566Z",
+  "builtAt": "2026-11-27T10:28:57.179Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -548,36 +548,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 7,
-   "mrr": 9784,
+   "count": 4,
+   "mrr": 4784,
    "rows": [
-    {
-     "company": "Service Star Inc",
-     "am": "Korth Rushdi",
-     "kind": "",
-     "kindWhy": "",
-     "mrr": 3950,
-     "requested": "2026-11-12",
-     "endsAt": "2026-11-26"
-    },
-    {
-     "company": "American Trade Partners LLC",
-     "am": "Zeus Acosta",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2025-08-28, ends 2026-11-26 mid-term",
-     "mrr": 850,
-     "requested": "2026-10-31",
-     "endsAt": "2026-11-26"
-    },
-    {
-     "company": "Royalty Carpet",
-     "am": "Zeus Acosta",
-     "kind": "",
-     "kindWhy": "",
-     "mrr": 200,
-     "requested": "2026-10-29",
-     "endsAt": "2026-11-26"
-    },
     {
      "company": "Good Times Restoration LLC DBA Good Times Plumbing & Restoration",
      "am": "Zeus Acosta",
@@ -617,14 +590,14 @@
    ]
   },
   "endingLater": {
-   "count": 32,
-   "mrr": 29036
+   "count": 35,
+   "mrr": 34036
   },
   "lostSoFar": 33521,
   "lostSigma": 34662,
   "retainedSoFar": 0.954,
-  "retainedIfAllEnd": 0.941,
-  "eomMrr": 725395.39,
+  "retainedIfAllEnd": 0.948,
+  "eomMrr": 730395.39,
   "trailing": [
    {
     "month": "2026-09",
