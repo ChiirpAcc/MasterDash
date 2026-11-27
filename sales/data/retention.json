@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-27T13:02:47.950Z",
+  "builtAt": "2026-11-27T13:07:51.209Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,25 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 735179.39,
-  "dataThrough": "2026-11-25",
+  "current": 736309.39,
+  "dataThrough": "2026-11-26",
   "churned": {
-   "count": 38,
-   "mrr": 33521,
+   "count": 39,
+   "mrr": 33596,
    "rows": [
+    {
+     "company": "City Wide Chem-Dry",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
+     "mrr": 75,
+     "requested": "2026-10-28",
+     "ended": "2026-11-26",
+     "unexpected": false,
+     "customers": [
+      "cus_OKtCvIOolZHZcv"
+     ]
+    },
     {
      "company": "Homestead Home Services",
      "am": "Zeus Acosta",
@@ -590,14 +603,14 @@
    ]
   },
   "endingLater": {
-   "count": 35,
-   "mrr": 34036
+   "count": 34,
+   "mrr": 33961
   },
-  "lostSoFar": 33521,
-  "lostSigma": 34662,
+  "lostSoFar": 33596,
+  "lostSigma": 34737,
   "retainedSoFar": 0.954,
   "retainedIfAllEnd": 0.948,
-  "eomMrr": 730395.39,
+  "eomMrr": 731525.39,
   "trailing": [
    {
     "month": "2026-09",
