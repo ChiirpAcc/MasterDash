@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-27T21:08:45.835Z",
+  "builtAt": "2026-11-27T21:14:05.481Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -1126,27 +1126,6 @@
    "waitWhy": "",
    "expect": null,
    "cash": 750,
-   "failDay": ""
-  },
-  {
-   "id": "316929548999",
-   "ae": "Ky Decker",
-   "company": "Garage Doors Parts & More",
-   "type": "New Business",
-   "close": "2026-03-19",
-   "booked": 700,
-   "status": "Not paid after 60 days",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 253,
-   "billsThisMonth": true,
-   "issue": "",
-   "issueDays": null,
-   "waitWhy": "",
-   "expect": null,
-   "cash": 0,
    "failDay": ""
   },
   {
@@ -2506,7 +2485,7 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 193,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
@@ -2716,7 +2695,7 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 183,
-   "billsThisMonth": true,
+   "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
@@ -2827,27 +2806,6 @@
    "waitWhy": "",
    "expect": null,
    "cash": 7650,
-   "failDay": ""
-  },
-  {
-   "id": "328510312142",
-   "ae": "Ky Decker",
-   "company": "Redhammer Roof Group",
-   "type": "New Business",
-   "close": "2026-06-08",
-   "booked": 2250,
-   "status": "Not paid after 60 days",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 172,
-   "billsThisMonth": true,
-   "issue": "",
-   "issueDays": null,
-   "waitWhy": "",
-   "expect": null,
-   "cash": 0,
    "failDay": ""
   },
   {
@@ -3754,27 +3712,6 @@
    "failDay": ""
   },
   {
-   "id": "340265864909",
-   "ae": "Ky Decker",
-   "company": "Vanguard Plumbing Solutions",
-   "type": "Expansion",
-   "close": "2026-08-06",
-   "booked": 650,
-   "status": "Not paid after 60 days",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 113,
-   "billsThisMonth": true,
-   "issue": "",
-   "issueDays": null,
-   "waitWhy": "",
-   "expect": null,
-   "cash": 0,
-   "failDay": ""
-  },
-  {
    "id": "340614334156",
    "ae": "Ky Decker",
    "company": "5 Star Heating & Air Charleston",
@@ -4390,7 +4327,7 @@
    "type": "New Business",
    "close": "2026-08-31",
    "booked": 2500,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -4399,7 +4336,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "fee waived in Stripe until 2026-12-31",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -4579,7 +4516,7 @@
    "type": "New Business",
    "close": "2026-09-10",
    "booked": 2250,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -4588,7 +4525,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "Stripe shows the first charge after month end",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -4684,7 +4621,7 @@
    "type": "New Business",
    "close": "2026-09-22",
    "booked": 1500,
-   "status": "Not paid after 60 days",
+   "status": "Awaiting first payment",
    "creditedMonth": "",
    "collectedDate": "",
    "credited": 0,
@@ -4693,7 +4630,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "fee waived in Stripe until 2027-01-23",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -4926,7 +4863,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 2000,
+   "cash": 3005,
    "failDay": ""
   },
   {
@@ -4947,7 +4884,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 1500,
+   "cash": 3005,
    "failDay": ""
   },
   {
@@ -4966,7 +4903,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "fee waived in Stripe until 2027-02-06",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -4989,7 +4926,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 2500,
+   "cash": 5005,
    "failDay": ""
   },
   {
@@ -5010,7 +4947,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 2500,
+   "cash": 3505,
    "failDay": ""
   },
   {
@@ -5052,7 +4989,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 2500,
+   "cash": 4005,
    "failDay": ""
   },
   {
@@ -5104,18 +5041,18 @@
    "type": "New Business",
    "close": "2026-10-19",
    "booked": 750,
-   "status": "Awaiting first payment",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 39,
+   "status": "Collected",
+   "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-21",
+   "credited": 750,
+   "daysToCollect": 2,
+   "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 0,
+   "cash": 750,
    "failDay": ""
   },
   {
@@ -5132,9 +5069,9 @@
    "daysToCollect": "",
    "waitingDays": 39,
    "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null,
-   "waitWhy": "",
+   "issue": "Not set up in Stripe",
+   "issueDays": 39,
+   "waitWhy": "won over 30 days ago, nothing set up in Stripe",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -5199,7 +5136,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 1500,
+   "cash": 3000,
    "failDay": ""
   },
   {
@@ -5230,18 +5167,18 @@
    "type": "New Business",
    "close": "2026-10-30",
    "booked": 1000,
-   "status": "Awaiting first payment",
-   "creditedMonth": "",
-   "collectedDate": "",
-   "credited": 0,
-   "daysToCollect": "",
-   "waitingDays": 28,
+   "status": "Collected",
+   "creditedMonth": "2026-10",
+   "collectedDate": "2026-10-30",
+   "credited": 1000,
+   "daysToCollect": 0,
+   "waitingDays": null,
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 0,
+   "cash": 1005,
    "failDay": ""
   },
   {
@@ -5302,7 +5239,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "Stripe shows the first charge after month end",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -5325,7 +5262,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 500,
+   "cash": 1005,
    "failDay": ""
   },
   {
@@ -5346,7 +5283,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 850,
+   "cash": 1355,
    "failDay": ""
   },
   {
@@ -5407,7 +5344,7 @@
    "billsThisMonth": true,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "Stripe charge before month end",
    "expect": 166.65,
    "cash": 0,
    "failDay": ""
@@ -5428,7 +5365,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "on a $0 plan in Stripe, nothing to charge",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -5464,7 +5401,7 @@
    "status": "Collected",
    "creditedMonth": "2026-11",
    "collectedDate": "2026-11-17",
-   "credited": 425,
+   "credited": 850,
    "daysToCollect": 0,
    "waitingDays": null,
    "billsThisMonth": false,
@@ -5472,7 +5409,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 425,
+   "cash": 1280,
    "failDay": ""
   },
   {
@@ -5575,7 +5512,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "fee waived in Stripe until 2027-01-18",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -5640,7 +5577,7 @@
    "issueDays": null,
    "waitWhy": "",
    "expect": null,
-   "cash": 750,
+   "cash": 1505,
    "failDay": ""
   },
   {
@@ -5656,10 +5593,10 @@
    "credited": 0,
    "daysToCollect": "",
    "waitingDays": 7,
-   "billsThisMonth": false,
-   "issue": "",
-   "issueDays": null,
-   "waitWhy": "",
+   "billsThisMonth": true,
+   "issue": "Not set up in Stripe",
+   "issueDays": 7,
+   "waitWhy": "won recently, not set up in Stripe yet",
    "expect": null,
    "cash": 0,
    "failDay": ""
@@ -5722,7 +5659,7 @@
    "billsThisMonth": false,
    "issue": "",
    "issueDays": null,
-   "waitWhy": "",
+   "waitWhy": "Stripe shows the first charge after month end",
    "expect": null,
    "cash": 0,
    "failDay": ""
