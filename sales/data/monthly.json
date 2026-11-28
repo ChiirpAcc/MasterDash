@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-28T00:17:49.731Z",
+  "builtAt": "2026-11-28T10:28:56.699Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -630,11 +630,11 @@
    "won": 0,
    "booked": 0,
    "collectedDeals": 0,
-   "credited": 1812,
+   "credited": 1860,
    "newCredited": 0,
    "expCredited": 0,
-   "dlcCredited": 1812,
-   "dlcCount": 151
+   "dlcCredited": 1860,
+   "dlcCount": 155
   },
   {
    "ae": "Ky Decker",
@@ -665,9 +665,9 @@
    "month": "2026-11",
    "won": 8,
    "booked": 9766.65,
-   "collectedDeals": 4,
-   "credited": 3100,
-   "newCredited": 2350,
+   "collectedDeals": 5,
+   "credited": 3266.65,
+   "newCredited": 2516.65,
    "expCredited": 750,
    "dlcCredited": 0,
    "dlcCount": 0

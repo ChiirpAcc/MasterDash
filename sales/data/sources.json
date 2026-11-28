@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-28T00:17:49.731Z",
+  "builtAt": "2026-11-28T10:28:56.699Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 21355,
+   "total": 21521.65,
    "mediums": [
     {
      "medium": "Events",
@@ -62,8 +62,8 @@
     },
     {
      "medium": "Account Manager",
-     "credited": 0,
-     "deals": 0
+     "credited": 166.65,
+     "deals": 1
     },
     {
      "medium": "Untagged",
@@ -123,7 +123,7 @@
    ]
   },
   "ytd": {
-   "total": 362276.36,
+   "total": 362443.01,
    "mediums": [
     {
      "medium": "Events",
@@ -147,8 +147,8 @@
     },
     {
      "medium": "Account Manager",
-     "credited": 1849.96,
-     "deals": 4
+     "credited": 2016.61,
+     "deals": 5
     },
     {
      "medium": "Untagged",
@@ -259,6 +259,10 @@
    {
     "day": "2026-11-24",
     "amount": 1500
+   },
+   {
+    "day": "2026-11-28",
+    "amount": 166.65
    }
   ]
  }

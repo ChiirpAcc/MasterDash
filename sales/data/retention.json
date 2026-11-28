@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-28T00:17:49.731Z",
+  "builtAt": "2026-11-28T10:28:56.699Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -561,18 +561,9 @@
    "mrr": 4000
   },
   "endingThisMonth": {
-   "count": 4,
-   "mrr": 4784,
+   "count": 3,
+   "mrr": 3849,
    "rows": [
-    {
-     "company": "Good Times Restoration LLC DBA Good Times Plumbing & Restoration",
-     "am": "Zeus Acosta",
-     "kind": "Early cancellation",
-     "kindWhy": "12-month term from 2024-08-28, ends 2026-11-28 mid-term",
-     "mrr": 935,
-     "requested": "2026-11-04",
-     "endsAt": "2026-11-28"
-    },
     {
      "company": "JW Heating and Air",
      "am": "Korth Rushdi",
@@ -603,14 +594,14 @@
    ]
   },
   "endingLater": {
-   "count": 34,
-   "mrr": 33961
+   "count": 35,
+   "mrr": 34896
   },
   "lostSoFar": 33596,
   "lostSigma": 34737,
   "retainedSoFar": 0.954,
-  "retainedIfAllEnd": 0.948,
-  "eomMrr": 731525.39,
+  "retainedIfAllEnd": 0.949,
+  "eomMrr": 732460.39,
   "trailing": [
    {
     "month": "2026-09",
