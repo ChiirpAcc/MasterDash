@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-28T11:27:48.824Z",
+  "builtAt": "2026-11-28T11:33:57.274Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -38,7 +38,7 @@
  "sources": {
   "month": "2026-11",
   "thisMonth": {
-   "total": 21521.65,
+   "total": 20930,
    "mediums": [
     {
      "medium": "Events",
@@ -57,13 +57,13 @@
     },
     {
      "medium": "Digital",
-     "credited": 4950,
+     "credited": 4525,
      "deals": 7
     },
     {
      "medium": "Account Manager",
-     "credited": 166.65,
-     "deals": 1
+     "credited": 0,
+     "deals": 0
     },
     {
      "medium": "Untagged",
@@ -73,16 +73,16 @@
    ],
    "top": [
     {
-     "source": "Facebook",
-     "medium": "Digital",
-     "credited": 2350,
-     "deals": 4
-    },
-    {
      "source": "One-offs",
      "medium": "Partners and referrals",
      "credited": 2300,
      "deals": 3
+    },
+    {
+     "source": "Facebook",
+     "medium": "Digital",
+     "credited": 1925,
+     "deals": 4
     },
     {
      "source": "FieldEdge",
@@ -123,7 +123,7 @@
    ]
   },
   "ytd": {
-   "total": 362443.01,
+   "total": 360101.36,
    "mediums": [
     {
      "medium": "Events",
@@ -142,13 +142,13 @@
     },
     {
      "medium": "Digital",
-     "credited": 115264.33,
-     "deals": 113
+     "credited": 113089.33,
+     "deals": 111
     },
     {
      "medium": "Account Manager",
-     "credited": 2016.61,
-     "deals": 5
+     "credited": 1849.96,
+     "deals": 4
     },
     {
      "medium": "Untagged",
@@ -160,13 +160,13 @@
     {
      "source": "Website",
      "medium": "Digital",
-     "credited": 50549,
-     "deals": 47
+     "credited": 49549,
+     "deals": 46
     },
     {
      "source": "Facebook",
      "medium": "Digital",
-     "credited": 24250,
+     "credited": 23825,
      "deals": 26
     },
     {
@@ -242,7 +242,7 @@
    },
    {
     "day": "2026-11-17",
-    "amount": 3300
+    "amount": 2875
    },
    {
     "day": "2026-11-18",
@@ -259,10 +259,6 @@
    {
     "day": "2026-11-24",
     "amount": 1500
-   },
-   {
-    "day": "2026-11-28",
-    "amount": 166.65
    }
   ]
  }
