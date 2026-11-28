@@ -1,7 +1,7 @@
 {
  "meta": {
   "version": "sk-v86",
-  "builtAt": "2026-11-28T13:02:47.771Z",
+  "builtAt": "2026-11-28T13:07:56.062Z",
   "month": "2026-11",
   "periods": {
    "thisMonth": [
@@ -39,12 +39,51 @@
   "month": "2026-11",
   "bomMonth": "2026-10",
   "bom": 732604.06,
-  "current": 736309.39,
-  "dataThrough": "2026-11-26",
+  "current": 733309.39,
+  "dataThrough": "2026-11-27",
   "churned": {
-   "count": 39,
-   "mrr": 33596,
+   "count": 42,
+   "mrr": 38596,
    "rows": [
+    {
+     "company": "Royalty Carpet",
+     "am": "Zeus Acosta",
+     "kind": "",
+     "kindWhy": "",
+     "mrr": 200,
+     "requested": "2026-10-29",
+     "ended": "2026-11-27",
+     "unexpected": false,
+     "customers": [
+      "cus_NR0IQd34RD3EBZ"
+     ]
+    },
+    {
+     "company": "American Trade Partners LLC",
+     "am": "Zeus Acosta",
+     "kind": "Early cancellation",
+     "kindWhy": "12-month term from 2025-08-28, ends 2026-11-27 mid-term",
+     "mrr": 850,
+     "requested": "2026-10-31",
+     "ended": "2026-11-27",
+     "unexpected": false,
+     "customers": [
+      "cus_SwjERWsxGN5cUu"
+     ]
+    },
+    {
+     "company": "Service Star Inc",
+     "am": "Korth Rushdi",
+     "kind": "",
+     "kindWhy": "",
+     "mrr": 3950,
+     "requested": "2026-11-12",
+     "ended": "2026-11-27",
+     "unexpected": false,
+     "customers": [
+      "cus_NbUtDZSbWl2Fpy"
+     ]
+    },
     {
      "company": "City Wide Chem-Dry",
      "am": "Zeus Acosta",
@@ -594,14 +633,14 @@
    ]
   },
   "endingLater": {
-   "count": 35,
-   "mrr": 34896
+   "count": 32,
+   "mrr": 29896
   },
-  "lostSoFar": 33596,
-  "lostSigma": 34737,
-  "retainedSoFar": 0.954,
-  "retainedIfAllEnd": 0.949,
-  "eomMrr": 732460.39,
+  "lostSoFar": 38596,
+  "lostSigma": 39737,
+  "retainedSoFar": 0.947,
+  "retainedIfAllEnd": 0.942,
+  "eomMrr": 729460.39,
   "trailing": [
    {
     "month": "2026-09",
